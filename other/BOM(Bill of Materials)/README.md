@@ -22,7 +22,7 @@
                   <td><a href="setup_link">Setup</a></td>
                   <td><a href="3d_model_link">3D Model</a></td>
                   <td>Raspberry Pi 4 Model B</td>
-                  <td><img src="image_link" alt="Raspberry Pi 4 Model B"></td>
+                  <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
               </tr>
           </tbody>
       </table>
