@@ -21,7 +21,7 @@
                   <td><a href="datasheet_link">Datasheet</a></td>
                   <td><a href="setup_link">Setup</a></td>
                   <td><a href="3d_model_link">3D Model</a></td>
-                  <td>NVIDIA Jetson Nano Dev Kit</td>
+                  <td>Main computer (Hub)</td>
                   <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
               </tr>
           </tbody>
@@ -32,18 +32,18 @@
                   <td><a href="datasheet_link">Datasheet</a></td>
                   <td><a href="setup_link">Setup</a></td>
                   <td><a href="3d_model_link">3D Model</a></td>
-                  <td>DTOF LIDAR - HD High Definition | RPLIDAR C1</td>
+                  <td>DTOF LIDAR - HD High Definition</td>
                   <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
               </tr>
           </tbody>
           <tbody>
               <tr>
                   <td>4</td>
-                  <td>VL53L1X</td>
+                  <td>Distance Sensor</td>
                   <td><a href="datasheet_link">Datasheet</a></td>
                   <td><a href="setup_link">Setup</a></td>
                   <td><a href="3d_model_link">3D Model</a></td>
-                  <td>VL53L1X DTOF Sensor</td>
+                  <td>VL53L1X</td>
                   <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="sensor"></td>
               </tr>
           </tbody>
