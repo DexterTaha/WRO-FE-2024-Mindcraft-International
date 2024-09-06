@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bcb0db63-07bf-4d5f-9a85-7500fe72c9e1)<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <body>
       <h1>Bill of Materials</h1>
