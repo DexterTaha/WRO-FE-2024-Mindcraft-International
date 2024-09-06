@@ -1,12 +1,30 @@
-## Bill of materials
-
-| Quantity | Status                             | Datasheet | Setup | 3D Model | Description                                                                                                                                            | Image |
-| ---------| ---------------------------------- | --------- | ----- | --------| -------------------------------------------------------------------------------------------------------------------------------------------------------| ----- |
-| 1        | AUVIDEA JN30D for NVIDIA jetson Nano Datasheet            | [Datasheet](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/other/datasheet/AUVIDEA%20JN30D%20for%20NVIDIA%20jetson%20Nano%20Datasheet.pdf) | [Setup](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) | [3D Model](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/other/parts%203D%20models/AUVIDEA%20JN30D%20for%20NVIDIA%20jetson%20Nano%20Datasheet.step) | Raspberry Pi 4 Model B | ![AUVIDEA JN30D for NVIDIA jetson Nano Datasheet](https://github.com/user-attachments/assets/81f08d0c-411d-4dfa-bcd8-41ca2d1c12d7) |
-| 1        | Logitech® HD Webcam C270           | [Datasheet](https://www.logitech.com/assets/47890/c270-pro-webcam-datasheet.pdf) | [Setup](https://support.logi.com/hc/en-us/articles/360023202454-Getting-Started-C270-HD-Webcam) | [3D Model](https://grabcad.com/library/logitech-hd-webcam-c270-1) | Logitech® HD Webcam C270 | ![Logitech® HD Webcam C270](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/49862a6a-7090-4f75-b339-11148f137492) |
-| 1        | 5v power bank                      | [Datasheet](https://www.anker.com/products/variant/powercore-10000/A1263011) | [Setup](https://www.lifewire.com/how-to-use-a-portable-charger-4582481) | [3D Model](https://grabcad.com/library/anker-powercore-26800-2) | 5v power bank | ![5v power bank](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/4259c9a3-a346-4806-9d60-ad36e5115942) |
-| 2        | Logo® Robot inventor hub           | [Datasheet](https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6303572.pdf) | [Setup](https://education.lego.com/en-us/lesson/prime/the-spike-prime-hub) | [3D Model](https://www.thingiverse.com/thing:4131528) | Logo® Robot inventor hub | ![Logo® Robot inventor hub](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/21c04300-7178-4238-b390-21bdbd0f5f05) |
-| 5        | Logo® Technic™ Medium Angular Motor| [Datasheet](https://education.lego.com/v3/assets/blt293eea581807678a/bltbb06e210ff2f4d01/611f5e2c574b4f4b7b116eff/Python_for_EV3.pdf) | [Setup](https://education.lego.com/en-us/lesson/prime/spike-prime-angular-motor) | [3D Model](https://www.thingiverse.com/thing:4223040) | Logo® Technic™ Medium Angular Motor | ![Logo® Technic™ Medium Angular Motor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/33029bab-2e1a-4e48-8a18-d5d74be013a8) |
-| 2        | Logo® Technic™ Color Sensor        | [Datasheet](https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6303572.pdf) | [Setup](https://education.lego.com/en-us/lesson/prime/spike-prime-color-sensor) | [3D Model](https://www.thingiverse.com/thing:4523013) | Logo® Technic™ Color Sensor | ![Logo® Technic™ Color Sensor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/3e84f65e-d1ff-419e-8f44-291a97303c2c) |
-| 3        | Logo® Technic™ Ultrasonic Sensor   | [Datasheet](https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6303572.pdf) | [Setup](https://education.lego.com/en-us/lesson/prime/spike-prime-ultrasonic-sensor) | [3D Model](https://www.thingiverse.com/thing:4745194) | Logo® Technic™ Ultrasonic Sensor | ![Logo® Technic™ Ultrasonic Sensor](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/e8e2d6ac-bb61-4a2b-bb90-486233006838) |
-| 280      | Logo® Technic™ spare pieces        | [Datasheet](https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6303572.pdf) | [Setup](https://education.lego.com/en-us/lesson/prime/spike-prime-spare-parts) | [3D Model](https://www.thingiverse.com/thing:2846486) | Logo® Technic™ spare pieces | ![efw](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/5115e60b-d975-47cc-acee-51f2e9d34bb0) |
+<!DOCTYPE html>
+<html>
+  <body>
+      <h1>Bill of Materials</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Quantity</th>
+                  <th>Status</th>
+                  <th>Datasheet</th>
+                  <th>Setup</th>
+                  <th>3D Model</th>
+                  <th>Description</th>
+                  <th>Image</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>AUVIDEA JN30D for NVIDIA Jetson Nano</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>Raspberry Pi 4 Model B</td>
+                  <td><img src="image_link" alt="Raspberry Pi 4 Model B"></td>
+              </tr>
+          </tbody>
+      </table>
+  </body>
+</html>
