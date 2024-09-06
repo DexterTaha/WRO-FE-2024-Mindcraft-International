@@ -25,6 +25,12 @@
                   <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
               </tr>
           </tbody>
+          <tbody>
+              <tr>
+                  <td>4</td>
+                  <td>vl53l1x</td>
+              </tr>
+          </tbody>
       </table>
   </body>
 </html>
