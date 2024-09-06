@@ -33,7 +33,7 @@
                   <td></td>
                   <td></td>
                   <td>VL53L1X DTOF Sensor</td>
-                  <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fholybro.com%2Fproducts%2Fst-vl53l1x-lidar&psig=AOvVaw1qs3nM0aJDikNvsCVAuT1h&ust=1725716637375000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiZ3s-5rogDFQAAAAAdAAAAABAZ" alt="sensor"></td>
+                  <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="sensor"></td>
               </tr>
           </tbody>
       </table>
