@@ -27,6 +27,17 @@
           </tbody>
           <tbody>
               <tr>
+                  <td>1</td>
+                  <td>RPLIDAR C1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>DTOF LIDAR - HD High Definition | RPLIDAR C1</td>
+                  <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
+              </tr>
+          </tbody>
+          <tbody>
+              <tr>
                   <td>4</td>
                   <td>VL53L1X</td>
                   <td></td>
