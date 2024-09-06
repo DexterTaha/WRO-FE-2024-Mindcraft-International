@@ -69,6 +69,17 @@
                   <td><img src="https://nfpshop.com/wp-content/uploads/2023/08/NFP-JGA25-370-EN-small-dc-gear-motors-with-encoder.jpg" alt="Motor"></td>
               </tr>
           </tbody>
+          <tbody>
+              <tr>
+                  <td>4</td>
+                  <td>Temperature Sensor</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>BMP280</td>
+                  <td><img src="https://a2itronic.ma/wp-content/uploads/2022/01/p_3_8_0_2_3802-BMP280-5V-I2CSPI-Module-capteur-de-pression-barometrique-et-de-temperature.jpg" alt="temperature"></td>
+              </tr>
+          </tbody>
       </table>
   </body>
 </html>
