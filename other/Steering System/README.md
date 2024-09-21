@@ -1,3 +1,4 @@
+<p style="font-size: 12px;">
 The steering system is powered by a 25T steering arm connected to the front axle, which acts as a joint rotating around a horizontal axis. This arm converts the rotational motion from the motor into angular motion for steering. It functions like a lever, translating torque into angular movement according to the equation:
 
     θ = T / r
@@ -15,3 +16,4 @@ Where:
 - L is the length of the steering linkage.
 
 Dynamic simulation ensures accurate translation of motion, optimizing the robot's steering performance.
+</p>
