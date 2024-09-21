@@ -1,3 +1,6 @@
+![Steering System](Screenshot 2024-09-21 162700.png)
+
+
 <p style="font-size: 12px;">
 The steering system is powered by a 25T steering arm connected to the front axle, which acts as a joint rotating around a horizontal axis. This arm converts the rotational motion from the motor into angular motion for steering. It functions like a lever, translating torque into angular movement according to the equation:
 
