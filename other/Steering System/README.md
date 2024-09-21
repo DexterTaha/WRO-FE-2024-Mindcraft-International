@@ -1,3 +1,39 @@
-The steering system relies on the 25T steering arm connected to the front axle, which acts as a joint rotating around a horizontal axis to convert the rotational motion from the motor into angular motion. The arm functions as a lever, where the rotational motion is transformed into an angle that controls the steering of the wheels, expressed by the equation \( \theta = \frac{T}{r} \), where \( \theta \) represents the angle of rotation, \( T \) is the torque, and \( r \) is the length of the arm.
+The steering system is powered by a 25T steering arm connected to the front axle, which acts as a joint rotating around a horizontal axis. This arm converts the rotational motion from the motor into angular motion for steering. It functions like a lever, translating torque into angular movement according to the equation 
+𝜃
+=
+𝑇
+𝑟
+θ= 
+r
+T
+​
+ , where 
+𝜃
+θ is the angle of rotation, 
+𝑇
+T is the torque applied, and 
+𝑟
+r is the length of the arm.
 
-The front wheels rotate around a horizontal axis based on the angle of rotation of the 25T, allowing the robot to turn. The angle of the wheels is determined by the axial rotation of the arm, using the equation \( \theta_{wheel} = \frac{L}{r} \cdot \theta_{25T} \) to define the angular motion. The system relies on dynamic simulation to ensure accurate translation of motion, enhancing the robot's performance and its ability to steer effectively.
+The front wheels rotate around a horizontal axis based on the angle of the 25T arm, enabling the robot to turn. The wheel's angle is determined by the axial rotation of the arm, as described by the equation 
+𝜃
+wheel
+=
+𝐿
+𝑟
+⋅
+𝜃
+25T
+θ 
+wheel
+​
+ = 
+r
+L
+​
+ ⋅θ 
+25T
+​
+ , where 
+𝐿
+L is the length of the steering linkage. Dynamic simulation ensures accurate translation of motion, optimizing the robot's steering performance.
