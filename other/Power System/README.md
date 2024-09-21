@@ -1,10 +1,11 @@
 <p align="center">
-  <img src="path/to/your/image.png" alt="Rear Drive System" width="400">
+  <img src="WhatsApp Image 2024-09-21 at 20.10.13.jpeg" alt="Rear Drive System" width="400">
+  <br>
 </p>
 
 ### Rear Drive System Overview
 
-The rear drive system of the robot relies on a horizontally mounted electric motor connected to gear mechanisms. This system converts the motor’s rotational motion into the rotational movement of the rear wheels. The motor is linked to gears that reduce the rotational speed while increasing the torque applied to the wheels, enhancing the robot's ability to move steadily and efficiently.
+The rear-drive system of the robot relies on a horizontally mounted electric motor connected to gear mechanisms. This system converts the motor’s rotational motion into the rotational movement of the rear wheels. The motor is linked to gears that reduce the rotational speed while increasing the torque applied to the wheels, enhancing the robot's ability to move steadily and efficiently.
 
 The fundamental equation governing motion transfer is:
 
