@@ -1,4 +1,8 @@
-![Steering System](Screenshot 2024-09-21 162700.png)
+<p align="center">
+    <img src="Screenshot 2024-09-21 162700.png" alt="Steering" width="400">
+    <hr>
+    Steering System
+</p>
 
 
 <p style="font-size: 12px;">
