@@ -15,3 +15,6 @@ The sensors provide high accuracy thanks to laser technology, which allows relia
 ### Gyroscope:
 [![Watch the video](https://img.youtube.com/vi/pLdBh24A_UU/0.jpg)](https://youtu.be/pLdBh24A_UU)
 
+## Temperature Sensor:
+[![Watch the video](https://img.youtube.com/vi/fO5gJq1IJq0/0.jpg)](https://youtu.be/fO5gJq1IJq0)
+
