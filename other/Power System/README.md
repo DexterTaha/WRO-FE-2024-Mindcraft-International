@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="WhatsApp Image 2024-09-21 at 20.10.13.jpeg" alt="Rear Drive System" width="400">
+  <img src="Power Sensor.png" alt="Rear Drive System" width="400">
   <br>
 </p>
 
