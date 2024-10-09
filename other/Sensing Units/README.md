@@ -1,5 +1,5 @@
 <p style="align: center;">
-  <img src="Screenshot 2024-09-21 203823.png" width="300">
+  <img src="DTOF sensor.png" width="300">
 </p>
 
 ## Sensing units:
