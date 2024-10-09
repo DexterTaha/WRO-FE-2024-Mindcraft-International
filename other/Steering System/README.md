@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Screenshot 2024-09-21 162700.png" alt="Steering" width="400">
+    <img src="Steering.png" alt="Steering" width="400">
     <br>
 </p>
 
