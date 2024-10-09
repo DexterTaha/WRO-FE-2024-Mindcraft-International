@@ -1,4 +1,4 @@
-<p style="align: center;">
+<p align: center>
   <img src="DTOF sensor.png" width="300">
 </p>
 
