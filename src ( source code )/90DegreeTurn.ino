@@ -61,44 +61,6 @@ void calibrateGyroscope();
 void turn90Degrees();
 
 // ---------------------------
-// Setup Function
-// ---------------------------
-void setup() {
-  // Initialize Serial Communication
-  Serial.begin(115200);
-  while (!Serial) { ; } // Wait for Serial to be ready
-
-  // Initialize Motor Control Pins
-  pinMode(ENA, OUTPUT);
-  pinMode(IN_1, OUTPUT);
-  pinMode(IN_2, OUTPUT);
-  
-  // Initialize Steering Servo
-  STEERING.attach(STEERING_SERVO_PIN);
-  
-  // Initialize motors to stopped state
-  StopMotors();
-  
-  // Initialize MPU6050
-  if (!initializeMPU6050()) {
-    Serial.println("Failed to initialize MPU6050. Check connections.");
-    while (1); // Halt if initialization fails
-  }
-  
-  // Calibrate Gyroscope
-  calibrateGyroscope();
-  Serial.println("Calibration complete. Starting operation.");
-}
-
-// ---------------------------
-// Loop Function
-// ---------------------------
-void loop() {
-  // Call the main robot control function
-  robotControl();
-}
-
-// ---------------------------
 // Robot Control Function
 // ---------------------------
 void robotControl() {
@@ -249,4 +211,42 @@ void turn90Degrees() {
     Serial.println("90-degree turn complete!");
 
     delay(1000); // Brief pause after turning
+}
+
+// ---------------------------
+// Setup Function
+// ---------------------------
+void setup() {
+  // Initialize Serial Communication
+  Serial.begin(115200);
+  while (!Serial) { ; } // Wait for Serial to be ready
+
+  // Initialize Motor Control Pins
+  pinMode(ENA, OUTPUT);
+  pinMode(IN_1, OUTPUT);
+  pinMode(IN_2, OUTPUT);
+  
+  // Initialize Steering Servo
+  STEERING.attach(STEERING_SERVO_PIN);
+  
+  // Initialize motors to stopped state
+  StopMotors();
+  
+  // Initialize MPU6050
+  if (!initializeMPU6050()) {
+    Serial.println("Failed to initialize MPU6050. Check connections.");
+    while (1); // Halt if initialization fails
+  }
+  
+  // Calibrate Gyroscope
+  calibrateGyroscope();
+  Serial.println("Calibration complete. Starting operation.");
+}
+
+// ---------------------------
+// Loop Function
+// ---------------------------
+void loop() {
+  // Call the main robot control function
+  robotControl();
 }
