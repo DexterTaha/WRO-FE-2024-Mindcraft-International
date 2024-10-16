@@ -7,7 +7,7 @@ void setup() {
 
 // Function for Robot Start (series of short beeps)
 void robotStart() {
-  for (int i = 0; i < 3; i++) {    // 3 short beeps
+  for (int i = 0; i < 10; i++) {    // 3 short beeps
     tone(buzzerPin, 1000);         // Frequency of 1000 Hz
     delay(200);                    // Beep for 200ms
     noTone(buzzerPin);             // Stop the beep
@@ -24,7 +24,7 @@ void robotEnd() {
 
 // Function for Error (quick beeps)
 void error() {
-  for (int i = 0; i < 5; i++) {    // 5 quick beeps
+  for (int i = 0; i < 10; i++) {    // 5 quick beeps
     tone(buzzerPin, 1500);         // Higher frequency for error
     delay(100);                    // Beep for 100ms
     noTone(buzzerPin);             // Stop the beep
@@ -35,7 +35,7 @@ void error() {
 // Function for Special (custom melody)
 void special() {
   int melody[] = { 262, 294, 330, 349 };  // Notes for C, D, E, F
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 10; i++) {
     tone(buzzerPin, melody[i]);           // Play each note
     delay(300);                           // Hold for 300ms
     noTone(buzzerPin);                    // Stop the beep
