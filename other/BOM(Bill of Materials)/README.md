@@ -143,7 +143,7 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td>0x16</td>
                 <td>Servobras</td>
-                <td><a href="https://servobras.com.br/">Datasheet</a></td>
+                <td><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/cf7c3951c0394e6adfc05022">Datasheet</a></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Arm</td>
