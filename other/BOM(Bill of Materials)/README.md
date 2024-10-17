@@ -147,7 +147,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Lipo Battery Alarm</td>
-                <td><img src="https://www.hobbyking.com/hobbyking/store/catalog/LIPO-Low-Voltage-Alarm1.jpg" alt="Buzzer Alarm"></td>
+                <td><img src="https://github.com/user-attachments/assets/2194b679-50bd-429a-bfaa-28c4bd65ff3b" alt="Buzzer Alarm"></td>
             </tr>
             <tr>
                 <td>0x15</td>
@@ -156,7 +156,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Motor Tester</td>
-                <td><img src="https://cdn3.volusion.com/axmfs.vuhbq/v/vspfiles/photos/STS-9000-2.jpg?v-cache=1388595167" alt="Servo Tester"></td>
+                <td><img src="https://github.com/user-attachments/assets/b4e8654e-ac73-4e93-bfa2-d3ac3c08affe" alt="Servo Tester"></td>
             </tr>
             <tr>
                 <td>0x16</td>
@@ -165,7 +165,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Arm</td>
-                <td><img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/448/714/products/img_63441-68a12d3b52b3fb8b5b15759014892264-1024-1024.jpg" alt="Servobras"></td>
+                <td><img src="https://github.com/user-attachments/assets/18799dc7-50cc-4926-9a16-e39e5fde5a1a" alt="Servobras"></td>
             </tr>
             <tr>
                 <td>0x17</td>
@@ -174,7 +174,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>64GB SD Card</td>
-                <td><img src="https://shop.westerndigital.com/content/dam/store/en-us/assets/products/memory-cards/ultra-microsd/gallery/ultra-microsd-400gb-2-hr.jpg.thumb.1280.1280.png" alt="SD Card"></td>
+                <td><img src="https://github.com/user-attachments/assets/2e96f0c0-c279-45fa-9d7b-3cb66cbc74db" alt="SD Card"></td>
             </tr>
             <tr>
                 <td>0x18</td>
@@ -183,7 +183,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
                 <td>N/A</td>
                 <td>WiFi Adapter</td>
-                <td><img src="https://static.tp-link.com/res/images/products/2021/20210105110747/Archer%20T2U/1_Front%20High-Res.jpg" alt="WiFi Adapter"></td>
+                <td><img src="https://github.com/user-attachments/assets/de919b03-407a-4680-8125-5b07b2ed4105" alt="WiFi Adapter"></td>
             </tr>
         </tbody>
     </table>
