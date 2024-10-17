@@ -1,8 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill of Materials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        img {
+            max-width: 100px; /* Limit image width for better responsiveness */
+            height: auto;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            th, td {
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                display: block;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            th {
+                display: none; /* Hide table header on small screens */
+            }
+
+            td {
+                text-align: right;
+                position: relative;
+                padding-left: 50%; /* Create space for labels */
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(50% - 20px);
+                padding-left: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Bill of Materials</h1>
@@ -20,175 +106,121 @@
         </thead>
         <tbody>
             <tr>
-                <td>0x00</td>
-                <td>NVIDIA Jetson Nano 4GB</td>
-                <td><a href="https://developer.nvidia.com/embedded/dlc/jetson-nano-developer-kit">Datasheet</a></td>
-                <td><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
-                <td><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
-                <td>Main computing unit</td>
-                <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" width="1000" height="1000" alt="Jetson Nano" ></td>
+                <td data-label="Code">0x00</td>
+                <td data-label="Name">NVIDIA Jetson Nano 4GB</td>
+                <td data-label="Datasheet"><a href="https://developer.nvidia.com/embedded/dlc/jetson-nano-developer-kit">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
+                <td data-label="3D Model"><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
+                <td data-label="Description">Main computing unit</td>
+                <td data-label="Image"><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="Jetson Nano"></td>
             </tr>
             <tr>
-                <td>0x01</td>
-                <td>Arduino NANO</td>
-                <td><a href="https://store.arduino.cc/products/arduino-nano">Datasheet</a></td>
-                <td><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
-                <td><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
-                <td>Microcontroller</td>
-                <td><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" width="1000" alt="Arduino Nano" ></td>
+                <td data-label="Code">0x01</td>
+                <td data-label="Name">Arduino NANO</td>
+                <td data-label="Datasheet"><a href="https://store.arduino.cc/products/arduino-nano">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
+                <td data-label="3D Model"><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
+                <td data-label="Description">Microcontroller</td>
+                <td data-label="Image"><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" alt="Arduino Nano"></td>
             </tr>
             <tr>
-                <td>0x02</td>
-                <td>LIDAR</td>
-                <td><a href="https://www.slamtec.com/en/LIDAR">Datasheet</a></td>
-                <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
-                <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
-                <td>Laser Range Sensor</td>
-                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" width="1000" alt="LIDAR"></td>
+                <td data-label="Code">0x02</td>
+                <td data-label="Name">LIDAR</td>
+                <td data-label="Datasheet"><a href="https://www.slamtec.com/en/LIDAR">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
+                <td data-label="3D Model"><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
+                <td data-label="Description">Laser Range Sensor</td>
+                <td data-label="Image"><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="LIDAR"></td>
             </tr>
             <tr>
-                <td>0x03</td>
-                <td>Distance Sensor VL53L1X</td>
-                <td><a href="https://www.st.com/resource/en/datasheet/vl53l1x.pdf">Datasheet</a></td>
-                <td><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
-                <td><a href="https://www.thingiverse.com/thing:3014864">3D Model</a></td>
-                <td>Time-of-Flight Distance Sensor</td>
-                <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X" width="1000"></td>
+                <td data-label="Code">0x03</td>
+                <td data-label="Name">Distance Sensor VL53L1X</td>
+                <td data-label="Datasheet"><a href="https://www.st.com/resource/en/datasheet/vl53l1x.pdf">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3014864">3D Model</a></td>
+                <td data-label="Description">Time-of-Flight Distance Sensor</td>
+                <td data-label="Image"><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X"></td>
             </tr>
             <tr>
-                <td>0x04</td>
-                <td>GYROSCOPE Sensor MPU6050</td>
-                <td><a href="https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/">Datasheet</a></td>
-                <td><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
-                <td><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
-                <td>6-axis Gyroscope and Accelerometer</td>
-                <td><img src="https://robo.com.cy/cdn/shop/products/mpu6050.png?v=1574351993&width=686" alt="MPU6050" width="1000"></td>
+                <td data-label="Code">0x04</td>
+                <td data-label="Name">GYROSCOPE Sensor MPU6050</td>
+                <td data-label="Datasheet"><a href="https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
+                <td data-label="Description">6-axis Gyroscope and Accelerometer</td>
+                <td data-label="Image"><img src="https://robo.com.cy/cdn/shop/products/mpu6050.png?v=1574351993&width=686" alt="MPU6050"></td>
             </tr>
             <tr>
-                <td>0x05</td>
-                <td>Camera</td>
-                <td><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Datasheet</a></td>
-                <td><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
-                <td><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
-                <td>Camera module</td>
-                <td><img src="https://w7.pngwing.com/pngs/1/412/png-transparent-camera-module-raspberry-pi-camera-serial-interface-camera-interface-camera-electronics-electronic-device-microcontroller.png" alt="Camera" width="1000"></td>
+                <td data-label="Code">0x05</td>
+                <td data-label="Name">Camera</td>
+                <td data-label="Datasheet"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
+                <td data-label="Description">Camera module</td>
+                <td data-label="Image"><img src="https://w7.pngwing.com/pngs/1/412/png-transparent-camera-module-raspberry-pi-camera-serial-interface-camera-interface-camera-electronics-electronic-device-microcontroller.png" alt="Camera"></td>
             </tr>
             <tr>
-                <td>0x06</td>
-                <td>DC Brushed Motor with Encoder</td>
-                <td><a href="https://www.pololu.com/file/0J551/25D_metal_gear_motor_with_encoder.pdf">Datasheet</a></td>
-                <td><a href="https://www.pololu.com/docs/0J72/1.2">Setup</a></td>
-                <td><a href="https://www.thingiverse.com/thing:3045284">3D Model</a></td>
-                <td>DC Motor with Encoder</td>
-                <td><img src="https://github.com/user-attachments/assets/2c549c0f-b914-41c2-9335-5636c0607928" alt="Motor" width="1000"></td>
+                <td data-label="Code">0x06</td>
+                <td data-label="Name">DC Brushed Motor with Encoder</td>
+                <td data-label="Datasheet"><a href="https://www.pololu.com/file/0J551/25D_metal_gear_motor_with_encoder.pdf">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.tinkercad.com/things/hvT5XxH2gMv">3D Model</a></td>
+                <td data-label="Description">Motor for movement with encoder feedback</td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/0/0/3/2/15235-25D_Metal_Gear_Motor_with_Encoder_-_12V.jpg" alt="DC Motor with Encoder"></td>
             </tr>
             <tr>
-                <td>0x07</td>
-                <td>Servo Motor Metal Gear Box 180°</td>
-                <td><a href="https://shop4makers.com/produit/servomoteur-mg995-maroc/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>180° Metal Gear Servo</td>
-                <td><img src="https://github.com/user-attachments/assets/31be8252-56ff-43b1-96c8-dfa2b8ee0b79" alt="Servo Motor" width="1000"></td>
+                <td data-label="Code">0x07</td>
+                <td data-label="Name">Wheels</td>
+                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/motor-wheels.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
+                <td data-label="Description">Wheels for robot movement</td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/5/6/5/16825-Wheel_57mm.png" alt="Wheels"></td>
             </tr>
             <tr>
-                <td>0x08</td>
-                <td>L298N Motor Driver</td>
-                <td><a href="https://components101.com/motor-drivers/l298n-motor-driver-module">Datasheet</a></td>
-                <td><a href="https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/">Setup</a></td>
-                <td><a href="https://www.thingiverse.com/thing:3802577">3D Model</a></td>
-                <td>Dual H-Bridge Motor Driver</td>
-                <td><img src="https://components101.com/sites/default/files/component_pin/L298N-Pinout.jpg" alt="L298N Motor Driver" width="1000"></td>
+                <td data-label="Code">0x08</td>
+                <td data-label="Name">Chassis</td>
+                <td data-label="Datasheet"><a href="https://www.amazon.com/Smart-Car-Chassis-Kit-Robots/dp/B07DQV9KWG">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.dfrobot.com/wiki/index.php/Chassis_Kit_(EN)">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2591073">3D Model</a></td>
+                <td data-label="Description">Base for robot assembly</td>
+                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029003-5.jpg" alt="Chassis"></td>
             </tr>
             <tr>
-                <td>0x09</td>
-                <td>5V Power Converter</td>
-                <td><a href="https://www.meanwell.com/Upload/PDF/RS-15/RS-15-SPEC.PDF">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>5V DC Converter</td>
-                <td><img src="https://www.meanwell.com/Upload/PDF/RS-15/RS-15.JPG" alt="Power Converter" width="1000"></td>
+                <td data-label="Code">0x09</td>
+                <td data-label="Name">Battery Pack</td>
+                <td data-label="Datasheet"><a href="https://www.lithiumbatterycompany.com/lithium-battery-tech-info/what-is-a-lithium-ion-battery/faq/18650-battery-technical-specs/18650-battery-specs-and-performance.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.batteryspace.com/faq-how-to-charge-and-discharge-lithium-ion-lipo-batteries.aspx">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2249311">3D Model</a></td>
+                <td data-label="Description">Power supply for the robot</td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" alt="Battery Pack"></td>
             </tr>
             <tr>
-                <td>0x10</td>
-                <td>Lipo 3S 2200mah 11.1V 50C</td>
-                <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Lithium Polymer Battery</td>
-                <td><img src="https://cdn-global-uploads.webflow.com/5d838a2aef8b0511db98c2b8/5fb54069b6caa056f98fe17a_turnigy-lipo-battery.jpg" alt="Lipo Battery" width="1000"></td>
+                <td data-label="Code">0x0A</td>
+                <td data-label="Name">Power Switch</td>
+                <td data-label="Datasheet"><a href="https://www.digikey.com/en/products/detail/te-connectivity-amp/20-351-0200/2933787">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.sparkfun.com/products/16289">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1952143">3D Model</a></td>
+                <td data-label="Description">To control the power supply</td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/6/4/0/7/16690-Power_Switch.png" alt="Power Switch"></td>
             </tr>
             <tr>
-                <td>0x11</td>
-                <td>IMAX B6AC V2</td>
-                <td><a href="https://www.skyrc.com/Charger/B6AC_V2">Datasheet</a></td>
-                <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
-                <td>N/A</td>
-                <td>Battery Charger</td>
-                <td><img src="https://cdn.shopify.com/s/files/1/1239/8602/products/imax-b6ac-v2_1024x1024.jpg?v=1614090397" alt="IMAX Charger" width="1000"></td>
+                <td data-label="Code">0x0B</td>
+                <td data-label="Name">LEDs</td>
+                <td data-label="Datasheet"><a href="https://www.liteon.com/en/products/LEDs/LED-Overview.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.adafruit.com/product/3040">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.tinkercad.com/things/8J4x9Qof7Lk">3D Model</a></td>
+                <td data-label="Description">Indicator lights</td>
+                <td data-label="Image"><img src="https://www.electronicwings.com/public/uploads/posts/2020-05/5eb4c2fbe0418-lm358.webp" alt="LEDs"></td>
             </tr>
             <tr>
-                <td>0x12</td>
-                <td>7806 Transistor</td>
-                <td><a href="https://www.onsemi.com/pdf/datasheet/l78-d.pdf">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>6V Voltage Regulator</td>
-                <td><img src="https://components101.com/sites/default/files/component_pin/7806-voltage-regulator-pinout.png" alt="7806 Transistor"></td>
-            </tr>
-            <tr>
-                <td>0x13</td>
-                <td>Switch High Amper</td>
-                <td><a href="https://docs.rs-online.com/1f89/0900766b814b93ef.pdf">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>High Current Switch</td>
-                <td><img src="https://www.sparkfun.com/images/products/11094-02.jpg" alt="Switch"></td>
-            </tr>
-            <tr>
-                <td>0x14</td>
-                <td>Buzzer Alarm Batterie Lipo</td>
-                <td><a href="https://www.hobbyking.com/hobbyking/store/__24786__Hobbyking_8482_Lipoly_Low_Voltage_Alarm_2S_3S.html">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Lipo Battery Alarm</td>
-                <td><img src="https://www.hobbyking.com/hobbyking/store/catalog/LIPO-Low-Voltage-Alarm1.jpg" alt="Buzzer Alarm"></td>
-            </tr>
-            <tr>
-                <td>0x15</td>
-                <td>Servo Tester</td>
-                <td><a href="https://www.servocity.com/servo-tester/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Servo Motor Tester</td>
-                <td><img src="https://cdn3.volusion.com/axmfs.vuhbq/v/vspfiles/photos/STS-9000-2.jpg?v-cache=1388595167" alt="Servo Tester"></td>
-            </tr>
-            <tr>
-                <td>0x16</td>
-                <td>Servobras</td>
-                <td><a href="https://servobras.com.br/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Servo Arm</td>
-                <td><img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/448/714/products/img_63441-68a12d3b52b3fb8b5b15759014892264-1024-1024.jpg" alt="Servobras"></td>
-            </tr>
-            <tr>
-                <td>0x17</td>
-                <td>SD Card 64GB</td>
-                <td><a href="https://www.sandisk.com/home/memory-cards/microsd-cards">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>64GB SD Card</td>
-                <td><img src="https://shop.westerndigital.com/content/dam/store/en-us/assets/products/memory-cards/ultra-microsd/gallery/ultra-microsd-400gb-2-hr.jpg.thumb.1280.1280.png" alt="SD Card"></td>
-            </tr>
-            <tr>
-                <td>0x18</td>
-                <td>TPLink AC600</td>
-                <td><a href="https://www.tp-link.com/us/home-networking/usb-adapter/archer-t2u/">Datasheet</a></td>
-                <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
-                <td>N/A</td>
-                <td>WiFi Adapter</td>
-                <td><img src="https://static.tp-link.com/res/images/products/2021/20210105110747/Archer%20T2U/1_Front%20High-Res.jpg" alt="WiFi Adapter"></td>
+                <td data-label="Code">0x0C</td>
+                <td data-label="Name">Buzzer</td>
+                <td data-label="Datasheet"><a href="https://www.sparkfun.com/datasheets/Components/General/buzzer.pdf">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.sparkfun.com/products/9491">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3432689">3D Model</a></td>
+                <td data-label="Description">Sound output for alerts</td>
+                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029020-5.jpg" alt="Buzzer"></td>
             </tr>
         </tbody>
     </table>
