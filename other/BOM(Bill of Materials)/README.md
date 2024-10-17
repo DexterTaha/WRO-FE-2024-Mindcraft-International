@@ -35,7 +35,7 @@
                 <td><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
                 <td><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
                 <td>Microcontroller</td>
-                <td><img src="https://store-cdn.arduino.cc/uni/catalog/product/cache/1/image/700x395/603d8cba50f48b1e7eaaad94a0c9412d/a/b/abx00055_featured.png" alt="Arduino Nano"></td>
+                <td><img src="https://github.com/user-attachments/assets/eb12af29-b436-4ec6-9c07-ae8f51c3ed88" alt="Arduino Nano"></td>
             </tr>
             <tr>
                 <td>0x02</td>
