@@ -48,7 +48,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3014864">3D Model</a></td>
                 <td data-label="Description">Time-of-Flight Distance Sensor</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/87126eb6-3d94-4dc3-aa94-e5ba5083c1b8" height="350" alt="VL53L1X"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/87126eb6-3d94-4dc3-aa94-e5ba5083c1b8" height="350" width="1000" alt="VL53L1X"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x04</td>
@@ -57,7 +57,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
                 <td data-label="Description">6-axis Gyroscope and Accelerometer</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/b403cc4d-2e55-45a2-9d9c-f42e105ebaec" height="350" alt="MPU6050"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/b403cc4d-2e55-45a2-9d9c-f42e105ebaec" height="350" width="1000" alt="MPU6050"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x05</td>
@@ -66,7 +66,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td data-label="Description">Camera module</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/732cbe1d-62a9-42e6-94f0-e05b6ea594ca" height="350" alt="Camera"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/732cbe1d-62a9-42e6-94f0-e05b6ea594ca" height="350" width="1000" alt="Camera"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x06</td>
@@ -75,7 +75,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.tinkercad.com/things/hvT5XxH2gMv">3D Model</a></td>
                 <td data-label="Description">Motor for movement with encoder feedback</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/14b59b8c-9b80-4388-846f-067335f6fa1c" height="350" alt="DC Motor with Encoder"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/14b59b8c-9b80-4388-846f-067335f6fa1c" height="350" width="1000" alt="DC Motor with Encoder"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x07</td>
@@ -84,7 +84,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">Wheels for robot movement</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/70ceb0f2-d238-47d2-916c-02193d48ecfb" height="350" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/70ceb0f2-d238-47d2-916c-02193d48ecfb" height="350" width="1000" alt="Wheels"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x08</td>
@@ -93,7 +93,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.dfrobot.com/wiki/index.php/Chassis_Kit_(EN)">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2591073">3D Model</a></td>
                 <td data-label="Description">Base for robot assembly</td>
-                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029003-5.jpg" alt="Chassis"></td>
+                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029003-5.jpg" height="350" width="1000" alt="Chassis"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x09</td>
@@ -102,7 +102,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.batteryspace.com/faq-how-to-charge-and-discharge-lithium-ion-lipo-batteries.aspx">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2249311">3D Model</a></td>
                 <td data-label="Description">Power supply for the robot</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" alt="Battery Pack"></td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" height="350" width="1000" alt="Battery Pack"></td>
             </tr>
             <tr>
                 <td>0x10</td>
@@ -111,7 +111,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Lithium Polymer Battery</td>
-                <td><img src="https://github.com/user-attachments/assets/a1fccdea-3f5b-4c8b-8b3d-73776964fc78" alt="Lipo Battery" width="1000"></td>
+                <td><img src="https://github.com/user-attachments/assets/a1fccdea-3f5b-4c8b-8b3d-73776964fc78" height="350" width="1000" alt="Lipo Battery" ></td>
             </tr>
             <tr>
                 <td>0x11</td>
@@ -120,7 +120,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
                 <td>N/A</td>
                 <td>Battery Charger</td>
-                <td><img src="https://github.com/user-attachments/assets/152292b2-6a48-452e-8397-891b64c9f151" alt="IMAX Charger" width="1000"></td>
+                <td><img src="https://github.com/user-attachments/assets/152292b2-6a48-452e-8397-891b64c9f151" height="350" width="1000" alt="IMAX Charger"></td>
             </tr>
             <tr>
                 <td>0x12</td>
@@ -129,7 +129,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>6V Voltage Regulator</td>
-                <td><img src="https://github.com/user-attachments/assets/f1f18869-0926-486a-b268-9d1454c185d4" alt="7806 Transistor"></td>
+                <td><img src="https://github.com/user-attachments/assets/f1f18869-0926-486a-b268-9d1454c185d4" height="350" width="1000" alt="7806 Transistor"></td>
             </tr>
             <tr>
                 <td>0x13</td>
@@ -138,7 +138,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>High Current Switch</td>
-                <td><img src="https://github.com/user-attachments/assets/1fa127ce-404c-4ae1-930d-679c359ce81e" alt="Switch"></td>
+                <td><img src="https://github.com/user-attachments/assets/1fa127ce-404c-4ae1-930d-679c359ce81e" height="350" width="1000" alt="Switch"></td>
             </tr>
             <tr>
                 <td>0x14</td>
@@ -147,7 +147,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Lipo Battery Alarm</td>
-                <td><img src="https://github.com/user-attachments/assets/2194b679-50bd-429a-bfaa-28c4bd65ff3b" alt="Buzzer Alarm"></td>
+                <td><img src="https://github.com/user-attachments/assets/2194b679-50bd-429a-bfaa-28c4bd65ff3b" height="350" width="1000" alt="Buzzer Alarm"></td>
             </tr>
             <tr>
                 <td>0x15</td>
@@ -156,7 +156,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Motor Tester</td>
-                <td><img src="https://github.com/user-attachments/assets/b4e8654e-ac73-4e93-bfa2-d3ac3c08affe" alt="Servo Tester"></td>
+                <td><img src="https://github.com/user-attachments/assets/b4e8654e-ac73-4e93-bfa2-d3ac3c08affe" height="350" width="1000" alt="Servo Tester"></td>
             </tr>
             <tr>
                 <td>0x16</td>
@@ -165,7 +165,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Arm</td>
-                <td><img src="https://github.com/user-attachments/assets/18799dc7-50cc-4926-9a16-e39e5fde5a1a" alt="Servobras"></td>
+                <td><img src="https://github.com/user-attachments/assets/18799dc7-50cc-4926-9a16-e39e5fde5a1a" height="350" width="1000" alt="Servobras"></td>
             </tr>
             <tr>
                 <td>0x17</td>
@@ -174,7 +174,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>64GB SD Card</td>
-                <td><img src="https://github.com/user-attachments/assets/2e96f0c0-c279-45fa-9d7b-3cb66cbc74db" alt="SD Card"></td>
+                <td><img src="https://github.com/user-attachments/assets/2e96f0c0-c279-45fa-9d7b-3cb66cbc74db" height="350" width="1000" alt="SD Card"></td>
             </tr>
             <tr>
                 <td>0x18</td>
@@ -183,7 +183,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
                 <td>N/A</td>
                 <td>WiFi Adapter</td>
-                <td><img src="https://github.com/user-attachments/assets/de919b03-407a-4680-8125-5b07b2ed4105" alt="WiFi Adapter"></td>
+                <td><img src="https://github.com/user-attachments/assets/de919b03-407a-4680-8125-5b07b2ed4105" height="350" width="1000" alt="WiFi Adapter"></td>
             </tr>
         </tbody>
     </table>
