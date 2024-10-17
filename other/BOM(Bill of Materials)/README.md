@@ -71,7 +71,7 @@
                 <td><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td>Camera module</td>
-                <td><img src="https://w7.pngwing.com/pngs/527/933/png-transparent-microcontroller-raspberry-pi-camera-module-v2-8-megapixel1080p-raspberry-pi-camera-module-v2-8-megapixel1080p-raspberry-pi-3-camera.png" alt="Camera" width="1000"></td>
+                <td><img src="https://e7.pngegg.com/pngimages/353/871/png-clipart-raspberry-pi-camera-module-camera-v2-8mp-raspberry-pi-raspberry-pi-camera-module-camera-v2-8mp-raspberry-pi-1080p-studio-flex-design-camera-lens-1080p.png" alt="Camera" width="1000"></td>
             </tr>
             <tr>
                 <td>0x06</td>
