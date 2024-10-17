@@ -8,30 +8,20 @@
     </thead>
     <tbody>
         <tr>
-            <td><img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="200" alt="Taha Taidi Laamiri"></td>
-            <td><strong>Taha Taidi Laamiri</strong></td>
             <td>
-                <div>LEGO Robotics ⭐⭐⭐⭐</div>
-                <div>Electronics Robotics ⭐⭐⭐⭐⭐</div>
-                <div>Electronics Programming ⭐⭐⭐⭐</div>
+                <img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="200" alt="Taha Taidi Laamiri">
+                <img src="https://github.com/user-attachments/assets/70c6ed95-7fce-4ee0-840e-6f5b5265e15e" width="200" alt="Salman Derdeb">
+                <img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="200" alt="Mortada Taidi Laamiri">
             </td>
-        </tr>
-        <tr>
-            <td><img src="https://github.com/user-attachments/assets/70c6ed95-7fce-4ee0-840e-6f5b5265e15e" width="200" alt="Salman Derdeb"></td>
-            <td><strong>Salman Derdeb</strong></td>
             <td>
-                <div>OpenCV Image Processing ⭐⭐⭐⭐⭐</div>
-                <div>Computer Science ⭐⭐⭐⭐</div>
-                <div>Front-End Development ⭐⭐⭐⭐</div>
+                <div><strong>Taha Taidi Laamiri</strong></div>
+                <div><strong>Salman Derdeb</strong></div>
+                <div><strong>Mortada Taidi Laamiri</strong></div>
             </td>
-        </tr>
-        <tr>
-            <td><img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="200" alt="Mortada Taidi Laamiri"></td>
-            <td><strong>Mortada Taidi Laamiri</strong></td>
             <td>
-                <div>LEGO Robotics ⭐⭐⭐⭐</div>
-                <div>Onshape 3D Design ⭐⭐⭐⭐</div>
-                <div>Python Programming ⭐⭐⭐</div>
+                <div>LEGO Robotics ⭐⭐⭐⭐<br>Electronics Robotics ⭐⭐⭐⭐⭐<br>Electronics Programming ⭐⭐⭐⭐</div>
+                <div>OpenCV Image Processing ⭐⭐⭐⭐⭐<br>Computer Science ⭐⭐⭐⭐<br>Front-End Development ⭐⭐⭐⭐</div>
+                <div>LEGO Robotics ⭐⭐⭐⭐<br>Onshape 3D Design ⭐⭐⭐⭐<br>Python Programming ⭐⭐⭐</div>
             </td>
         </tr>
     </tbody>
