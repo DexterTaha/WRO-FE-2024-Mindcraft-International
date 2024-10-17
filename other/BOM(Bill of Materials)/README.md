@@ -1,64 +1,242 @@
-# Robot Hardware Components
-
-This repository includes information and setup instructions for the robot's hardware components. Below is a list of all components, along with descriptions and links to resources.
-
-## Components
-
-### 1. NVIDIA Jetson Nano 4GB
-- **Description**: A powerful edge AI computing device, ideal for robotics projects requiring machine learning.
-- [Product Info](https://developer.nvidia.com/embedded/jetson-nano)
-
-### 2. Arduino Nano
-- **Description**: Small, easy-to-use microcontroller for handling simple tasks and sensors.
-- [Product Info](https://store.arduino.cc/usa/nano)
-
-### 3. LIDAR
-- **Description**: Distance measuring sensor using laser technology to map surroundings.
-- [Product Info](https://en.wikipedia.org/wiki/Lidar)
-
-### 4. Distance Sensor VL53L1X
-- **Description**: A Time-of-Flight sensor capable of detecting precise distances up to 4 meters.
-- [Product Info](https://www.pololu.com/product/3415)
-
-### 5. GYROSCOPE Sensor MPU6050
-- **Description**: An accelerometer and gyroscope module used for tracking orientation and movement.
-- [Product Info](https://www.sparkfun.com/products/11028)
-
-### 6. Camera
-- **Description**: Used for real-time video capture and object detection.
-- [Product Info](https://www.sparkfun.com/products/15887)
-
-### 7. DC Brushed Motor with Encoder
-- **Description**: A brushed DC motor for mechanical motion with encoder feedback for precision control.
-- [Product Info](https://www.pololu.com/category/22/motors)
-
-### 8. Servo Motor Metal Gear Box 180°
-- **Description**: Servo motor with a durable metal gear setup for rotation control up to 180°.
-- [Product Info](https://www.robotshop.com/ca/en/180-degree-servo-motor.html)
-
-### 9. L298N Motor Driver
-- **Description**: Motor driver for controlling dual DC motors with H-Bridge configuration.
-- [Product Info](https://www.sparkfun.com/products/14451)
-
-### 10. 5V Power Converter
-- **Description**: Voltage converter used to step down input voltage to 5V.
-- [Product Info](https://www.pololu.com/product/2842)
-
-### 11. Lipo 3S 2200mah 11.1V 50C
-- **Description**: A rechargeable lithium-polymer battery for powering the robot.
-- [Product Info](https://www.genstattu.com/gens-ace-2200mah-11-1v-50c-3s1p-lipo-battery-pack.html)
-
-### 12. IMAX B6AC V2
-- **Description**: Balance charger for Lipo batteries, ensuring safe and efficient charging.
-- [Product Info](https://www.skyrc.com/Charger/B6AC_V2)
-
-### 13. 7806 Transistor
-- **Description**: A voltage regulator used to ensure a stable 6V supply to specific components.
-- [Product Info](https://www.st.com/en/power-management/l78.html)
-
-### 14. Switch High Amper
-- **Description**: A high-current switch for power control.
-- [Product Info](https://www.amazon.com/Heavy-Duty-Power-Switches/b?ie=UTF8&node=306766011)
-
-### 15. Buzzer Alarm Batterie Lipo
-- **Description**: Buzzer alarm used to notify low Lipo
+<html>
+  <body>
+      <h1>Bill of Materials</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Quantity</th>
+                  <th>Status</th>
+                  <th>Datasheet</th>
+                  <th>Setup</th>
+                  <th>3D Model</th>
+                  <th>Description</th>
+                  <th>Image</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>NVIDIA Jetson Nano</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>Main computer (Hub)</td>
+                  <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
+              </tr>
+          </tbody>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>RPLIDAR C1</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>DTOF LIDAR - HD High Definition</td>
+                  <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
+              </tr>
+          </tbody>
+          <tbody>
+              <tr>
+                  <td>4</td>
+                  <td>Distance Sensor</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>VL53L1X</td>
+                  <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="sensor"></td>
+              </tr>
+          </tbody>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Gyroscope Sensor</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>MPU6050</td>
+                  <td><img src="https://microcell.ma/wp-content/uploads/2024/02/ori-module-6-dof-sen-mpu6050-31492.jpg" alt="gyroscope"></td>
+              </tr>
+          </tbody>
+            <tbody>
+              <tr>
+                  <td>4</td>
+                  <td>Servo Motor</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>Model NFP-JGA25-370</td>
+                  <td><img src="https://nfpshop.com/wp-content/uploads/2023/08/NFP-JGA25-370-EN-small-dc-gear-motors-with-encoder.jpg" alt="Motor"></td>
+              </tr>
+          </tbody>
+          <tbody>
+              <tr>
+                  <td>4</td>
+                  <td>Temperature Sensor</td>
+                  <td><a href="datasheet_link">Datasheet</a></td>
+                  <td><a href="setup_link">Setup</a></td>
+                  <td><a href="3d_model_link">3D Model</a></td>
+                  <td>BMP280</td>
+                  <td><img src="https://a2itronic.ma/wp-content/uploads/2022/01/p_3_8_0_2_3802-BMP280-5V-I2CSPI-Module-capteur-de-pression-barometrique-et-de-temperature.jpg" alt="temperature"></td>
+              </tr>
+          </tbody>
+      </table>
+  </body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill of Materials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bill of Materials</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Name</th>
+                <th>Datasheet</th>
+                <th>Setup</th>
+                <th>3D Model</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>NVIDIA Jetson Nano</td>
+                <td><a href="https://developer.nvidia.com/embedded/dlc/jetson-nano-developer-kit">Datasheet</a></td>
+                <td><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
+                <td><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
+                <td>Main computer (Hub)</td>
+                <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DTOF RPLIDAR C1</td>
+                <td><a href="https://www.slamtec.com/en/SLAMTEC-RPLIDAR">Datasheet</a></td>
+                <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
+                <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
+                <td>Distance sensor</td>
+                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Filament - Nylon Fibre</td>
+                <td><a href="https://www.3dware.ma/produit/esun-fibre-de-carbone-haute-temperature-naturel-filament-1-75mm-1kg/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Nylon Fibre</td>
+                <td><img src="https://www.3dware.ma/image/cache/catalog/Filaments/Nylon/filament-nylon-carbone-1-75mm-1kg-300x300.png" alt="Nylon Filament"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Filament - Flexible TPU</td>
+                <td><a href="https://www.3dware.ma/produit/filament-3d-fila-flexible-tpu-blanc-1-75mm-1kg/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Flexible TPU</td>
+                <td><img src="https://www.3dware.ma/image/cache/catalog/Filaments/TPU/filament-tpu-1-75mm-1kg-300x300.png" alt="TPU Filament"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Batterie - Lipo 3S 2200mah 11.1V 50C</td>
+                <td><a href="https://shop4makers.com/produit/batterie-lipo-3s-2200mah-11-1v-50c-xt60/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>3S Lipo Battery</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/lipo-3s-battery.jpg" alt="Lipo Battery"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Chargeur - IMAX B6AC V2</td>
+                <td><a href="https://shop4makers.com/produit/chargeur-imax-b6ac-v2/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Battery Charger</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/imax-b6ac-v2.jpg" alt="Charger"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Buzzer</td>
+                <td><a href="https://shop4makers.com/produit/buzzer-alarme-batterie-lipo/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Lipo Battery Alarm Buzzer</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/buzzer.jpg" alt="Buzzer"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Servo Driver</td>
+                <td><a href="https://shop4makers.com/produit/controleur-de-servomoteurs-pwm-16-canaux/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>16 Channel Servo Controller</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-driver.jpg" alt="Servo Driver"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Servo Tester</td>
+                <td><a href="https://shop4makers.com/produit/testeur-de-servomoteur-et-desc/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Servo Motor Tester</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-tester.jpg" alt="Servo Tester"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Servo Motor</td>
+                <td><a href="https://shop4makers.com/produit/servomoteur-mg995-maroc/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Metal Gear Box 180°</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-motor.jpg" alt="Servo Motor"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Servobras</td>
+                <td><a href="https://shop4makers.com/produit/servobras-aluminium-25-t-m3/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Servo Arms</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-arm.jpg" alt="Servo Arm"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Screen - OLED</td>
+                <td><a href="https://shop4makers.com/produit/afficheur-oled-0-96-i2c/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>OLED Display</td>
+                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/oled-screen.jpg" alt="OLED Screen"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ARDU
