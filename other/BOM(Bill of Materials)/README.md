@@ -21,7 +21,7 @@
                 <td data-label="3D Model"><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
                 <td data-label="Description">Main computing unit</td>
                 <td data-label="Image"><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" height="350" 
-width="300" alt="Jetson Nano"></td>
+width="1000" alt="Jetson Nano"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x01</td>
