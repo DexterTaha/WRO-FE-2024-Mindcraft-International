@@ -75,7 +75,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.tinkercad.com/things/hvT5XxH2gMv">3D Model</a></td>
                 <td data-label="Description">Motor for movement with encoder feedback</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/8b43b4c6-20d2-4801-b866-ca32b44fb25c" height="350" alt="DC Motor with Encoder"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/14b59b8c-9b80-4388-846f-067335f6fa1c" height="350" alt="DC Motor with Encoder"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x07</td>
