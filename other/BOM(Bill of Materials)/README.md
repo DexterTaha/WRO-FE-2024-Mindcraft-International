@@ -44,7 +44,7 @@
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
                 <td>Laser Range Sensor</td>
-                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" width="1000" alt="LIDAR"></td>
+                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" width="200" alt="LIDAR"></td>
             </tr>
             <tr>
                 <td>0x03</td>
