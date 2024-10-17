@@ -35,7 +35,7 @@
                 <td><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
                 <td><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
                 <td>Microcontroller</td>
-                <td><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" alt="Arduino Nano" width="400"></td>
+                <td><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" width="1000" alt="Arduino Nano" ></td>
             </tr>
             <tr>
                 <td>0x02</td>
@@ -44,7 +44,7 @@
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
                 <td>Laser Range Sensor</td>
-                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="LIDAR" width="1000"></td>
+                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" width="1000" alt="LIDAR"></td>
             </tr>
             <tr>
                 <td>0x03</td>
