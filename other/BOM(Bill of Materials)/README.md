@@ -26,7 +26,7 @@
                 <td><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
                 <td><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
                 <td>Main computing unit</td>
-                <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="Jetson Nano" width="1000"h></td>
+                <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="Jetson Nano" width="1000"></td>
             </tr>
             <tr>
                 <td>0x01</td>
@@ -35,7 +35,7 @@
                 <td><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
                 <td><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
                 <td>Microcontroller</td>
-                <td><img src="https://github.com/user-attachments/assets/eb12af29-b436-4ec6-9c07-ae8f51c3ed88" alt="Arduino Nano"></td>
+                <td><img src="https://github.com/user-attachments/assets/eb12af29-b436-4ec6-9c07-ae8f51c3ed88" alt="Arduino Nano" width="1000"></td>
             </tr>
             <tr>
                 <td>0x02</td>
@@ -44,7 +44,7 @@
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
                 <td>Laser Range Sensor</td>
-                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="LIDAR"></td>
+                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="LIDAR" width="1000"></td>
             </tr>
             <tr>
                 <td>0x03</td>
@@ -53,7 +53,7 @@
                 <td><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:3014864">3D Model</a></td>
                 <td>Time-of-Flight Distance Sensor</td>
-                <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X"></td>
+                <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X" width="1000"></td>
             </tr>
             <tr>
                 <td>0x04</td>
@@ -62,7 +62,7 @@
                 <td><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
                 <td>6-axis Gyroscope and Accelerometer</td>
-                <td><img src="https://github.com/user-attachments/assets/1499f772-bac9-4ab1-b7b8-276010e5b388" alt="MPU6050"></td>
+                <td><img src="https://github.com/user-attachments/assets/1499f772-bac9-4ab1-b7b8-276010e5b388" alt="MPU6050" width="1000"></td>
             </tr>
             <tr>
                 <td>0x05</td>
@@ -71,7 +71,7 @@
                 <td><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td>Camera module</td>
-                <td><img src="https://www.raspberrypi.org/documentation/hardware/camera/raspberry-pi-camera-module-v2.png" alt="Camera"></td>
+                <td><img src="https://www.raspberrypi.org/documentation/hardware/camera/raspberry-pi-camera-module-v2.png" alt="Camera" width="1000"></td>
             </tr>
             <tr>
                 <td>0x06</td>
@@ -80,7 +80,7 @@
                 <td><a href="https://www.pololu.com/docs/0J72/1.2">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:3045284">3D Model</a></td>
                 <td>DC Motor with Encoder</td>
-                <td><img src="https://github.com/user-attachments/assets/2c549c0f-b914-41c2-9335-5636c0607928" alt="Motor"></td>
+                <td><img src="https://github.com/user-attachments/assets/2c549c0f-b914-41c2-9335-5636c0607928" alt="Motor" width="1000"></td>
             </tr>
             <tr>
                 <td>0x07</td>
@@ -89,7 +89,7 @@
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>180° Metal Gear Servo</td>
-                <td><img src="https://github.com/user-attachments/assets/31be8252-56ff-43b1-96c8-dfa2b8ee0b79" alt="Servo Motor"></td>
+                <td><img src="https://github.com/user-attachments/assets/31be8252-56ff-43b1-96c8-dfa2b8ee0b79" alt="Servo Motor" width="1000"></td>
             </tr>
             <tr>
                 <td>0x08</td>
@@ -98,7 +98,7 @@
                 <td><a href="https://lastminuteengineers.com/l298n-dc-stepper-driver-arduino-tutorial/">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:3802577">3D Model</a></td>
                 <td>Dual H-Bridge Motor Driver</td>
-                <td><img src="https://components101.com/sites/default/files/component_pin/L298N-Pinout.jpg" alt="L298N Motor Driver"></td>
+                <td><img src="https://components101.com/sites/default/files/component_pin/L298N-Pinout.jpg" alt="L298N Motor Driver" width="1000"></td>
             </tr>
             <tr>
                 <td>0x09</td>
@@ -107,7 +107,7 @@
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>5V DC Converter</td>
-                <td><img src="https://www.meanwell.com/Upload/PDF/RS-15/RS-15.JPG" alt="Power Converter"></td>
+                <td><img src="https://www.meanwell.com/Upload/PDF/RS-15/RS-15.JPG" alt="Power Converter" width="1000"></td>
             </tr>
             <tr>
                 <td>0x10</td>
@@ -116,7 +116,7 @@
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Lithium Polymer Battery</td>
-                <td><img src="https://cdn-global-uploads.webflow.com/5d838a2aef8b0511db98c2b8/5fb54069b6caa056f98fe17a_turnigy-lipo-battery.jpg" alt="Lipo Battery"></td>
+                <td><img src="https://cdn-global-uploads.webflow.com/5d838a2aef8b0511db98c2b8/5fb54069b6caa056f98fe17a_turnigy-lipo-battery.jpg" alt="Lipo Battery" width="1000"></td>
             </tr>
             <tr>
                 <td>0x11</td>
@@ -125,7 +125,7 @@
                 <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
                 <td>N/A</td>
                 <td>Battery Charger</td>
-                <td><img src="https://cdn.shopify.com/s/files/1/1239/8602/products/imax-b6ac-v2_1024x1024.jpg?v=1614090397" alt="IMAX Charger"></td>
+                <td><img src="https://cdn.shopify.com/s/files/1/1239/8602/products/imax-b6ac-v2_1024x1024.jpg?v=1614090397" alt="IMAX Charger" width="1000"></td>
             </tr>
             <tr>
                 <td>0x12</td>
