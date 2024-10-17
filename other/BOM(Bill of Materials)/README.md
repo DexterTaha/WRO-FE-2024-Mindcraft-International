@@ -1,87 +1,3 @@
-<html>
-  <body>
-      <h1>Bill of Materials</h1>
-      <table>
-          <thead>
-              <tr>
-                  <th>Quantity</th>
-                  <th>Status</th>
-                  <th>Datasheet</th>
-                  <th>Setup</th>
-                  <th>3D Model</th>
-                  <th>Description</th>
-                  <th>Image</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>NVIDIA Jetson Nano</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>Main computer (Hub)</td>
-                  <td><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" alt="JETSON NANO"></td>
-              </tr>
-          </tbody>
-          <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>RPLIDAR C1</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>DTOF LIDAR - HD High Definition</td>
-                  <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
-              </tr>
-          </tbody>
-          <tbody>
-              <tr>
-                  <td>4</td>
-                  <td>Distance Sensor</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>VL53L1X</td>
-                  <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="sensor"></td>
-              </tr>
-          </tbody>
-          <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>Gyroscope Sensor</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>MPU6050</td>
-                  <td><img src="https://microcell.ma/wp-content/uploads/2024/02/ori-module-6-dof-sen-mpu6050-31492.jpg" alt="gyroscope"></td>
-              </tr>
-          </tbody>
-            <tbody>
-              <tr>
-                  <td>4</td>
-                  <td>Servo Motor</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>Model NFP-JGA25-370</td>
-                  <td><img src="https://nfpshop.com/wp-content/uploads/2023/08/NFP-JGA25-370-EN-small-dc-gear-motors-with-encoder.jpg" alt="Motor"></td>
-              </tr>
-          </tbody>
-          <tbody>
-              <tr>
-                  <td>4</td>
-                  <td>Temperature Sensor</td>
-                  <td><a href="datasheet_link">Datasheet</a></td>
-                  <td><a href="setup_link">Setup</a></td>
-                  <td><a href="3d_model_link">3D Model</a></td>
-                  <td>BMP280</td>
-                  <td><img src="https://a2itronic.ma/wp-content/uploads/2022/01/p_3_8_0_2_3802-BMP280-5V-I2CSPI-Module-capteur-de-pression-barometrique-et-de-temperature.jpg" alt="temperature"></td>
-              </tr>
-          </tbody>
-      </table>
-  </body>
-</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -140,103 +56,68 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>DTOF RPLIDAR C1</td>
+                <td>Arduino NANO</td>
+                <td><a href="https://store.arduino.cc/products/arduino-nano">Datasheet</a></td>
+                <td><a href="https://store.arduino.cc/products/arduino-nano">Setup</a></td>
+                <td><a href="https://grabcad.com/library/arduino-nano-10">3D Model</a></td>
+                <td>Microcontroller board</td>
+                <td><img src="https://store-usa.arduino.cc/usa/images/products/ABX00087_iso_both.jpg" alt="Arduino NANO"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>LIDAR (RPLIDAR C1)</td>
                 <td><a href="https://www.slamtec.com/en/SLAMTEC-RPLIDAR">Datasheet</a></td>
                 <td><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
-                <td><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
+                <td><a href="https://grabcad.com/library/slamtec-rplidar-1">3D Model</a></td>
                 <td>Distance sensor</td>
-                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="RPLICAR C1"></td>
+                <td><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" alt="LIDAR"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Distance Sensor (VL53L1X)</td>
+                <td><a href="https://www.st.com/resource/en/datasheet/vl53l1x.pdf">Datasheet</a></td>
+                <td><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
+                <td><a href="https://grabcad.com/library/vl53l1x">3D Model</a></td>
+                <td>Time-of-Flight distance sensor</td>
+                <td><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X"></td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Filament - Nylon Fibre</td>
-                <td><a href="https://www.3dware.ma/produit/esun-fibre-de-carbone-haute-temperature-naturel-filament-1-75mm-1kg/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Nylon Fibre</td>
-                <td><img src="https://www.3dware.ma/image/cache/catalog/Filaments/Nylon/filament-nylon-carbone-1-75mm-1kg-300x300.png" alt="Nylon Filament"></td>
+                <td>Gyroscope Sensor (MPU6050)</td>
+                <td><a href="https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/">Datasheet</a></td>
+                <td><a href="https://invensense.tdk.com/developers/arduino-library/">Setup</a></td>
+                <td><a href="https://grabcad.com/library/mpu6050">3D Model</a></td>
+                <td>6-axis motion tracking device</td>
+                <td><img src="https://microcell.ma/wp-content/uploads/2024/02/ori-module-6-dof-sen-mpu6050-31492.jpg" alt="MPU6050"></td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Filament - Flexible TPU</td>
-                <td><a href="https://www.3dware.ma/produit/filament-3d-fila-flexible-tpu-blanc-1-75mm-1kg/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Flexible TPU</td>
-                <td><img src="https://www.3dware.ma/image/cache/catalog/Filaments/TPU/filament-tpu-1-75mm-1kg-300x300.png" alt="TPU Filament"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Batterie - Lipo 3S 2200mah 11.1V 50C</td>
-                <td><a href="https://shop4makers.com/produit/batterie-lipo-3s-2200mah-11-1v-50c-xt60/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>3S Lipo Battery</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/lipo-3s-battery.jpg" alt="Lipo Battery"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Chargeur - IMAX B6AC V2</td>
-                <td><a href="https://shop4makers.com/produit/chargeur-imax-b6ac-v2/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Battery Charger</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/imax-b6ac-v2.jpg" alt="Charger"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Buzzer</td>
-                <td><a href="https://shop4makers.com/produit/buzzer-alarme-batterie-lipo/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Lipo Battery Alarm Buzzer</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/buzzer.jpg" alt="Buzzer"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Servo Driver</td>
-                <td><a href="https://shop4makers.com/produit/controleur-de-servomoteurs-pwm-16-canaux/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>16 Channel Servo Controller</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-driver.jpg" alt="Servo Driver"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Servo Tester</td>
-                <td><a href="https://shop4makers.com/produit/testeur-de-servomoteur-et-desc/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Servo Motor Tester</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-tester.jpg" alt="Servo Tester"></td>
+                <td>Camera Module</td>
+                <td><a href="https://www.arducam.com/raspberry-pi-camera/">Datasheet</a></td>
+                <td><a href="https://www.arducam.com/raspberry-pi-camera/">Setup</a></td>
+                <td><a href="https://grabcad.com/library/arducam-raspberry-pi-camera">3D Model</a></td>
+                <td>1080p Camera for Vision Processing</td>
+                <td><img src="https://www.arducam.com/wp-content/uploads/2020/02/arducam-ov5647-mini-camera.jpg" alt="Camera Module"></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Servo Motor</td>
-                <td><a href="https://shop4makers.com/produit/servomoteur-mg995-maroc/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Metal Gear Box 180°</td>
+                <td>DC Brushed Motor with encoder</td>
+                <td><a href="https://www.pololu.com/product/1447">Datasheet</a></td>
+                <td><a href="https://www.pololu.com/docs/0J15">Setup</a></td>
+                <td><a href="https://grabcad.com/library/pololu-37d-mm-metal-geared-dc-motor-with-encoder-1">3D Model</a></td>
+                <td>DC motor with encoder for accurate control</td>
+                <td><img src="https://www.pololu.com/file/download/37D.jpg?file_id=0J8083" alt="DC Motor"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Servo Motor (Metal Gear Box 180°)</td>
+                <td><a href="https://www.servocity.com/servos/metal-gear-servos/">Datasheet</a></td>
+                <td><a href="https://www.servocity.com/servos/metal-gear-servos/">Setup</a></td>
+                <td><a href="https://grabcad.com/library/servo-motor-1">3D Model</a></td>
+                <td>Metal gear servo for precise control</td>
                 <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-motor.jpg" alt="Servo Motor"></td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Servobras</td>
-                <td><a href="https://shop4makers.com/produit/servobras-aluminium-25-t-m3/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>Servo Arms</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-arm.jpg" alt="Servo Arm"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Screen - OLED</td>
-                <td><a href="https://shop4makers.com/produit/afficheur-oled-0-96-i2c/">Datasheet</a></td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>OLED Display</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/oled-screen.jpg" alt="OLED Screen"></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>ARDU
+        </tbody>
+    </table>
+</body>
+</html>
