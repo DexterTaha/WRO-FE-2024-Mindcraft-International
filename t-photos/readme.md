@@ -15,10 +15,10 @@
         <td><img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="200" alt="Mortada Taidi Laamiri"></td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>AGE</td>
+        <td>14 YEARS OLD</td>
+        <td>19 YEARS OLD</td>
+        <td>16 YEARS OLD</td>
     </tr>
     <tr>
         <td></td>
