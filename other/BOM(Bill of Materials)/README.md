@@ -47,7 +47,7 @@
                 <td data-label="Setup"><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3014864">3D Model</a></td>
                 <td data-label="Description">Time-of-Flight Distance Sensor</td>
-                <td data-label="Image"><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" alt="VL53L1X"></td>
+                <td data-label="Image"><img src="https://holybro.com/cdn/shop/products/19004_1_1080x.jpg?v=1681882471" height="320" alt="VL53L1X"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x04</td>
@@ -56,7 +56,7 @@
                 <td data-label="Setup"><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
                 <td data-label="Description">6-axis Gyroscope and Accelerometer</td>
-                <td data-label="Image"><img src="https://robo.com.cy/cdn/shop/products/mpu6050.png?v=1574351993&width=686" alt="MPU6050"></td>
+                <td data-label="Image"><img src="https://robo.com.cy/cdn/shop/products/mpu6050.png?v=1574351993&width=686" height="320" alt="MPU6050"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x05</td>
