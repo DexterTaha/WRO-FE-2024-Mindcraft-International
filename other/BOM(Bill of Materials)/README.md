@@ -30,7 +30,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
                 <td data-label="3D Model"><a href="https://grabcad.com/library/arduino-nano-v3-2">3D Model</a></td>
                 <td data-label="Description">Microcontroller</td>
-                <td data-label="Image"><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" height="350" alt="Arduino Nano"></td>
+                <td data-label="Image"><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" height="350" width="1000" alt="Arduino Nano"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x02</td>
@@ -39,7 +39,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
                 <td data-label="3D Model"><a href="https://github.com/Slamtec/RPLIDAR_SDK/tree/master/examples">3D Model</a></td>
                 <td data-label="Description">Laser Range Sensor</td>
-                <td data-label="Image"><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" height="350" alt="LIDAR"></td>
+                <td data-label="Image"><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" height="350" width="1000" alt="LIDAR"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x03</td>
