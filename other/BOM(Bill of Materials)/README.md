@@ -1,6 +1,3 @@
-<head>
-    <title>Bill of Materials</title>
-</head>
 <body>
     <h1>Bill of Materials</h1>
     <table>
