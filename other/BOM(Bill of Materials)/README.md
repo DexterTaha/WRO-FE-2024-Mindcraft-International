@@ -87,24 +87,6 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Image"><img src="https://github.com/user-attachments/assets/70ceb0f2-d238-47d2-916c-02193d48ecfb" height="350" width="1000" alt="Wheels"></td>
             </tr>
             <tr>
-                <td data-label="Code">0x08</td>
-                <td data-label="Name">Chassis</td>
-                <td data-label="Datasheet"><a href="https://www.amazon.com/Smart-Car-Chassis-Kit-Robots/dp/B07DQV9KWG">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.dfrobot.com/wiki/index.php/Chassis_Kit_(EN)">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2591073">3D Model</a></td>
-                <td data-label="Description">Base for robot assembly</td>
-                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029003-5.jpg" height="350" width="1000" alt="Chassis"></td>
-            </tr>
-            <tr>
-                <td data-label="Code">0x09</td>
-                <td data-label="Name">Battery Pack</td>
-                <td data-label="Datasheet"><a href="https://www.lithiumbatterycompany.com/lithium-battery-tech-info/what-is-a-lithium-ion-battery/faq/18650-battery-technical-specs/18650-battery-specs-and-performance.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.batteryspace.com/faq-how-to-charge-and-discharge-lithium-ion-lipo-batteries.aspx">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2249311">3D Model</a></td>
-                <td data-label="Description">Power supply for the robot</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" height="350" width="1000" alt="Battery Pack"></td>
-            </tr>
-            <tr>
                 <td>0x10</td>
                 <td>Lipo 3S 2200mah 11.1V 50C</td>
                 <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
@@ -165,7 +147,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Servo Arm</td>
-                <td><img src="https://github.com/user-attachments/assets/18799dc7-50cc-4926-9a16-e39e5fde5a1a" height="350" width="1000" alt="Servobras"></td>
+                <td><img src="https://github.com/user-attachments/assets/cfe158a0-dd02-47ab-a1cb-d2c9bfbac38d"></td>
             </tr>
             <tr>
                 <td>0x17</td>
