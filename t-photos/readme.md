@@ -64,5 +64,33 @@
                 </ul>
             </td>
         </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">🛠️ TOOLS AND SOFTWARES</td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/adobe-after-effects.png" width="32" alt="After Effects"> After Effects</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" width="32" alt="Premiere Pro"> Premiere Pro</li>
+                </ul>
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/freezing.png" width="32" alt="Freezing"> Freezing</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/vnc-viewer.png" width="32" alt="VNC Viewer"> VNC Viewer</li>
+                </ul>
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/creality-3d.png" width="32" alt="Creality Print"> Creality Print</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/onshape.png" width="32" alt="Onshape"> Onshape</li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
