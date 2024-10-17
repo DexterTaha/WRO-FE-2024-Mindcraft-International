@@ -62,7 +62,7 @@
                 <td><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
                 <td>6-axis Gyroscope and Accelerometer</td>
-                <td><img src="https://microcell.ma/wp-content/uploads/2024/02/ori-module-6-dof-sen-mpu6050-31492.jpg" alt="MPU6050"></td>
+                <td><img src="https://github.com/user-attachments/assets/1499f772-bac9-4ab1-b7b8-276010e5b388" alt="MPU6050"></td>
             </tr>
             <tr>
                 <td>0x05</td>
@@ -80,7 +80,7 @@
                 <td><a href="https://www.pololu.com/docs/0J72/1.2">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:3045284">3D Model</a></td>
                 <td>DC Motor with Encoder</td>
-                <td><img src="https://nfpshop.com/wp-content/uploads/2023/08/NFP-JGA25-370-EN-small-dc-gear-motors-with-encoder.jpg" alt="Motor"></td>
+                <td><img src="https://github.com/user-attachments/assets/2c549c0f-b914-41c2-9335-5636c0607928" alt="Motor"></td>
             </tr>
             <tr>
                 <td>0x07</td>
@@ -89,7 +89,7 @@
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>180° Metal Gear Servo</td>
-                <td><img src="https://shop4makers.com/wp-content/uploads/2021/09/servo-motor.jpg" alt="Servo Motor"></td>
+                <td><img src="https://github.com/user-attachments/assets/31be8252-56ff-43b1-96c8-dfa2b8ee0b79" alt="Servo Motor"></td>
             </tr>
             <tr>
                 <td>0x08</td>
