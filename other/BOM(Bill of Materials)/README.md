@@ -104,31 +104,85 @@
                 <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" alt="Battery Pack"></td>
             </tr>
             <tr>
-                <td data-label="Code">0x0A</td>
-                <td data-label="Name">Power Switch</td>
-                <td data-label="Datasheet"><a href="https://www.digikey.com/en/products/detail/te-connectivity-amp/20-351-0200/2933787">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.sparkfun.com/products/16289">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1952143">3D Model</a></td>
-                <td data-label="Description">To control the power supply</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/6/4/0/7/16690-Power_Switch.png" alt="Power Switch"></td>
+                <td>0x10</td>
+                <td>Lipo 3S 2200mah 11.1V 50C</td>
+                <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Lithium Polymer Battery</td>
+                <td><img src="https://cdn-global-uploads.webflow.com/5d838a2aef8b0511db98c2b8/5fb54069b6caa056f98fe17a_turnigy-lipo-battery.jpg" alt="Lipo Battery" width="1000"></td>
             </tr>
             <tr>
-                <td data-label="Code">0x0B</td>
-                <td data-label="Name">LEDs</td>
-                <td data-label="Datasheet"><a href="https://www.liteon.com/en/products/LEDs/LED-Overview.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.adafruit.com/product/3040">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.tinkercad.com/things/8J4x9Qof7Lk">3D Model</a></td>
-                <td data-label="Description">Indicator lights</td>
-                <td data-label="Image"><img src="https://www.electronicwings.com/public/uploads/posts/2020-05/5eb4c2fbe0418-lm358.webp" alt="LEDs"></td>
+                <td>0x11</td>
+                <td>IMAX B6AC V2</td>
+                <td><a href="https://www.skyrc.com/Charger/B6AC_V2">Datasheet</a></td>
+                <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
+                <td>N/A</td>
+                <td>Battery Charger</td>
+                <td><img src="https://cdn.shopify.com/s/files/1/1239/8602/products/imax-b6ac-v2_1024x1024.jpg?v=1614090397" alt="IMAX Charger" width="1000"></td>
             </tr>
             <tr>
-                <td data-label="Code">0x0C</td>
-                <td data-label="Name">Buzzer</td>
-                <td data-label="Datasheet"><a href="https://www.sparkfun.com/datasheets/Components/General/buzzer.pdf">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.sparkfun.com/products/9491">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3432689">3D Model</a></td>
-                <td data-label="Description">Sound output for alerts</td>
-                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029020-5.jpg" alt="Buzzer"></td>
+                <td>0x12</td>
+                <td>7806 Transistor</td>
+                <td><a href="https://www.onsemi.com/pdf/datasheet/l78-d.pdf">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>6V Voltage Regulator</td>
+                <td><img src="https://components101.com/sites/default/files/component_pin/7806-voltage-regulator-pinout.png" alt="7806 Transistor"></td>
+            </tr>
+            <tr>
+                <td>0x13</td>
+                <td>Switch High Amper</td>
+                <td><a href="https://docs.rs-online.com/1f89/0900766b814b93ef.pdf">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>High Current Switch</td>
+                <td><img src="https://www.sparkfun.com/images/products/11094-02.jpg" alt="Switch"></td>
+            </tr>
+            <tr>
+                <td>0x14</td>
+                <td>Buzzer Alarm Batterie Lipo</td>
+                <td><a href="https://www.hobbyking.com/hobbyking/store/__24786__Hobbyking_8482_Lipoly_Low_Voltage_Alarm_2S_3S.html">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Lipo Battery Alarm</td>
+                <td><img src="https://www.hobbyking.com/hobbyking/store/catalog/LIPO-Low-Voltage-Alarm1.jpg" alt="Buzzer Alarm"></td>
+            </tr>
+            <tr>
+                <td>0x15</td>
+                <td>Servo Tester</td>
+                <td><a href="https://www.servocity.com/servo-tester/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Servo Motor Tester</td>
+                <td><img src="https://cdn3.volusion.com/axmfs.vuhbq/v/vspfiles/photos/STS-9000-2.jpg?v-cache=1388595167" alt="Servo Tester"></td>
+            </tr>
+            <tr>
+                <td>0x16</td>
+                <td>Servobras</td>
+                <td><a href="https://servobras.com.br/">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Servo Arm</td>
+                <td><img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/448/714/products/img_63441-68a12d3b52b3fb8b5b15759014892264-1024-1024.jpg" alt="Servobras"></td>
+            </tr>
+            <tr>
+                <td>0x17</td>
+                <td>SD Card 64GB</td>
+                <td><a href="https://www.sandisk.com/home/memory-cards/microsd-cards">Datasheet</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>64GB SD Card</td>
+                <td><img src="https://shop.westerndigital.com/content/dam/store/en-us/assets/products/memory-cards/ultra-microsd/gallery/ultra-microsd-400gb-2-hr.jpg.thumb.1280.1280.png" alt="SD Card"></td>
+            </tr>
+            <tr>
+                <td>0x18</td>
+                <td>TPLink AC600</td>
+                <td><a href="https://www.tp-link.com/us/home-networking/usb-adapter/archer-t2u/">Datasheet</a></td>
+                <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
+                <td>N/A</td>
+                <td>WiFi Adapter</td>
+                <td><img src="https://static.tp-link.com/res/images/products/2021/20210105110747/Archer%20T2U/1_Front%20High-Res.jpg" alt="WiFi Adapter"></td>
             </tr>
         </tbody>
     </table>
