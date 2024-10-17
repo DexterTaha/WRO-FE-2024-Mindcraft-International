@@ -66,7 +66,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td data-label="Description">Camera module</td>
-                <td data-label="Image"><img src="https://w7.pngwing.com/pngs/1/412/png-transparent-camera-module-raspberry-pi-camera-serial-interface-camera-interface-camera-electronics-electronic-device-microcontroller.png" height="350" alt="Camera"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/732cbe1d-62a9-42e6-94f0-e05b6ea594ca" height="350" alt="Camera"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x06</td>
@@ -75,7 +75,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.tinkercad.com/things/hvT5XxH2gMv">3D Model</a></td>
                 <td data-label="Description">Motor for movement with encoder feedback</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/0/0/3/2/15235-25D_Metal_Gear_Motor_with_Encoder_-_12V.jpg" height="350" alt="DC Motor with Encoder"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/8b43b4c6-20d2-4801-b866-ca32b44fb25c" height="350" alt="DC Motor with Encoder"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x07</td>
