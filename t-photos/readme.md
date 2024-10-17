@@ -1,39 +1,42 @@
-
-<table>
+<table border="1">
     <thead>
         <tr>
+            <th></th>
             <th>Picture</th>
             <th>Name</th>
             <th>SKILLS</th>
         </tr>
     </thead>
     <tbody>
-      <tr>
-            <td><img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="300" alt="taha taidi laamiri "></td>
+        <tr>
+            <td></td>
+            <td><img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="300" alt="taha taidi laamiri"></td>
             <td><strong>TAHA TAIDI LAAMIRI</strong></td>
             <td>
-              <div>  LEGO Robotics ⭐⭐⭐⭐   <div/>
-                <div>   Electronics Robotics ⭐⭐⭐⭐⭐    <div/>
-                  <div> Electronics Programming ⭐⭐⭐⭐  <div/>
-              </td>
+                <div>LEGO Robotics ⭐⭐⭐⭐</div>
+                <div>Electronics Robotics ⭐⭐⭐⭐⭐</div>
+                <div>Electronics Programming ⭐⭐⭐⭐</div>
+            </td>
         </tr>
-      <tr>
+        <tr>
+            <td></td>
             <td><img src="https://github.com/user-attachments/assets/70c6ed95-7fce-4ee0-840e-6f5b5265e15e" width="300" alt="SALMAN DERDEB"></td>
             <td><strong>SALMAN DERDEB</strong></td>
             <td>
-              <div>  OpenCV Image Processing developper⭐⭐⭐⭐⭐   <div/>
-                <div>   Computer Science ⭐⭐⭐⭐   <div/>
-                  <div> front end developpement ⭐⭐⭐⭐  <div/>
-                  </td>
+                <div>OpenCV Image Processing ⭐⭐⭐⭐⭐</div>
+                <div>Computer Science ⭐⭐⭐⭐</div>
+                <div>Front-End Development ⭐⭐⭐⭐</div>
+            </td>
         </tr>
         <tr>
+            <td></td>
             <td><img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="300" alt="MORTADA TAIDI LAAMIRI"></td>
             <td><strong>MORTADA TAIDI LAAMIRI</strong></td>
             <td>
-              <div>  LEGO Robotics⭐⭐⭐⭐   <div/>
-                <div>    Onshape 3D Design ⭐⭐⭐⭐   <div/>
-                  <div> python programming ⭐⭐⭐  <div/>
-                  </td>
+                <div>LEGO Robotics ⭐⭐⭐⭐</div>
+                <div>Onshape 3D Design ⭐⭐⭐⭐</div>
+                <div>Python Programming ⭐⭐⭐</div>
+            </td>
         </tr>
     </tbody>
 </table>
