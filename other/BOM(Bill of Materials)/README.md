@@ -1,5 +1,25 @@
 <body>
     <h1>Bill of Materials</h1>
+    <style>
+        /* Styling for table images */
+        table img {
+            width: 100px; /* Set a fixed width */
+            height: 100px; /* Set a fixed height */
+            object-fit: cover; /* Ensure images cover the specified dimensions */
+        }
+        table {
+            width: 100%; /* Set table to full width */
+            border-collapse: collapse; /* Collapse borders */
+        }
+        th, td {
+            border: 1px solid #ddd; /* Add border to cells */
+            padding: 8px; /* Add padding to cells */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #f2f2f2; /* Background color for table header */
+        }
+    </style>
     <table>
         <thead>
             <tr>
@@ -83,54 +103,17 @@
                 <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">Wheels for robot movement</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/5/6/5/16825-Wheel_57mm.png" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/5/6/1/14535-19899-wheels-15-50mm-rubber_03.jpg" alt="Wheels"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x08</td>
                 <td data-label="Name">Chassis</td>
-                <td data-label="Datasheet"><a href="https://www.amazon.com/Smart-Car-Chassis-Kit-Robots/dp/B07DQV9KWG">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.dfrobot.com/wiki/index.php/Chassis_Kit_(EN)">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2591073">3D Model</a></td>
-                <td data-label="Description">Base for robot assembly</td>
-                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029003-5.jpg" alt="Chassis"></td>
-            </tr>
-            <tr>
-                <td data-label="Code">0x09</td>
-                <td data-label="Name">Battery Pack</td>
-                <td data-label="Datasheet"><a href="https://www.lithiumbatterycompany.com/lithium-battery-tech-info/what-is-a-lithium-ion-battery/faq/18650-battery-technical-specs/18650-battery-specs-and-performance.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.batteryspace.com/faq-how-to-charge-and-discharge-lithium-ion-lipo-batteries.aspx">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2249311">3D Model</a></td>
-                <td data-label="Description">Power supply for the robot</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/0/7/6/14562-Battery_Pack_18650.jpg" alt="Battery Pack"></td>
-            </tr>
-            <tr>
-                <td data-label="Code">0x0A</td>
-                <td data-label="Name">Power Switch</td>
-                <td data-label="Datasheet"><a href="https://www.digikey.com/en/products/detail/te-connectivity-amp/20-351-0200/2933787">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.sparkfun.com/products/16289">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1952143">3D Model</a></td>
-                <td data-label="Description">To control the power supply</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/6/4/0/7/16690-Power_Switch.png" alt="Power Switch"></td>
-            </tr>
-            <tr>
-                <td data-label="Code">0x0B</td>
-                <td data-label="Name">LEDs</td>
-                <td data-label="Datasheet"><a href="https://www.liteon.com/en/products/LEDs/LED-Overview.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.adafruit.com/product/3040">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.tinkercad.com/things/8J4x9Qof7Lk">3D Model</a></td>
-                <td data-label="Description">Indicator lights</td>
-                <td data-label="Image"><img src="https://www.electronicwings.com/public/uploads/posts/2020-05/5eb4c2fbe0418-lm358.webp" alt="LEDs"></td>
-            </tr>
-            <tr>
-                <td data-label="Code">0x0C</td>
-                <td data-label="Name">Buzzer</td>
-                <td data-label="Datasheet"><a href="https://www.sparkfun.com/datasheets/Components/General/buzzer.pdf">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.sparkfun.com/products/9491">Setup</a></td>
-                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:3432689">3D Model</a></td>
-                <td data-label="Description">Sound output for alerts</td>
-                <td data-label="Image"><img src="https://www.robotshop.com/media/catalog/product/cache/1/image/748x445/9df78eab33525d08d6e5fb8d27136e95/s/h/sh029020-5.jpg" alt="Buzzer"></td>
+                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/chassis.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.robotshop.com/en/chassis.html">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.tinkercad.com/learn/projects/create-a-robot-chassis">3D Model</a></td>
+                <td data-label="Description">Chassis for assembling components</td>
+                <td data-label="Image"><img src="https://www.trossenrobotics.com/p/robot-chassis.jpg" alt="Chassis"></td>
             </tr>
         </tbody>
     </table>
 </body>
-</html>
