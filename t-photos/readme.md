@@ -31,23 +31,30 @@
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Lead the development and implementation of computer vision algorithms.</li>
-                    <li>Handle programming to ensure smooth integration of software and hardware components.</li>
-                    <li>Develop code for features like obstacle detection, navigation, and intelligent behavior.</li>
+                    <li>Handle general programming, ensuring the software works smoothly with hardware.</li>
+                    <li>Create and edit videos, graphics, and other content for the team.</li>
+                    <li>Responsible for 3D animations using Blender for project visuals.</li>
+                    <li>Document his work on GitHub and maintain the physical engineering notebook.</li>
                 </ul>
             </td>
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li>Oversee the entire project and manage team collaboration and communication.</li>
-                    <li>Coordinate tasks, manage deadlines, and guide the overall project direction.</li>
-                    <li>Lead the design and implementation of the electrical and electronics systems.</li>
-                    <li>Ensure proper wiring and integration of electronic components like sensors, motors, and controllers with the software.</li>
+                    <li>Oversee team tasks and ensure all work is completed on time.</li>
+                    <li>Ensure smooth communication between team members and decision-makers.</li>
+                    <li>Responsible for the technical study and engineering aspects of the robot.</li>
+                    <li>Design and create the PCB and handle electronics connections.</li>
+                    <li>Perform calculations and ensure components work together compatibly.</li>
+                    <li>Create the Bill of Materials (BOM) and manage component sourcing.</li>
+                    <li>Document the project on GitHub and manage overall team documentation.</li>
                 </ul>
             </td>
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li>Lead the design and fabrication of the robot's mechanical components.</li>
-                    <li>Oversee construction and assembly to meet the design requirements.</li>
-                    <li>Ensure the robot's structure is sturdy and accommodates all necessary hardware (motors, sensors, etc.).</li>
+                    <li>Take precise measurements for each part of the robot.</li>
+                    <li>Design the robot from scratch and 3D print components.</li>
+                    <li>Lead the assembly of the robot and handle all mechanical components.</li>
+                    <li>Conduct testing, make improvements, and iterate on new versions of the design.</li>
+                    <li>Document his part of the project on GitHub.</li>
                 </ul>
             </td>
         </tr>
