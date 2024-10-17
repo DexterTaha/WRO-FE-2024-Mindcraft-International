@@ -4,7 +4,7 @@
         /* Styling for table images */
         table img {
             width: 100px; /* Set a fixed width */
-            height: 100px; /* Set a fixed height */
+            height: 500px; /* Set a fixed height */
             object-fit: cover; /* Ensure images cover the specified dimensions */
         }
         table {
