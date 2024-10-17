@@ -20,99 +20,66 @@
             <td style="text-align: center; vertical-align: middle;">19 YEARS OLD</td>
             <td style="text-align: center; vertical-align: middle;">16 YEARS OLD</td>
         </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">ROLE</td>
+            <td style="text-align: center; vertical-align: middle;"> Computer Vision and Programming Lead</td>
+            <td style="text-align: center; vertical-align: middle;">Team Leader, Electrical and Electronics Lead</td>
+            <td style="text-align: center; vertical-align: middle;">Fabrication and Conception Lead</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">Responsibilities</td>
+            <td style="text-align: center; vertical-align: middle;">Lead the development and implementation of computer vision algorithms.
+Handle the programming, ensuring smooth integration of software and hardware components.
+Develop code for features like obstacle detection, navigation, and intelligent behavior.</td>
+            <td style="text-align: center; vertical-align: middle;">Oversee the entire project and manage team collaboration and communication.
+Coordinate tasks, manage deadlines, and guide the overall project direction.
+Lead the design and implementation of the electrical and electronics systems.
+Ensure proper wiring and integration of electronic components like sensors, motors, and controllers with the software.</td>
+            <td style="text-align: center; vertical-align: middle;">Lead the design and fabrication of the robot's mechanical components.
+Oversee construction and assembly, ensuring all parts meet the design requirements.
+Ensure the robot's structure is sturdy and accommodates all necessary hardware (motors, sensors, etc.).</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+            <td style="text-align: center; vertical-align: middle;"></td>
+        </tr>
     </tbody>
 </table>
