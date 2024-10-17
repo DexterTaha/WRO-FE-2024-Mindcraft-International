@@ -84,7 +84,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">Wheels for robot movement</td>
-                <td data-label="Image"><img src="https://cdn.sparkfun.com/assets/parts/1/5/5/6/5/16825-Wheel_57mm.png" height="350" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://github.com/user-attachments/assets/70ceb0f2-d238-47d2-916c-02193d48ecfb" height="350" alt="Wheels"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x08</td>
@@ -111,7 +111,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>Lithium Polymer Battery</td>
-                <td><img src="https://cdn-global-uploads.webflow.com/5d838a2aef8b0511db98c2b8/5fb54069b6caa056f98fe17a_turnigy-lipo-battery.jpg" alt="Lipo Battery" width="1000"></td>
+                <td><img src="https://github.com/user-attachments/assets/a1fccdea-3f5b-4c8b-8b3d-73776964fc78" alt="Lipo Battery" width="1000"></td>
             </tr>
             <tr>
                 <td>0x11</td>
