@@ -1,7 +1,7 @@
 <table border="1">
     <thead>
         <tr>
-            <th></th>
+            <th>IMAGE</th>
             <th>DERDEB Salman</th>
             <th>TAIDI LAAMIRI TAHA</th>
             <th>TAIDI LAAMIRI MORTADA</th>
