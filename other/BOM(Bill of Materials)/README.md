@@ -20,7 +20,7 @@
                 <td data-label="Setup"><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
                 <td data-label="3D Model"><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
                 <td data-label="Description">Main computing unit</td>
-                <td data-label="Image"><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" height="430" alt="Jetson Nano"></td>
+                <td data-label="Image"><img src="https://developer.nvidia.com/blog/wp-content/uploads/2019/03/Jetson-Nano_3QTR-Front_Left-1920px.png" height="350" alt="Jetson Nano"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x01</td>
