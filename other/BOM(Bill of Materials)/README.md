@@ -62,7 +62,7 @@
                 <td><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td><a href="https://www.tinkercad.com/things/9SZjBC0iDtF">3D Model</a></td>
                 <td>6-axis Gyroscope and Accelerometer</td>
-                <td><img src="https://github.com/user-attachments/assets/1499f772-bac9-4ab1-b7b8-276010e5b388" alt="MPU6050" width="1000"></td>
+                <td><img src="https://robo.com.cy/cdn/shop/products/mpu6050.png?v=1574351993&width=686" alt="MPU6050" width="1000"></td>
             </tr>
             <tr>
                 <td>0x05</td>
