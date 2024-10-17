@@ -120,7 +120,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
                 <td>N/A</td>
                 <td>Battery Charger</td>
-                <td><img src="https://cdn.shopify.com/s/files/1/1239/8602/products/imax-b6ac-v2_1024x1024.jpg?v=1614090397" alt="IMAX Charger" width="1000"></td>
+                <td><img src="https://github.com/user-attachments/assets/152292b2-6a48-452e-8397-891b64c9f151" alt="IMAX Charger" width="1000"></td>
             </tr>
             <tr>
                 <td>0x12</td>
@@ -129,7 +129,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>6V Voltage Regulator</td>
-                <td><img src="https://components101.com/sites/default/files/component_pin/7806-voltage-regulator-pinout.png" alt="7806 Transistor"></td>
+                <td><img src="https://github.com/user-attachments/assets/f1f18869-0926-486a-b268-9d1454c185d4" alt="7806 Transistor"></td>
             </tr>
             <tr>
                 <td>0x13</td>
@@ -138,7 +138,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td>N/A</td>
                 <td>High Current Switch</td>
-                <td><img src="https://www.sparkfun.com/images/products/11094-02.jpg" alt="Switch"></td>
+                <td><img src="https://github.com/user-attachments/assets/1fa127ce-404c-4ae1-930d-679c359ce81e" alt="Switch"></td>
             </tr>
             <tr>
                 <td>0x14</td>
