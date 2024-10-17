@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th style="text-align: center; vertical-align: middle; width: 25%;">👤 NAME</th>
-            <th style="text-align: center; vertical-align: middle; width: 25%;">DERDEB Salman</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">DERDEB Salmane</th>
             <th style="text-align: center; vertical-align: middle; width: 25%;">TAIDI LAAMIRI TAHA</th>
             <th style="text-align: center; vertical-align: middle; width: 25%;">TAIDI LAAMIRI MORTADA</th>
         </tr>
@@ -16,7 +16,7 @@
         </tr>
         <tr>
             <td style="text-align: center; vertical-align: middle;">🔢 AGE</td>
-            <td style="text-align: center; vertical-align: middle;">14 YEARS OLD</td>
+            <td style="text-align: center; vertical-align: middle;">15 YEARS OLD</td>
             <td style="text-align: center; vertical-align: middle;">19 YEARS OLD</td>
             <td style="text-align: center; vertical-align: middle;">16 YEARS OLD</td>
         </tr>
