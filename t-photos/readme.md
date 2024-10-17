@@ -21,6 +21,12 @@
             <td style="text-align: center; vertical-align: middle;">16 YEARS OLD</td>
         </tr>
         <tr>
+            <td style="text-align: center; vertical-align: middle;">🎓 STUDIES</td>
+            <td style="text-align: center; vertical-align: middle;">Industrial Engineering Student</td>
+            <td style="text-align: center; vertical-align: middle;">10th Grade Scientific (French Option) Student</td>
+            <td style="text-align: center; vertical-align: middle;">11th Grade Physics and Math (French Option) Student</td>
+        </tr>
+        <tr>
             <td style="text-align: center; vertical-align: middle;">🎯 ROLE</td>
             <td style="text-align: center; vertical-align: middle;">Computer Vision and Programming Lead</td>
             <td style="text-align: center; vertical-align: middle;">Team Leader, Electrical and Electronics Lead</td>
@@ -57,12 +63,6 @@
                     <li>Document his part of the project on GitHub.</li>
                 </ul>
             </td>
-        </tr>
-        <tr>
-            <td style="text-align: center; vertical-align: middle;">🎓 STUDIES</td>
-            <td style="text-align: center; vertical-align: middle;">Industrial Engineering Student</td>
-            <td style="text-align: center; vertical-align: middle;">10th Grade Scientific (French Option) Student</td>
-            <td style="text-align: center; vertical-align: middle;">11th Grade Physics and Math (French Option) Student</td>
         </tr>
     </tbody>
 </table>
