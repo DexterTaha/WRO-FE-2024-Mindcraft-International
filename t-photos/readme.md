@@ -124,7 +124,7 @@
         <tr>
             <th style="text-align: center; vertical-align: middle; width: 25%;">Github Profiles</th>
             <th style="text-align: center; vertical-align: middle; width: 25%;">
-                <a href="https://github.com/derdebsalmane" target="_blank" style="text-decoration: none; color: black;">DERDEB Salmane</a>
+                <a href="https://github.com/salmane-derdeb" target="_blank" style="text-decoration: none; color: black;">DERDEB Salmane</a>
             </th>
             <th style="text-align: center; vertical-align: middle; width: 25%;">
                 <a href="https://github.com/DexterTaha" target="_blank" style="text-decoration: none; color: black;">TAIDI LAAMIRI TAHA</a>
