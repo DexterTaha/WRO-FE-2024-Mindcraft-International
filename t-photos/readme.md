@@ -74,7 +74,7 @@
                     <li>Document his work on GitHub and maintain the physical engineering notebook.</li>
                 </ul>
             </td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Oversee team tasks and ensure all work is completed on time.</li>
                     <li>Ensure smooth communication between team members and decision-makers.</li>
@@ -85,7 +85,7 @@
                     <li>Document the project on GitHub and manage overall team documentation.</li>
                 </ul>
             </td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Take precise measurements for each part of the robot.</li>
                     <li>Design the robot from scratch and 3D print components.</li>
@@ -96,8 +96,8 @@
             </td>
         </tr>
          <tr>
-            <td style="text-align: center; vertical-align: middle;">🛠️ TOOLS AND SOFTWARES</td>
-             <td style="text-align: left; vertical-align: top;">
+            <td style="text-align: center; vertical-align: top;">🛠️ TOOLS AND SOFTWARES</td>
+             <td style="text-align: left; vertical-align: bottom;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
