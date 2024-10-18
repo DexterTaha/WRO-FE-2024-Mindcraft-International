@@ -27,5 +27,10 @@ sudo pip3 install rplidar
 ```bash
 sudo pip3 install matplotlib
 sudo pip3 install numpy
+
 //these packages are already on the libraries folder
+```
+#### Install opencv via apt:
+```bash
+sudo apt install libopencv-dev python3-opencv
 ```
