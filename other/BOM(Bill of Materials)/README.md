@@ -110,8 +110,8 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
-                <td>Lithium Polymer Battery</td>
-                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/BATTERIE.png" height="auto" width="1000" alt="Lipo Battery" ></td>
+                <td>5V Power Converter</td>
+                <td><img src="" height="auto" width="1000" alt="Lipo Battery" ></td>
             </tr>
             <tr>
             <tr>
