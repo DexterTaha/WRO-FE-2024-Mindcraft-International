@@ -10,9 +10,15 @@
     <tbody>
         <tr>
             <td style="text-align: center; vertical-align: middle;">🖼️ IMAGE</td>
-            <td style="text-align: center; vertical-align: middle;"><img src="https://github.com/user-attachments/assets/70c6ed95-7fce-4ee0-840e-6f5b5265e15e" width="200" alt="Salman Derdeb"></td>
-            <td style="text-align: center; vertical-align: middle;"><img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="200" alt="Taha Taidi Laamiri"></td>
-            <td style="text-align: center; vertical-align: middle;"><img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="200" alt="Mortada Taidi Laamiri"></td>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="https://github.com/user-attachments/assets/70c6ed95-7fce-4ee0-840e-6f5b5265e15e" width="200" alt="Salman Derdeb">
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="https://github.com/user-attachments/assets/23f7989c-80eb-4c4a-bd4e-48854502ae04" width="200" alt="Taha Taidi Laamiri">
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <img src="https://github.com/user-attachments/assets/5c9d1a28-243c-4c6f-8052-82998c2a2ced" width="200" alt="Mortada Taidi Laamiri">
+            </td>
         </tr>
         <tr>
             <td style="text-align: center; vertical-align: middle;">🔢 AGE</td>
@@ -94,79 +100,48 @@
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub
+                        <img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code
+                        <img src="https://skillicons.dev/icons?i=matlab" width="32" alt="MATLAB"> MATLAB
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm
+                        <img src="https://skillicons.dev/icons?i=sketchup" width="32" alt="SketchUp"> SketchUp
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/adobe-after-effects.png" width="32" alt="After Effects"> After Effects
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" width="32" alt="Premiere Pro"> Premiere Pro
+                        <img src="https://skillicons.dev/icons?i=unity" width="32" alt="Unity"> Unity
                     </li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub
+                        <img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code
+                        <img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm
+                        <img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/figma.png" width="32" alt="Figma"> Figma
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/adobe-photoshop.png" width="32" alt="Photoshop"> Photoshop
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/docker.png" width="32" alt="Docker"> Docker
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/kubernetes.png" width="32" alt="Kubernetes"> Kubernetes
+                        <img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino IDE"> Arduino IDE
                     </li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub
+                        <img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code
+                        <img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/adobe-after-effects.png" width="32" alt="After Effects"> After Effects
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" width="32" alt="Premiere Pro"> Premiere Pro
+                        <img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm
                     </li>
                 </ul>
             </td>
         </tr>
     </tbody>
 </table>
-       
