@@ -66,7 +66,7 @@
         </tr>
        <tr>
             <td style="text-align: center; vertical-align: middle;">🛠️ TOOLS AND SOFTWARES</td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li><img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
@@ -77,7 +77,7 @@
                     <li><img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" width="32" alt="Premiere Pro"> Premiere Pro</li>                    
                 </ul>
             </td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li><img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
@@ -87,7 +87,7 @@
                     <li><img src="https://img.icons8.com/fluency/48/000000/network.png" width="32" alt="VNC Viewer"> VNC Viewer</li>
                 </ul>
             </td>
-            <td style="text-align: center; vertical-align: top;">
+            <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px;">
                     <li style="display: flex; align-items: center;">
                         <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub Logo">
