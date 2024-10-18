@@ -98,3 +98,6 @@ The primary aim of this robot project is to develop an autonomous vehicle capabl
 2. Implementing autonomous driving capabilities.
 3. Enabling state detection and automatic correction in case of errors.
 4. Performing tasks efficiently within competition constraints.
+
+### Competition Context:
+The WRO Future Engineers 2024 competition challenges teams to design, build, and program advanced autonomous robots to solve real-world engineering problems. Robots must navigate complex environments, interact with objects, and perform tasks using sophisticated sensors such as LiDAR, DTOF, and gyroscopes. The emphasis is on both the technical aspects, like precision and programming (often using platforms like Jetson Nano or Raspberry Pi), and the engineering design, focusing on efficient mechanical systems. Teams will be evaluated based on their robot's performance, problem-solving, and ability to innovate, with a focus on themes like automation and sustainability.
