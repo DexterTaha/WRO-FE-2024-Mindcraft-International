@@ -2,7 +2,7 @@ MINDCRAFT WRO Future Engineers team
 ====
 
 <p align="center">
-  <img src="https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/d9385136-f971-4c95-ba80-ffc14f7c0a4e" alt="banner" width="1500">
+  <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/1b560d62026fe432f3dff80fa5efd213787d7d30/images/team.png" alt="banner" width="1500">
 </p>
 
 
