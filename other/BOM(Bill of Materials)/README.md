@@ -26,8 +26,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x01</td>
                 <td data-label="Name">Arduino NANO</td>
-                <td data-label="Datasheet"><a href="https://store.arduino.cc/products/arduino-nano">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x01-Arduino%20NANO/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x01-Arduino%20NANO/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/58c1c76865cebcf7f2c0d9cc">3D Model</a></td>
                 <td data-label="Description">Microcontroller</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/arduino%20NANO.png" height="auto" width="1000" alt="Arduino Nano"></td>
@@ -35,8 +35,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x02</td>
                 <td data-label="Name">LIDAR</td>
-                <td data-label="Datasheet"><a href="https://www.slamtec.com/en/LIDAR">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x02-LIDAR/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x02-LIDAR/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/2729187d74795f5505a642cc/w/3e0c0cce82870e83e2fa6638/e/bc5a610b18bbd2f7644b07b9">3D Model</a></td>
                 <td data-label="Description">Laser Range Sensor</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/LIDAR.png" height="auto" width="1000" alt="LIDAR"></td>
@@ -44,8 +44,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x03</td>
                 <td data-label="Name">Distance Sensor VL53L1X</td>
-                <td data-label="Datasheet"><a href="https://www.st.com/resource/en/datasheet/vl53l1x.pdf">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x03-Distance%20Sensor%20VL53L1X/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x03-Distance%20Sensor%20VL53L1X/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/94e51bc799b10763631d10cb">3D Model</a></td>
                 <td data-label="Description">Time-of-Flight Distance Sensor</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/VLX1-DTOF.png" height="auto" width="1000" alt="VL53L1X"></td>
@@ -53,8 +53,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x04</td>
                 <td data-label="Name">GYROSCOPE Sensor MPU6050</td>
-                <td data-label="Datasheet"><a href="https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x04-GYROSCOPE%20Sensor%20MPU6050/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x04-GYROSCOPE%20Sensor%20MPU6050/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/5080605618051d13a916ba3c">3D Model</a></td>
                 <td data-label="Description">6-axis Gyroscope and Accelerometer</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/mpu-6050.png" height="auto" width="1000" alt="MPU6050"></td>
@@ -62,8 +62,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x05</td>
                 <td data-label="Name">Camera</td>
-                <td data-label="Datasheet"><a href="https://www.raspberrypi.org/documentation/hardware/camera/">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/47bf23bfe6a8f57052bee0b2b33903a335146ad1/other/component%20Details/0x05-Camera/Datasheet/">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/84b82731468978746051cf060b159d2cc26e164f/other/component%20Details/0x05-Camera/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td data-label="Description">Camera module</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/CAM-RASPI.png" height="auto" width="1000" alt="Camera"></td>
@@ -71,8 +71,8 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x06</td>
                 <td data-label="Name">DC Brushed Motor with Encoder</td>
-                <td data-label="Datasheet"><a href="https://www.pololu.com/file/0J551/25D_metal_gear_motor_with_encoder.pdf">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/84b82731468978746051cf060b159d2cc26e164f/other/component%20Details/0x06-DC%20Brushed%20Motor%20with%20encoder/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/84b82731468978746051cf060b159d2cc26e164f/other/component%20Details/0x06-DC%20Brushed%20Motor%20with%20encoder/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/bc317ffe6fa7f5ad89df3856">3D Model</a></td>
                 <td data-label="Description">Motor for movement with encoder feedback</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Brushed%20motor.png" height="auto" width="1000" alt="DC Motor with Encoder"></td>
