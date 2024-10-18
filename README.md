@@ -33,64 +33,80 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - `other` (optional): Contains additional files that can help understand how to prepare the vehicle for the competition, such as documentation on connecting to a SBC/SBM, uploading files, datasets, hardware specifications, and communication protocols descriptions. If not needed, this directory can be removed.
 
 
-# Robot Project Overview
+# Project Title
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-   1.1. [Competition Context](#competition-context)  
-   1.2. [Team Management](#team-management)  
-   1.3. [Strengths and Limitations of Our Vehicle](#strengths-and-limitations-of-our-vehicle)  
 
-2. [Technical Overview](#technical-overview)
-   2.1. [Hardware Design](#hardware-design)  
-       2.1.1. [Chassis](#chassis)  
-       2.1.2. [Power and Control](#power-and-control)  
-       2.1.3. [Sensors](#sensors)  
-       2.1.4. [Wiring Diagram](#wiring-diagram)  
-   2.2. [Software Design](#software-design)  
-       2.2.1. [Programming Languages and Libraries](#programming-languages-and-libraries)  
-       2.2.2. [Algorithm Documentation](#algorithm-documentation)  
+- **[Project Overview](#project-overview)**  
+   - [Competition Context](#competition-context)  
+   - [Team Management](#team-management)  
+   - [Strengths and Limitations of Our Vehicle](#strengths-and-limitations-of-our-vehicle)  
 
-3. [Programming Language and Libraries](#programming-language-and-libraries)  
-   3.1. [Detecting Turns and Direction](#detecting-turns-and-direction)  
-   3.2. [Lap Counting Method](#lap-counting-method)  
-   3.3. [IMU-Based Steering](#imu-based-steering)  
+- **[Technical Overview](#technical-overview)**  
+   - **Hardware Design**  
+      - [Chassis](#chassis)  
+      - [Power and Control](#power-and-control)  
+      - [Sensors](#sensors)  
+      - [Wiring Diagram](#wiring-diagram)  
+   - **Software Design**  
+      - [Programming Languages and Libraries](#programming-languages-and-libraries)  
+      - [Algorithm Documentation](#algorithm-documentation)  
 
-4. [Open Challenge](#open-challenge-algorithm)  
-   4.1. [Open Challenge Overview](#open-challenge-overview)  
-   4.2. [PID Controller](#pid-controller)  
-   4.3. [Turn Execution](#turn-execution)  
+- **[Programming and Algorithms](#programming-and-algorithms)**  
+   - [Detecting Turns and Direction](#detecting-turns-and-direction)  
+   - [Lap Counting Method](#lap-counting-method)  
+   - [IMU-Based Steering](#imu-based-steering)  
+   - [PID Controller](#pid-controller)  
+   - [Turn Execution](#turn-execution)  
 
-5. [Obstacle Avoidance Round Challenge](#obstacle-avoidance-round-challenge)  
-   5.1. [Obstacle Challenge Overview](#obstacle-challenge-overview)  
-   5.2. [Pillar Detection](#pillar-detection)  
-   5.3. [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)  
+- **[Challenges](#challenges)**  
+   - **Obstacle Avoidance Round**  
+      - [Obstacle Challenge Overview](#obstacle-challenge-overview)  
+      - [Pillar Detection](#pillar-detection)  
+      - [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)  
+   - **Hurdles and Challenges**  
+      - [Designing Process Challenges](#designing-process-challenges)  
+      - [Sensor and Coding Challenges](#sensor-and-coding-challenges)  
+      - [Mechanical Challenges](#mechanical-challenges)  
 
-6. [Designing Process](#designing-process)  
-   6.1. [Steering System](#steering-system)  
-   6.2. [Differential Gear](#differential-gear)  
-   6.3. [Chassis](#chassis)  
-   6.4. [Mechanism](#mechanism)  
-   6.5. [Ackermann Steering Mechanism](#ackermann-steering-mechanism)  
+- **[Designing Process](#designing-process)**  
+   - [Steering System](#steering-system)  
+   - [Differential Gear](#differential-gear)  
+   - [Chassis](#chassis)  
+   - [Mechanism](#mechanism)  
+   - [Ackermann Steering Mechanism](#ackermann-steering-mechanism)  
 
-7. [Power and Sense Management](#power-and-sense-management)  
-   7.1. [Power Source](#power-source)  
-   7.2. [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)  
+- **[Power and Sense Management](#power-and-sense-management)**  
+   - [Power Source](#power-source)  
+   - [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)  
 
-8. [Hurdles and Challenges](#hurdles-and-challenges)  
-   8.1. [Designing Process Challenges](#designing-process-challenges)  
-   8.2. [Sensor and Coding Challenges](#sensor-and-coding-challenges)  
-   8.3. [Mechanical Challenges](#mechanical-challenges)  
+- **[Future Work and Reflections](#future-work-and-reflections)**  
+   - [Future Work](#future-work)  
+   - [Reflections and Gratitude](#reflections-and-gratitude)  
 
-9. [Future Work](#future-work)  
+- **[Acknowledgments](#acknowledgments)**  
 
-10. [Acknowledgments](#acknowledgments)  
+- **[Appendices](#appendices)**  
+   - [Datasheets and Specifications](#datasheets-and-specifications)  
+   - [References](#references)  
 
-11. [Appendices](#appendices)  
-    11.1. [Datasheets and Specifications](#datasheets-and-specifications)  
-    11.2. [References](#references)  
+- **[Mindcraft Utilities](#mindcraft-utilities)**  
+   - [Mindcraft Control Panel](#mindcraft-control-panel)  
+      - [Map View](#map-view)  
+      - [Changing Parameters](#changing-parameters)  
+   - [Mindcraft Randomizer](#mindcraft-randomizer)  
+   - [Mindcraft Utility Setup](#mindcraft-utility-setup)  
 
-12. [Reflections and Gratitude](#reflections-and-gratitude)  
+- **[Demonstrations](#demonstrations)**  
+   - [Demonstration Videos](#demonstration-videos)  
+   - [Photos](#photos)  
+   - [Team Photos](#team-photos)  
+
+- **[Lessons Learned](#lessons-learned)**  
+
+- **[Safety Notes](#safety-notes)**  
+   - [LiPo Battery Safety Notice](#lipo-battery-safety-notice)
+
 
 ## Project Overview
 
