@@ -31,3 +31,112 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - `src`: Contains the control software code for all components programmed to participate in the competition.
 - `models` (optional): Contains files for models used by 3D printers, laser cutting machines, and CNC machines to produce the vehicle elements. If not needed, this directory can be removed.
 - `other` (optional): Contains additional files that can help understand how to prepare the vehicle for the competition, such as documentation on connecting to a SBC/SBM, uploading files, datasets, hardware specifications, and communication protocols descriptions. If not needed, this directory can be removed.
+
+
+# Robot Project Overview
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+   - [Aim and Objectives](#aim-and-objectives)
+   - [Competition Context](#competition-context)
+   - [Team Management](#team-management)
+2. [Technical Overview](#technical-overview)
+   - [Hardware Design](#hardware-design)
+     - [Chassis](#chassis)
+     - [Power and Control](#power-and-control)
+     - [Sensors](#sensors)
+     - [Wiring Diagram](#wiring-diagram)
+   - [Software Design](#software-design)
+     - [Programming Languages and Libraries](#programming-languages-and-libraries)
+     - [Algorithm Documentation](#algorithm-documentation)
+3. [Functional Capabilities](#functional-capabilities)
+   - [Obstacle Detection and Avoidance](#obstacle-detection-and-avoidance)
+   - [Color Detection](#color-detection)
+   - [Navigation and Movement](#navigation-and-movement)
+4. [Challenges and Solutions](#challenges-and-solutions)
+   - [Design Challenges](#design-challenges)
+   - [Coding Challenges](#coding-challenges)
+5. [Future Work](#future-work)
+6. [Acknowledgments](#acknowledgments)
+7. [Appendices](#appendices)
+   - [Datasheets and Specifications](#datasheets-and-specifications)
+   - [References](#references)
+
+## Project Overview
+
+### Aim and Objectives
+The primary aim of this robot project is to develop an autonomous vehicle capable of navigating its environment effectively. The key objectives include:
+
+1. Detecting and avoiding obstacles in real-time.
+2. Implementing autonomous driving capabilities.
+3. Enabling state detection and automatic correction in case of errors.
+4. Performing tasks efficiently within competition constraints.
+
+### Competition Context
+This robot is being developed for [insert competition name], where agility and responsiveness are critical for success.
+
+### Team Management
+Our team comprises skilled members with defined roles:
+
+- **Team Leader:** [Name]
+- **Software Developer:** [Name]
+- **Hardware Engineer:** [Name]
+- **Testing Specialist:** [Name]
+
+## Technical Overview
+
+### Hardware Design
+
+#### Chassis
+The robot features a robust chassis designed for stability and maneuverability.
+
+#### Power and Control
+Utilizes a [specify battery type, e.g., LiPo] for power, coupled with an efficient motor driver setup.
+
+#### Sensors
+- **Distance Sensors:** [Types and functions]
+- **Camera:** [Specifications]
+
+#### Wiring Diagram
+![Wiring Diagram](link-to-your-diagram.png)
+
+### Software Design
+
+#### Programming Languages and Libraries
+Developed using Python and C++, with libraries such as OpenCV for computer vision.
+
+#### Algorithm Documentation
+Refer to [ALGORITHM.md](ALGORITHM.md) for detailed explanations of algorithms used.
+
+## Functional Capabilities
+
+### Obstacle Detection and Avoidance
+The robot employs advanced algorithms to detect obstacles and execute avoidance maneuvers.
+
+### Color Detection
+Utilizes the HSV format for color detection, leveraging OpenCV’s capabilities to create masks for specific colors.
+
+### Navigation and Movement
+Features capabilities like lane following, acceleration/deceleration, and crash handling, ensuring smooth operation in dynamic environments.
+
+## Challenges and Solutions
+
+### Design Challenges
+Discuss specific design challenges faced and how they were overcome.
+
+### Coding Challenges
+Highlight any coding difficulties encountered during development and their solutions.
+
+## Future Work
+Outline potential improvements and features for future iterations of the project.
+
+## Acknowledgments
+Thank those who contributed to the project, including mentors, team members, and supporters.
+
+## Appendices
+
+### Datasheets and Specifications
+Provide links or references to datasheets for components used.
+
+### References
+Include references to any external resources or research papers relevant to the project.
