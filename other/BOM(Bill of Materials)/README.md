@@ -87,6 +87,24 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Wheels.png" height="auto" width="1000" alt="Wheels"></td>
             </tr>
             <tr>
+                <td data-label="Code">0x08</td>
+                <td data-label="Name">L298 Motor Driver</td>
+                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/motor-wheels.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
+                <td data-label="Description">Command Motor High Voltage with logic voltage 5v</td>
+                <td data-label="Image"><img src="" height="auto" width="1000" alt="Wheels"></td>
+            </tr>
+            <tr>
+                <td data-label="Code">0x09</td>
+                <td data-label="Name">Servo motor Metal Gear Box 180°</td>
+                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/motor-wheels.html">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
+                <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
+                <td data-label="Description">For Robot turning</td>
+                <td data-label="Image"><img src="" height="auto" width="1000" alt="Wheels"></td>
+            </tr>
+            <tr>
                 <td>0x10</td>
                 <td>Lipo 3S 2200mah 11.1V 50C</td>
                 <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
