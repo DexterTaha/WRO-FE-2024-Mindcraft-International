@@ -30,7 +30,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://docs.arduino.cc/hardware/nano">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/58c1c76865cebcf7f2c0d9cc">3D Model</a></td>
                 <td data-label="Description">Microcontroller</td>
-                <td data-label="Image"><img src="https://lh4.googleusercontent.com/proxy/9zUFLqlsIkmYlalhS33rOtFl7yIgIaflCP0bLvCnSY1_cTr9I2BGU8tNpbRsU8mRALt-mlRAmGV4EHakpUJJkDzJ6GSH5bEnfxY" height="350" width="1000" alt="Arduino Nano"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/arduino%20NANO.png" height="auto" width="1000" alt="Arduino Nano"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x02</td>
@@ -39,7 +39,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://github.com/Slamtec/RPLIDAR_SDK">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/2729187d74795f5505a642cc/w/3e0c0cce82870e83e2fa6638/e/bc5a610b18bbd2f7644b07b9">3D Model</a></td>
                 <td data-label="Description">Laser Range Sensor</td>
-                <td data-label="Image"><img src="https://d229kd5ey79jzj.cloudfront.net/3157/images/3157_1_M.png?20240815085137" height="350" width="1000" alt="LIDAR"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/LIDAR.png" height="auto" width="1000" alt="LIDAR"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x03</td>
@@ -48,7 +48,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.st.com/en/imaging-and-photonics-solutions/vl53l1x.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/94e51bc799b10763631d10cb">3D Model</a></td>
                 <td data-label="Description">Time-of-Flight Distance Sensor</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/87126eb6-3d94-4dc3-aa94-e5ba5083c1b8" height="350" width="1000" alt="VL53L1X"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/VLX1-DTOF.png" height="auto" width="1000" alt="VL53L1X"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x04</td>
@@ -57,7 +57,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://components101.com/sensors/mpu6050-accelerometer-gyroscope-module">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/5080605618051d13a916ba3c">3D Model</a></td>
                 <td data-label="Description">6-axis Gyroscope and Accelerometer</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/b403cc4d-2e55-45a2-9d9c-f42e105ebaec" height="350" width="1000" alt="MPU6050"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/mpu-6050.png" height="auto" width="1000" alt="MPU6050"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x05</td>
@@ -66,7 +66,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.raspberrypi.org/documentation/hardware/camera/README.md">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:2970128">3D Model</a></td>
                 <td data-label="Description">Camera module</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/732cbe1d-62a9-42e6-94f0-e05b6ea594ca" height="350" width="1000" alt="Camera"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/CAM-RASPI.png" height="auto" width="1000" alt="Camera"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x06</td>
@@ -75,7 +75,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.pololu.com/product/1119">Setup</a></td>
                 <td data-label="3D Model"><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/bc317ffe6fa7f5ad89df3856">3D Model</a></td>
                 <td data-label="Description">Motor for movement with encoder feedback</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/14b59b8c-9b80-4388-846f-067335f6fa1c" height="350" width="1000" alt="DC Motor with Encoder"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Brushed%20motor.png" height="auto" width="1000" alt="DC Motor with Encoder"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x07</td>
@@ -84,7 +84,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">Wheels for robot movement</td>
-                <td data-label="Image"><img src="https://github.com/user-attachments/assets/70ceb0f2-d238-47d2-916c-02193d48ecfb" height="350" width="1000" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Wheels.png" height="auto" width="1000" alt="Wheels"></td>
             </tr>
             <tr>
                 <td>0x10</td>
@@ -93,7 +93,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>Lithium Polymer Battery</td>
-                <td><img src="https://github.com/user-attachments/assets/a1fccdea-3f5b-4c8b-8b3d-73776964fc78" height="350" width="1000" alt="Lipo Battery" ></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/BATTERIE.png" height="auto" width="1000" alt="Lipo Battery" ></td>
             </tr>
             <tr>
                 <td>0x11</td>
@@ -102,7 +102,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>Battery Charger</td>
-                <td><img src="https://github.com/user-attachments/assets/152292b2-6a48-452e-8397-891b64c9f151" height="350" width="1000" alt="IMAX Charger"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/B6AC1.png" height="auto" width="1000" alt="IMAX Charger"></td>
             </tr>
             <tr>
                 <td>0x12</td>
@@ -111,7 +111,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>6V Voltage Regulator</td>
-                <td><img src="https://github.com/user-attachments/assets/f1f18869-0926-486a-b268-9d1454c185d4" height="350" width="1000" alt="7806 Transistor"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/TRANSISTORS.png" height="auto" width="1000" alt="7806 Transistor"></td>
             </tr>
             <tr>
                 <td>0x13</td>
@@ -120,7 +120,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>High Current Switch</td>
-                <td><img src="https://github.com/user-attachments/assets/1fa127ce-404c-4ae1-930d-679c359ce81e" height="350" width="1000" alt="Switch"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Switch.png" height="auto" width="1000" alt="Switch"></td>
             </tr>
             <tr>
                 <td>0x14</td>
@@ -129,7 +129,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>Lipo Battery Alarm</td>
-                <td><img src="https://github.com/user-attachments/assets/2194b679-50bd-429a-bfaa-28c4bd65ff3b" height="350" width="1000" alt="Buzzer Alarm"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/livo%20battery%20level%20sensor.png" height="auto" width="1000" alt="Buzzer Alarm"></td>
             </tr>
             <tr>
                 <td>0x15</td>
