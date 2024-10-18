@@ -37,30 +37,60 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-   - [Aim and Objectives](#aim-and-objectives)
-   - [Competition Context](#competition-context)
-   - [Team Management](#team-management)
+   1.1. [Competition Context](#competition-context)  
+   1.2. [Team Management](#team-management)  
+   1.3. [Strengths and Limitations of Our Vehicle](#strengths-and-limitations-of-our-vehicle)  
+
 2. [Technical Overview](#technical-overview)
-   - [Hardware Design](#hardware-design)
-     - [Chassis](#chassis)
-     - [Power and Control](#power-and-control)
-     - [Sensors](#sensors)
-     - [Wiring Diagram](#wiring-diagram)
-   - [Software Design](#software-design)
-     - [Programming Languages and Libraries](#programming-languages-and-libraries)
-     - [Algorithm Documentation](#algorithm-documentation)
-3. [Functional Capabilities](#functional-capabilities)
-   - [Obstacle Detection and Avoidance](#obstacle-detection-and-avoidance)
-   - [Color Detection](#color-detection)
-   - [Navigation and Movement](#navigation-and-movement)
-4. [Challenges and Solutions](#challenges-and-solutions)
-   - [Design Challenges](#design-challenges)
-   - [Coding Challenges](#coding-challenges)
-5. [Future Work](#future-work)
-6. [Acknowledgments](#acknowledgments)
-7. [Appendices](#appendices)
-   - [Datasheets and Specifications](#datasheets-and-specifications)
-   - [References](#references)
+   2.1. [Hardware Design](#hardware-design)  
+       2.1.1. [Chassis](#chassis)  
+       2.1.2. [Power and Control](#power-and-control)  
+       2.1.3. [Sensors](#sensors)  
+       2.1.4. [Wiring Diagram](#wiring-diagram)  
+   2.2. [Software Design](#software-design)  
+       2.2.1. [Programming Languages and Libraries](#programming-languages-and-libraries)  
+       2.2.2. [Algorithm Documentation](#algorithm-documentation)  
+
+3. [Programming Language and Libraries](#programming-language-and-libraries)  
+   3.1. [Detecting Turns and Direction](#detecting-turns-and-direction)  
+   3.2. [Lap Counting Method](#lap-counting-method)  
+   3.3. [IMU-Based Steering](#imu-based-steering)  
+
+4. [Open Challenge](#open-challenge-algorithm)  
+   4.1. [Open Challenge Overview](#open-challenge-overview)  
+   4.2. [PID Controller](#pid-controller)  
+   4.3. [Turn Execution](#turn-execution)  
+
+5. [Obstacle Avoidance Round Challenge](#obstacle-avoidance-round-challenge)  
+   5.1. [Obstacle Challenge Overview](#obstacle-challenge-overview)  
+   5.2. [Pillar Detection](#pillar-detection)  
+   5.3. [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)  
+
+6. [Designing Process](#designing-process)  
+   6.1. [Steering System](#steering-system)  
+   6.2. [Differential Gear](#differential-gear)  
+   6.3. [Chassis](#chassis)  
+   6.4. [Mechanism](#mechanism)  
+   6.5. [Ackermann Steering Mechanism](#ackermann-steering-mechanism)  
+
+7. [Power and Sense Management](#power-and-sense-management)  
+   7.1. [Power Source](#power-source)  
+   7.2. [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)  
+
+8. [Hurdles and Challenges](#hurdles-and-challenges)  
+   8.1. [Designing Process Challenges](#designing-process-challenges)  
+   8.2. [Sensor and Coding Challenges](#sensor-and-coding-challenges)  
+   8.3. [Mechanical Challenges](#mechanical-challenges)  
+
+9. [Future Work](#future-work)  
+
+10. [Acknowledgments](#acknowledgments)  
+
+11. [Appendices](#appendices)  
+    11.1. [Datasheets and Specifications](#datasheets-and-specifications)  
+    11.2. [References](#references)  
+
+12. [Reflections and Gratitude](#reflections-and-gratitude)  
 
 ## Project Overview
 
@@ -82,6 +112,10 @@ Our team comprises skilled members with defined roles:
 - **Software Developer:** [Name]
 - **Hardware Engineer:** [Name]
 - **Testing Specialist:** [Name]
+
+### Strengths and Limitations of Our Vehicle
+- **Strengths:** [List strengths here]
+- **Limitations:** [List limitations here]
 
 ## Technical Overview
 
@@ -108,24 +142,74 @@ Developed using Python and C++, with libraries such as OpenCV for computer visio
 #### Algorithm Documentation
 Refer to [ALGORITHM.md](ALGORITHM.md) for detailed explanations of algorithms used.
 
-## Functional Capabilities
+## Programming Language and Libraries
 
-### Obstacle Detection and Avoidance
-The robot employs advanced algorithms to detect obstacles and execute avoidance maneuvers.
+### Detecting Turns and Direction
+Description of the methodology for detecting turns and direction changes.
 
-### Color Detection
-Utilizes the HSV format for color detection, leveraging OpenCV’s capabilities to create masks for specific colors.
+### Lap Counting Method
+Explanation of the approach used for counting laps during the competition.
 
-### Navigation and Movement
-Features capabilities like lane following, acceleration/deceleration, and crash handling, ensuring smooth operation in dynamic environments.
+### IMU-Based Steering
+Details on how the IMU (Inertial Measurement Unit) is utilized for steering control.
 
-## Challenges and Solutions
+## Open Challenge
 
-### Design Challenges
-Discuss specific design challenges faced and how they were overcome.
+### Open Challenge Overview
+Overview of the challenges faced during the competition and how they were approached.
 
-### Coding Challenges
-Highlight any coding difficulties encountered during development and their solutions.
+### PID Controller
+Description of the PID controller's role in maintaining vehicle stability and control.
+
+### Turn Execution
+Explanation of the methods used to execute turns effectively.
+
+## Obstacle Avoidance Round Challenge
+
+### Obstacle Challenge Overview
+Overview of the obstacle avoidance challenge during the competition.
+
+### Pillar Detection
+Methods used for detecting pillars and other obstacles.
+
+### Obstacle Avoidance Strategy
+Strategies implemented for effective obstacle avoidance.
+
+## Designing Process
+
+### Steering System
+Details on the steering system design and functionality.
+
+### Differential Gear
+Description of the differential gear system used in the robot.
+
+### Chassis
+Details about the chassis design process and considerations.
+
+### Mechanism
+Explanation of the mechanisms involved in the robot's movement.
+
+### Ackermann Steering Mechanism
+Overview of the Ackermann steering mechanism and its advantages.
+
+## Power and Sense Management
+
+### Power Source
+Information about the power sources used in the robot.
+
+### Sensors We Used and Their Functions
+List of sensors and their respective roles in the robot's functionality.
+
+## Hurdles and Challenges
+
+### Designing Process Challenges
+Challenges faced during the design process and how they were resolved.
+
+### Sensor and Coding Challenges
+Discussion of issues encountered with sensors and coding during development.
+
+### Mechanical Challenges
+Details of mechanical challenges faced during the building process.
 
 ## Future Work
 Outline potential improvements and features for future iterations of the project.
@@ -134,6 +218,15 @@ Outline potential improvements and features for future iterations of the project
 Thank those who contributed to the project, including mentors, team members, and supporters.
 
 ## Appendices
+
+### Datasheets and Specifications
+Provide links or references to datasheets for components used.
+
+### References
+Include references to any external resources or research papers relevant to the project.
+
+## Reflections and Gratitude
+Reflect on the learning experience and express gratitude to all contributors.
 
 ### Datasheets and Specifications
 Provide links or references to datasheets for components used.
