@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/Power System.png" alt="Rear Drive System" width="600">
+  <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/3370da7a54e1b7f4dd0a0b950fe7d5e5e00790cf/images/Power%20System.png" alt="Rear Drive System" width="600">
   <br>
 </p>
 
