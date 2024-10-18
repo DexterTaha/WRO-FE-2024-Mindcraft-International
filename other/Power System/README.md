@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Power System.png" alt="Rear Drive System" width="600">
+  <img src="./images/Power System.png" alt="Rear Drive System" width="600">
   <br>
 </p>
 
