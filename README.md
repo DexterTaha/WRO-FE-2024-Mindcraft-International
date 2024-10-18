@@ -40,7 +40,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - **[Project Overview](#project-overview)**  
    - [Competition Context](#competition-context)  
    - [Team Management](#team-management)  
-   - [Strengths and Limitations of Our Vehicle](#strengths-and-limitations-of-our-vehicle)  
+   - [Vehicle Strengths and Limitations](#vehicle-strengths-and-limitations)  
 
 - **[Technical Overview](#technical-overview)**  
    - **Hardware Design**  
@@ -49,12 +49,12 @@ This year, the Future Engineers category presents an exciting challenge: creatin
       - [Sensors](#sensors)  
       - [Wiring Diagram](#wiring-diagram)  
    - **Software Design**  
-      - [Programming Languages and Libraries](#programming-languages-and-libraries)  
-      - [Algorithm Documentation](#algorithm-documentation)  
+      - [Programming Languages & Libraries](#programming-languages-libraries)  
+      - [Algorithms](#algorithms)  
 
 - **[Programming and Algorithms](#programming-and-algorithms)**  
-   - [Detecting Turns and Direction](#detecting-turns-and-direction)  
-   - [Lap Counting Method](#lap-counting-method)  
+   - [Detecting Turns & Direction](#detecting-turns-direction)  
+   - [Lap Counting](#lap-counting)  
    - [IMU-Based Steering](#imu-based-steering)  
    - [PID Controller](#pid-controller)  
    - [Turn Execution](#turn-execution)  
@@ -64,21 +64,10 @@ This year, the Future Engineers category presents an exciting challenge: creatin
       - [Obstacle Challenge Overview](#obstacle-challenge-overview)  
       - [Pillar Detection](#pillar-detection)  
       - [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)  
-   - **Hurdles and Challenges**  
-      - [Designing Process Challenges](#designing-process-challenges)  
-      - [Sensor and Coding Challenges](#sensor-and-coding-challenges)  
+   - **Design Challenges**  
+      - [Hardware Challenges](#hardware-challenges)  
+      - [Sensor & Coding Challenges](#sensor-coding-challenges)  
       - [Mechanical Challenges](#mechanical-challenges)  
-
-- **[Designing Process](#designing-process)**  
-   - [Steering System](#steering-system)  
-   - [Differential Gear](#differential-gear)  
-   - [Chassis](#chassis)  
-   - [Mechanism](#mechanism)  
-   - [Ackermann Steering Mechanism](#ackermann-steering-mechanism)  
-
-- **[Power and Sense Management](#power-and-sense-management)**  
-   - [Power Source](#power-source)  
-   - [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)  
 
 - **[Future Work and Reflections](#future-work-and-reflections)**  
    - [Future Work](#future-work)  
@@ -87,15 +76,8 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - **[Acknowledgments](#acknowledgments)**  
 
 - **[Appendices](#appendices)**  
-   - [Datasheets and Specifications](#datasheets-and-specifications)  
+   - [Datasheets & Specifications](#datasheets-specifications)  
    - [References](#references)  
-
-- **[Mindcraft Utilities](#mindcraft-utilities)**  
-   - [Mindcraft Control Panel](#mindcraft-control-panel)  
-      - [Map View](#map-view)  
-      - [Changing Parameters](#changing-parameters)  
-   - [Mindcraft Randomizer](#mindcraft-randomizer)  
-   - [Mindcraft Utility Setup](#mindcraft-utility-setup)  
 
 - **[Demonstrations](#demonstrations)**  
    - [Demonstration Videos](#demonstration-videos)  
@@ -105,8 +87,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - **[Lessons Learned](#lessons-learned)**  
 
 - **[Safety Notes](#safety-notes)**  
-   - [LiPo Battery Safety Notice](#lipo-battery-safety-notice)
-
+   - [LiPo Battery Safety](#lipo-battery-safety)
 
 ## Project Overview
 
@@ -117,135 +98,3 @@ The primary aim of this robot project is to develop an autonomous vehicle capabl
 2. Implementing autonomous driving capabilities.
 3. Enabling state detection and automatic correction in case of errors.
 4. Performing tasks efficiently within competition constraints.
-
-### Competition Context
-This robot is being developed for [insert competition name], where agility and responsiveness are critical for success.
-
-### Team Management
-Our team comprises skilled members with defined roles:
-
-- **Team Leader:** [Name]
-- **Software Developer:** [Name]
-- **Hardware Engineer:** [Name]
-- **Testing Specialist:** [Name]
-
-### Strengths and Limitations of Our Vehicle
-- **Strengths:** [List strengths here]
-- **Limitations:** [List limitations here]
-
-## Technical Overview
-
-### Hardware Design
-
-#### Chassis
-The robot features a robust chassis designed for stability and maneuverability.
-
-#### Power and Control
-Utilizes a [specify battery type, e.g., LiPo] for power, coupled with an efficient motor driver setup.
-
-#### Sensors
-- **Distance Sensors:** [Types and functions]
-- **Camera:** [Specifications]
-
-#### Wiring Diagram
-![Wiring Diagram](link-to-your-diagram.png)
-
-### Software Design
-
-#### Programming Languages and Libraries
-Developed using Python and C++, with libraries such as OpenCV for computer vision.
-
-#### Algorithm Documentation
-Refer to [ALGORITHM.md](ALGORITHM.md) for detailed explanations of algorithms used.
-
-## Programming Language and Libraries
-
-### Detecting Turns and Direction
-Description of the methodology for detecting turns and direction changes.
-
-### Lap Counting Method
-Explanation of the approach used for counting laps during the competition.
-
-### IMU-Based Steering
-Details on how the IMU (Inertial Measurement Unit) is utilized for steering control.
-
-## Open Challenge
-
-### Open Challenge Overview
-Overview of the challenges faced during the competition and how they were approached.
-
-### PID Controller
-Description of the PID controller's role in maintaining vehicle stability and control.
-
-### Turn Execution
-Explanation of the methods used to execute turns effectively.
-
-## Obstacle Avoidance Round Challenge
-
-### Obstacle Challenge Overview
-Overview of the obstacle avoidance challenge during the competition.
-
-### Pillar Detection
-Methods used for detecting pillars and other obstacles.
-
-### Obstacle Avoidance Strategy
-Strategies implemented for effective obstacle avoidance.
-
-## Designing Process
-
-### Steering System
-Details on the steering system design and functionality.
-
-### Differential Gear
-Description of the differential gear system used in the robot.
-
-### Chassis
-Details about the chassis design process and considerations.
-
-### Mechanism
-Explanation of the mechanisms involved in the robot's movement.
-
-### Ackermann Steering Mechanism
-Overview of the Ackermann steering mechanism and its advantages.
-
-## Power and Sense Management
-
-### Power Source
-Information about the power sources used in the robot.
-
-### Sensors We Used and Their Functions
-List of sensors and their respective roles in the robot's functionality.
-
-## Hurdles and Challenges
-
-### Designing Process Challenges
-Challenges faced during the design process and how they were resolved.
-
-### Sensor and Coding Challenges
-Discussion of issues encountered with sensors and coding during development.
-
-### Mechanical Challenges
-Details of mechanical challenges faced during the building process.
-
-## Future Work
-Outline potential improvements and features for future iterations of the project.
-
-## Acknowledgments
-Thank those who contributed to the project, including mentors, team members, and supporters.
-
-## Appendices
-
-### Datasheets and Specifications
-Provide links or references to datasheets for components used.
-
-### References
-Include references to any external resources or research papers relevant to the project.
-
-## Reflections and Gratitude
-Reflect on the learning experience and express gratitude to all contributors.
-
-### Datasheets and Specifications
-Provide links or references to datasheets for components used.
-
-### References
-Include references to any external resources or research papers relevant to the project.
