@@ -99,23 +99,26 @@
             <td style="text-align: center; vertical-align: middle;">🛠️ TOOLS AND SOFTWARES</td>
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
+                   <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm
+                    </li>
+                     <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino IDE"> Arduino IDE
+                    </li>
                     <li style="display: flex; align-items: center;">
                         <img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender
                     </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://skillicons.dev/icons?i=matlab" width="32" alt="MATLAB"> MATLAB
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://skillicons.dev/icons?i=sketchup" width="32" alt="SketchUp"> SketchUp
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://skillicons.dev/icons?i=unity" width="32" alt="Unity"> Unity
-                    </li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
-                    <li style="display: flex; align-items: center;">
+                   <li style="display: flex; align-items: center;">
                         <img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub
                     </li>
                     <li style="display: flex; align-items: center;">
@@ -124,9 +127,24 @@
                     <li style="display: flex; align-items: center;">
                         <img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm
                     </li>
-                    <li style="display: flex; align-items: center;">
+                     <li style="display: flex; align-items: center;">
                         <img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino IDE"> Arduino IDE
                     </li>
+                   <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=ai" width="32" alt="Adobe illustrator"> Adobe illustrator
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=ae" width="32" alt="Adobe after effects"> Adobe after effects
+                    </li>
+                     <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=ps" width="32" alt="Adobe photoshop"> Adobe photoshop
+                    </li>
+                   <li style="display: flex; align-items: center;">
+                        <img src="https://skillicons.dev/icons?i=pr" width="32" alt="Adobe premiere pro"> Adobe premiere pro
+                    </li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
@@ -138,7 +156,7 @@
                         <img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code
                     </li>
                     <li style="display: flex; align-items: center;">
-                        <img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm
+                        <img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender
                     </li>
                 </ul>
             </td>
