@@ -14,3 +14,12 @@ sudo apt install python3
 #### Installing pip3:
 ```bash
 sudo apt install python3-pip
+```
+#### Installing Pyserial package:
+```bash
+sudo pip3 install pyserial
+```
+#### Installing rplidar package:
+```bash
+sudo pip3 install rplidar
+```
