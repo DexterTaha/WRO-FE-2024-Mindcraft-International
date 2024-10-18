@@ -87,7 +87,7 @@
                     <li><img src="https://img.icons8.com/fluency/48/000000/network.png" width="32" alt="VNC Viewer"> VNC Viewer</li>
                 </ul>
             </td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px;">
                     <li style="display: flex; align-items: center;">
                         <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub Logo">
