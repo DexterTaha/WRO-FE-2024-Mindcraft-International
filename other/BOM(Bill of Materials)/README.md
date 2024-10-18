@@ -138,7 +138,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>Servo Motor Tester</td>
-                <td><img src="https://github.com/user-attachments/assets/b4e8654e-ac73-4e93-bfa2-d3ac3c08affe" height="350" width="1000" alt="Servo Tester"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/4c209b5711322504d4969d14073aa15a5130b8df/images/pwm.png" height="auto" width="1000" alt="Servo Tester"></td>
             </tr>
             <tr>
                 <td>0x16</td>
@@ -147,7 +147,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>Servo Arm</td>
-                <td><img src="https://github.com/user-attachments/assets/cfe158a0-dd02-47ab-a1cb-d2c9bfbac38d"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/4c209b5711322504d4969d14073aa15a5130b8df/images/SERVOBRAS.png" height="auto"></td>
             </tr>
             <tr>
                 <td>0x17</td>
@@ -156,7 +156,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td>N/A</td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>64GB SD Card</td>
-                <td><img src="https://github.com/user-attachments/assets/2e96f0c0-c279-45fa-9d7b-3cb66cbc74db" height="350" width="1000" alt="SD Card"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/069266dcb97c8694b2de51c4d2f10cfe2f28b0b3/images/MEMORY-CARD.png" height="auto" width="1000" alt="SD Card"></td>
             </tr>
             <tr>
                 <td>0x18</td>
@@ -165,7 +165,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>WiFi Adapter</td>
-                <td><img src="https://github.com/user-attachments/assets/de919b03-407a-4680-8125-5b07b2ed4105" height="350" width="1000" alt="WiFi Adapter"></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/7db8edfbd032b0a25831cd457da72fb8935418f6/images/TP-LINK.png" height="auto" width="1000" alt="WiFi Adapter"></td>
             </tr>
         </tbody>
     </table>
