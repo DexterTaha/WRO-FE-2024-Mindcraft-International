@@ -89,20 +89,20 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td data-label="Code">0x08</td>
                 <td data-label="Name">L298 Motor Driver</td>
-                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/motor-wheels.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/67650b7d72705afa8f343d58dabc49bec869e66c/other/component%20Details/0x08-L298N%20Motor%20driver/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/67650b7d72705afa8f343d58dabc49bec869e66c/other/component%20Details/0x08-L298N%20Motor%20driver/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">Command Motor High Voltage with logic voltage 5v</td>
-                <td data-label="Image"><img src="" height="auto" width="1000" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/67650b7d72705afa8f343d58dabc49bec869e66c/images/Driver.png" height="auto" alt="Wheels"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x09</td>
                 <td data-label="Name">Servo motor Metal Gear Box 180°</td>
-                <td data-label="Datasheet"><a href="https://www.robotshop.com/en/motor-wheels.html">Datasheet</a></td>
-                <td data-label="Setup"><a href="https://www.robotshop.com/en/wheel-and-tread.html">Setup</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/67650b7d72705afa8f343d58dabc49bec869e66c/other/component%20Details/0x09-Servo%20motor%20Metal%20Gear%20Box%20180%C2%B0/Datasheet">Datasheet</a></td>
+                <td data-label="Setup"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/67650b7d72705afa8f343d58dabc49bec869e66c/other/component%20Details/0x09-Servo%20motor%20Metal%20Gear%20Box%20180%C2%B0/Setup">Setup</a></td>
                 <td data-label="3D Model"><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td data-label="Description">For Robot turning</td>
-                <td data-label="Image"><img src="" height="auto" width="1000" alt="Wheels"></td>
+                <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/67650b7d72705afa8f343d58dabc49bec869e66c/images/SERVO.png" height="auto" alt="Wheels"></td>
             </tr>
             <tr>
                 <td>0x10</td>
