@@ -106,6 +106,16 @@ width="1000" alt="Jetson Nano"></td>
             </tr>
             <tr>
                 <td>0x10</td>
+                <td>5V Power Converter</td>
+                <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
+                <td>N/A</td>
+                <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
+                <td>Lithium Polymer Battery</td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/BATTERIE.png" height="auto" width="1000" alt="Lipo Battery" ></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>0x11</td>
                 <td>Lipo 3S 2200mah 11.1V 50C</td>
                 <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
                 <td>N/A</td>
@@ -114,7 +124,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/BATTERIE.png" height="auto" width="1000" alt="Lipo Battery" ></td>
             </tr>
             <tr>
-                <td>0x11</td>
+                <td>0x12</td>
                 <td>IMAX B6AC V2</td>
                 <td><a href="https://www.skyrc.com/Charger/B6AC_V2">Datasheet</a></td>
                 <td><a href="https://manuals.skyrc.com/B6AC%20V2.pdf">Setup</a></td>
@@ -123,7 +133,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/B6AC1.png" height="auto" width="1000" alt="IMAX Charger"></td>
             </tr>
             <tr>
-                <td>0x12</td>
+                <td>0x13</td>
                 <td>7806 Transistor</td>
                 <td><a href="https://www.onsemi.com/pdf/datasheet/l78-d.pdf">Datasheet</a></td>
                 <td>N/A</td>
@@ -132,7 +142,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/TRANSISTORS.png" height="auto" width="1000" alt="7806 Transistor"></td>
             </tr>
             <tr>
-                <td>0x13</td>
+                <td>0x14</td>
                 <td>Switch High Amper</td>
                 <td><a href="https://docs.rs-online.com/1f89/0900766b814b93ef.pdf">Datasheet</a></td>
                 <td>N/A</td>
@@ -141,7 +151,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/Switch.png" height="auto" width="1000" alt="Switch"></td>
             </tr>
             <tr>
-                <td>0x14</td>
+                <td>0x15</td>
                 <td>Buzzer Alarm Batterie Lipo</td>
                 <td><a href="https://www.hobbyking.com/hobbyking/store/__24786__Hobbyking_8482_Lipoly_Low_Voltage_Alarm_2S_3S.html">Datasheet</a></td>
                 <td>N/A</td>
@@ -150,7 +160,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/797552ba634ac775af451a20127c331770118177/images/livo%20battery%20level%20sensor.png" height="auto" width="1000" alt="Buzzer Alarm"></td>
             </tr>
             <tr>
-                <td>0x15</td>
+                <td>0x16</td>
                 <td>Servo Tester</td>
                 <td><a href="https://www.servocity.com/servo-tester/">Datasheet</a></td>
                 <td>N/A</td>
@@ -159,7 +169,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/4c209b5711322504d4969d14073aa15a5130b8df/images/pwm.png" height="auto" width="1000" alt="Servo Tester"></td>
             </tr>
             <tr>
-                <td>0x16</td>
+                <td>0x17</td>
                 <td>Servobras</td>
                 <td><a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/cf7c3951c0394e6adfc05022">Datasheet</a></td>
                 <td>N/A</td>
@@ -168,7 +178,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/4c209b5711322504d4969d14073aa15a5130b8df/images/SERVOBRAS.png" height="auto"></td>
             </tr>
             <tr>
-                <td>0x17</td>
+                <td>0x18</td>
                 <td>SD Card 64GB</td>
                 <td><a href="https://www.sandisk.com/home/memory-cards/microsd-cards">Datasheet</a></td>
                 <td>N/A</td>
@@ -177,7 +187,7 @@ width="1000" alt="Jetson Nano"></td>
                 <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/069266dcb97c8694b2de51c4d2f10cfe2f28b0b3/images/MEMORY-CARD.png" height="auto" width="1000" alt="SD Card"></td>
             </tr>
             <tr>
-                <td>0x18</td>
+                <td>0x19</td>
                 <td>TPLink AC600</td>
                 <td><a href="https://www.tp-link.com/us/home-networking/usb-adapter/archer-t2u/">Datasheet</a></td>
                 <td><a href="https://static.tp-link.com/2018/201812/20181227/2018Q4_UG_T2U.pdf">Setup</a></td>
