@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Steering.png" alt="Steering" width="400">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/c49080620d08a28a2c56fb28aea237c9f2fbfd57/images/Steering.png" alt="Steering" width="400">
     <br>
 </p>
 
