@@ -2,15 +2,9 @@
     <thead>
         <tr>
             <th style="text-align: center; vertical-align: middle; width: 25%;">👤 NAME</th>
-            <th style="text-align: center; vertical-align: middle; width: 25%;">
-                <a href="https://github.com/derdebsalmane" target="_blank" style="text-decoration: none; color: black;">DERDEB Salmane</a>
-            </th>
-            <th style="text-align: center; vertical-align: middle; width: 25%;">
-                <a href="https://github.com/taiditaha" target="_blank" style="text-decoration: none; color: black;">TAIDI LAAMIRI TAHA</a>
-            </th>
-            <th style="text-align: center; vertical-align: middle; width: 25%;">
-                <a href="https://github.com/taidimortada" target="_blank" style="text-decoration: none; color: black;">TAIDI LAAMIRI MORTADA</a>
-            </th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">DERDEB Salmane</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">TAIDI LAAMIRI TAHA</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">TAIDI LAAMIRI MORTADA</th>
         </tr>
     </thead>
     <tbody>
@@ -127,3 +121,15 @@
         </ul>
     </td>
 </tr>
+        <tr>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">Github Profiles</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">
+                <a href="https://github.com/derdebsalmane" target="_blank" style="text-decoration: none; color: black;">DERDEB Salmane</a>
+            </th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">
+                <a href="https://github.com/taiditaha" target="_blank" style="text-decoration: none; color: black;">TAIDI LAAMIRI TAHA</a>
+            </th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">
+                <a href="https://github.com/taidimortada" target="_blank" style="text-decoration: none; color: black;">TAIDI LAAMIRI MORTADA</a>
+            </th>
+        </tr>
