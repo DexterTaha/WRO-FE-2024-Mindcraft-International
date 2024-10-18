@@ -33,6 +33,31 @@
             <td style="text-align: center; vertical-align: middle;">Fabrication and Conception Lead</td>
         </tr>
         <tr>
+            <td style="text-align: center; vertical-align: middle;">🌐 LANGUAGE LEVEL</td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>Arabic: Native</li>
+                    <li>French: Very Good</li>
+                    <li>English: Very Good</li>
+                    <li>Turkish: Intermediate</li>
+                </ul>
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>Arabic: Native</li>
+                    <li>French: Good</li>
+                    <li>English: Good</li>
+                </ul>
+            </td>
+            <td style="text-align: center; vertical-align: middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>Arabic: Native</li>
+                    <li>French: Good</li>
+                    <li>English: Beginner</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
             <td style="text-align: center; vertical-align: middle;">🛠️ RESPONSIBILITIES</td>
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
