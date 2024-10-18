@@ -107,11 +107,11 @@ width="1000" alt="Jetson Nano"></td>
             <tr>
                 <td>0x10</td>
                 <td>5V Power Converter</td>
-                <td><a href="https://www.hobbyking.com/hobbyking/store/__17356__Turnigy_2200mAh_3S_20C_Lipo_Pack.html">Datasheet</a></td>
-                <td>N/A</td>
+                <td><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/d3d67aaae2e988e7a49f0e28bd44e6e8cd050f9c/other/component%20Details/0x10-5V%20Power%20Converter/Datasheet">Datasheet</a></td>
+                <td><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/d3d67aaae2e988e7a49f0e28bd44e6e8cd050f9c/other/component%20Details/0x10-5V%20Power%20Converter/Setup">Setup</a></td>
                 <td><a href="https://www.thingiverse.com/thing:1864586">3D Model</a></td>
                 <td>5V Power Converter</td>
-                <td><img src="" height="auto" width="1000" alt="Lipo Battery" ></td>
+                <td><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/d3d67aaae2e988e7a49f0e28bd44e6e8cd050f9c/images/5V.png" height="auto" width="1000" alt="Lipo Battery" ></td>
             </tr>
             <tr>
             <tr>
