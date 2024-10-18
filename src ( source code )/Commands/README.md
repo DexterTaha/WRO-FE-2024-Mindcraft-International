@@ -1,16 +1,16 @@
-### Updating package:
+#### Updating package:
 ```bash
 sudo apt-get update
 ```
 
-### Upgrading package:
+#### Upgrading package:
 ```bash
 sudo apt-get upgrade
 ```
-### Installing python3
+#### Installing python3:
 ```bash
 sudo apt install python3
 ```
-### Installing pip3
+#### Installing pip3:
 ```bash
 sudo apt install python3-pip
