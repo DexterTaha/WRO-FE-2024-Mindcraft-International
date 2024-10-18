@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="DTOF sensor.png" width="300">
+  <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/b99c3c2cdc72a3ae477383965cc59590641dc289/images/DTOF%20sensor.png" width="300">
 </p>
 
 ## Sensing units:
