@@ -82,9 +82,9 @@
                     <li><img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
                     <li><img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/circuit.png" width="32" alt="Fritzing"> Fritzing</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/network.png" width="32" alt="VNC Viewer"> VNC Viewer</li>
-                    <li><img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE</li>
                 </ul>
             </td>
             <td style="text-align: center; vertical-align: middle;">
