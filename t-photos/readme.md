@@ -64,8 +64,8 @@
             </td>
         </tr>
         <tr>
-            <td style="text-align: center; vertical-align: middle;">🛠️ RESPONSIBILITIES</td>
-            <td style="text-align: center; vertical-align: middle;">
+            <td style="text-align: center; vertical-align: top;">🛠️ RESPONSIBILITIES</td>
+            <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Lead the development and implementation of computer vision algorithms.</li>
                     <li>Handle general programming, ensuring the software works smoothly with hardware.</li>
