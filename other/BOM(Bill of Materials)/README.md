@@ -16,7 +16,7 @@
             <tr>
                 <td data-label="Code">0x00</td>
                 <td data-label="Name">NVIDIA Jetson Nano 4GB</td>
-                <td data-label="Datasheet"><a href="https://developer.nvidia.com/embedded/dlc/jetson-nano-developer-kit">Datasheet</a></td>
+                <td data-label="Datasheet"><a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/13b9149276b35567d60be73b0caf569a492784e8/other/component%20Details/0x00-NVIDIA%20Jetson%20Nano%204GB/Datasheet">Datasheet</a></td>
                 <td data-label="Setup"><a href="https://docs.nvidia.com/jetson/archives/r32.4/Jetson_Nano_Developer_Kit_Users_Guide.pdf">Setup</a></td>
                 <td data-label="3D Model"><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
                 <td data-label="Description">Main computing unit</td>
