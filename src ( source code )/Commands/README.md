@@ -23,3 +23,9 @@ sudo pip3 install pyserial
 ```bash
 sudo pip3 install rplidar
 ```
+#### Install matplotlib and numpy:
+```bash
+sudo pip3 install matplotlib
+sudo pip3 install numpy
+//these packages are already on the libraries folder
+```
