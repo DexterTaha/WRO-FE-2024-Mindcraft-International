@@ -68,8 +68,10 @@
             <td style="text-align: center; vertical-align: middle;">🛠️ TOOLS AND SOFTWARES</td>
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: none; padding-left: 0;">
+                    <li><img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
                     <li><img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE</li>
                     <li><img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender</li>
                     <li><img src="https://img.icons8.com/color/48/000000/adobe-after-effects.png" width="32" alt="After Effects"> After Effects</li>
                     <li><img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" width="32" alt="Premiere Pro"> Premiere Pro</li>                    
@@ -77,9 +79,10 @@
             </td>
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: none; padding-left: 0;">
-                    <li><img src="https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
-                    <li><img src="https://img.icons8.com/fluency/48/000000/circuit.png" width="32" alt="Fritzing"> Fritzing</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub"> GitHub</li>
+                    <li><img src="https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png" width="32" alt="VS Code"> VS Code</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/pycharm.png" width="32" alt="PyCharm"> PyCharm</li>
+                    <li><img src="https://img.icons8.com/fluency/48/000000/circuit.png" width="32" alt="Fritzing"> Fritzing</li>
                     <li><img src="https://img.icons8.com/fluency/48/000000/network.png" width="32" alt="VNC Viewer"> VNC Viewer</li>
                     <li><img src="https://img.icons8.com/color/48/000000/arduino.png" width="32" alt="Arduino IDE"> Arduino IDE</li>
                 </ul>
@@ -87,12 +90,12 @@
             <td style="text-align: center; vertical-align: middle;">
                 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px;">
                     <li style="display: flex; align-items: center;">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" width="32" alt="Blender Logo">
-                        <span style="margin-left: 8px;">Blender</span>
-                    </li>
-                    <li style="display: flex; align-items: center;">
                         <img src="https://img.icons8.com/fluency/48/000000/github.png" width="32" alt="GitHub Logo">
                         <span style="margin-left: 8px;">GitHub</span>
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" width="32" alt="Blender Logo">
+                        <span style="margin-left: 8px;">Blender</span>
                     </li>
                     <li style="display: flex; align-items: center;">
                         <img src="https://github.com/user-attachments/assets/9622f29f-0532-4cea-8713-8ae77dbe80ec" width="32" alt="Creality Print Logo">
@@ -101,10 +104,6 @@
                     <li style="display: flex; align-items: center;">
                         <img src="https://github.com/user-attachments/assets/899d33c8-cb89-4db9-bf12-0dd8760016fd" width="32" alt="Onshape Logo">
                         <span style="margin-left: 8px;">Onshape</span>
-                    </li>
-                    <li style="display: flex; align-items: center;">
-                        <img src="https://img.icons8.com/color/48/000000/xmind.png" width="32" alt="XMind Logo">
-                        <span style="margin-left: 8px;">XMind</span>
                     </li>
                 </ul>
             </td>
