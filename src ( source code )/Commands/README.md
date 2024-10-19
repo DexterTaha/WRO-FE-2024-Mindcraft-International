@@ -1,3 +1,13 @@
+# Simple actions:
+
+
+
+
+
+
+
+
+# Libraries installation:
 #### Updating package:
 ```bash
 sudo apt-get update
