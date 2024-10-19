@@ -1,4 +1,4 @@
-# Simple actions:
+# Setup:
 #### Updating package:
 ```bash
 sudo apt-get update
@@ -36,8 +36,10 @@ rm file.py
 ```bash
 python file.py
 ```
-
-
+#### Stop a python code:
+```bash
+Ctrl + C
+```
 
 # Libraries installation:
 #### Installing python3:
