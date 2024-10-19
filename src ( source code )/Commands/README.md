@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-## Terminal commands:
+### Terminal commands:
 #### Navigating to a specific file:
 ```bash
 cd path/to/your/file
