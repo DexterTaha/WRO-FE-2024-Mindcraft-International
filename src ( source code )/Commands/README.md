@@ -1,13 +1,4 @@
 # Simple actions:
-
-
-
-
-
-
-
-
-# Libraries installation:
 #### Updating package:
 ```bash
 sudo apt-get update
@@ -17,6 +8,31 @@ sudo apt-get update
 ```bash
 sudo apt-get upgrade
 ```
+
+## Terminal commands:
+#### Navigating to a specific file:
+```bash
+cd path/to/your/file
+```
+
+#### Creating a new folder:
+```bash
+mkdir new_folder
+```
+
+#### Creating a new file:
+```bash
+touch file.py
+```
+
+#### Editing a file:
+```bash
+vi file.py
+```
+
+
+
+# Libraries installation:
 #### Installing python3:
 ```bash
 sudo apt install python3
