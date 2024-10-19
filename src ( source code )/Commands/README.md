@@ -28,6 +28,10 @@ touch file.py
 ```bash
 vi file.py
 ```
+#### Running a python code:
+```bash
+python file.py
+```
 
 
 
