@@ -28,6 +28,10 @@ touch file.py
 ```bash
 vi file.py
 ```
+#### Remove a file:
+```bash
+rm file.py
+```
 #### Running a python code:
 ```bash
 python file.py
