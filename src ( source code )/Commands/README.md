@@ -70,3 +70,9 @@ sudo pip3 install numpy
 sudo apt install python3-opencv
 sudo apt install libopencv-dev python3-opencv
 ```
+
+#### Adding on-startup functionality
+```bash
+crontab -e
+@reboot python3 /home/mindcraft/Desktop/buzzer.py >> /home/mindcraft/Desktop/buzzer_startup.log 2>&1
+```
