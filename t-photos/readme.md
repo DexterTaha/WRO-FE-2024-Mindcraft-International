@@ -134,6 +134,12 @@
                     <li></li>
                     <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
                     <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
+                     <li><img src="https://skillicons.dev/icons?i=pytorch" width="32" alt="PyTorch"> PyTorch</li>
+                    <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
+                    <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
+                    <li><img src="https://skillicons.dev/icons?i=vue" width="32" alt="Vue.js"> Vue.js</li>
+                    <li><img src="https://skillicons.dev/icons?i=threejs" width="32" alt="Three.js"> Three.js</li>
+                    <li><img src="https://skillicons.dev/icons?i=latex" width="32" alt="LaTeX"> LaTeX</li>
                 </ul>
             </td>
              <td style="text-align: left; vertical-align: top;">
