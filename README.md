@@ -33,7 +33,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 - `other` (optional): Contains additional files that can help understand how to prepare the vehicle for the competition, such as documentation on connecting to a SBC/SBM, uploading files, datasets, hardware specifications, and communication protocols descriptions. If not needed, this directory can be removed.
 
 
-# Project Title
+# WRO Future-Engineers Competition:
 
 ## Table of Contents
 
