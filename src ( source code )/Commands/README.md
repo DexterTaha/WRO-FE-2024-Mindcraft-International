@@ -71,8 +71,35 @@ sudo apt install python3-opencv
 sudo apt install libopencv-dev python3-opencv
 ```
 
-#### Adding on-startup functionality
+#### Adding on-start run functionality
 ```bash
-crontab -e
-@reboot python3 /home/mindcraft/Desktop/buzzer.py >> /home/mindcraft/Desktop/buzzer_startup.log 2>&1
+sudo touch /etc/systemd/system/mything.service
 ```
+##### Edit the code:
+```bash
+// edit the mything.service edit and add this code:
+[Unit]
+Description=Run Buzzer Script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/mindcraft/Desktop/buzzer.py
+Restart=always
+User=mindcraft
+Group=mindcraft
+
+[Install]
+WantedBy=multi-user.target
+```
+##### Start the service:
+```bash
+sudo systemctl enable mything.service
+```
+```bash
+sudo systemctl start mything.service
+```
+##### View the service status:
+```bash
+sudo systemctl status mything.service
+```
+
