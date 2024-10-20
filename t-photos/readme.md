@@ -99,6 +99,7 @@
             <td style="text-align: center; vertical-align: top;">🛠️ TOOLS AND SOFTWARES</td>
              <td style="text-align: left; vertical-align: bottom;">
                 <ul style="list-style-type: none; padding-left: 0;">
+                                        <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li> <h2>web developpement </h2>
                          <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
                         <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
@@ -106,14 +107,15 @@
                         <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
                          <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
                          <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
+                                        <h3>UX UI designe</h3>
+                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
                     <li> <h2>programing languages </h2> 
                          <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
                     <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
                     <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
-                    <li></li>
-                    <h2>UX UI designe</h3>
-                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
-                    <h2>3d designe/animation</h3>
+                    <h3>python library</h3>
+                    <li>                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li></li>
+                    <h3>3d designe/animation</h3>
                    <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
                     <li><h2>Operating system</h2>
                         <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
@@ -126,16 +128,17 @@
                     <li><img src="https://skillicons.dev/icons?i=ae" width="32" alt="Adobe after effects"> Adobe after effects</li>
                     <li><img src="https://skillicons.dev/icons?i=ps" width="32" alt="Adobe photoshop"> Adobe photoshop</li>
                     <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Adobe premiere pro"> Adobe premiere pro</li>
+                     <li><h2>micro controller /micro computer</h2></li>
                     <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
+                    <li></li>
                     <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
-                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li>
                     <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
-                                        <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                 </ul>
             </td>
              <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
+                                        <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                             <li> <h2>web developpement </h2>
                          <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
                         <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
@@ -143,15 +146,16 @@
                         <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
                          <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
                          <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
+                     <h4>UX UI designe</h4>
+                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
                                            <li> <h2>programing languages </h2> 
                          <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
                     <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
-                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
-                   <li><img src="https://skillicons.dev/icons?i=java" width="32" alt="Java"> Java</li>
-                                     <h4>UX UI designe</h4>
-                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
+                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>   
+                                        <h3>python library</h3>
+                    <li>                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li></li>
                     <h4>3d designe/animation</h4>
-                   <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
+                   <li></li>
                     <li><h2>Operating system</h2>
                         <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
                     <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
@@ -159,16 +163,17 @@
                     <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
                     <li><img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm</li>
                      <li> <h2>graphic designe </h2>
-<li></li><li></
+                         <li></li>
                     <li></li>
-                    <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
+                    <li></li>
+                    <li></li>
+                    <li><h2>micro controller /micro computer</h2></li>
                     <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
+                    <li></li>
                     <li><img src="https://skillicons.dev/icons?i=ros" width="32" alt="ROS"> ROS</li>
                     <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
-                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li>
                     <li><img src="https://skillicons.dev/icons?i=pytorch" width="32" alt="PyTorch"> PyTorch</li>
-                    <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
                     <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
                     <li><img src="https://skillicons.dev/icons?i=vue" width="32" alt="Vue.js"> Vue.js</li>
@@ -188,5 +193,4 @@
             </td>
         </tr>
     </tbody>
-    
 </table>
