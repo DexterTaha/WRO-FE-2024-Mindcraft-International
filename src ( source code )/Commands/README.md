@@ -8,10 +8,6 @@ sudo apt-get update
 ```bash
 sudo apt-get upgrade
 ```
-#### Installing nano:
-```bash
-sudo apt install nano
-```
 
 #### Navigating to a specific file:
 ```bash
@@ -31,8 +27,6 @@ touch file.py
 #### Editing a file:
 ```bash
 vi file.py
-//or
-sudo nano file.py
 ```
 #### Remove a file:
 ```bash
