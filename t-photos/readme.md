@@ -108,8 +108,6 @@
                     <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
                     <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li>
                     <li><img src="https://skillicons.dev/icons?i=sublime" width="32" alt="Sublime"> Sublime</li>
-                    <li><img src="https://skillicons.dev/icons?i=apple" width="32" alt="Apple"> Apple</li>
-                    <li><img src="https://skillicons.dev/icons?i=windows" width="32" alt="Windows"> Windows</li>
                     <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
                     <li><img src="https://skillicons.dev/icons?i=kali" width="32" alt="Kali"> Kali</li>
                     <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
@@ -139,7 +137,6 @@
                     <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
                     <li><img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm</li>
-                    <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino IDE"> Arduino IDE</li>
                     <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
                     <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
@@ -151,8 +148,6 @@
                     <li><img src="https://skillicons.dev/icons?i=androidstudio" width="32" alt="Android Studio"> Android Studio</li>
                     <li><img src="https://skillicons.dev/icons?i=sublime" width="32" alt="Sublime"> Sublime</li>
                     <li><img src="https://skillicons.dev/icons?i=processing" width="32" alt="Processing"> Processing</li>
-                    <li><img src="https://skillicons.dev/icons?i=apple" width="32" alt="Apple"> Apple</li>
-                    <li><img src="https://skillicons.dev/icons?i=windows" width="32" alt="Windows"> Windows</li>
                     <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
                     <li><img src="https://skillicons.dev/icons?i=kali" width="32" alt="Kali"> Kali</li>
@@ -160,13 +155,11 @@
                     <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
                     <li><img src="https://skillicons.dev/icons?i=matlab" width="32" alt="MATLAB"> MATLAB</li>
                     <li><img src="https://skillicons.dev/icons?i=sketchup" width="32" alt="SketchUp"> SketchUp</li>
-                    <li><img src="https://skillicons.dev/icons?i=unity" width="32" alt="Unity"> Unity</li>
                     <li><img src="https://skillicons.dev/icons?i=notion" width="32" alt="Notion"> Notion</li>
                     <li><img src="https://skillicons.dev/icons?i=stackoverflow" width="32" alt="Stack Overflow"> Stack Overflow</li>
                     <li><img src="https://skillicons.dev/icons?i=docker" width="32" alt="Docker"> Docker</li>
                     <li><img src="https://skillicons.dev/icons?i=kubernetes" width="32" alt="Kubernetes"> Kubernetes</li>
                     <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
-                    <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=mysql" width="32" alt="MySQL"> MySQL</li>
                     <li><img src="https://skillicons.dev/icons?i=firebase" width="32" alt="Firebase"> Firebase</li>
                     <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
@@ -184,7 +177,6 @@
                     <li><img src="https://skillicons.dev/icons?i=java" width="32" alt="Java"> Java</li>
                     <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
                     <li><img src="https://skillicons.dev/icons?i=ai" width="32" alt="Adobe illustrator"> Adobe illustrator</li>
-                    <li><img src="https://skillicons.dev/icons?i=ae" width="32" alt="Adobe after effects"> Adobe after effects</li>
                     <li><img src="https://skillicons.dev/icons?i=ps" width="32" alt="Adobe photoshop"> Adobe photoshop</li>
                     <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Adobe premiere pro"> Adobe premiere pro</li>
                 </ul>
@@ -193,13 +185,6 @@
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
-                    <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino IDE"> Arduino IDE</li>
-                    <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
-                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li>
-                    <li><img src="https://skillicons.dev/icons?i=apple" width="32" alt="Apple"> Apple</li>
-                    <li><img src="https://skillicons.dev/icons?i=windows" width="32" alt="Windows"> Windows</li>
-                    <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
-                    <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
                     <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
                     <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
