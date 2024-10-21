@@ -10,7 +10,7 @@ In this competition, our robot needs to figure out where to go and how to avoid 
 - Our robot uses **4 sensors** to find out where these Zones are.
 - After that, the robot locates itself based on these zones and gets ready to move!
 
-![Image](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/71f4f0625fcd301564ceb619e6b7f5b077dd08b7/images/zones.png)
+![zones](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/71f4f0625fcd301564ceb619e6b7f5b077dd08b7/images/zones.png)
 ---
 
 ## 2. **Looking for Obstacles**
@@ -21,6 +21,8 @@ In this competition, our robot needs to figure out where to go and how to avoid 
   - **Red** = Dangerous
   - **Green** = Safe
   - **None** = No obstacle
+    
+![obstacles](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/9781a5c67df650d096feca76e06a3b82906b8b59/images/obstacles.png)
 
 ---
 
