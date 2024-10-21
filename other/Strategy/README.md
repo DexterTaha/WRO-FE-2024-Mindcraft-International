@@ -34,3 +34,21 @@ In this competition, our robot needs to figure out where to go and how to avoid 
   - If there’s a **Red obstacle**, the value is **2**.
   
 For example:
+```powershell
+P1 = 0 (no obstacle)
+P2 = 2 (red obstacle)
+p3 = 1 (green obstacle)
+```
+
+
+---
+
+## 4. **Finding the Target**
+
+- After knowing where the obstacles are, the robot uses its **LiDAR** to trace the path to the **target**.
+- Then it moves carefully to avoid the obstacles and reach its goal!
+
+![variables](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/9ee2800d892db4f2527620af95ed6c12a5400082/images/variables.png)
+
+This is the basic idea of how our robot works in the competition!
+
