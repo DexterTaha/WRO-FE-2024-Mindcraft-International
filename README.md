@@ -1,9 +1,6 @@
 MINDCRAFT WRO Future Engineers team
 ====
 
-
-<span style="font-family: 'Times New Roman', serif;">This text is in Times New Roman.</span>
-
 <p align="center">
   <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/1b560d62026fe432f3dff80fa5efd213787d7d30/images/team.png" alt="banner" width="1500">
 </p>
