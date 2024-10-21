@@ -1,4 +1,3 @@
-
 # Robot Strategy for WRO Future Engineers
 
 In this competition, our robot needs to figure out where to go and how to avoid obstacles using **sensors** like LiDAR and a camera. Here’s how it works:
@@ -11,6 +10,7 @@ In this competition, our robot needs to figure out where to go and how to avoid 
 - Our robot uses **4 sensors** to find out where these Zones are.
 - After that, the robot locates itself based on these zones and gets ready to move!
 
+![Image](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/71f4f0625fcd301564ceb619e6b7f5b077dd08b7/images/zones.png)
 ---
 
 ## 2. **Looking for Obstacles**
