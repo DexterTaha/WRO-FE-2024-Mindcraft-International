@@ -4,8 +4,8 @@
 
 // Define motor and sensor pins
 #define ENA  11           // L298N EN_A motor speed
-#define IN_1  13          // L298N in1 motor direction control (right motor)
-#define IN_2  12          // L298N in2 motor direction control (right motor)
+#define IN_1  13          // L298N in1 motor direction control
+#define IN_2  12          // L298N in2 motor direction control
 #define buzzerPin  8      // Pin for the buzzer
 
 // Define sensor configuration
@@ -167,17 +167,5 @@ void setup() {
 
 // Loop function for continuous operation
 void loop() {
-  // Test the robot's movement with different speeds and steering angles
-  controlRobot(50, 0);  // Move forward with 50% speed, neutral steering
-  delay(2000);
-
-  controlRobot(-50, 50);  // Move backward with 50% speed, steer right
-  delay(2000);
-
-  controlRobot(100, -100);  // Move forward with full speed, steer left
-  delay(2000);
-
-  StopMotors();  // Stop the motors after the loop
-
-  readAndPrintDistances();  // Read and print sensor distances
+ 
 }
