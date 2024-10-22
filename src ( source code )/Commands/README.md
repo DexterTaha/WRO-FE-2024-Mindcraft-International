@@ -13,6 +13,10 @@ sudo apt-get upgrade
 ```bash
 cd path/to/your/file
 ```
+#### Going back:
+```bash
+cd ..
+```
 
 #### Creating a new folder:
 ```bash
