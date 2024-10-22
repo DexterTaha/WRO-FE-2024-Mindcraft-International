@@ -1,6 +1,6 @@
 # Setup:
 #### Updating package:
-```bash
+```sudo
 sudo apt-get update
 ```
 
