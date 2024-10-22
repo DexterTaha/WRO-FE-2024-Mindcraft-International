@@ -29,7 +29,7 @@
         <tr>
             <td style="text-align: center; vertical-align: middle;">🎓 STUDIES</td>
             <td style="text-align: center; vertical-align: middle;">10th Grade Scientific (French Option) Student</td>
-            <td style="text-align: center; vertical-align: middle;">Industrial Engineering Student + Automated system Degree</td>
+            <td style="text-align: center; vertical-align: middle;">Industrial Engineering Student + Automated System Degree</td>
             <td style="text-align: center; vertical-align: middle;">11th Grade Physics and Math (French Option) Student</td>
         </tr>
         <tr>
@@ -68,133 +68,71 @@
             <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
                     <li>Lead the development and implementation of computer vision algorithms.</li>
-                    <li>Handle general programming, ensuring the software works smoothly with hardware.</li>
-                    <li>Create and edit videos, graphics, and other content for the team.</li>
-                    <li>Responsible for 3D animations using Blender for project visuals.</li>
-                    <li>Document his work on GitHub and maintain the physical engineering notebook.</li>
+                    <li>Handle general programming, ensuring software works with hardware.</li>
+                    <li>Create and edit videos, graphics, and team content.</li>
+                    <li>Produce 3D animations using Blender for project visuals.</li>
+                    <li>Document work on GitHub and maintain the physical engineering notebook.</li>
                 </ul>
             </td>
             <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li>Oversee team tasks and ensure all work is completed on time.</li>
-                    <li>Ensure smooth communication between team members and decision-makers.</li>
-                    <li>Responsible for the technical study and engineering aspects of the robot.</li>
+                    <li>Oversee team tasks and ensure deadlines are met.</li>
+                    <li>Facilitate communication between team members.</li>
+                    <li>Conduct technical study and oversee engineering of the robot.</li>
                     <li>Design and create the PCB and handle electronics connections.</li>
-                    <li>Perform calculations and ensure components work together compatibly.</li>
-                    <li>Create the Bill of Materials (BOM) and manage component sourcing.</li>
-                    <li>Document the project on GitHub and manage overall team documentation.</li>
+                    <li>Perform component compatibility calculations.</li>
+                    <li>Manage the Bill of Materials (BOM) and component sourcing.</li>
+                    <li>Document project progress on GitHub.</li>
                 </ul>
             </td>
             <td style="text-align: center; vertical-align: top;">
                 <ul style="list-style-type: disc; padding-left: 20px;">
-                    <li>Take precise measurements for each part of the robot.</li>
-                    <li>Design the robot from scratch and 3D print components.</li>
-                    <li>Lead the assembly of the robot and handle all mechanical components.</li>
-                    <li>Conduct testing, make improvements, and iterate on new versions of the design.</li>
-                    <li>Document his part of the project on GitHub.</li>
+                    <li>Take measurements for robot components.</li>
+                    <li>Design and 3D print components.</li>
+                    <li>Lead robot assembly and manage mechanical parts.</li>
+                    <li>Test, iterate, and improve design versions.</li>
+                    <li>Document work on GitHub.</li>
                 </ul>
             </td>
         </tr>
-         <tr>
-            <td style="text-align: center; vertical-align: top;">🛠️ TOOLS AND SOFTWARES</td>
-             <td style="text-align: left; vertical-align: bottom;">
+        <tr>
+            <td style="text-align: center; vertical-align: top;">🛠️ TOOLS AND SOFTWARE</td>
+            <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
-                                        <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
-                    <li> <h2>web developpement </h2>
-                         <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
-                        <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
-                     <li><img src="https://skillicons.dev/icons?i=scss" width="32" alt="SCSS"> SCSS</li>
-                        <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
-                         <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
-                         <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
-                                        <h3>UX UI designe</h3>
-                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
-                    <li> <h2>programing languages </h2> 
-                         <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
-                    <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
-                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
-                    <h3>python library</h3>
-                    <li>                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li></li>
-                    <h3>3d designe/animation</h3>
-                   <li><img src="https://skillicons.dev/icons?i=blender" width="32" alt="Blender"> Blender</li>
-                    <li><h2>Operating system</h2>
-                        <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
-                    <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
-                    <li><h2> Integrated development environment</h2>
-                    <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
-                    <li><img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm</li>
-                     <li> <h2>graphic designe </h2>
-                    <li><img src="https://skillicons.dev/icons?i=ai" width="32" alt="Adobe illustrator"> Adobe illustrator</li>
-                    <li><img src="https://skillicons.dev/icons?i=ae" width="32" alt="Adobe after effects"> Adobe after effects</li>
-                    <li><img src="https://skillicons.dev/icons?i=ps" width="32" alt="Adobe photoshop"> Adobe photoshop</li>
                     <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Adobe premiere pro"> Adobe premiere pro</li>
-                     <li><h2>micro controller /micro computer</h2></li>
-                    <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                     <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
-                    <li></li>
-                    <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
-                    <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
-                     <li><img src="https://skillicons.dev/icons?i=pytorch" width="32" alt="PyTorch"> PyTorch</li>
-                    <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
-                    <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
-                    <li><img src="https://skillicons.dev/icons?i=vue" width="32" alt="Vue.js"> Vue.js</li>
-                    <li><img src="https://skillicons.dev/icons?i=threejs" width="32" alt="Three.js"> Three.js</li>
-                    <li><img src="https://skillicons.dev/icons?i=latex" width="32" alt="LaTeX"> LaTeX</li>
-                </ul>
-            </td>
-             <td style="text-align: left; vertical-align: top;">
-                <ul style="list-style-type: none; padding-left: 0;">
-                                        <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
-                            <li> <h2>web developpement </h2>
-                         <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
-                        <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
-                     <li><img src="https://skillicons.dev/icons?i=scss" width="32" alt="SCSS"> SCSS</li>
-                        <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
-                         <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
-                         <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
-                     <h4>UX UI designe</h4>
-                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
-                                           <li> <h2>programing languages </h2> 
-                         <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
-                    <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
-                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>   
-                                        <h3>python library</h3>
-                    <li>                    <li><img src="https://skillicons.dev/icons?i=opencv" width="32" alt="OpenCV"> OpenCV</li></li>
-                    <h4>3d designe/animation</h4>
-                   <li></li>
-                    <li><h2>Operating system</h2>
-                        <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
-                    <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
-                    <li><h2> Integrated development environment</h2>
-                    <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
-                    <li><img src="https://skillicons.dev/icons?i=pycharm" width="32" alt="PyCharm"> PyCharm</li>
-                     <li> <h2>graphic designe </h2>
-                         <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li><h2>micro controller /micro computer</h2></li>
-                    <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
-                    <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
-                    <li></li>
-                    <li><img src="https://skillicons.dev/icons?i=ros" width="32" alt="ROS"> ROS</li>
-                    <li><img src="https://skillicons.dev/icons?i=bash" width="32" alt="Bash"> Bash</li>
                     <li><img src="https://skillicons.dev/icons?i=pytorch" width="32" alt="PyTorch"> PyTorch</li>
-                    <li><img src="https://skillicons.dev/icons?i=git" width="32" alt="Git"> Git</li>
-                    <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
-                    <li><img src="https://skillicons.dev/icons?i=vue" width="32" alt="Vue.js"> Vue.js</li>
-                    <li><img src="https://skillicons.dev/icons?i=threejs" width="32" alt="Three.js"> Three.js</li>
-                    <li><img src="https://skillicons.dev/icons?i=latex" width="32" alt="LaTeX"> LaTeX</li>
                 </ul>
             </td>
-             <td style="text-align: left; vertical-align: top;">
+            <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
-                    <li><img src="https://skillicons.dev/icons?i=vscode" width="32" alt="VS Code"> VS Code</li>
+                    <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
+                    <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
+                    <li><img src="https://skillicons.dev/icons?i=scss" width="32" alt="SCSS"> SCSS</li>
+                    <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
+                    <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
+                    <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
+                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
+                     <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
+                    <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
+                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
+                     <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
+                    <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
+                    <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
+                    <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Proteus"> Proteus</li>
+                </ul>
+            </td>
+            <td style="text-align: left; vertical-align: top;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
                     <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
                     <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
                     <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
-                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
+                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
+                    <li><img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender</li>
+                    <li><img src="https://github.com/user-attachments/assets/3bd25fc1-e0b4-4359-a85d-52b0d4249014" width="32" alt="Creality Print"> Onshape</li>
+                    <li><img src="https://github.com/user-attachments/assets/d12627fa-4115-4672-9df0-1b158f3b0dda" width="32" alt="Onshape"> creality print
                 </ul>
             </td>
         </tr>
