@@ -99,9 +99,20 @@
             <td style="text-align: center; vertical-align: top;">🛠️ TOOLS AND SOFTWARE</td>
             <td style="text-align: left; vertical-align: top;">
                 <ul style="list-style-type: none; padding-left: 0;">
-                    <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Adobe premiere pro"> Adobe premiere pro</li>
-                    <li><img src="https://skillicons.dev/icons?i=arduino" width="32" alt="Arduino"> Arduino</li>
-                    <li><img src="https://skillicons.dev/icons?i=pytorch" width="32" alt="PyTorch"> PyTorch</li>
+                    <li><img src="https://skillicons.dev/icons?i=github" width="32" alt="GitHub"> GitHub</li>
+                    <li><img src="https://skillicons.dev/icons?i=html" width="32" alt="HTML"> HTML</li>
+                    <li><img src="https://skillicons.dev/icons?i=css" width="32" alt="CSS"> CSS</li>
+                    <li><img src="https://skillicons.dev/icons?i=scss" width="32" alt="SCSS"> SCSS</li>
+                    <li><img src="https://skillicons.dev/icons?i=js" width="32" alt="JavaScript"> JavaScript</li>
+                    <li><img src="https://skillicons.dev/icons?i=react" width="32" alt="React"> React</li>
+                    <li><img src="https://skillicons.dev/icons?i=bootstrap" width="32" alt="Bootstrap"> Bootstrap</li>
+                    <li><img src="https://skillicons.dev/icons?i=figma" width="32" alt="Figma"> Figma</li>
+                     <li><img src="https://skillicons.dev/icons?i=c" width="32" alt="C"> C</li>
+                    <li><img src="https://skillicons.dev/icons?i=cpp" width="32" alt="C++"> C++</li>
+                    <li><img src="https://skillicons.dev/icons?i=py" width="32" alt="Python"> Python</li>
+                     <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
+                    <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
+                    <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
@@ -120,7 +131,6 @@
                      <li><img src="https://skillicons.dev/icons?i=linux" width="32" alt="Linux"> Linux</li>
                     <li><img src="https://skillicons.dev/icons?i=ubuntu" width="32" alt="Ubuntu"> Ubuntu</li>
                     <li><img src="https://skillicons.dev/icons?i=raspberrypi" width="32" alt="Raspberry Pi"> Raspberry Pi</li>
-                    <li><img src="https://skillicons.dev/icons?i=pr" width="32" alt="Proteus"> Proteus</li>
                 </ul>
             </td>
             <td style="text-align: left; vertical-align: top;">
@@ -133,6 +143,14 @@
                     <li><img src="https://img.icons8.com/color/48/000000/blender-3d.png" width="32" alt="Blender"> Blender</li>
                     <li><img src="https://github.com/user-attachments/assets/3bd25fc1-e0b4-4359-a85d-52b0d4249014" width="32" alt="Creality Print"> Onshape</li>
                     <li><img src="https://github.com/user-attachments/assets/d12627fa-4115-4672-9df0-1b158f3b0dda" width="32" alt="Onshape"> creality print
+                            <li>
+                                <li>
+                                    <li>
+                                        <li>
+                                            <li><li>
+                                                <li>
+                                                    <li>
+                            <li>
                 </ul>
             </td>
         </tr>
