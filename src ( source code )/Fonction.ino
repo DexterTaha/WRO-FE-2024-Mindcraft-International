@@ -53,13 +53,6 @@ void resetEncoder() {
   encoderCount = 0;
 }
 
-// Function to stop the motors
-void StopMotors() {
-  digitalWrite(IN_1, LOW);
-  digitalWrite(IN_2, LOW);
-  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
-}
-
 // Function to drive the robot based on distance (in cm) and speed (-100 to 100)
 void driveDistanceSpeed(float distanceCM, int speedInput) {
   // Set direction based on distance and speedInput
@@ -101,7 +94,124 @@ void driveDistanceSpeed(float distanceCM, int speedInput) {
   StopMotors();
 }
 
-// Setup function for initialization
+// Existing motor control function
+void controlRobot(int speedInput, int steeringInput) {
+  // Map speedInput from -100 to 100 to motor speed range
+  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
+  
+  // Set motor direction based on the sign of speedInput
+  if (speedInput > 0) {
+    // Move forward
+    digitalWrite(IN_1, HIGH);
+    digitalWrite(IN_2, LOW);
+  } else if (speedInput < 0) {
+    // Move backward
+    digitalWrite(IN_1, LOW);
+    digitalWrite(IN_2, HIGH);
+  } else {
+    // Stop motors
+    StopMotors();
+  }
+
+  // Set motor speed
+  analogWrite(ENA, motorSpeed);
+
+  // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
+  steeringAngle = map(steeringInput, -100, 100, 130, 50);
+
+  // Set servo position
+  STEERING.write(steeringAngle);
+}
+
+// Existing sensor functions
+void setupSensors() {
+  for (uint8_t i = 0; i < sensorCount; i++) {
+    pinMode(xshutPins[i], OUTPUT);
+    digitalWrite(xshutPins[i], LOW);
+  }
+  
+  for (uint8_t i = 0; i < sensorCount; i++) {
+    pinMode(xshutPins[i], INPUT);
+    delay(10);
+
+    sensors[i].setTimeout(500);
+    if (!sensors[i].init()) {
+      Serial.print("Failed to detect and initialize sensor ");
+      Serial.println(i);
+      while (1);  // Halt execution if sensor initialization fails
+    }
+
+    sensors[i].setAddress(0x2A + i);
+    sensors[i].startContinuous(50);  // Start continuous measurement
+  }
+}
+
+void readAndPrintDistances() {
+  Serial.print("F: ");
+  Serial.print(sensors[2].read());
+  if (sensors[2].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  Serial.print("\t");
+
+  Serial.print("R: ");
+  Serial.print(sensors[3].read());
+  if (sensors[3].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  Serial.print("\t");
+
+  Serial.print("L: ");
+  Serial.print(sensors[1].read());
+  if (sensors[1].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  Serial.print("\t");
+
+  Serial.print("B: ");
+  Serial.print(sensors[0].read());
+  if (sensors[0].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  Serial.println();
+
+  delay(50);  // Delay to match the sensor's continuous reading interval
+}
+
+void StopMotors() {
+  digitalWrite(IN_1, LOW);
+  digitalWrite(IN_2, LOW);
+  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
+}
+
+// Existing buzzer functions
+void BuzzerRobotStart() {
+  for (int i = 0; i < 3; i++) {
+    tone(buzzerPin, 1000);  // Frequency of 1000 Hz
+    delay(200);
+    noTone(buzzerPin);
+    delay(100);
+  }
+}
+
+void BuzzerRobotEnd() {
+  tone(buzzerPin, 500);  // Lower frequency for end sound
+  delay(1000);           // Long beep for 1 second
+  noTone(buzzerPin);
+}
+
+void BuzzerRobotError() {
+  for (int i = 0; i < 5; i++) {
+    tone(buzzerPin, 1500);  // Higher frequency for error
+    delay(100);
+    noTone(buzzerPin);
+    delay(100);
+  }
+}
+
+void BuzzerRobotSpecial() {
+  int melody[] = { 262, 294, 330, 349 };  // Notes for C, D, E, F
+  for (int i = 0; i < 4; i++) {
+    tone(buzzerPin, melody[i]);
+    delay(300);
+    noTone(buzzerPin);
+    delay(100);
+  }
+}
+
+// Setup function
 void setup() {
   Serial.begin(115200);
   Wire.begin();
@@ -118,20 +228,21 @@ void setup() {
 
   StopMotors();  // Ensure motors are stopped initially
 
+  setupSensors();  // Initialize sensors
   setupEncoder();  // Initialize encoder
 
   BuzzerRobotStart();  // Play the start sound
 }
 
-// Loop function for continuous operation
+// Loop function
 void loop() {
   // Test driving forward for 100 cm at 50% speed
-  driveDistanceSpeed(100.0, 50);  
+  driveDistanceSpeed(100.0, 50);
   delay(2000);  // Wait for 2 seconds
   
-  // Test driving backward for 50 cm at 30% speed
-  driveDistanceSpeed(-50.0, -30);
-  delay(2000);  // Wait for 2 seconds
+  // Test driving backward for 50 cm at 50% speed
+  driveDistanceSpeed(-50.0, 50);
+  delay(2000);
   
-  // Repeat or add other driving patterns as needed
+  readAndPrintDistances();  // Print sensor readings continuously
 }
