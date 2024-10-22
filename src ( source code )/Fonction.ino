@@ -2,11 +2,12 @@
 #include <VL53L1X.h>      // Include the VL53L1X sensor library
 #include <Wire.h>         // Include the Wire library for I2C communication
 
-// Define motor and sensor pins
+// Define motors and sensor pins
 #define ENA  11           // L298N EN_A motor speed
 #define IN_1  13          // L298N in1 motor direction control
 #define IN_2  12          // L298N in2 motor direction control
 #define buzzerPin  8      // Pin for the buzzer
+#define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 
 // Define sensor configuration
 const uint8_t sensorCount = 4;  // Number of distance sensors
@@ -155,8 +156,8 @@ void setup() {
   pinMode(IN_2, OUTPUT);
   pinMode(buzzerPin, OUTPUT);
 
-  // Attach the servo to pin 9
-  STEERING.attach(9);
+  // Initialize Steering Servo
+  STEERING.attach(STEERING_SERVO_PIN);
 
   StopMotors();  // Ensure motors are stopped initially
 
