@@ -22,84 +22,35 @@ int MaxSpeed = 255;
 int MinSpeed = 127;
 int steeringAngle = 0;
 
-// Setup function to control speed, direction, and steering
-void controlRobot(int speedInput, int steeringInput) {
-  // Map speedInput from -100 to 100 to motor speed range
-  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
-  
-  // Set motor direction based on the sign of speedInput
-  if (speedInput > 0) {
-    // Move forward
-    digitalWrite(IN_1, HIGH);
-    digitalWrite(IN_2, LOW);
-  } else if (speedInput < 0) {
-    // Move backward
-    digitalWrite(IN_1, LOW);
-    digitalWrite(IN_2, HIGH);
-  } else {
-    // Stop motors
-    StopMotors();
-  }
+volatile long encoderCount = 0;  // Track the encoder pulses
+unsigned long lastTime = 0;      // Time for speed calculation
+float motorSpeedRPM = 0;         // Motor speed in RPM
 
-  // Set motor speed
-  analogWrite(ENA, motorSpeed);
-
-  // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
-  steeringAngle = map(steeringInput, -100, 100, 130, 50);
-
-  // Set servo position
-  STEERING.write(steeringAngle);
+// Interrupt Service Routines for Encoder
+void encoderISR_A() {
+  encoderCount++;  // Increment pulse count on signal change
+}
+void encoderISR_B() {
+  encoderCount--;  // Decrement pulse count on signal change (if using quadrature)
 }
 
-// Function to setup the VL53L1X sensors
-void setupSensors() {
-  // Disable/reset all sensors by driving their XSHUT pins low
-  for (uint8_t i = 0; i < sensorCount; i++) {
-    pinMode(xshutPins[i], OUTPUT);
-    digitalWrite(xshutPins[i], LOW);
-  }
+// Function to initialize the encoder
+void setupEncoder() {
+  pinMode(2, INPUT_PULLUP);  // Set encoder pin D2
+  pinMode(3, INPUT_PULLUP);  // Set encoder pin D3
 
-  // Enable and initialize each sensor
-  for (uint8_t i = 0; i < sensorCount; i++) {
-    pinMode(xshutPins[i], INPUT);
-    delay(10);
-
-    sensors[i].setTimeout(500);
-    if (!sensors[i].init()) {
-      Serial.print("Failed to detect and initialize sensor ");
-      Serial.println(i);
-      while (1);  // Halt execution if sensor initialization fails
-    }
-
-    // Set a unique address for each sensor
-    sensors[i].setAddress(0x2A + i);
-    sensors[i].startContinuous(50);  // Start continuous measurement
-  }
+  attachInterrupt(digitalPinToInterrupt(2), encoderISR_A, CHANGE);  // Attach interrupt to D2
+  attachInterrupt(digitalPinToInterrupt(3), encoderISR_B, CHANGE);  // Attach interrupt to D3
 }
 
-// Function to read and print distances from the sensors
-void readAndPrintDistances() {
-  Serial.print("F: ");
-  Serial.print(sensors[2].read());
-  if (sensors[2].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  Serial.print("\t");
+// Function to read the current encoder count
+long readEncoder() {
+  return encoderCount;  // Return the pulse count
+}
 
-  Serial.print("R: ");
-  Serial.print(sensors[3].read());
-  if (sensors[3].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  Serial.print("\t");
-
-  Serial.print("L: ");
-  Serial.print(sensors[1].read());
-  if (sensors[1].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  Serial.print("\t");
-
-  Serial.print("B: ");
-  Serial.print(sensors[0].read());
-  if (sensors[0].timeoutOccurred()) { Serial.print(" TIMEOUT"); }
-  Serial.println();
-
-  delay(50);  // Delay to match the sensor's continuous reading interval
+// Function to reset the encoder count
+void resetEncoder() {
+  encoderCount = 0;
 }
 
 // Function to stop the motors
@@ -109,39 +60,45 @@ void StopMotors() {
   analogWrite(ENA, 0);  // Stop motor by setting speed to 0
 }
 
-// Buzzer functions
-void BuzzerRobotStart() {
-  for (int i = 0; i < 3; i++) {  // 3 short beeps
-    tone(buzzerPin, 1000);  // Frequency of 1000 Hz
-    delay(200);
-    noTone(buzzerPin);
-    delay(100);
+// Function to drive the robot based on distance (in cm) and speed (-100 to 100)
+void driveDistanceSpeed(float distanceCM, int speedInput) {
+  // Set direction based on distance and speedInput
+  if (distanceCM < 0 || speedInput < 0) {
+    // Move backward if distance or speed is negative
+    digitalWrite(IN_1, LOW);
+    digitalWrite(IN_2, HIGH);
+    distanceCM = abs(distanceCM);  // Use absolute distance for backward movement
+    speedInput = abs(speedInput);  // Use absolute speed for backward movement
+  } else {
+    // Move forward if distance and speed are positive
+    digitalWrite(IN_1, HIGH);
+    digitalWrite(IN_2, LOW);
   }
-}
 
-void BuzzerRobotEnd() {
-  tone(buzzerPin, 500);  // Lower frequency for end sound
-  delay(1000);           // Long beep for 1 second
-  noTone(buzzerPin);
-}
+  // Map speedInput from -100 to 100 to motor speed range (MinSpeed to MaxSpeed)
+  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
+  analogWrite(ENA, motorSpeed);
 
-void BuzzerRobotError() {
-  for (int i = 0; i < 5; i++) {  // 5 quick beeps
-    tone(buzzerPin, 1500);  // Higher frequency for error
-    delay(100);
-    noTone(buzzerPin);
-    delay(100);
+  // Reset encoder count before starting the movement
+  resetEncoder();
+
+  // Assuming the encoder gives 11 pulses per revolution and we know the wheel circumference
+  // Wheel circumference should be in centimeters
+  float pulsesPerRevolution = 11.0;  // Adjust if necessary
+  float wheelDiameterCM = 6.8;  // Example: wheel diameter of 6.8 cm (adjust based on your wheel size)
+  float wheelCircumferenceCM = PI * wheelDiameterCM;  // Calculate wheel circumference in cm
+
+  // Calculate the required number of pulses for the given distance in cm
+  float pulsesRequired = (distanceCM / wheelCircumferenceCM) * pulsesPerRevolution;
+
+  // Move the robot until the encoder count reaches the required distance
+  while (abs(readEncoder()) < pulsesRequired) {
+    // Continuously move the robot until the required distance is reached
+    delay(10);  // Small delay for smooth operation
   }
-}
 
-void BuzzerRobotSpecial() {
-  int melody[] = { 262, 294, 330, 349 };  // Notes for C, D, E, F
-  for (int i = 0; i < 4; i++) {  // Play the melody
-    tone(buzzerPin, melody[i]);
-    delay(300);
-    noTone(buzzerPin);
-    delay(100);
-  }
+  // Stop the motors after reaching the distance
+  StopMotors();
 }
 
 // Setup function for initialization
@@ -161,12 +118,20 @@ void setup() {
 
   StopMotors();  // Ensure motors are stopped initially
 
-  setupSensors();  // Initialize sensors
+  setupEncoder();  // Initialize encoder
 
   BuzzerRobotStart();  // Play the start sound
 }
 
 // Loop function for continuous operation
 void loop() {
- 
+  // Test driving forward for 100 cm at 50% speed
+  driveDistanceSpeed(100.0, 50);  
+  delay(2000);  // Wait for 2 seconds
+  
+  // Test driving backward for 50 cm at 30% speed
+  driveDistanceSpeed(-50.0, -30);
+  delay(2000);  // Wait for 2 seconds
+  
+  // Repeat or add other driving patterns as needed
 }
