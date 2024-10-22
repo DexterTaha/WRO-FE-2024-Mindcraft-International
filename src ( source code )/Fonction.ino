@@ -8,7 +8,8 @@
 #define IN_2  12          // L298N in2 motor direction control
 #define buzzerPin  8      // Pin for the buzzer
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
-
+#define ENCODER_PIN_A 2  // D2 for encoder
+#define ENCODER_PIN_B 3  // D3 for encoder
 // Define sensor configuration
 const uint8_t sensorCount = 4;  // Number of distance sensors
 const uint8_t xshutPins[sensorCount] = { 4, 5, 6, 7 };  // XSHUT pins for the VL53L1X sensors
@@ -36,11 +37,11 @@ void encoderISR_B() {
 
 // Function to initialize the encoder
 void setupEncoder() {
-  pinMode(2, INPUT_PULLUP);  // Set encoder pin D2
-  pinMode(3, INPUT_PULLUP);  // Set encoder pin D3
+  pinMode(ENCODER_PIN_A, INPUT_PULLUP);  // Set encoder pin A (D2)
+  pinMode(ENCODER_PIN_B, INPUT_PULLUP);  // Set encoder pin B (D3)
 
-  attachInterrupt(digitalPinToInterrupt(2), encoderISR_A, CHANGE);  // Attach interrupt to D2
-  attachInterrupt(digitalPinToInterrupt(3), encoderISR_B, CHANGE);  // Attach interrupt to D3
+  attachInterrupt(digitalPinToInterrupt(ENCODER_PIN_A), encoderISR_A, CHANGE);  // Attach interrupt to pin A
+  attachInterrupt(digitalPinToInterrupt(ENCODER_PIN_B), encoderISR_B, CHANGE);  // Attach interrupt to pin B
 }
 
 // Function to read the current encoder count
