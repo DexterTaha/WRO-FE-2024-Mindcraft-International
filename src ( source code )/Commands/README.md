@@ -1,6 +1,6 @@
-# ubuntu:
+# Setup:
 #### Updating package:
-```sudo
+```ubuntu
 sudo apt-get update
 ```
 
