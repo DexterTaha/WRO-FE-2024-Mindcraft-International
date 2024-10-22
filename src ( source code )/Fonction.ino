@@ -19,7 +19,7 @@ Servo STEERING;  // Create Servo object for steering
 
 // Motor control variables
 int MaxSpeed = 255;
-int MinSpeed = 0;
+int MinSpeed = 127;
 int steeringAngle = 0;
 
 // Setup function to control speed, direction, and steering
