@@ -10,6 +10,7 @@
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 #define ENCODER_PIN_A 2  // D2 for encoder
 #define ENCODER_PIN_B 3  // D3 for encoder
+
 // Define sensor configuration
 const uint8_t sensorCount = 4;  // Number of distance sensors
 const uint8_t xshutPins[sensorCount] = { 4, 5, 6, 7 };  // XSHUT pins for the VL53L1X sensors
@@ -237,13 +238,5 @@ void setup() {
 
 // Loop function
 void loop() {
-  // Test driving forward for 100 cm at 50% speed
-  driveDistanceSpeed(100.0, 50);
-  delay(2000);  // Wait for 2 seconds
-  
-  // Test driving backward for 50 cm at 50% speed
-  driveDistanceSpeed(-50.0, 50);
-  delay(2000);
-  
-  readAndPrintDistances();  // Print sensor readings continuously
+
 }
