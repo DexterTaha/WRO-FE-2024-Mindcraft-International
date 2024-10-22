@@ -1,4 +1,4 @@
-# Setup:
+# linux:
 #### Updating package:
 ```sudo
 sudo apt-get update
