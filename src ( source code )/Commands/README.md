@@ -1,4 +1,4 @@
-# linux:
+# ubuntu:
 #### Updating package:
 ```sudo
 sudo apt-get update
