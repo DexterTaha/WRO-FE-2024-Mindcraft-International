@@ -21,7 +21,7 @@
                 <td data-label="3D Model"><a href="https://developer.nvidia.com/embedded/learn/jetson-nano-3d-models">3D Model</a></td>
                 <td data-label="Description">Main computing unit</td>
                 <td data-label="Image"><img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/94d52010db407ad0a1d92fda1c9abeead3c4f7cd/images/Raspberry%20pi%204B.png" height="auto" 
-width="1000" alt="Raspberry"></td>
+width="1500" alt="Raspberry"></td>
             </tr>
             <tr>
                 <td data-label="Code">0x01</td>
