@@ -70,3 +70,8 @@ python3 -m pip install rplidar
 #### Matplotlib:
 ```bash
 python3 -m pip install matplotlib
+```
+#### Numpy:
+```bash
+python3 -m pip install numpy
+```
