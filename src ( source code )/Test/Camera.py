@@ -9,7 +9,7 @@ picam2.configure(config)
 picam2.start()
 
 # Define your color range for red detection
-lower_red = np.array([97, 170, 70])   # Adjust these values for red
+lower_red = np.array([97, 170, 70])  # Adjust these values for red
 upper_red = np.array([180, 255, 255])  # Adjust these values for red
 #lower_red = np.array([113, 70, 32])   # Adjust these values for red
 #upper_red = np.array([154, 255, 160])  # Adjust these values for red
@@ -17,8 +17,8 @@ upper_red = np.array([180, 255, 255])  # Adjust these values for red
 # Define your color range for green detection
 #lower_green = np.array([25, 250, 40])   # Adjust these values for green
 #upper_green = np.array([77, 255, 255])    # Adjust these values for green
-lower_green = np.array([27, 155, 3])   # Adjust these values for green
-upper_green = np.array([75, 255, 255])    # Adjust these values for green
+lower_green = np.array([27, 155, 3])  # Adjust these values for green
+upper_green = np.array([75, 255, 255])  # Adjust these values for green
 
 while True:
     # Capture frame
@@ -38,30 +38,48 @@ while True:
     # Combine the masks
     mask_combined = cv2.bitwise_or(mask_red, mask_green)
 
-    # Apply a binary threshold to the combined mask
-    _, mask1 = cv2.threshold(mask_combined, 254, 255, cv2.THRESH_BINARY)
+    # Find contours in the combined mask
+    cnts, _ = cv2.findContours(mask_combined, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-    # Find contours in the thresholded mask
-    cnts, _ = cv2.findContours(mask1, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    # Initialize variables to store the nearest object
+    nearest_contour = None
+    max_area = 0
+    detected_color_nearest = None
 
-    # Draw rectangles around detected contours and print detected color
+    # Loop through contours and process all objects
     for c in cnts:
-        area_threshold = 600
-        if cv2.contourArea(c) > area_threshold:
+        area = cv2.contourArea(c)
+        if area > 600:  # Only process contours larger than a threshold
             x, y, w, h = cv2.boundingRect(c)
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
             # Check which color was detected
-            if cv2.countNonZero(mask_red[y:y+h, x:x+w]) > 0:
+            if cv2.countNonZero(mask_red[y:y + h, x:x + w]) > 0:
                 detected_color = "RED"
-            elif cv2.countNonZero(mask_green[y:y+h, x:x+w]) > 0:
+                color_rectangle = (0, 0, 255)  # Red rectangle
+                label_color = (0, 0, 255)  # Red label text
+            elif cv2.countNonZero(mask_green[y:y + h, x:x + w]) > 0:
                 detected_color = "GREEN"
+                color_rectangle = (0, 255, 0)  # Green rectangle
+                label_color = (0, 255, 0)  # Green label text
             else:
                 detected_color = "UNKNOWN"
+                color_rectangle = (255, 255, 255)  # White rectangle for unknown
 
-            # Display the detected color on the frame
-            cv2.putText(frame, detected_color, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
-            print("Detected color:", detected_color)
+            # Draw rectangles with appropriate color and label each object
+            cv2.rectangle(frame, (x, y), (x + w, y + h), color_rectangle, 2)
+            cv2.putText(frame, detected_color, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, label_color, 2)
+
+            # Track the nearest object based on the largest contour area
+            if area > max_area:
+                max_area = area
+                nearest_contour = c
+                detected_color_nearest = detected_color
+
+    # Display the color of the nearest object
+    if nearest_contour is not None:
+        x, y, w, h = cv2.boundingRect(nearest_contour)
+        cv2.putText(frame, f"{detected_color_nearest} - NEAREST", (x, y - 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
+        print("Detected nearest object color:", detected_color_nearest)
 
     # Show the resulting frame
     cv2.imshow("FRAME", frame)
