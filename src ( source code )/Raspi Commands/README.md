@@ -67,3 +67,6 @@ python3 -m pip install pyserial
 ```bash
 python3 -m pip install rplidar
 ```
+#### Matplotlib:
+```bash
+python3 -m pip install matplotlib
