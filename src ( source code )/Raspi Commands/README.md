@@ -75,3 +75,7 @@ python3 -m pip install matplotlib
 ```bash
 python3 -m pip install numpy
 ```
+#### OpenCV:
+```bash
+pip3 install opencv-python
+```
