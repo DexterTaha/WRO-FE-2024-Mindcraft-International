@@ -6,6 +6,41 @@ sudo apt-get update
 ```bash
 sudo apt-get upgrade
 ```
+#### Navigating to a specific file:
+```bash
+cd path/to/your/file
+```
+#### Going back:
+```bash
+cd ..
+```
+
+#### Creating a new folder:
+```bash
+mkdir new_folder
+```
+
+#### Creating a new file:
+```bash
+touch file.py
+```
+
+#### Editing a file:
+```bash
+vi file.py
+```
+#### Remove a file:
+```bash
+rm file.py
+```
+#### Running a python code:
+```bash
+python file.py
+```
+#### Stopping a python code:
+```bash
+Ctrl + C
+```
 #### Installing python3:
 ```bash
 sudo apt install python3
