@@ -14,3 +14,4 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 3) Score Calculation: Input robot interactions with the map elements, and the tool will automatically calculate the score.
 
 ## Files:
+- `index.html` - Main HTML structure and randomizer display.
