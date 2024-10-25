@@ -5,4 +5,5 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 ## Features:
 - Map Randomizer: Automatically generates randomized layouts for obstacles and scoring zones, preparing teams for a range of possible scenarios.
 - Score Calculator: Allows for quick, manual input of robot actions to calculate scores based on the competition's rules.
+- Responsive Design: Built with HTML, CSS, and JavaScript for a smooth and accessible experience across devices.
 
