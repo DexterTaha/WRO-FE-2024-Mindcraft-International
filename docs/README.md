@@ -10,3 +10,4 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 
 ## Usage:
 1) Open in Browser: Simply open the index.html file in any modern browser.
+2) Generate a Map Layout: Use the randomizer feature to produce a randomized map setup.
