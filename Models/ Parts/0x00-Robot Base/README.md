@@ -28,5 +28,52 @@
 
 <div align="left">
   <h1>Printing Parameters:</h1>
-  <!-- Add details about the printing parameters here -->
 </div>
+
+<!-- Table for printing parameters -->
+<table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Variable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Material</td>
+      <td>PLA</td>
+    </tr>
+    <tr>
+      <td>Layer Height</td>
+      <td>0.2 mm</td>
+    </tr>
+    <tr>
+      <td>Infill Density</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Print Speed</td>
+      <td>60 mm/s</td>
+    </tr>
+    <tr>
+      <td>Nozzle Size</td>
+      <td>0.4 mm</td>
+    </tr>
+    <tr>
+      <td>Bed Temperature</td>
+      <td>60°C</td>
+    </tr>
+    <tr>
+      <td>Print Temperature</td>
+      <td>200°C</td>
+    </tr>
+    <tr>
+      <td>Supports</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Fan Speed</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
+</table>
