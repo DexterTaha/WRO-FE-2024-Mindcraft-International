@@ -8,3 +8,5 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 - Responsive Design: Built with HTML, CSS, and JavaScript for a smooth and accessible experience across devices.
 - User-Friendly Interface: Intuitive design that makes setup and scoring easy to navigate.
 
+## Usage:
+
