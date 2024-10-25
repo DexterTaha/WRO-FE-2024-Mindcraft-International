@@ -15,3 +15,4 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 
 ## Files:
 - `index.html` - Main HTML structure and randomizer display.
+- `styl.css` - Styling for layout and interactive elements.
