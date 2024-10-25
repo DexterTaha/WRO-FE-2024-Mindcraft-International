@@ -12,3 +12,5 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 1) Open in Browser: Simply open the index.html file in any modern browser.
 2) Generate a Map Layout: Use the randomizer feature to produce a randomized map setup.
 3) Score Calculation: Input robot interactions with the map elements, and the tool will automatically calculate the score.
+
+## Files:
