@@ -9,4 +9,4 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 - User-Friendly Interface: Intuitive design that makes setup and scoring easy to navigate.
 
 ## Usage:
-
+1) Open in Browser: Simply open the index.html file in any modern browser.
