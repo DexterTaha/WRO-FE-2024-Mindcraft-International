@@ -1,1 +1,1 @@
-## Fut map
+## Future map
