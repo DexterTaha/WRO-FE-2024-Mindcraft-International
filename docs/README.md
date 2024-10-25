@@ -2,5 +2,6 @@
 
 This project provides an interactive web-based tool for the WRO Future Engineers competition, offering a randomizer and score calculator for map setups. It’s designed to help participants practice in varied, randomized environments and quickly calculate scores based on performance.
 
-### Features:
+## Features:
+- Map Randomizer: Automatically generates randomized layouts for obstacles and scoring zones, preparing teams for a range of possible scenarios.
 
