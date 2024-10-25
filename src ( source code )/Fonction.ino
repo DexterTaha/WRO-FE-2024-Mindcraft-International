@@ -3,14 +3,15 @@
 #include <Wire.h>         // Include the Wire library for I2C communication
 
 // Define motors and sensor pins
-#define ENA  11           // L298N EN_A motor speed
-#define IN_1  13          // L298N in1 motor direction control
-#define IN_2  12          // L298N in2 motor direction control
-#define buzzerPin  8      // Pin for the buzzer
+#define ENA  11                // L298N EN_A motor speed
+#define IN_1  13               // L298N in1 motor direction control
+#define IN_2  12               // L298N in2 motor direction control
+#define buzzerPin  8           // Pin for the buzzer
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
-#define ENCODER_PIN_A 2  // D2 for encoder
-#define ENCODER_PIN_B 3  // D3 for encoder
-
+#define ENCODER_PIN_A 2        // D2 for encoder
+#define ENCODER_PIN_B 3        // D3 for encoder
+#define outputPin A0           // A0 used to send signal
+#define inputPin A1            // A1 used to read signal
 // Define sensor configuration
 const uint8_t sensorCount = 4;  // Number of distance sensors
 const uint8_t xshutPins[sensorCount] = { 4, 5, 6, 7 };  // XSHUT pins for the VL53L1X sensors
@@ -213,6 +214,19 @@ void BuzzerRobotSpecial() {
   }
 }
 
+// Function to wait until the button is pressed (switch is closed)
+void waitUntil() {
+  // Send a HIGH signal from A0
+  digitalWrite(outputPin, HIGH);
+  
+  // Wait until A1 reads HIGH (switch is pressed)
+  while (digitalRead(inputPin) == LOW) {
+    // Do nothing and keep checking
+  }
+
+  // Once the switch is pressed, continue with the rest of the program
+}
+
 // Setup function
 void setup() {
   Serial.begin(115200);
@@ -224,7 +238,13 @@ void setup() {
   pinMode(IN_1, OUTPUT);
   pinMode(IN_2, OUTPUT);
   pinMode(buzzerPin, OUTPUT);
-
+  
+  // A0 will send the signal, so set it as output
+  pinMode(outputPin, OUTPUT);
+  
+  // A1 will read the signal, so set it as input
+  pinMode(inputPin, INPUT);
+  
   // Initialize Steering Servo
   STEERING.attach(STEERING_SERVO_PIN);
 
@@ -233,6 +253,11 @@ void setup() {
   setupSensors();  // Initialize sensors
   setupEncoder();  // Initialize encoder
 
+  BuzzerRobotStart();  // Play the start sound
+  
+  // Call waitUntil() to wait for the button press
+  waitUntil();
+  
   BuzzerRobotStart();  // Play the start sound
 }
 
