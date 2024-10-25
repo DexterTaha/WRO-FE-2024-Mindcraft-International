@@ -13,14 +13,13 @@
 
 <div align="left">
   <h1>STL File Link:</h1>
-  <p>You can view the 3D model directly from the repository by clicking <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Robot%20Base%20.stl">this link</a>.</p>
+  <p>You can view the 3D model directly from the repository by clicking <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Robot%20Base%20.stl" target="_blank">this link</a>.</p>
 </div>
 
 <div align="left">
   <h1>Onshape File Link:</h1>
-  <p>You can view the 3D model directly from the repository by clicking <a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/3d798daea79d75d88b470c18?renderMode=0&uiState=671bdafd0e6bd205bc48c042">this link</a>.</p>
+  <p>You can view the 3D model directly from the repository by clicking <a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/3d798daea79d75d88b470c18?renderMode=0&uiState=671bdafd0e6bd205bc48c042" target="_blank">this link</a>.</p>
 </div>
-[![Instructions](https://img.shields.io/badge/-Instructions-blue?style=for-the-badge&logo=gear&logoColor=white)](https://wro-association.org/wp-content/uploads/RM-Junior-Full-Instructions-2024.pdf)
 
 <div align="left">
   <h1>Video Printing:</h1>
