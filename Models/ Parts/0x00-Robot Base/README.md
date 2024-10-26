@@ -23,7 +23,12 @@
 
 <div align="left">
   <h1>Video Printing:</h1>
-  <!-- Add video content or a link to the video here -->
+  # My YouTube Video Link
+
+[![Watch the video](https://img.youtube.com/vi/J01qLRWSCVE/maxresdefault.jpg)](https://www.youtube.com/watch?v=J01qLRWSCVE)
+
+Click the image above to watch the video.
+
 </div>
 
 <div align="left">
