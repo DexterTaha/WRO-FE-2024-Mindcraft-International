@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Robot Base</h1>
+  <h1>Back Support Camera</h1>
 </div>
 
 <p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
