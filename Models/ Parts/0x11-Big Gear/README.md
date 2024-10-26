@@ -7,7 +7,7 @@
 <div align="left">
   <h2>Drawing PNG:</h2>
   <p align="center">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Drawing%20Robot%20Base.png" alt="Robot Base Drawing" width="1000">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x11-Big%20Gear/Drawing%20Big%20Gear.png" alt="Robot Base Drawing" width="1000">
   </p>
 </div>
 
