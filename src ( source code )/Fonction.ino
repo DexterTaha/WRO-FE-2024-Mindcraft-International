@@ -214,6 +214,41 @@ void BuzzerRobotSpecial() {
   }
 }
 
+// Function to send data to Raspberry Pi
+void sendDataToPi() {
+  int frontDist = sensors[2].read();
+  int rightDist = sensors[3].read();
+  int leftDist = sensors[1].read();
+  int backDist = sensors[0].read();
+  int gyroZ = analogRead(A2);  // Example reading for gyroscope z-axis (replace if using actual sensor)
+  float encoderSpeed = motorSpeedRPM;
+
+  // Send data as a comma-separated string
+  Serial.print(frontDist); Serial.print(",");
+  Serial.print(rightDist); Serial.print(",");
+  Serial.print(leftDist); Serial.print(",");
+  Serial.print(backDist); Serial.print(",");
+  Serial.print(gyroZ); Serial.print(",");
+  Serial.println(encoderSpeed);
+}
+
+// Function to receive and parse control data from Raspberry Pi
+void receiveDataFromPi() {
+  if (Serial.available() > 0) {
+    String receivedData = Serial.readStringUntil('\n');  // Read incoming data until newline character
+    int delimiterIndex = receivedData.indexOf(',');      // Find comma separator
+
+    if (delimiterIndex > 0) {
+      // Parse speedInput and steeringInput from the received data
+      int speedInput = receivedData.substring(0, delimiterIndex).toInt();
+      int steeringInput = receivedData.substring(delimiterIndex + 1).toInt();
+
+      // Call control function with received inputs
+      controlRobot(speedInput, steeringInput);
+    }
+  }
+}
+
 // Function to wait until the button is pressed (switch is closed)
 void waitUntil() {
   // Send a HIGH signal from A0
@@ -263,5 +298,8 @@ void setup() {
 
 // Loop function
 void loop() {
-
+  sendDataToPi();       // Send sensor and motor data to Raspberry Pi
+  receiveDataFromPi();  // Receive control data from Raspberry Pi
+  
+  delay(100);           // Adjust delay based on communication speed and data requirements
 }
