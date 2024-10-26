@@ -5,34 +5,34 @@
 <p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
 
 <div align="left">
-  <h1>Drawing PNG:</h1>
+  <h2>Drawing PNG:</h2>
   <p align="center">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Drawing%20Robot%20Base.png" alt="Robot Base Drawing" width="1500">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Drawing%20Robot%20Base.png" alt="Robot Base Drawing" width="1000">
   </p>
 </div>
 
 <div align="left">
-  <h1>STL File Link:</h1>
+  <h2>STL File Link:</h2>
   <p>You can view the 3D model directly from the repository by clicking <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Robot%20Base%20.stl" target="_blank">this link</a>.</p>
 </div>
 
 <div align="left">
-  <h1>Onshape File Link:</h1>
-  <p>You can view the 3D model directly from the repository by clicking <a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/3d798daea79d75d88b470c18?renderMode=0&uiState=671bdafd0e6bd205bc48c042" target="_blank">this link</a>.</p>
+  <h2>Onshape File Link:</h2>
+  <p>You can view the 3D model on Onshape by clicking <a href="https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/3d798daea79d75d88b470c18?renderMode=0&uiState=671bdafd0e6bd205bc48c042" target="_blank">this link</a>.</p>
 </div>
 
 <div align="left">
-  <h1>Video Printing:</h1>
-  # My YouTube Video Link
-
-[![Watch the video](https://img.youtube.com/vi/J01qLRWSCVE/maxresdefault.jpg)](https://www.youtube.com/watch?v=J01qLRWSCVE)
-
-Click the image above to watch the video.
-
+  <h2>Video Printing:</h2>
+  <p align="center">
+    <a href="https://www.youtube.com/watch?v=J01qLRWSCVE" target="_blank">
+      <img src="https://img.youtube.com/vi/J01qLRWSCVE/maxresdefault.jpg" alt="Watch the video" width="800">
+    </a>
+  </p>
+  <p>Click the image above to watch the video.</p>
 </div>
 
 <div align="left">
-  <h1>Printing Parameters:</h1>
+  <h2>Printing Parameters:</h2>
 </div>
 
 <!-- Table for printing parameters -->
@@ -40,7 +40,7 @@ Click the image above to watch the video.
   <thead>
     <tr>
       <th>Parameter</th>
-      <th>Variable</th>
+      <th>Value</th>
     </tr>
   </thead>
   <tbody>
@@ -54,7 +54,7 @@ Click the image above to watch the video.
     </tr>
     <tr>
       <td>Infill Density</td>
-      <td>20%</td>
+      <td>20%</</td>
     </tr>
     <tr>
       <td>Print Speed</td>
