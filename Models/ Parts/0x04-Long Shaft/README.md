@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Robot Base</h1>
+  <h1>Long Shaft</h1>
 </div>
 
 <p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
@@ -7,7 +7,7 @@
 <div align="left">
   <h2>Drawing PNG:</h2>
   <p align="center">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x04-Long%20Short%20Shaft/Drawing%20Long%20Short%20Shaft.png" alt="Robot Base Drawing" width="1000">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x04-Long%20Shaft/Drawing%20Long%20Shaft.png" alt="Robot Base Drawing" width="1000">
   </p>
 </div>
 
