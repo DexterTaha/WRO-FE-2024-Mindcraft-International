@@ -82,3 +82,33 @@ Steering System
             </tbody>
 </table>
 
+
+
+Parts 
+====
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                        <tr>
+                                    <td style="text-align: center; vertical-align: middle; width: 25%;"></td> 
+                                    <th style="text-align: center; vertical-align: middle; width: 25%;">Steering System</th>
+                        </tr>
+            </thead>
+            <tbody>
+                        <tr>
+                                    <td style="text-align: center; vertical-align: middle; width: 25%;">
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x00-Robot%20Base" target="_blank">Steering System Assembly</a>
+            </td>
+                                    <td style="text-align: center; vertical-align: middle;">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                    </td>
+                        </tr>
+                        <tr>
+                                    <td style="text-align: center; vertical-align: middle; width: 25%;">Steering System View</td>
+                                    <td style="text-align: center; vertical-align: middle;">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering.png" width="1000" alt="Salman Derdeb">
+                                    </td>
+                        </tr>
+            </tbody>
+</table>
+
