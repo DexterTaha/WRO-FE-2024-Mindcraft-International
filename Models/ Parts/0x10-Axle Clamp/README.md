@@ -13,7 +13,7 @@
 
 <div align="left">
   <h2>STL File Link:</h2>
-  <p>You can view the 3D model directly from the repository by clicking <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x00-Robot%20Base/Robot%20Base%20.stl" target="_blank">this link</a>.</p>
+  <p>You can view the 3D model directly from the repository by clicking <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/%20Parts/0x10-Axle%20Clamp/Axle%20Clamp.stl" target="_blank">this link</a>.</p>
 </div>
 
 <div align="left">
