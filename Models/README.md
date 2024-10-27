@@ -1,4 +1,4 @@
-MINDCRAFT WRO Future Engineers team
+ROBOT Assembly
 ====
 
 <table border="1" style="width: 100%; border-collapse: collapse;">
@@ -30,7 +30,7 @@ MINDCRAFT WRO Future Engineers team
             </tbody>
 </table>
 
-MINDCRAFT WRO Future Engineers team
+Power System
 ====
 
 <table border="1" style="width: 100%; border-collapse: collapse;">
@@ -56,7 +56,7 @@ MINDCRAFT WRO Future Engineers team
             </tbody>
 </table>
 
-MINDCRAFT WRO Future Engineers team
+Steering System
 ====
 
 <table border="1" style="width: 100%; border-collapse: collapse;">
