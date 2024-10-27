@@ -137,10 +137,10 @@ Parts
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft" target="_blank">Front Short Shaft</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft" target="_blank"> Berring Support Front Bottom</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Front%20Short%20Shaft.png" width="1000" alt="Front Short Shaft">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x06-Isometric%20Berring%20Support%20Front%20Bottom%20.png" width="1000" alt=" Berring Support Front Bottom">
                                     </td>
                         </tr>
                         <tr>
