@@ -1,6 +1,9 @@
+import serial
+import time
 import tkinter as tk
 import os
 from tkinter import *
+import threading
 from PIL import ImageTk, Image
 import numpy as np
 import cv2
@@ -8,9 +11,29 @@ from picamera2 import Picamera2  # Import Picamera2
 
 Image.MAX_IMAGE_PIXELS = None
 
+# Set up serial connection (adjust the port and baud rate as needed)
+ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # 
+
 # Function to create and place borders with curved appearance
 def add_rounded_border(frame, radius=10):
     frame.config(highlightbackground="black", highlightthickness=2)
+    
+def read_from_arduino():
+    while True:
+        if ser.in_waiting > 0:
+            line = ser.readline().decode('utf-8').strip()  # Read and decode data
+            data = line.split(",")  # Split comma-separated values
+            
+            if len(data) == 6:  # Ensure the correct number of values
+                front_dist.set(f"F: {data[0]} cm")
+                right_dist.set(f"R: {data[1]} cm")
+                left_dist.set(f"L: {data[2]} cm")
+                back_dist.set(f"B: {data[3]} cm")
+                gyro_z.set(f"Gyro: {data[4]}")
+                speed.set(f"Speed: {data[5]} RPM")
+
+        time.sleep(0.001)  # Adjust delay for reading speed
+
 
 # Initialize the main window
 root = tk.Tk()
@@ -173,6 +196,14 @@ def process_frame():
 # Start the camera and mask processing
 process_frame()
 
+# Create StringVars to hold sensor values
+front_dist = StringVar()
+right_dist = StringVar()
+left_dist = StringVar()
+back_dist = StringVar()
+gyro_z = StringVar()
+speed = StringVar()
+
 
 # --- Gyro Graph Placeholder ---
 gyro_frame = tk.Frame(main_frame, width=100, height=80, bg="white", bd=2, relief="flat")
@@ -181,6 +212,7 @@ gyro_label = tk.Label(gyro_frame, text="Gyro Graph", font=("Helvetica", 12), bg=
 gyro_label.pack(pady=2)
 gyro_canvas = tk.Canvas(gyro_frame, width=100, height=70, bg="#cccccc")
 gyro_canvas.pack(pady=2)
+tk.Label(gyro_canvas, textvariable=gyro_z).pack()
 
 # --- Speed Graph Placeholder ---
 speed_frame = tk.Frame(main_frame, width=100, height=100, bg="white", bd=2, relief="flat")
@@ -189,19 +221,35 @@ speed_label = tk.Label(speed_frame, text="Speed Graph", font=("Helvetica", 12), 
 speed_label.pack(pady=2)
 speed_canvas = tk.Canvas(speed_frame, width=200, height=70, bg="#cccccc")
 speed_canvas.pack(pady=2)
+tk.Label(speed_canvas, textvariable=speed).pack()
 
 main_frame.grid_columnconfigure(1, weight=4)  # Allow the speed frame to expand
+
 # --- Car with Sensors ---
-car_frame = tk.Frame(main_frame, width=100, height=100, bg="white", bd=2, relief="flat")
+car_frame = tk.Frame(main_frame, width=120, height=120, bg="white", bd=2, relief="flat")
 car_frame.grid(row=2, column=4, padx=2, pady=2, sticky="nsew")
+
 car_label = tk.Label(car_frame, text="Car with Sensors", font=("Helvetica", 12), bg="white")
 car_label.pack(pady=2)
-car_canvas = tk.Canvas(car_frame, width=100, height=100, bg="#cccccc")
-car_canvas.create_rectangle(20, 20, 73, 73, outline="black", width=1)
-car_canvas.create_text(50, 15, text="Front: 20", font=("Helvetica", 8))
-car_canvas.create_text(50, 85, text="Back: 30", font=("Helvetica", 8))  # Back sensor added
-car_canvas.create_text(15, 50, text="Left: 10", font=("Helvetica", 8), angle=90)
-car_canvas.create_text(85, 50, text="Right: 15", font=("Helvetica", 8), angle=270)
+
+car_canvas = tk.Canvas(car_frame, width=120, height=120, bg="#cccccc")
+car_canvas.create_rectangle(15, 10, 85, 90, outline="black", width=1)  # Rectangle with extended height
+
+# Labels for front and back sensors (Top and Bottom)
+front_label = tk.Label(car_canvas, textvariable=front_dist, font=("Helvetica", 8), bg="#cccccc")
+back_label = tk.Label(car_canvas, textvariable=back_dist, font=("Helvetica", 8), bg="#cccccc")
+car_canvas.create_window(50, 5, window=front_label)   # Front sensor (top)
+car_canvas.create_window(50, 95, window=back_label)   # Back sensor (bottom)
+
+# Labels for left and right sensors (rotated using grid to position near edges)
+left_label = tk.Label(car_canvas, textvariable=left_dist, font=("Helvetica", 8), bg="#cccccc")
+right_label = tk.Label(car_canvas, textvariable=right_dist, font=("Helvetica", 8), bg="#cccccc")
+
+## Position left and right labels close to the car rectangle with added spacing
+car_canvas.create_window(0, 50, window=left_label, anchor="w")    # Left sensor (slightly shifted left)
+car_canvas.create_window(110, 50, window=right_label, anchor="e")  # Right sensor (slightly shifted right)
+
+
 car_canvas.pack(pady=2)
 
 # --- Control Panel ---
@@ -298,7 +346,10 @@ logo_image_label.pack(pady=2)
 # Keep a reference to the logo image to prevent it from being garbage collected
 logo_image_label.image = logo_image
 
+# Start the Arduino reading thread
+sensor_thread = threading.Thread(target=read_from_arduino)
+sensor_thread.daemon = True  # This makes sure the thread will close when the main program exits
+sensor_thread.start()
 
 # Run the main loop
 root.mainloop()
-
