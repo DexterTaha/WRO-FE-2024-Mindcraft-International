@@ -97,50 +97,50 @@ Parts
             <tbody>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x00-Robot%20Base" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x00-Robot%20Base" target="_blank">Robot Base</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x00-Isometric%20Robot%20Base.png" width="1000" alt="Robot Base">
                                     </td>
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x01-Second%20Layer" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x01-Second%20Layer" target="_blank">Second Layer</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x01-Isometric%20Second%20Layer%20.png" width="1000" alt="Second Layer ">
                                     </td>
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x02-Third%20Layer" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x02-Third%20Layer" target="_blank">Third Layer</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x02-Isometric%20Third%20Layer.png" width="1000" alt="Third Layer">
                                     </td>
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x03-Short%20Shaft" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x03-Short%20Shaft" target="_blank">Short Shaft</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x03-Isometric%20Short%20Shaft.png" width="1000" alt="Short Shaft">
                                     </td>
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x04-Long%20Shaft" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x04-Long%20Shaft" target="_blank">Long Shaft</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x04-Isometric%20Long%20Shaft.png" width="1000" alt="Long Shaft">
                                     </td>
                         </tr>
                         <tr>
                                     <td style="text-align: center; vertical-align: middle; width: 25%;">
-                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft" target="_blank">Steering System Assembly</a>
+                                    <a href="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft" target="_blank">Front Short Shaft</a>
             </td>
                                     <td style="text-align: center; vertical-align: middle;">
-                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png" width="1000" alt="Salman Derdeb">
+                                        <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Front%20Short%20Shaft.png" width="1000" alt="Front Short Shaft">
                                     </td>
                         </tr>
                         <tr>
