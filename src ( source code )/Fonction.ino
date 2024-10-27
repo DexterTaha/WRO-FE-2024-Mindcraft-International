@@ -10,8 +10,8 @@
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 #define ENCODER_PIN_A 2        // D2 for encoder
 #define ENCODER_PIN_B 3        // D3 for encoder
-#define outputPin A0           // A0 used to send signal
-#define inputPin A1            // A1 used to read signal
+#define switchPin  A0          // Switch pin
+
 // Define sensor configuration
 const uint8_t sensorCount = 4;  // Number of distance sensors
 const uint8_t xshutPins[sensorCount] = { 4, 5, 6, 7 };  // XSHUT pins for the VL53L1X sensors
@@ -179,6 +179,12 @@ void StopMotors() {
   analogWrite(ENA, 0);  // Stop motor by setting speed to 0
 }
 
+void HoldMotors() {
+  digitalWrite(IN_1, HIGH);
+  digitalWrite(IN_2, HIGH);
+  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
+}
+
 // Existing buzzer functions
 void BuzzerRobotStart() {
   for (int i = 0; i < 3; i++) {
@@ -249,17 +255,15 @@ void receiveDataFromPi() {
   }
 }
 
-// Function to wait until the button is pressed (switch is closed)
-void waitUntil() {
-  // Send a HIGH signal from A0
-  digitalWrite(outputPin, HIGH);
-  
-  // Wait until A1 reads HIGH (switch is pressed)
-  while (digitalRead(inputPin) == LOW) {
-    // Do nothing and keep checking
-  }
+bool isSwitchOn(int value) {
+  return value > 1000;  // Return true if analog reading is close to 1023 (switch on)
+}
 
-  // Once the switch is pressed, continue with the rest of the program
+void act(){
+  sendDataToPi();       // Send sensor and motor data to Raspberry Pi
+  receiveDataFromPi();  // Receive control data from Raspberry Pi
+  
+  delay(10);           // Delay based on communication speed and data requirement
 }
 
 // Setup function
@@ -274,14 +278,9 @@ void setup() {
   pinMode(IN_2, OUTPUT);
   pinMode(buzzerPin, OUTPUT);
   
-  // A0 will send the signal, so set it as output
-  pinMode(outputPin, OUTPUT);
-  
-  // A1 will read the signal, so set it as input
-  pinMode(inputPin, INPUT);
-  
-  // Initialize Steering Servo
-  STEERING.attach(STEERING_SERVO_PIN);
+  pinMode(buzzerPin, OUTPUT);  // Set buzzer pin as output
+
+  STEERING.attach(STEERING_SERVO_PIN);   // Initialize Steering Servo
 
   StopMotors();  // Ensure motors are stopped initially
 
@@ -289,17 +288,17 @@ void setup() {
   setupEncoder();  // Initialize encoder
 
   BuzzerRobotStart();  // Play the start sound
-  
-  // Call waitUntil() to wait for the button press
-  waitUntil();
-  
-  BuzzerRobotStart();  // Play the start sound
+
 }
 
 // Loop function
 void loop() {
-  sendDataToPi();       // Send sensor and motor data to Raspberry Pi
-  receiveDataFromPi();  // Receive control data from Raspberry Pi
-  
-  delay(100);           // Adjust delay based on communication speed and data requirements
+  int switchValue = analogRead(switchPin); // Read the analog value of the switch
+
+  if (isSwitchOn(switchValue)) { // Check if switch is on
+    act();
+  } else {
+    HoldMotors();
+    BuzzerRobotError();
+  }
 }
