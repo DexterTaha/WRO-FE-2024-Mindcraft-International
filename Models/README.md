@@ -1,6 +1,7 @@
 <table border="1" style="width: 100%; border-collapse: collapse;">
             <thead>
                         <tr>
+                                    <td style="text-align: center; vertical-align: middle; width: 25%;"></td> 
                                     <th style="text-align: center; vertical-align: middle; width: 25%;">ROBOT</th>
                         </tr>
             </thead>
