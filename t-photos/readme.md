@@ -154,5 +154,11 @@
                 </ul>
             </td>
         </tr>
+        <tr>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">🐈‍⬛ GITHUB Profil</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">[Salmane Derdeb](https://github.com/salmane-derdeb)</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">[Taha TAIDI LAAMIRI](https://github.com/DexterTaha)</th>
+            <th style="text-align: center; vertical-align: middle; width: 25%;">[Mortada TAIDI LAAMIRI](https://github.com/taidimortada)</th>
+        </tr>
     </tbody>
 </table>
