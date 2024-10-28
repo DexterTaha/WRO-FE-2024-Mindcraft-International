@@ -6,7 +6,7 @@ MINDCRAFT WRO Future Engineers team
 </p>
 
 
-This repository provides information and knowledge regarding the ongoing progress, evolution, and development of our self-driving robot vehicle, which was created and coded by us, [Salmane Derdeb](https://github.com/salmane-derdeb),  [Taha TAIDI LAAMIRI](https://github.com/DexterTaha) and [Mortada TAIDI LAAMIRI]() as participants in the Future Engineers 2024 division of the World Robot Olympiad (WRO).
+This repository provides information and knowledge regarding the ongoing progress, evolution, and development of our self-driving robot vehicle, which was created and coded by us, [Salmane Derdeb](https://github.com/salmane-derdeb),  [Taha TAIDI LAAMIRI](https://github.com/DexterTaha) and [Mortada TAIDI LAAMIRI](https://github.com/taidimortada) as participants in the Future Engineers 2024 division of the World Robot Olympiad (WRO).
 
 ## World Robot Olympiad (WRO)
 <p align="center">
