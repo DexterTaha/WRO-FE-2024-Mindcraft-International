@@ -165,16 +165,14 @@ python main.py
 ### Map Display Section
 ![Map Display]() | ![Score Calculation]()
 
-## Images Side by Side
+<div style="display: flex; justify-content: space-between;">
 
-<div style="display: flex; justify-content: space-around;">
-
-  <div style="margin: 10px;">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/randomizer.png" alt="Description of Image 1" style="width: 300px;">
+  <div style="flex: 1; text-align: left; margin-right: 10px;">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/randomizer.png" alt="Description of Image 1" style="width: 100%; max-width: 300px;">
   </div>
 
-  <div style="margin: 10px;">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/calculator.png" alt="Description of Image 2" style="width: 300px;">
+  <div style="flex: 1; text-align: right; margin-left: 10px;">
+    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/calculator.png" alt="Description of Image 2" style="width: 100%; max-width: 300px;">
   </div>
 
 </div>
