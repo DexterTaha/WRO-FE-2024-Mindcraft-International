@@ -73,8 +73,9 @@ We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts
 
 Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)
 
-*Images of the 3D printing process:*
-![3D Printed Robot Parts](link-to-your-image-3)
+### 3D Printed Robot Parts:
+![3D Printed Robot Parts](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Robot%20Creality%20Silcer.png)
+
 ![Creality K1 Max in Action](link-to-your-image-4)
 
 #### Why We Didn't Choose Laser Cutting or CNC Engraving
