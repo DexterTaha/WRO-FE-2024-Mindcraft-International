@@ -190,23 +190,18 @@ The randomization works by selecting a random item from arrays of predefined obs
 **Chrono Functionality**\
 The chrono (timer) functionality is implemented with two main functions: `startTimer()` and `stopTimer()`. The `startTimer()` function sets an interval that increments a seconds counter every second, updating the display accordingly. The `stopTimer()` function clears this interval, effectively stopping the timer.
 
-Step 4: Testing the Application
-Open the Application: After setting up the files, open index.html in your web browser to see the application in action.
+### Step 4: Testing the Application
+1. **Open the Application**: After setting up the files, open `index.html` in your web browser to see the application in action.
+2. **Interact with the Application**: Click the "Randomize Map" button to generate a new map layout, enter data in the input fields, calculate the score, and start/stop the timer to ensure everything works as expected.
 
-Interact with the Application: Click the "Randomize Map" button to generate a new map layout, enter data in the input fields, calculate the score, and start/stop the timer to ensure everything works as expected.
-
-Code Explanation
-HTML (index.html)
+## Code Explanation
+## HTML (index.html)
 The HTML file contains the basic structure for the application. It includes buttons for randomizing the map, calculating the score, and managing the timer, as well as input fields for user interaction.
-
-CSS (style.css)
+## CSS (style.css)
 The CSS file provides styles for the application. You can adjust colors, fonts, and layout to customize the appearance further.
-
-JavaScript (script.js)
+## JavaScript (script.js)
 The JavaScript file handles the logic for randomization, score calculation, and timer functionality. It listens for user actions and performs the corresponding operations, updating the displayed results.
 
-Contributing
-Contributions are welcome! If you have ideas for features or improvements, please fork the repository and submit a pull request. When contributing, please
 
 
 
