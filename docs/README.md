@@ -54,16 +54,14 @@ To run this project, ensure you have a modern web browser installed, such as:
    git clone https://github.com/YOUR_USERNAME/WRO-FE-2024-Mindcraft-International.git
    ```
 
-2 - **Open the Project**: Navigate to the project folder and open the index.html file in your web browser.
+2 - **Open the Project**: Navigate to the project folder and open the `index.html` file in your web browser.
 
 ## Creating the Project
 ### Step 1: Setting Up the HTML Structure
-Create an index.html File: Start by creating an HTML file. This will be the main structure of your web application.
+1. **Create an index.html File**: Start by creating an HTML file. This will be the main structure of your web application.
+2. **Add Basic HTML Structure**: Inside the `index.html`, include the basic HTML template and a title for your application. Use the following template:
 
-Add Basic HTML Structure: Inside the index.html, include the basic HTML template and a title for your application. Use the following template:
-
-html
-Copy code
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,13 +91,13 @@ Copy code
     <script src="script.js"></script>
 </body>
 </html>
-Step 2: Styling the Application
-Create a style.css File: Create a CSS file in the project folder. This will control the visual appearance of your application.
+```
 
-Add Basic Styles: Use the following CSS code to provide basic styling for your layout. Customize as needed:
+### Step 2: Styling the Application
+1. **Create a style.css File**: Create a CSS file in the project folder. This will control the visual appearance of your application.
+2. **Add Basic Styles**: Use the following CSS code to provide basic styling for your layout. Customize as needed:
 
-css
-Copy code
+```css
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -122,13 +120,13 @@ input {
     margin: 10px;
     width: 50px;
 }
-Step 3: Adding JavaScript Logic
-Create a script.js File: Create a JavaScript file in your project folder. This will contain the logic for randomization, map drawing, and timer functionality.
+```
 
-Add Event Listeners: Use the following code to handle user interactions such as randomizing the map, calculating the score, and starting/stopping the timer:
+### Step 3: Adding JavaScript Logic
+1. **Create a script.js File**: Create a JavaScript file in your project folder. This will contain the logic for randomization, map drawing, and timer functionality.
+2. **Add Event Listeners**: Use the following code to handle user interactions such as randomizing the map, calculating the score, and starting/stopping the timer:
 
-javascript
-Copy code
+```javascript
 let timerInterval;
 let seconds = 0;
 
@@ -183,11 +181,12 @@ function startTimer() {
 function stopTimer() {
     clearInterval(timerInterval);
 }
-Drawing the Map
-In the generateRandomMap() function, we create a simple representation of the map by randomly selecting obstacles and scoring zones. The function constructs a string that includes random combinations of these elements, which is then displayed in the mapDisplay div.
+```
 
-Randomization Logic
-The randomization works by selecting a random item from arrays of predefined obstacles and scoring zones. The code uses Math.random() and Math.floor() to ensure that a valid index is chosen each time a random element is requested.
+**Drawing the Map**
+In the `generateRandomMap()` function, we create a simple representation of the map by randomly selecting obstacles and scoring zones. The function constructs a string that includes random combinations of these elements, which is then displayed in the `mapDisplay` div.
+**Randomization Logic**
+The randomization works by selecting a random item from arrays of predefined obstacles and scoring zones. The code uses `Math.random()` and `Math.floor()` to ensure that a valid index is chosen each time a random element is requested.
 
 Chrono Functionality
 The chrono (timer) functionality is implemented with two main functions: startTimer() and stopTimer(). The startTimer() function sets an interval that increments a seconds counter every second, updating the display accordingly. The stopTimer() function clears this interval, effectively stopping the timer.
