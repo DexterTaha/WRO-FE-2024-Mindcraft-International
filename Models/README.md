@@ -1,6 +1,3 @@
-
-
-
 # README Table of Contents
 1. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
    - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
@@ -38,10 +35,12 @@ You can learn more about Onshape here: [Onshape Website](https://www.onshape.com
 
 Here are some screenshots of our robot's 3D model in Onshape:
 
-*Video of Onshape demonstration:*
-![Watch the video](https://github.com/user-attachments/assets/06358587-5d99-4ab1-9217-43a24bd0d578)
-*Screenshots of our robot's 3D model in Onshape:*
-![Robot Chassis Design]([link-to-your-image-1](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png))
+### Video of Onshape demonstration:
+[![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/06358587-5d99-4ab1-9217-43a24bd0d578)
+
+### Screenshots of our robot's 3D model in Onshape:
+![Robot Chassis Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png)
+
 
 #### Other CAD Options Considered
 - **Fusion 360**: Hybrid cloud solution, limited collaboration, and High costs.
