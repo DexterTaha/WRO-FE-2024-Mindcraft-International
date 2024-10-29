@@ -18,7 +18,10 @@
          1.2.1. [Why We Chose 3D Printing](#Why_We_Chose_3D_Printing)  
          1.2.2. [Printer of Choice: Creality K1 Max](#Printer_of_Choice_Creality_K1_Max)  
          1.2.3. [Why We Didn't Choose Laser Cutting or CNC Engraving](#Why_We_Didn't_Choose_Laser_Cutting_or_CNC_Engraving)  
-   1.3. [Robot](#ROBOT)  
+   1.3. [Robot](#ROBOT)
+         1.1.1. [ROBOT Assembly](#ROBOT_Assembly)  
+         1.1.2. [Power System](#Power_System)  
+         1.1.3. [Steering System](#Steering_System)
    1.4. [Robot Parts Details](#Robot_Parts_Details)  
    1.5. [Conclusion](#Conclusion)  
    
