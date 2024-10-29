@@ -114,4 +114,4 @@ For our **WRO Future Engineers robot project**, using **Onshape for CAD modeling
 
 Thank you for following our journey as we design a cutting-edge robot to represent **Morocco** on the global stage at the **World Robot Olympiad**!
 
-For more information and to follow our progress, check out our [Project link]([link-to-your-wiki](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International)).
+For more information and to follow our progress, check out our [Project link](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International).
