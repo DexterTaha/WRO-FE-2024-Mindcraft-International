@@ -31,57 +31,60 @@ This section covers the **CAD modeling and manufacturing process** behind the de
 To design and develop the robot, we used **Onshape**, a cloud-based CAD tool that allows for efficient collaboration and design flexibility. We had various options for CAD software, such as **Fusion 360** and **CATIA**, but we ultimately chose Onshape for several reasons:
 
 #### 1.1.1. Why We Chose Onshape
-- **Cloud-Based**: Operates entirely in the cloud for collaborative design.
-- **Collaborative Design**: Multiple team members can work simultaneously.
-- **Free for Educational Use**: Accessible for students without extra costs.
-- **No Hardware Constraints**: Browser-based, requires no high-end hardware.
+- **Cloud-Based**: Onshape operates entirely in the cloud, allowing our team to collaborate from any location. This was essential since team members were working from different places.
+- **Collaborative Design**: Multiple team members can work on the same design simultaneously, ensuring faster iterations and feedback loops.
+- **Free for Educational Use**: Being students representing Morocco, Onshape’s free educational plan provided us with full access to powerful design tools without extra costs.
+- **No Hardware Constraints**: Onshape runs in a web browser, meaning we didn’t need high-end computers or complex software installations. This allowed everyone on the team to contribute regardless of their hardware limitations.
+You can learn more about Onshape here: [Onshape Website](https://www.onshape.com/)
 
-*Learn more about Onshape here: [Onshape Website](https://www.onshape.com/)*
+Here are some screenshots of our robot's 3D model in Onshape:
 
 *Screenshots of our robot's 3D model in Onshape:*
 ![Robot Chassis Design](link-to-your-image-1)
 ![Assembly Process in Onshape](link-to-your-image-2)
 
 #### 1.1.2. Other CAD Options Considered
-- **Fusion 360**: Hybrid cloud solution, limited collaboration, and costs.
+- **Fusion 360**: Hybrid cloud solution, limited collaboration, and High costs.
 - **CATIA**: Too complex and expensive for our needs.
 
 #### 1.1.3. Onshape Advantages
-- **Real-Time Collaboration**: Accelerates the design process.
-- **Accessible Anywhere**: Work from any device with internet.
-- **Powerful CAD Tools**: Advanced features for complex designs.
-- **Version Control**: Track changes and revert to previous versions.
+- **Real-Time Collaboration**: Multiple people can work on the design at the same time, accelerating the design process.
+- **Accessible Anywhere**: Since it’s cloud-based, we could work on designs from any device with an internet connection.
+- **Powerful CAD Tools**: Despite being browser-based, Onshape provides all the advanced CAD features we needed to design complex mechanical components for our robot.
+- **Version Control**: We could easily track changes, revert to previous versions, and work on multiple iterations without losing progress.
 
 ### 1.2. 3D Printing
 
-Once our designs were finalized, we needed to choose a manufacturing method. We considered several techniques like **laser cutting**, **CNC engraving**, and **3D printing**, ultimately deciding on **3D printing** for its flexibility.
+Once our designs were finalized in Onshape, we needed to choose a manufacturing method. We considered several techniques like **laser cutting**, **CNC engraving**, and **3D printing**, but we ultimately decided to use **3D printing** due to its flexibility and ability to produce complex parts for our robot.
 
 #### 1.2.1. Why We Chose 3D Printing
-- **Complex Geometries**: Enables custom shapes that are hard to achieve otherwise.
-- **Rapid Prototyping**: Allows quick printing and testing of parts.
-- **Cost-Effective**: More affordable for prototypes.
-- **Less Material Waste**: Only uses necessary material.
+- **Complex Geometries**: 3D printing allowed us to create complex and custom geometries that are difficult to achieve with laser cutting or CNC engraving.
+- **Rapid Prototyping**: We could quickly print and test various parts, allowing us to make fast iterations on our robot design.
+- **Cost-Effective**: 3D printing is often more affordable for one-off parts or prototypes compared to CNC engraving or laser cutting, which require more setup and material waste.
+- **Less Material Waste**: 3D printing only uses the material needed for the part, reducing waste and lowering costs.
 
 #### 1.2.2. Printer of Choice: Creality K1 Max
-- **Large Build Volume**: Prints large components in one go.
-- **High Speed**: Fast print speeds maintain project pace.
-- **Precision**: Ensures mechanical parts fit perfectly.
-- **Ease of Use**: Ideal for students and quick prototyping.
+We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts. This printer has several key advantages:
 
-*Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)*
+- **Large Build Volume**: The K1 Max provides a large build area, allowing us to print large components of the robot in a single go without having to divide them into smaller parts.
+- **High Speed**: With fast print speeds, we were able to print our parts in a short amount of time, keeping up with the rapid pace of our project.
+- **Precision**: The Creality K1 Max delivers high accuracy and detail in its prints, ensuring that our robot's mechanical parts fit together perfectly.
+- **Ease of Use**: The printer is easy to set up and use, even for students, making it an ideal choice for quick prototyping.
+
+Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)
 
 *Images of the 3D printing process:*
 ![3D Printed Robot Parts](link-to-your-image-3)
 ![Creality K1 Max in Action](link-to-your-image-4)
 
 #### 1.2.3. Why We Didn't Choose Laser Cutting or CNC Engraving
-- **Laser Cutting**: Limited to flat parts, not suitable for 3D shapes.
-- **CNC Engraving**: Higher setup time and costs, more waste.
+- **Laser Cutting**: While laser cutting is great for creating flat, 2D parts, it is limited in producing complex 3D shapes and detailed mechanical components.
+- **CNC Engraving**: CNC is excellent for metal and wood parts but involves more setup time and higher costs, especially for custom parts. It also generates more material waste, making it less ideal for our project, which requires many iterations.
 
 #### 1.2.4. Advantages of 3D Printing
-- **Customization**: Easy to modify designs and print new parts quickly.
-- **Quick Turnaround**: Enables rapid prototyping and testing.
-- **Sustainable**: Less material waste aligns with our sustainability goals.
+- **Customization**: We can easily make modifications to the design and print new parts within hours.
+- **Quick Turnaround**: 3D printing enabled us to quickly prototype, test, and refine parts, significantly reducing development time.
+- **Sustainable**: With 3D printing, there’s less waste of materials, aligning with our goal of sustainability for this project.
 
 ### 1.3. ROBOT
 #### 1.3.1. ROBOT Assembly
@@ -114,4 +117,7 @@ Once our designs were finalized, we needed to choose a manufacturing method. We 
 | 0x05- Robot Feet                    | ![Robot Feet](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Robot%20Feet.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Robot%20Feet) |
 
 ### 1.5. Conclusion
-In conclusion, our team successfully designed and manufactured a competitive robot for the WRO Future Engineers competition. By leveraging modern tools like Onshape for CAD modeling and the Creality K1 Max for 3D printing, we were able to iterate quickly and adapt our design based on testing feedback. This project not only honed our technical skills but also fostered collaboration and innovative thinking among our team members.
+For our **WRO Future Engineers robot project**, using **Onshape for CAD modeling** and the **Creality K1 Max for 3D printing** has been a critical part of our design and manufacturing process. These tools allowed us to work collaboratively, iterate quickly, and produce complex parts efficiently, all while staying within the constraints of an educational project.
+Thank you for following our journey as we design a cutting-edge robot to represent **Morocco** on the global stage at the **World Robot Olympiad**!
+
+For more information and to follow our progress, check out our [Project link](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International).
