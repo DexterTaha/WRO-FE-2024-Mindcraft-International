@@ -4,15 +4,15 @@
    - [Context](#context)
      - [Management](#management)
        - [Further Details](#further-details)
-2. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot-models)
-   - [3D CAD Modeling - Onshape](#3d-cad-modeling-onshape)
+2. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
+   - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
      - [Why We Chose Onshape](#why-we-chose-onshape)
      - [Other CAD Options Considered](#other-cad-options-considered)
      - [Onshape Advantages](#onshape-advantages)
    - [3D Printing](#3d-printing)
      - [Why We Chose 3D Printing](#why-we-chose-3d-printing)
      - [Printer of Choice: Creality K1 Max](#printer-of-choice-creality-k1-max)
-     - [Why We Didn't Choose Laser Cutting or CNC Engraving](#why-we-didn't-choose-laser-cutting-or-cnc-engraving)
+     - [Why We Didn't Choose Laser Cutting or CNC Engraving](#why-we-didnt-choose-laser-cutting-or-cnc-engraving)
    - [Robot](#robot)
      - [ROBOT Assembly](#robot-assembly)
      - [Power System](#power-system)
@@ -21,6 +21,7 @@
    - [Conclusion](#conclusion)
 
 ---
+
 
 ## 1. WRO Future Engineers Robot - Models (Design & Manufacturing Process + 3D Files)
 
