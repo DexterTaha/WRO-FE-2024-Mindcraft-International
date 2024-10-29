@@ -201,7 +201,8 @@ The HTML file contains the basic structure for the application. It includes butt
 The CSS file provides styles for the application. You can adjust colors, fonts, and layout to customize the appearance further.
 ## JavaScript (script.js)
 The JavaScript file handles the logic for randomization, score calculation, and timer functionality. It listens for user actions and performs the corresponding operations, updating the displayed results.
----
+
+***
 
 ## Website Preview
 ![website preview](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/0fd944c4e0d555fc80da8dd42af44a5308ee50ac/images/randomizer_page.jpeg)
