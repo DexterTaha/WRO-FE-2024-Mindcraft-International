@@ -4,7 +4,7 @@
    - [Context](#context)
      - [Management](#management)
        - [Further Details](#further-details)
-2. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot-models)
+2. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
    - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
      - [Why We Chose Onshape](#why-we-chose-onshape)
      - [Other CAD Options Considered](#other-cad-options-considered)
@@ -23,7 +23,7 @@
 ---
 
 
-## 1. WRO Future Engineers Robot - Models
+## WRO Future Engineers Robot - Models
 
 This section covers the **CAD modeling and manufacturing process** behind the development of our robot for the **WRO Future Engineers competition**, explaining our design tools, choices, and manufacturing techniques. The following highlights the key decisions in our process and why they benefit the project.
 
