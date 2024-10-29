@@ -162,24 +162,9 @@ python main.py
 - __Pillow__ for handling image rendering in Tkinter.
 - __NumPy__ for matrix operations.
 
-### Map Display Section
-![Map Display]() | ![Score Calculation]()
 
-<div style="display: flex; justify-content: space-between;">
-
-  <div style="flex: 1; text-align: left; margin-right: 10px;">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/randomizer.png" alt="Description of Image 1" style="width: 100%; max-width: 300px;">
-  </div>
-
-  <div style="flex: 1; text-align: right; margin-left: 10px;">
-    <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/calculator.png" alt="Description of Image 2" style="width: 100%; max-width: 300px;">
-  </div>
-
-</div>
-
-
-### Chrono Timer Section
-![Chrono Timer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/chrono.png)
+## Website Preview
+![website preview](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/0fd944c4e0d555fc80da8dd42af44a5308ee50ac/images/randomizer_page.jpeg)
 
 
 
