@@ -76,7 +76,7 @@ Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www
 ### 3D Printed Robot Parts:
 ![3D Printed Robot Parts](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Robot%20Creality%20Silcer.png)
 
-#### Video of Onshape demonstration
+#### Video of printing a parts
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/6be9707f-b833-463a-9889-6819d3ff1817)
 
 
