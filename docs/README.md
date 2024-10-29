@@ -203,6 +203,10 @@ The CSS file provides styles for the application. You can adjust colors, fonts, 
 The JavaScript file handles the logic for randomization, score calculation, and timer functionality. It listens for user actions and performs the corresponding operations, updating the displayed results.
 
 
+### Images
+
+
+
 
 
 
