@@ -16,3 +16,23 @@ This project provides an interactive web-based tool for the WRO Future Engineers
 ## Files:
 - `index.html` - Main HTML structure and randomizer display.
 - `styl.css` - Styling for layout and interactive elements.
+
+```latex
+ \begin{titlepage}      
+        \begin{center}
+            \includegraphics[width=3cm]{figures/contours-mindcraft-logo.png}\\[1.5cm]            {\LARGE Mindcraft Team\\[0.5cm]
+            WRO Future Engineers Competition}\\[2cm]
+			%{\color{blue} \rule{\textwidth}{1pt}}
+			
+			% -------------------------------
+			% You need to edit some details here
+			% -------------------------------  
+            \linespread{1.2}\huge {
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                %TODO: 1 TITLE of Your PROJECT 
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                % change the following line                
+                Optimized Robotic Object Detection and Localization for WRO Future Engineers
+            
+            }
+```
