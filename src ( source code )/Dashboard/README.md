@@ -163,10 +163,7 @@ python main.py
 - __NumPy__ for matrix operations.
 
 ### Map Display Section
-![Map Display](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/randomizer.png)
-
-### Score Calculation Section
-![Score Calculation](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/calculator.png)
+![Map Display](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/randomizer.png) | ![Score Calculation](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/calculator.png)
 
 ### Chrono Timer Section
 ![Chrono Timer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/be11468641e9ae62ee19dc5921432c51489fcfb5/images/chrono.png)
