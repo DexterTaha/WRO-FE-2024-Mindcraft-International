@@ -70,7 +70,8 @@ Here are some images of the 3D printing process:
 
 ---
 
-## 1.3 ROBOT Assembly
+## 1.3. ROBOT
+### 1.3.1. ROBOT Assembly
 
 |                   | ROBOT                                                         |
 |-------------------|---------------------------------------------------------------|
@@ -78,58 +79,21 @@ Here are some images of the 3D printing process:
 | Robot Assembly     | ![Robot Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Parts%20Robot.png) |
 | Robot View         | ![Robot View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Views%20Robot.png) |
 
-## Power System
+### 1.3.2. Power System
 
 |                   | Power System                                                 |
 |-------------------|-------------------------------------------------------------|
 | Power System Assembly | ![Power System Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Power%20Animation.png) |
 | Power System View     | ![Power System View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Power.png) |
 
-## Steering System
+### 1.3.3. Steering System
 
 |                   | Steering System                                             |
 |-------------------|-----------------------------------------------------------|
 | Steering System Assembly | ![Steering System Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png) |
 | Steering System View     | ![Steering System View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering.png) |
 
-## Parts
-
-|                   | Robot Parts                                                |
-|-------------------|-----------------------------------------------------------|
-| [Robot Base](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x00-Robot%20Base) | ![Robot Base](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x00-Isometric%20Robot%20Base.png) |
-| [Second Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x01-Second%20Layer) | ![Second Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x01-Isometric%20Second%20Layer%20.png) |
-| [Third Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x02-Third%20Layer) | ![Third Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x02-Isometric%20Third%20Layer.png) |
-| [Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x03-Short%20Shaft) | ![Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x03-Isometric%20Short%20Shaft.png) |
-| [Long Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x04-Long%20Shaft) | ![Long Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x04-Isometric%20Long%20Shaft.png) |
-| [Front Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft) | ![Front Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Front%20Short%20Shaft.png) |
-| [Berring Support Front Bottom](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x06-Berring%20Support%20Front%20Bottom) | ![Berring Support Front Bottom](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x06-Isometric%20Berring%20Support%20Front%20Bottom%20.png) |
-| [Berring Support Front Top](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x07-Berring%20Support%20Front%20Top) | ![Berring Support Front Top](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x07-Isometric%20Berring%20Support%20Front%20Top.png) |
-| [Steering Rack](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x08-Steering%20Rack) | ![Steering Rack](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x08-Isometric%20Steering%20Rack.png) |
-| [Steering Connector](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x09-Steering%20Conector) | ![Steering Connector](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x09-Isometric%20Steering%20Conector.png) |
-
-## Conclusion
-
-For our **WRO Future Engineers robot project**, using **Onshape for CAD modeling** and the **Creality K1 Max for 3D printing** has been a critical part of our design and manufacturing process. These tools allowed us to work collaboratively, iterate quickly, and produce complex parts efficiently, all while staying within the constraints of an educational project.
-
-Thank you for following our journey as we design a cutting-edge robot to represent **Morocco** on the global stage at the **World Robot Olympiad**!
-
-For more information and to follow our progress, check out our [Project Wiki](link-to-your-wiki).
-
-
-
-# Robot Assembly Overview
-
-## Contents
-- **Assembly Views**
-  - Visual representation of the robot assembly.
-  
-- **Assembly Parts**
-  - Detailed list of all parts used in the robot assembly.
-  
-- **Assembly Dimensions**
-  - Specifications of the robot's dimensions.
-
-## Robot Parts Details
+## 1.4. Robot Parts Details
 
 | Part Name                           | Image                     | 3D File Link                        |
 |-------------------------------------|---------------------------|-------------------------------------|
@@ -144,11 +108,10 @@ For more information and to follow our progress, check out our [Project Wiki](li
 | 0x08- Steering Rack                  | ![Steering Rack](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x08-Isometric%20Steering%20Rack.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x08-Steering%20Rack) |
 | 0x09- Steering Connector             | ![Steering Connector](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x09-Isometric%20Steering%20Conector.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x09-Steering%20Conector) |
 
+## 1.5. Conclusion
 
-## Assembly Dimensions
-- **Total Height:** XX cm
-- **Total Width:** XX cm
-- **Total Depth:** XX cm
+For our **WRO Future Engineers robot project**, using **Onshape for CAD modeling** and the **Creality K1 Max for 3D printing** has been a critical part of our design and manufacturing process. These tools allowed us to work collaboratively, iterate quickly, and produce complex parts efficiently, all while staying within the constraints of an educational project.
 
+Thank you for following our journey as we design a cutting-edge robot to represent **Morocco** on the global stage at the **World Robot Olympiad**!
 
-
+For more information and to follow our progress, check out our [Project link]([link-to-your-wiki](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International)).
