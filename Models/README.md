@@ -1,10 +1,5 @@
 # README Table of Contents
-
-1. [Overview](#overview)
-   - [Context](#context)
-     - [Management](#management)
-       - [Further Details](#further-details)
-2. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
+1. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
    - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
      - [Why We Chose Onshape](#why-we-chose-onshape)
      - [Other CAD Options Considered](#other-cad-options-considered)
