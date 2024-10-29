@@ -37,6 +37,7 @@ Here are some screenshots of our robot's 3D model in Onshape:
 
 *Screenshots of our robot's 3D model in Onshape:*
 ![Robot Chassis Design](link-to-your-image-1)
+![Robot Chassis Design]([link-to-your-image-1](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20demonstration.mp4))
 ![Assembly Process in Onshape](link-to-your-image-2)
 
 #### Other CAD Options Considered
