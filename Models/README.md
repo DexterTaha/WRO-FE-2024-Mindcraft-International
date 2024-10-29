@@ -3,7 +3,7 @@
    - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
      - [Why We Chose Onshape](#why-we-chose-onshape)
      - [Video of Onshape demonstration](#Video-of-Onshape-demonstration)
-     - [Screenshots of our robot's 3D model in Onshape](#Screenshots-of-our-robot's-3D-model-in-Onshape)
+     - [Screenshots of our robot 3D model in Onshape](#Screenshots-of-our-robot-3D-model-in-Onshape)
      - [Other CAD Options Considered](#other-cad-options-considered)
      - [Onshape Advantages](#onshape-advantages)
    - [3D Printing](#3d-printing)
@@ -40,7 +40,7 @@ Here are some screenshots of our robot's 3D model in Onshape:
 #### Video of Onshape demonstration
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/06358587-5d99-4ab1-9217-43a24bd0d578)
 
-#### Screenshots of our robot's 3D model in Onshape
+#### Screenshots of our robot 3D model in Onshape
 ![Robot Chassis Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png)
 
 #### Other CAD Options Considered
