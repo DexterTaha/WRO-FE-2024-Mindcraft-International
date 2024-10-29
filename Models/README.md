@@ -23,7 +23,7 @@
 ---
 
 
-## WRO Future Engineers Robot - Models (Design & Manufacturing Process + 3D Files)
+## WRO Future Engineers Robot - Models
 
 This section covers the **CAD modeling and manufacturing process** behind the development of our robot for the **WRO Future Engineers competition**, explaining our design tools, choices, and manufacturing techniques. The following highlights the key decisions in our process and why they benefit the project.
 
