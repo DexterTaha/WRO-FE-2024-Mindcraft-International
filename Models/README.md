@@ -1,6 +1,8 @@
+## READ.ME table of content
+
 1. [eklnklrnklegn](#project-overview)
 
-   1.1. [,dmvnm,vdn](#competition-context)
+   1.1. [dmvnmvdn](#competition-context)
    
    1.1.1. [Team Management](#team-management)
 
