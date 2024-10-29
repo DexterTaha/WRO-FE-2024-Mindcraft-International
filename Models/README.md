@@ -1,13 +1,30 @@
 ## READ.ME table of content
 
-1. [eklnklrnklegn](#project-overview)
+1. [eklnklrnklegn](#overview)
 
-   1.1. [dmvnmvdn](#competition-context)
+   1.1. [dmvnmvdn](#context)
    
-   1.1.1. [Team Management](#team-management)
+   1.1.1. [Management](#management)
 
-   1.1.1.1. [Strengths and Limitations of Our Vehicle](strengths-and-limitations-of-our-vehicle)
+   1.1.1.1. [sjbhegvij](sdjfhbgeskj)
 
+
+1. [WRO Future Engineers Robot - Models](#WRO_Future_Engineers_Robot)
+   1.1. [3D CAD Modeling - Onshape](#3D_CAD_Modeling_Onshape)   
+      1.1.1. [Why We Chose Onshape](#Why_We_Chose_Onshape)
+      1.1.2. [Other CAD Options Considered:](#Other_CAD_Options_Considered:)
+      1.1.3. [Onshape Advantages](#Onshape_Advantages)
+   1.2. [3D Printing](#3D_Printing)
+      1.2.1. [Why We Chose 3D Printing](#Why_We_Chose_3D_Printing)
+      1.2.2. [Printer of Choice: Creality K1 Max](#Printer_of_Choice:_Creality_K1_Max)
+      1.2.3. [Why We Didn't Choose Laser Cutting or CNC Engraving](#Why_We_Didn't_Choose_Laser_Cutting_or_CNC_Engraving)
+   1.3. [ROBOT](#ROBOT)
+   1.4. [Robot Parts Details](#Robot_Parts_Details)
+   1.5. [Conclusion](#Conclusion)
+   
+
+
+   1.1.1.1. [sjbhegvij](sdjfhbgeskj)
 
 
 # 1. WRO Future Engineers Robot - Models (Design & Manufacturing Process + 3D files)
@@ -33,17 +50,17 @@ Here are some screenshots of our robot's 3D model in Onshape:
 
 ![Assembly Process in Onshape](link-to-your-image-2)
 
-#### 1.1.1.1. Other CAD Options Considered:
+### 1.1.2. Other CAD Options Considered:
 - **Fusion 360**: A hybrid cloud CAD/CAM solution, but not fully cloud-based, limiting real-time collaboration. It also has paid plans that weren't ideal for our educational project.
 - **CATIA**: An industrial-grade CAD tool, but too complex and expensive for our needs, especially since our project required fast prototyping and team collaboration.
 
-### 1.1.2. Onshape Advantages
+### 1.1.3. Onshape Advantages
 - **Real-Time Collaboration**: Multiple people can work on the design at the same time, accelerating the design process.
 - **Accessible Anywhere**: Since it’s cloud-based, we could work on designs from any device with an internet connection.
 - **Powerful CAD Tools**: Despite being browser-based, Onshape provides all the advanced CAD features we needed to design complex mechanical components for our robot.
 - **Version Control**: We could easily track changes, revert to previous versions, and work on multiple iterations without losing progress.
 
-## 1.2. 3D Printing with Creality K1 Max
+## 1.2. 3D Printing
 
 Once our designs were finalized in Onshape, we needed to choose a manufacturing method. We considered several techniques like **laser cutting**, **CNC engraving**, and **3D printing**, but we ultimately decided to use **3D printing** due to its flexibility and ability to produce complex parts for our robot.
 
