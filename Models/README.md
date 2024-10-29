@@ -43,7 +43,6 @@ Here are some screenshots of our robot's 3D model in Onshape:
 #### Screenshots of our robot's 3D model in Onshape
 ![Robot Chassis Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png)
 
-
 #### Other CAD Options Considered
 - **Fusion 360**: Hybrid cloud solution, limited collaboration, and High costs.
 - **CATIA**: Too complex and expensive for our needs.
