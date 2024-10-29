@@ -183,11 +183,11 @@ function stopTimer() {
 }
 ```
 
-**Drawing the Map**\
+**Drawing the Map**\\
 In the `generateRandomMap()` function, we create a simple representation of the map by randomly selecting obstacles and scoring zones. The function constructs a string that includes random combinations of these elements, which is then displayed in the `mapDisplay` div.
-**Randomization Logic**\
+**Randomization Logic**\\
 The randomization works by selecting a random item from arrays of predefined obstacles and scoring zones. The code uses `Math.random()` and `Math.floor()` to ensure that a valid index is chosen each time a random element is requested.
-**Chrono Functionality**\
+**Chrono Functionality**\\
 The chrono (timer) functionality is implemented with two main functions: `startTimer()` and `stopTimer()`. The `startTimer()` function sets an interval that increments a seconds counter every second, updating the display accordingly. The `stopTimer()` function clears this interval, effectively stopping the timer.
 
 ### Step 4: Testing the Application
