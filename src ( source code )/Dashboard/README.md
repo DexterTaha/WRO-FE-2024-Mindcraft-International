@@ -163,9 +163,6 @@ python main.py
 - __NumPy__ for matrix operations.
 
 
-## Website Preview
-![website preview](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/0fd944c4e0d555fc80da8dd42af44a5308ee50ac/images/randomizer_page.jpeg)
-
 
 
 
