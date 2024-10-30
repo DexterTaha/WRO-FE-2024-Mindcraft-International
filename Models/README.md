@@ -79,7 +79,7 @@ Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www
 ![3D Printed Robot Parts](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Robot%20Creality%20Silcer.png)
 
 ##### Video of printing a parts
-[![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/6be9707f-b833-463a-9889-6819d3ff1817)
+[![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/a05f5144-69ca-4180-a867-5e9cf91d8875)
 
 
 #### Why We Didn't Choose Laser Cutting or CNC Engraving
