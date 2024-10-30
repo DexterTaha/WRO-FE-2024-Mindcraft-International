@@ -9,6 +9,8 @@
    - [3D Printing](#3d-printing)
      - [Why We Chose 3D Printing](#why-we-chose-3d-printing)
      - [Printer of Choice: Creality K1 Max](#printer-of-choice-creality-k1-max)
+     - [3D Printed Robot Parts:](#3D-Printed-Robot-Parts)
+     - [Video of printing a parts](#Video-of-printing-a-parts)
      - [Why We Didn't Choose Laser Cutting or CNC Engraving](#why-we-didnt-choose-laser-cutting-or-cnc-engraving)
    - [Robot](#robot)
      - [ROBOT Assembly](#robot-assembly)
@@ -73,10 +75,10 @@ We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts
 
 Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)
 
-### 3D Printed Robot Parts:
+#### 3D Printed Robot Parts
 ![3D Printed Robot Parts](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Robot%20Creality%20Silcer.png)
 
-#### Video of printing a parts
+##### Video of printing a parts
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/6be9707f-b833-463a-9889-6819d3ff1817)
 
 
