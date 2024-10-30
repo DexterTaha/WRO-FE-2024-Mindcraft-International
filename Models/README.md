@@ -40,7 +40,7 @@ You can learn more about Onshape here: [Onshape Website](https://www.onshape.com
 Here are some screenshots of our robot's 3D model in Onshape:
 
 #### Video of Onshape demonstration
-[![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/8084e2c8-017b-43f4-8663-e213fd60739f)
+[![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/29b17698-be3b-4aab-8515-d6c245b77802)
 
 #### Screenshots of our robot 3D model in Onshape
 ![Robot Chassis Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png)
