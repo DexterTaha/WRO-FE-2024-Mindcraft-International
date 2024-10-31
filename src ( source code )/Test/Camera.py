@@ -2,92 +2,110 @@ from picamera2 import Picamera2
 import cv2
 import numpy as np
 
-# Initialize Picamera2
-picam2 = Picamera2(camera_num=0)
-config = picam2.create_preview_configuration()
-picam2.configure(config)
-picam2.start()
+def initialize_camera():
+    """Initialize and configure the Picamera2."""
+    picam2 = Picamera2(camera_num=0)
+    config = picam2.create_preview_configuration()
+    picam2.configure(config)
+    picam2.start()
+    return picam2
 
-# Define your color range for red detection
-lower_red = np.array([97, 170, 70])  # Adjust these values for red
-upper_red = np.array([180, 255, 255])  # Adjust these values for red
-#lower_red = np.array([113, 70, 32])   # Adjust these values for red
-#upper_red = np.array([154, 255, 160])  # Adjust these values for red
-
-# Define your color range for green detection
-#lower_green = np.array([25, 250, 40])   # Adjust these values for green
-#upper_green = np.array([77, 255, 255])    # Adjust these values for green
-lower_green = np.array([27, 155, 3])  # Adjust these values for green
-upper_green = np.array([75, 255, 255])  # Adjust these values for green
-
-while True:
-    # Capture frame
+def capture_frame(picam2, flip=False, resize_shape=(640, 480)):
+    """Capture a frame from the camera, resize, and optionally flip it vertically."""
     frame = picam2.capture_array()
-    frame = cv2.resize(frame, (640, 480))
+    frame = cv2.resize(frame, resize_shape)
+    if flip:
+        frame = cv2.flip(frame, 0)  # Flip vertically
+        frame = cv2.flip(frame, 1)  # Flip horizontally
+    return frame
 
-    # Flip the frame vertically
-    frame = cv2.flip(frame, 0)
+def convert_to_hsv(frame):
+    """Convert the frame from BGR to HSV color space."""
+    return cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # Convert the frame to HSV
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+def create_color_masks(hsv_frame, lower_red, upper_red, lower_green, upper_green):
+    """Create color masks for red and green in the HSV frame."""
+    mask_red = cv2.inRange(hsv_frame, lower_red, upper_red)
+    mask_green = cv2.inRange(hsv_frame, lower_green, upper_green)
+    return mask_red, mask_green
 
-    # Create masks for red and green detection
-    mask_red = cv2.inRange(hsv, lower_red, upper_red)
-    mask_green = cv2.inRange(hsv, lower_green, upper_green)
+def find_and_store_contours(mask, color_label, rectangle_color, label_color):
+    """Find and store contours along with their areas for both close and far objects."""
+    contours_info = []
+    cnts, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
-    # Combine the masks
-    mask_combined = cv2.bitwise_or(mask_red, mask_green)
-
-    # Find contours in the combined mask
-    cnts, _ = cv2.findContours(mask_combined, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-
-    # Initialize variables to store the nearest object
-    nearest_contour = None
-    max_area = 0
-    detected_color_nearest = None
-
-    # Loop through contours and process all objects
     for c in cnts:
         area = cv2.contourArea(c)
-        if area > 600:  # Only process contours larger than a threshold
-            x, y, w, h = cv2.boundingRect(c)
+        if area > 200:  # Lower threshold to capture smaller, distant objects
+            contours_info.append({
+                'contour': c,
+                'area': area,
+                'color_label': color_label,
+                'rectangle_color': rectangle_color,
+                'label_color': label_color
+            })
+    return contours_info
 
-            # Check which color was detected
-            if cv2.countNonZero(mask_red[y:y + h, x:x + w]) > 0:
-                detected_color = "RED"
-                color_rectangle = (0, 0, 255)  # Red rectangle
-                label_color = (0, 0, 255)  # Red label text
-            elif cv2.countNonZero(mask_green[y:y + h, x:x + w]) > 0:
-                detected_color = "GREEN"
-                color_rectangle = (0, 255, 0)  # Green rectangle
-                label_color = (0, 255, 0)  # Green label text
-            else:
-                detected_color = "UNKNOWN"
-                color_rectangle = (255, 255, 255)  # White rectangle for unknown
+def draw_and_label_contours(frame, contours_info):
+    """Draw and label the contours in the frame based on sorted order by size."""
+    contours_info = sorted(contours_info, key=lambda x: x['area'], reverse=True)
 
-            # Draw rectangles with appropriate color and label each object
-            cv2.rectangle(frame, (x, y), (x + w, y + h), color_rectangle, 2)
-            cv2.putText(frame, detected_color, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, label_color, 2)
+    for i, info in enumerate(contours_info):
+        c = info['contour']
+        color_label = info['color_label']
+        rectangle_color = info['rectangle_color']
+        label_color = info['label_color']
 
-            # Track the nearest object based on the largest contour area
-            if area > max_area:
-                max_area = area
-                nearest_contour = c
-                detected_color_nearest = detected_color
+        x, y, w, h = cv2.boundingRect(c)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), rectangle_color, 2)
+        cv2.putText(frame, f"{color_label} {i + 1}", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, label_color, 2)
 
-    # Display the color of the nearest object
-    if nearest_contour is not None:
-        x, y, w, h = cv2.boundingRect(nearest_contour)
-        cv2.putText(frame, f"{detected_color_nearest} - NEAREST", (x, y - 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
-        print("Detected nearest object color:", detected_color_nearest)
+       # Calculate centroid
+        M = cv2.moments(c)
+        if M['m00'] != 0:
+            cX = int(M['m10'] / M['m00'])
+            cY = int(M['m01'] / M['m00'])
+            # Draw the centroid
+            cv2.circle(frame, (cX, cY), 5, rectangle_color, -1)
+            # Draw the vertical line at the Y-coordinate
+            cv2.line(frame, (cX, 0), (cX, frame.shape[0]), rectangle_color, 2)
+            # Display the Y-coordinate
+            cv2.putText(frame, f"Y: {cY}", (cX + 10, cY - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, rectangle_color, 2)
 
-    # Show the resulting frame
-    cv2.imshow("FRAME", frame)
+    return contours_info
 
-    # Exit the loop when 'ESC' is pressed
-    if cv2.waitKey(1) & 0xFF == 27:
-        break
+def main():
+    # Color ranges for red and green (can be adjusted dynamically)
+    lower_red = np.array([97, 170, 70])
+    upper_red = np.array([180, 255, 255])
+    lower_green = np.array([27, 155, 3])
+    upper_green = np.array([75, 255, 255])
 
-# Cleanup
-picam2.stop()
-cv2.destroyAllWindows()
+    picam2 = initialize_camera()
+
+    while True:
+        frame = capture_frame(picam2, flip=True)  # Vertical flip applied here
+        hsv = convert_to_hsv(frame)
+
+        mask_red, mask_green = create_color_masks(hsv, lower_red, upper_red, lower_green, upper_green)
+
+        # Store red and green contours with their information
+        red_contours_info = find_and_store_contours(mask_red, "RED", (0, 0, 255), (0, 0, 255))
+        green_contours_info = find_and_store_contours(mask_green, "GREEN", (0, 255, 0), (0, 255, 0))
+
+        # Combine red and green contours into one list
+        all_contours_info = red_contours_info + green_contours_info
+
+        # Draw and label contours with distance order
+        draw_and_label_contours(frame, all_contours_info)
+
+        cv2.imshow("FRAME", frame)
+
+        if cv2.waitKey(1) & 0xFF == 27:  # Exit on 'ESC'
+            break
+
+    picam2.stop()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
