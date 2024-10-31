@@ -8,9 +8,10 @@ This section covers the **CAD modeling and manufacturing process** behind the de
    - [Key Requirements](#key-requirements)
    - [Study and Planning](#study-and-planning)
 2. [Initial Robot Design and Iterations](#initial-robot-design-and-iterations)
-   - [First Version: Oversized LEGO Robot](#first-version-oversized-lego-robot)
+   - [National Competition: LEGO Robot](#national-competition-lego-robot)
+   - [First Version: Oversized DIY Robot](#first-version-oversized-diy-robot)
    - [Second Version: Lack of Differential System](#second-version-lack-of-differential-system)
-   - [Third Version: Hardware Upgrades](#third-version-hardware-upgrades)
+   - [Third Version: Final Optimized Robot](#third-version-final-optimized-robot)
 3. [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
    - [Why We Chose Onshape](#why-we-chose-onshape)
    - [Video of Onshape Demonstration](#video-of-onshape-demonstration)
@@ -61,48 +62,63 @@ We meticulously planned the robot's design to meet these requirements. By priori
 
 Our journey began with initial prototypes and several iterations to refine our robot design. Throughout this process, we learned valuable lessons that informed our final design.
 
-### First Version: Oversized LEGO Robot
+### National Competition: LEGO Robot
 
-Our first robot prototype was constructed using **LEGO components** due to their ease of use and availability. However, this version had several mistakes:
+We participated in the **national competition** with a robot constructed using **LEGO components** due to their ease of use and availability. However, this version had several issues:
 
-- **Size Issue**: The robot was **too big**, exceeding the size limitations we had set in our design considerations.
-- **Structural Limitations**: LEGO components did not provide the **sturdiness** required for the competition's demands.
-- **Limited Customization**: We found it challenging to integrate custom parts or systems within the LEGO framework.
+- **Size and Speed Issues**: The robot was **too big and slow**, exceeding the size limitations we had set and lacking the required speed.
+- **Obstacle Challenges**: We couldn't manage to successfully complete the **obstacle challenge and parking**, which are critical parts of the competition.
+- **Structural Limitations**: LEGO components did not provide the **sturdiness** and customization required for the competition's demands.
 
-*Image of First LEGO Robot:*
+*Image of LEGO Robot Used in National Competition:*
 
-![First LEGO Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/First_LEGO_Robot.png)
+![LEGO Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/LEGO_Robot_National.png)
+
+### First Version: Oversized DIY Robot
+
+After qualifying for the international stage, we decided to build a **100% DIY robot**, making all the mechanics and body ourselves while purchasing only the electronics. Our first DIY version had the following issues:
+
+- **Size Issue**: The robot was **still too big**, not meeting our compact size requirement of fitting within a 20cm cube.
+- **Weight Problems**: The larger size contributed to increased weight, affecting speed and maneuverability.
+- **Inefficient Design**: The oversized structure made it difficult to navigate the course effectively.
+
+*Image of First DIY Robot Version:*
+
+![First DIY Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/First_DIY_Robot.png)
 
 ### Second Version: Lack of Differential System
 
-In the second iteration, we attempted to reduce the robot's size and improve its structure. However, we encountered new issues:
+In the second iteration of our DIY robot, we attempted to reduce the size and weight but encountered new challenges:
 
-- **No Differential System**: The robot **lacked a differential system**, which made turning difficult and inefficient.
-- **Maneuverability Problems**: Without the ability to turn easily, the robot could not navigate the course effectively.
-- **Continued Stability Concerns**: While improvements were made, the robot still did not meet our stability requirements.
+- **No Differential System**: The robot **lacked a differential system**, making turning difficult and inefficient.
+- **Poor Maneuverability**: The robot would **drift a lot** and took **150cm** to complete a full turn, which is unacceptable for tight course navigation.
+- **Inefficient Turning Radius**: The large turning radius prevented the robot from handling obstacles and precise movements required in the competition.
 
-*Image of Second Robot Version:*
+*Image of Second DIY Robot Version:*
 
-![Second Robot Version](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Second_Robot_Version.png)
+![Second DIY Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Second_DIY_Robot.png)
 
-### Third Version: Hardware Upgrades
+### Third Version: Final Optimized Robot
 
-For the third version, we made significant changes to address previous shortcomings:
+For the third version, we made significant changes to address the previous shortcomings:
 
-- **Introduction of Differential System**: We incorporated a **differential system** to allow smooth and efficient turning.
-- **Hardware Change**: We switched from using the **NVIDIA Jetson Nano** to the **Raspberry Pi 4 Model B**. This change provided:
+- **Incorporation of Differential System**: We added a **differential system** to allow smooth and efficient turning.
+- **Hardware Upgrade**: We switched from using the **NVIDIA Jetson Nano** to the **Raspberry Pi 4 Model B**, which provided:
 
-  - **Improved Compatibility**: The Raspberry Pi 4 B offered better compatibility with our control systems and peripherals.
+  - **Improved Compatibility**: Better compatibility with our control systems and peripherals.
   - **Weight Reduction**: The Raspberry Pi is **lighter**, contributing to our goal of a lightweight robot.
-  - **Energy Efficiency**: Lower power consumption helped in managing the robot's energy requirements.
+  - **Energy Efficiency**: Lower power consumption helped manage the robot's energy requirements.
 
-- **Enhanced Stability and Size**: We further refined the robot's size to fit within the **20cm cube** constraint and lowered the center of gravity for better stability.
+- **Optimized Design**: The robot now fits within the **20cm cube** constraint, has a **low center of gravity**, and features **equal weight distribution**.
+- **Enhanced Maneuverability**: With the differential system, the robot can turn efficiently within the required **40cm outside circle**.
+- **Sturdy and Modular Assembly**: All parts are assembled using screws, nuts, and zip ties—no glue—making the robot sturdy yet easy to modify and improve.
+- **Safety Features**: The battery is placed in a safe location to avoid damage from bumps or accidents, and critical components are protected from potential battery issues.
 
-*Image of Third Robot Version:*
+*Image of Third DIY Robot Version:*
 
-![Third Robot Version](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Third_Robot_Version.png)
+![Third DIY Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Third_DIY_Robot.png)
 
-These iterations were crucial in developing a robot that meets all our design considerations. The lessons learned from each version guided us toward a more efficient and competition-ready design.
+This final version solved all the problems encountered in previous iterations, resulting in a robot that is compact, efficient, and competition-ready.
 
 ## 3D CAD Modeling - Onshape
 
