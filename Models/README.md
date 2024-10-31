@@ -57,11 +57,10 @@ Here are some screenshots of our robot's 3D model in Onshape:
 - **Version Control**: We could easily track changes, revert to previous versions, and work on multiple iterations without losing progress.
 
 #### Learning Onshape
-
 We learned how to use Onshape through resources from the official Onshape website and a helpful playlist on YouTube.
 
 - [Onshape Official Website](https://www.onshape.com/learn)
-- [Onshape YouTube Playlist](https://www.youtube.com/playlist?list=PLDQaRcbiSnqFMu5I3lfpj_kZZJ2abtv7Y)
+- [Onshape YouTube Playlist](https://youtube.com/playlist?list=PL4FdDkwWXT9p3IaT11JjJcnwnFWiHJuco&si=v0Z2kmiZvLGKHOFY)
 
 ### 3D Printing
 
