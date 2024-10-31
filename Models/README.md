@@ -1,78 +1,162 @@
-# README Table of Contents
-1. [WRO Future Engineers Robot - Models](#wro-future-engineers-robot---models)
-   - [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
-     - [Why We Chose Onshape](#why-we-chose-onshape)
-     - [Video of Onshape demonstration](#Video-of-Onshape-demonstration)
-     - [Screenshots of our robot 3D model in Onshape](#Screenshots-of-our-robot-3D-model-in-Onshape)
-     - [Other CAD Options Considered](#other-cad-options-considered)
-     - [Onshape Advantages](#onshape-advantages)
-     - [Learning Onshape](#Learning_Onshape)
-   - [3D Printing](#3d-printing)
-     - [Why We Chose 3D Printing](#why-we-chose-3d-printing)
-     - [Printer of Choice: Creality K1 Max](#printer-of-choice-creality-k1-max)
-     - [3D Printed Robot Parts:](#3D-Printed-Robot-Parts)
-     - [Video of printing a parts](#Video-of-printing-a-parts)
-     - [Why We Didn't Choose Laser Cutting or CNC Engraving](#why-we-didnt-choose-laser-cutting-or-cnc-engraving)
-   - [Robot](#robot)
-     - [ROBOT Assembly](#robot-assembly)
-     - [Power System](#power-system)
-     - [Steering System](#steering-system)
-   - [Robot Parts Details](#robot-parts-details)
-   - [Conclusion](#conclusion)
-
----
-
-
-## WRO Future Engineers Robot - Models 
+# WRO Future Engineers Robot - Models
 
 This section covers the **CAD modeling and manufacturing process** behind the development of our robot for the **WRO Future Engineers competition**, explaining our design tools, choices, and manufacturing techniques. The following highlights the key decisions in our process and why they benefit the project.
 
-### 3D CAD Modeling - Onshape
+## Table of Contents
+
+1. [Design Considerations Before CAD Modeling](#design-considerations-before-cad-modeling)
+   - [Key Requirements](#key-requirements)
+   - [Study and Planning](#study-and-planning)
+2. [Initial Robot Design and Iterations](#initial-robot-design-and-iterations)
+   - [First Version: Oversized LEGO Robot](#first-version-oversized-lego-robot)
+   - [Second Version: Lack of Differential System](#second-version-lack-of-differential-system)
+   - [Third Version: Hardware Upgrades](#third-version-hardware-upgrades)
+3. [3D CAD Modeling - Onshape](#3d-cad-modeling---onshape)
+   - [Why We Chose Onshape](#why-we-chose-onshape)
+   - [Video of Onshape Demonstration](#video-of-onshape-demonstration)
+   - [Screenshots of Our Robot 3D Model in Onshape](#screenshots-of-our-robot-3d-model-in-onshape)
+   - [Other CAD Options Considered](#other-cad-options-considered)
+   - [Onshape Advantages](#onshape-advantages)
+   - [Learning Onshape](#learning-onshape)
+4. [3D Printing](#3d-printing)
+   - [Why We Chose 3D Printing](#why-we-chose-3d-printing)
+   - [Printer of Choice: Creality K1 Max](#printer-of-choice-creality-k1-max)
+   - [3D Printed Robot Parts](#3d-printed-robot-parts)
+   - [Video of Printing a Part](#video-of-printing-a-part)
+   - [Why We Didn't Choose Laser Cutting or CNC Engraving](#why-we-didnt-choose-laser-cutting-or-cnc-engraving)
+5. [Robot](#robot)
+   - [Robot Assembly](#robot-assembly)
+   - [Power System](#power-system)
+   - [Steering System](#steering-system)
+6. [Robot Parts Details](#robot-parts-details)
+7. [Conclusion](#conclusion)
+
+---
+
+## Design Considerations Before CAD Modeling
+
+Before we began the CAD modeling process, we conducted a thorough study to establish the key requirements and considerations for our robot design. Our primary goal was to create a robot that is efficient, reliable, and optimized for the competition's challenges. The following points outline the main factors we considered:
+
+### Key Requirements
+
+- **Compact Size**: Our strategy required the robot to be smaller than a **20cm cube** to navigate efficiently through the competition environment.
+- **Turning Radius**: The robot must be able to turn within an outside circle of maximum **40cm**, enabling it to maneuver in tight spaces.
+- **Stability**: A **low center of gravity** was essential to ensure the robot's stability during movement and operations.
+- **Weight Distribution**: **Equal weight distribution** across the robot prevents tipping and improves handling.
+- **Traction**: High **friction on traction wheels** was necessary to prevent slipping and to provide better control.
+- **Assembly Method**: All robot parts should be assembled using **screws**, **nuts**, and **zip ties**—**no glue**—to allow for easy modifications and repairs.
+- **Ease of Modification**: The robot should be **sturdy yet easy to modify** and improve as needed.
+- **Lightweight Design**: Keeping the robot as **lightweight as possible** enhances speed and reduces energy consumption.
+- **Differential System**: Incorporating a **differential system** allows the robot to turn easily and smoothly.
+- **Battery Safety**: The battery should be placed in a **safe location** to avoid damage from bumps or accidents, and to prevent hazards if the battery fails.
+- **Component Safety**: Critical components should be **protected from potential battery issues**, such as leaks or explosions.
+- **Ease of Reassembly**: The robot should be **easy to rebuild**, with parts designed to assemble in only **one way** to minimize errors.
+- **Availability of Parts**: All parts should be **commonly available** in most markets to allow other teams to rebuild or service the robot if needed.
+
+### Study and Planning
+
+We meticulously planned the robot's design to meet these requirements. By prioritizing a compact and stable structure, we ensured that the robot could navigate the competition course effectively. The decision to use common assembly methods and readily available parts not only facilitated our building process but also made our design accessible to others.
+
+## Initial Robot Design and Iterations
+
+Our journey began with initial prototypes and several iterations to refine our robot design. Throughout this process, we learned valuable lessons that informed our final design.
+
+### First Version: Oversized LEGO Robot
+
+Our first robot prototype was constructed using **LEGO components** due to their ease of use and availability. However, this version had several mistakes:
+
+- **Size Issue**: The robot was **too big**, exceeding the size limitations we had set in our design considerations.
+- **Structural Limitations**: LEGO components did not provide the **sturdiness** required for the competition's demands.
+- **Limited Customization**: We found it challenging to integrate custom parts or systems within the LEGO framework.
+
+*Image of First LEGO Robot:*
+
+![First LEGO Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/First_LEGO_Robot.png)
+
+### Second Version: Lack of Differential System
+
+In the second iteration, we attempted to reduce the robot's size and improve its structure. However, we encountered new issues:
+
+- **No Differential System**: The robot **lacked a differential system**, which made turning difficult and inefficient.
+- **Maneuverability Problems**: Without the ability to turn easily, the robot could not navigate the course effectively.
+- **Continued Stability Concerns**: While improvements were made, the robot still did not meet our stability requirements.
+
+*Image of Second Robot Version:*
+
+![Second Robot Version](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Second_Robot_Version.png)
+
+### Third Version: Hardware Upgrades
+
+For the third version, we made significant changes to address previous shortcomings:
+
+- **Introduction of Differential System**: We incorporated a **differential system** to allow smooth and efficient turning.
+- **Hardware Change**: We switched from using the **NVIDIA Jetson Nano** to the **Raspberry Pi 4 Model B**. This change provided:
+
+  - **Improved Compatibility**: The Raspberry Pi 4 B offered better compatibility with our control systems and peripherals.
+  - **Weight Reduction**: The Raspberry Pi is **lighter**, contributing to our goal of a lightweight robot.
+  - **Energy Efficiency**: Lower power consumption helped in managing the robot's energy requirements.
+
+- **Enhanced Stability and Size**: We further refined the robot's size to fit within the **20cm cube** constraint and lowered the center of gravity for better stability.
+
+*Image of Third Robot Version:*
+
+![Third Robot Version](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Third_Robot_Version.png)
+
+These iterations were crucial in developing a robot that meets all our design considerations. The lessons learned from each version guided us toward a more efficient and competition-ready design.
+
+## 3D CAD Modeling - Onshape
 
 To design and develop the robot, we used **Onshape**, a cloud-based CAD tool that allows for efficient collaboration and design flexibility. We had various options for CAD software, such as **Fusion 360** and **CATIA**, but we ultimately chose Onshape for several reasons:
 
-#### Why We Chose Onshape
+### Why We Chose Onshape
+
 - **Cloud-Based**: Onshape operates entirely in the cloud, allowing our team to collaborate from any location. This was essential since team members were working from different places.
 - **Collaborative Design**: Multiple team members can work on the same design simultaneously, ensuring faster iterations and feedback loops.
 - **Free for Educational Use**: Being students representing Morocco, Onshape’s free educational plan provided us with full access to powerful design tools without extra costs.
 - **No Hardware Constraints**: Onshape runs in a web browser, meaning we didn’t need high-end computers or complex software installations. This allowed everyone on the team to contribute regardless of their hardware limitations.
+
 You can learn more about Onshape here: [Onshape Website](https://www.onshape.com/)
 
-Here are some screenshots of our robot's 3D model in Onshape:
+### Video of Onshape Demonstration
 
-#### Video of Onshape demonstration
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/29b17698-be3b-4aab-8515-d6c245b77802)
 
-#### Screenshots of our robot 3D model in Onshape
+### Screenshots of Our Robot 3D Model in Onshape
+
 ![Robot Chassis Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Onshape%20robot%20CAD.png)
 
-#### Other CAD Options Considered
-- **Fusion 360**: Hybrid cloud solution, limited collaboration, and High costs.
+### Other CAD Options Considered
+
+- **Fusion 360**: Hybrid cloud solution, limited collaboration, and high costs.
 - **CATIA**: Too complex and expensive for our needs.
 
-#### Onshape Advantages
+### Onshape Advantages
+
 - **Real-Time Collaboration**: Multiple people can work on the design at the same time, accelerating the design process.
 - **Accessible Anywhere**: Since it’s cloud-based, we could work on designs from any device with an internet connection.
 - **Powerful CAD Tools**: Despite being browser-based, Onshape provides all the advanced CAD features we needed to design complex mechanical components for our robot.
 - **Version Control**: We could easily track changes, revert to previous versions, and work on multiple iterations without losing progress.
 
-#### Learning Onshape
+### Learning Onshape
+
 We learned how to use Onshape through resources from the official Onshape website and a helpful playlist on YouTube.
 
 - [Onshape Official Website](https://www.onshape.com/learn)
 - [Onshape YouTube Playlist](https://youtube.com/playlist?list=PL4FdDkwWXT9p3IaT11JjJcnwnFWiHJuco&si=v0Z2kmiZvLGKHOFY)
 
-### 3D Printing
+## 3D Printing
 
 Once our designs were finalized in Onshape, we needed to choose a manufacturing method. We considered several techniques like **laser cutting**, **CNC engraving**, and **3D printing**, but we ultimately decided to use **3D printing** due to its flexibility and ability to produce complex parts for our robot.
 
-#### Why We Chose 3D Printing
+### Why We Chose 3D Printing
+
 - **Complex Geometries**: 3D printing allowed us to create complex and custom geometries that are difficult to achieve with laser cutting or CNC engraving.
 - **Rapid Prototyping**: We could quickly print and test various parts, allowing us to make fast iterations on our robot design.
 - **Cost-Effective**: 3D printing is often more affordable for one-off parts or prototypes compared to CNC engraving or laser cutting, which require more setup and material waste.
 - **Less Material Waste**: 3D printing only uses the material needed for the part, reducing waste and lowering costs.
 
-#### Printer of Choice: Creality K1 Max
+### Printer of Choice: Creality K1 Max
+
 We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts. This printer has several key advantages:
 
 - **Large Build Volume**: The K1 Max provides a large build area, allowing us to print large components of the robot in a single go without having to divide them into smaller parts.
@@ -82,67 +166,76 @@ We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts
 
 Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)
 
-#### 3D Printed Robot Parts
+### 3D Printed Robot Parts
+
 ![3D Printed Robot Parts](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Robot%20Creality%20Silcer.png)
 
-##### Video of printing a parts
+### Video of Printing a Part
+
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/a05f5144-69ca-4180-a867-5e9cf91d8875)
 
 *This video was made by us while printing the robot base of our robot.*
 
+### Why We Didn't Choose Laser Cutting or CNC Engraving
 
-#### Why We Didn't Choose Laser Cutting or CNC Engraving
 - **Laser Cutting**: While laser cutting is great for creating flat, 2D parts, it is limited in producing complex 3D shapes and detailed mechanical components.
 - **CNC Engraving**: CNC is excellent for metal and wood parts but involves more setup time and higher costs, especially for custom parts. It also generates more material waste, making it less ideal for our project, which requires many iterations.
 
-#### Advantages of 3D Printing
+### Advantages of 3D Printing
+
 - **Customization**: We can easily make modifications to the design and print new parts within hours.
 - **Quick Turnaround**: 3D printing enabled us to quickly prototype, test, and refine parts, significantly reducing development time.
 - **Sustainable**: With 3D printing, there’s less waste of materials, aligning with our goal of sustainability for this project.
 
-### ROBOT
-#### ROBOT Assembly
-|                   | ROBOT                                                         |
-|-------------------|---------------------------------------------------------------|
-| Robot Dimensions   | ![Robot Dimensions](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Dimensions%20Robot.png) |
-| Robot Assembly     | ![Robot Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Parts%20Robot.png) |
-| Robot View         | ![Robot View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Views%20Robot.png) |
+## Robot
 
-#### Power System
+### Robot Assembly
+
+|                   | Robot                                                         |
+|-------------------|---------------------------------------------------------------|
+| Robot Dimensions  | ![Robot Dimensions](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Dimensions%20Robot.png) |
+| Robot Assembly    | ![Robot Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Parts%20Robot.png) |
+| Robot View        | ![Robot View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Views%20Robot.png) |
+
+### Power System
+
 |                   | Power System                                                 |
-|-------------------|-------------------------------------------------------------|
+|-------------------|--------------------------------------------------------------|
 | Power System Assembly | ![Power System Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Power%20Animation.png) |
 | Power System View     | ![Power System View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Power.png) |
 
-#### Steering System
-|                   | Steering System                                             |
-|-------------------|-----------------------------------------------------------|
+### Steering System
+
+|                   | Steering System                                              |
+|-------------------|--------------------------------------------------------------|
 | Steering System Assembly | ![Steering System Assembly](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering%20Animation.png) |
 | Steering System View     | ![Steering System View](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/Models/Drawing%20Assembly%20Steering.png) |
 
-### Robot Parts Details
+## Robot Parts Details
+
 | Part Name                           | Image                                                                                     | 3D File Link                                                                                       |
 |-------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| 0x00- Robot Base                    | ![Robot Base](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x00-Isometric%20Robot%20Base.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x00-Robot%20Base) |
-| 0x01- Second Layer                  | ![Second Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x01-Isometric%20Second%20Layer.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x01-Second%20Layer) |
-| 0x02- Third Layer                   | ![Third Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x02-Isometric%20Third%20Layer.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x02-Third%20Layer) |
-| 0x03- Short Shaft                   | ![Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x03-Isometric%20Short%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x03-Short%20Shaft) |
-| 0x04- Long Shaft                    | ![Long Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x04-Isometric%20Long%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x04-Long%20Shaft) |
-| 0x05- Front Short Shaft             | ![Front Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Front%20Short%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x05-Front%20Short%20Shaft) |
-| 0x06- Berring Support Front Bottom  | ![Berring Support Front Bottom](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x06-Isometric%20Axle%20Clamp.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x06-Berring%20Support%20Front%20Bottom) |
-| 0x07- Berring Support Front Top     | ![Berring Support Front Top](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x07-Isometric%20Berring%20Support%20Front%20Bottom.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x07-Berring%20Support%20Front%20Top) |
-| 0x08- Steering Rack                 | ![Steering Rack](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x08-Isometric%20Berring%20Support%20Front%20Top.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x08-Steering%20Rack) |
-| 0x09- Steering Connector            | ![Steering Connector](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x09-Isometric%20Steering%20Rack.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x09-Steering%20Connector) |
-| 0x10- Axle Clamp                    | ![Axle Clamp](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x10-Isometric%20Steering%20Conector.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x10-Axle%20Clamp) |
-| 0x11- Big Gear                      | ![Big Gear](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x11-Isometric%20Gear.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x11-Big%20Gear) |
-| 0x12- Gear                          | ![Gear](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x12-Isometric%20Big%20Gear.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x12-Gear) |
-| 0x13- Front Support Camera          | ![Front Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x13-Isometric%20Front%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x13-Front%20Support%20Camera) |
-| 0x14- Back Support Camera           | ![Back Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x14-Isometric%20Back%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x14-Back%20Support%20Camera) |
-| 0x15- Connector Support Camera      | ![Connector Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x15-Isometric%20Conector%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/%20Parts/0x15-Conector%20Support%20Camera) |
+| 0x00- Robot Base                    | ![Robot Base](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x00-Isometric%20Robot%20Base.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x00-Robot%20Base) |
+| 0x01- Second Layer                  | ![Second Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x01-Isometric%20Second%20Layer.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x01-Second%20Layer) |
+| 0x02- Third Layer                   | ![Third Layer](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x02-Isometric%20Third%20Layer.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x02-Third%20Layer) |
+| 0x03- Short Shaft                   | ![Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x03-Isometric%20Short%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x03-Short%20Shaft) |
+| 0x04- Long Shaft                    | ![Long Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x04-Isometric%20Long%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x04-Long%20Shaft) |
+| 0x05- Front Short Shaft             | ![Front Short Shaft](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x05-Isometric%20Front%20Short%20Shaft.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x05-Front%20Short%20Shaft) |
+| 0x06- Bearing Support Front Bottom  | ![Bearing Support Front Bottom](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x06-Isometric%20Axle%20Clamp.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x06-Bearing%20Support%20Front%20Bottom) |
+| 0x07- Bearing Support Front Top     | ![Bearing Support Front Top](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x07-Isometric%20Bearing%20Support%20Front%20Bottom.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x07-Bearing%20Support%20Front%20Top) |
+| 0x08- Steering Rack                 | ![Steering Rack](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x08-Isometric%20Bearing%20Support%20Front%20Top.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x08-Steering%20Rack) |
+| 0x09- Steering Connector            | ![Steering Connector](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x09-Isometric%20Steering%20Rack.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x09-Steering%20Connector) |
+| 0x10- Axle Clamp                    | ![Axle Clamp](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x10-Isometric%20Steering%20Connector.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x10-Axle%20Clamp) |
+| 0x11- Big Gear                      | ![Big Gear](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x11-Isometric%20Gear.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x11-Big%20Gear) |
+| 0x12- Gear                          | ![Gear](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x12-Isometric%20Big%20Gear.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x12-Gear) |
+| 0x13- Front Support Camera          | ![Front Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x13-Isometric%20Front%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x13-Front%20Support%20Camera) |
+| 0x14- Back Support Camera           | ![Back Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x14-Isometric%20Back%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x14-Back%20Support%20Camera) |
+| 0x15- Connector Support Camera      | ![Connector Support Camera](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Images%20Isometric/0x15-Isometric%20Connector%20Support%20Camera.png) | [Part Details](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/main/Models/Parts/0x15-Connector%20Support%20Camera) |
 
+## Conclusion
 
-### Conclusion
 For our **WRO Future Engineers robot project**, using **Onshape for CAD modeling** and the **Creality K1 Max for 3D printing** has been a critical part of our design and manufacturing process. These tools allowed us to work collaboratively, iterate quickly, and produce complex parts efficiently, all while staying within the constraints of an educational project.
+
 Thank you for following our journey as we design a cutting-edge robot to represent **Morocco** on the global stage at the **World Robot Olympiad**!
 
-For more information and to follow our progress, check out our [Project link](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International).
+For more information and to follow our progress, check out our [Project Link](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International).
