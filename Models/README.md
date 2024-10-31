@@ -164,7 +164,7 @@ We selected the **Creality K1 Max** 3D printer for manufacturing our robot parts
 - **Precision**: The Creality K1 Max delivers high accuracy and detail in its prints, ensuring that our robot's mechanical parts fit together perfectly.
 - **Ease of Use**: The printer is easy to set up and use, even for students, making it an ideal choice for quick prototyping.
 
-Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/k1-max-3d-printer)
+Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www.creality.com/products/creality-k1-max-3d-printer?spm=..404.header_1.1)
 
 ### 3D Printed Robot Parts
 
