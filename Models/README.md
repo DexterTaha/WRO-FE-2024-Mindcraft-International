@@ -80,6 +80,7 @@ Learn more about the Creality K1 Max here: [Creality K1 Max Printer](https://www
 
 ##### Video of printing a parts
 [![Watch the video](https://img.icons8.com/color/452/play--v1.png)](https://github.com/user-attachments/assets/a05f5144-69ca-4180-a867-5e9cf91d8875)
+
 *This video was made by us while printing the robot base of our robot.*
 
 
