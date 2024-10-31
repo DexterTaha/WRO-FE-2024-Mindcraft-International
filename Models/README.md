@@ -6,6 +6,7 @@
      - [Screenshots of our robot 3D model in Onshape](#Screenshots-of-our-robot-3D-model-in-Onshape)
      - [Other CAD Options Considered](#other-cad-options-considered)
      - [Onshape Advantages](#onshape-advantages)
+     - [Learning Onshape](#Learning_Onshape)
    - [3D Printing](#3d-printing)
      - [Why We Chose 3D Printing](#why-we-chose-3d-printing)
      - [Printer of Choice: Creality K1 Max](#printer-of-choice-creality-k1-max)
@@ -54,6 +55,13 @@ Here are some screenshots of our robot's 3D model in Onshape:
 - **Accessible Anywhere**: Since it’s cloud-based, we could work on designs from any device with an internet connection.
 - **Powerful CAD Tools**: Despite being browser-based, Onshape provides all the advanced CAD features we needed to design complex mechanical components for our robot.
 - **Version Control**: We could easily track changes, revert to previous versions, and work on multiple iterations without losing progress.
+
+#### Learning Onshape
+
+We learned how to use Onshape through resources from the official Onshape website and a helpful playlist on YouTube.
+
+- [Onshape Official Website](https://www.onshape.com/learn)
+- [Onshape YouTube Playlist](https://www.youtube.com/playlist?list=PLDQaRcbiSnqFMu5I3lfpj_kZZJ2abtv7Y)
 
 ### 3D Printing
 
