@@ -69,5 +69,5 @@ python3 -m pip install numpy
 ```
 #### OpenCV:
 ```bash
-pip3 install opencv-python
+sudo apt install python3-opencv
 ```
