@@ -71,3 +71,11 @@ python3 -m pip install numpy
 ```bash
 sudo apt install python3-opencv
 ```
+### Pillow:
+```bash
+sudo apt install python3-pil
+```
+if you get to any errors, you can use this code:
+```bash
+sudo apt install --reinstall python3-pil python3-pil.imagetk
+```
