@@ -1,9 +1,6 @@
-| Column 1                               |
+|https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png|
 
-| ROBOT ISOMETRIC VIEW.png | Isometric view of the robot         | dellet              |
-| ROBOT FRONT VIEW.png     | Front view of the robot             | dellet              |
-| ROBOT BACK VIEW.png      | Back view of the robot              | dellet              |
-| ROBOT RIGHT VIEW.png     | Right view of the robot             | dellet              |
-| ROBOT LEFT VIEW.png      | Left view of the robot              | dellet              |
-| ROBOT TOP VIEW.png       | Top view of the robot               | dellet              |
-| ROBOT BOTTOM VIEW.png    | Bottom view of the robot            | dellet              |
+|https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png | |https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png |
+|https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png | |https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png |
+|https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png | |https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png |
+|https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png | |https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png |
