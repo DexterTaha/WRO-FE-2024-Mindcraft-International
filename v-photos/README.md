@@ -25,7 +25,7 @@
       <p>Face View</p>
     </td>
     <td>
-      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/v-photos/rendering%20images/ROBOT%20%20VIEW.png" alt="ROBOT VIEW" width="200" height="200">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/v-photos/rendering%20images/ROBOT%20REAR%20VIEW.png" alt="ROBOT VIEW" width="200" height="200">
       <p>Rear View</p>
     </td>
   </tr>
