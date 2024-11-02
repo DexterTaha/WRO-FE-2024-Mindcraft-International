@@ -20,6 +20,18 @@ This project involves a robot that detects colors via a camera connected to a Ra
 | Switch              | Pin A0 |
 | VL53L1X Sensors     | XSHUT Pins (Pins 4, 5, 6, 7) |
 
+```cpp
+#define ENA  11                // L298N motor speed (suggested: confirm the PWM-capable port)
+#define IN_1  13               // L298N motor direction
+#define IN_2  12               // L298N motor direction
+#define buzzerPin  8           // Buzzer
+#define STEERING_SERVO_PIN 10  // Servo control
+#define ENCODER_PIN_A 2        // Encoder (Interrupt pin, usually D2 or D3 on many Arduino boards)
+#define ENCODER_PIN_B 3        // Encoder
+#define switchPin  A0          // Switch
+#define xshutPins[sensorCount] = { 4, 5, 6, 7 };  // VL53L1X sensors' XSHUT pins
+```
+
 **Note**: Ensure that the **VL53L1X** sensors are correctly wired for I2C communication, and each sensor is assigned a unique address in the `setupSensors()` function.
 
 ### Raspberry Pi Connections
