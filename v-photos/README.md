@@ -5,6 +5,8 @@
       <p>Top View</p>
     </td>
   </tr>
+</table>
+<table>
   <tr>
     <td>
       <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/v-photos/rendering%20images/ROBOT%20TOP%20VIEW.png" alt="ROBOT TOP VIEW" height="300">
