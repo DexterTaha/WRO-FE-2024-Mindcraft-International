@@ -169,7 +169,7 @@ The main function ties everything together:
 To execute this code, simply run:
 
 ```bash
-python camera.py
+python3 camera.py
 ```
 
 ## Adjusting Color Detection Ranges
