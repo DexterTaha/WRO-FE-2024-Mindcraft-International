@@ -1,79 +1,89 @@
-# Raspberry Pi and Arduino Uno Color Detection Motor Control System
+# WRO Future Engineers Robot Project Documentation
 
-## Overview
-This project enables color-based motor control using a Raspberry Pi and an Arduino Uno. The Raspberry Pi detects colors (red and green) in real time using OpenCV, sending commands to the Arduino Uno, which controls the motors accordingly. A dashboard provides a live preview of component states and allows configuration adjustments.
+## Project Overview
 
-## Components and Connections
+This project involves a robot that detects colors via a camera connected to a Raspberry Pi, processes the data, and sends control signals to an Arduino which drives the motors. A dashboard on the Raspberry Pi previews the state of the robot’s components, allowing real-time monitoring and control.
 
-### 1. Arduino Uno
-The Arduino Uno controls the motors based on serial commands received from the Raspberry Pi. It has functions to:
-- Parse serial messages to determine motor actions
-- Control motor speed and direction based on the received commands
+## Hardware Setup
 
-#### Pin Configuration
-| Component | Arduino Pin |
-|-----------|-------------|
-| Motor 1   | Pin X       |
-| Motor 2   | Pin Y       |
+### Arduino Connections
 
-### 2. Raspberry Pi
-The Raspberry Pi processes video frames using OpenCV to detect specific colors in real time. It sends commands over serial to the Arduino Uno, instructing it to adjust motor actions based on detected colors.
+| Component           | Arduino Pin |
+|---------------------|-------------|
+| Motor Speed Control | ENA (Pin 11)|
+| Motor Direction 1   | IN_1 (Pin 13) |
+| Motor Direction 2   | IN_2 (Pin 12) |
+| Steering Servo      | Pin 10 |
+| Encoder A           | Pin 2 (Interrupt Pin) |
+| Encoder B           | Pin 3 (Interrupt Pin) |
+| Buzzer              | Pin 8 |
+| Switch              | Pin A0 |
+| VL53L1X Sensors     | XSHUT Pins (Pins 4, 5, 6, 7) |
 
-- **Color Detection**: Uses OpenCV with HSV range filtering to detect red and green colors.
-- **Command Structure**: Sends simple commands like `"MOVE_FORWARD"`, `"TURN_LEFT"`, etc., to the Arduino based on detected colors.
+**Note**: Ensure that the **VL53L1X** sensors are correctly wired for I2C communication, and each sensor is assigned a unique address in the `setupSensors()` function.
 
-### 3. Serial Communication
-The Raspberry Pi and Arduino communicate via a serial connection, with the following protocol:
-- **Baud Rate**: 9600
-- **Command Format**: Commands are sent as strings, e.g., `"MOVE_FORWARD"`, `"STOP"`.
-- **Error Handling**: Ensures that messages are acknowledged before sending the next command.
+### Raspberry Pi Connections
 
-## Dashboard
-The dashboard provides a visual interface to monitor and control the system's state.
+The Raspberry Pi is connected to the Arduino via USB or direct TX/RX serial pins, enabling it to send color detection data to control the robot’s motors. A PS4 controller is used for manual control, where:
 
-### Dashboard Features
-- **Color Detection Preview**: Displays the live feed with color masks for red and green objects.
-- **Motor State Display**: Shows the current state of each motor, e.g., running or stopped.
-- **Serial Connection Status**: Indicates if the connection between the Raspberry Pi and Arduino is active.
-- **Adjustable Parameters**: Allows the user to tweak HSV values for color detection and update motor controls.
+- **Left Joystick**: Controls forward/backward movement.
+- **Right Joystick**: Controls steering.
 
-### Preview
-The dashboard displays each component’s status in real time, providing feedback on:
-- Detected color regions
-- Motor activity based on color triggers
-- Connection status between Raspberry Pi and Arduino
+## Software Requirements
 
-## Code Structure
+### Python Libraries (Raspberry Pi)
 
-### Raspberry Pi Code
-The Raspberry Pi code includes:
-- Color detection functions using OpenCV
-- Serial communication setup and message-sending functions
-- Main loop for processing frames and sending commands to Arduino
+Ensure the following Python libraries are installed on the Raspberry Pi:
 
-### Arduino Code
-The Arduino code includes:
-- Serial message reading and parsing
-- Motor control functions for each command received
-- Error handling for lost or malformed commands
+```bash
+pip3 install numpy tkinter matplotlib pyserial pygame opencv-python
+```
 
-## How to Run the System
+| Library             | Purpose |
+|---------------------|-------------|
+| `numpy` | For numerical operations and array handling |
+| `tkinter` | For creating GUI applications |
+| `matplotlib` | For plotting data and visualizations |
+| `pyserial` | Serial communication between Pi and Arduino|
+| `pygame` | For handling joystick input and sound |
+| `opencv-python`   | Color detection and camera processing |
+| `RPi.GPIO` or `gpiozero`   | GPIO control on Raspberry Pi |
+	
+Use `pip list` to verify installations.
 
-1. **Connect Components**: Ensure the Raspberry Pi is connected to the Arduino over serial.
-2. **Upload Arduino Code**: Upload the motor control code to the Arduino.
-3. **Run Raspberry Pi Code**: Execute the color detection script on the Raspberry Pi.
-4. **Open Dashboard**: Access the dashboard to monitor and control the system.
+### Arduino Libraries (Arduino IDE)
+In the Arduino IDE, make sure to install the following libraries:
+1. **Servo** - For controlling the steering servo.
+2. **VL53L1X** - For handling ToF distance sensors.
+3. **Wire** - For I2C communication.
+   
+To install these libraries:
+1. Go to __Sketch__ > __Include Library__ > __Manage Libraries__….
+2. Search for each library by name and install it.
 
-## Troubleshooting
-- **No Serial Connection**: Check the wiring and ensure the baud rate matches on both devices.
-- **Color Detection Issues**: Adjust HSV values on the dashboard.
-- **Motor Control Issues**: Verify Arduino pin connections and motor control functions.
+## Communication Protocol
+### Serial Communication
+- The Raspberry Pi sends control data (speed and steering) based on color detection.
+- The Arduino receives this data to control motor speed and direction.
+- Arduino sends sensor data (distance, encoder count, etc.) back to the Raspberry Pi for dashboard updates.
 
-## Future Improvements
-- Add more colors for multi-condition control
-- Implement more complex motor control logic for smoother movements
-- Refine the dashboard to include data logging
+### Data Format
+- Data Sent to Arduino: `speed,steering\n` (e.g., `50,20\n`).
+- Data Sent to Raspberry Pi: `frontDist,rightDist,leftDist,backDist,gyroZ,encoderSpeed\n` (e.g., `100,200,150,300,512,50.5\n`).
+  
+## Arduino Code Highlights
+### Control Functions
+1. `driveDistanceSpeed()` - Moves the robot a specified distance at a given speed.
+2. `controlRobot()` - Controls motor speed and direction based on received data.
+3. `sendDataToPi()` - Sends sensor readings to Raspberry Pi.
+4. `receiveDataFromPi()` - Receives control commands from Raspberry Pi.
+   
+### Buzzer Functions
+- `BuzzerRobotStart()` - Plays a start-up sound.
+- `BuzzerRobotEnd()` - Plays a shutdown sound.
+- `BuzzerRobotError()` - Indicates errors.
+- `BuzzerRobotSpecial()` - Plays a special tune.
 
----
-
-**Project Authors**: Salmane and the Mindcraft team
+### Sensor Functions
+- `setupSensors()` - Initializes and assigns addresses to each VL53L1X sensor.
+- `readAndPrintDistances()` - Reads and prints distances from each sensor.
