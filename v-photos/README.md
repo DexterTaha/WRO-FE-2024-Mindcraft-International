@@ -1,6 +1,12 @@
 <table>
   <tr>
     <td>
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/v-photos/rendering%20images/ROBOT%20ISOMOTRIC%20VIEW.png" alt="ROBOT TOP VIEW" height="700">
+      <p>Top View</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/v-photos/rendering%20images/ROBOT%20TOP%20VIEW.png" alt="ROBOT TOP VIEW" height="300">
       <p>Top View</p>
     </td>
