@@ -68,6 +68,11 @@ In the Arduino IDE, make sure to install the following libraries:
 1. **Servo** - For controlling the steering servo.
 2. **VL53L1X** - For handling ToF distance sensors.
 3. **Wire** - For I2C communication.
+```cpp
+#include <Servo.h>    
+#include <VL53L1X.h>  
+#include <Wire.h>
+```
    
 To install these libraries:
 1. Go to __Sketch__ > __Include Library__ > __Manage Libraries__….
