@@ -1,12 +1,9 @@
-Here's the corrected and detailed Markdown document with the new specifications, including the 7806 voltage regulator, the additional buck converter, and updated communication details. I've also embedded the image for a clear view of the circuit.
-
----
 
 # WRO-FE 2024 Mindcraft International Robot Circuit Documentation
 
 This document provides a detailed explanation of the robot circuit used for the World Robot Olympiad (WRO) Future Engineers 2024 competition. The circuit includes components like the Raspberry Pi, Arduino Nano, L298N motor driver, sensors, and power management elements. This guide details the wiring, communication protocols, and component roles within the system.
 
-![Robot Circuit Diagram](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/schemes/Robot%20Circuit.fzz)
+![Robot Circuit Diagram](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/schemes/Robot%20Circuit.png)
 
 ## Table of Contents
 
