@@ -1,9 +1,8 @@
-
 # WRO-FE 2024 Mindcraft International Robot Circuit Documentation
 
-This document provides a detailed explanation of the robot circuit used for the World Robot Olympiad (WRO) Future Engineers 2024 competition. The circuit includes components like the Raspberry Pi, Arduino Nano, L298N motor driver, sensors, and power management elements. This guide details the wiring, communication protocols, and component roles within the system.
+This document provides a comprehensive overview of the robot circuit used for the World Robot Olympiad (WRO) Future Engineers 2024 competition. The circuit includes various components such as the Raspberry Pi, Arduino Nano, L298N motor driver, sensors, and power management elements. This guide covers the wiring, communication protocols, and component roles within the system.
 
-![Robot Circuit Diagram](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/schemes/Robot%20Circuit.png)
+![Robot Circuit Diagram](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/raw/main/schemes/Robot%20Circuit.png)
 
 ## Table of Contents
 
@@ -27,11 +26,11 @@ The primary components in the circuit include:
 
 1. **Raspberry Pi**: Main control and processing unit.
 2. **Arduino Nano**: Microcontroller handling low-level sensor operations and communication with the Raspberry Pi.
-3. **L298N Motor Driver**: Controls a DC motor's direction and speed.
-4. **DC Motor**: Drives the robot’s wheels or actuators.
-5. **LiPo Batteries (3.7V, 1000mAh)**: Power source for the entire system.
+3. **L298N Motor Driver**: Controls a 12V DC motor with magnetic encoders.
+4. **12V DC Motor with Magnetic Encoders**: Drives the robot’s wheels, with encoder feedback for precise control.
+5. **LiPo Battery (3S, 50C, 2.2Ah, 11.1V)**: High-capacity power source for the entire system.
 6. **7806 Voltage Regulator**: Provides a stable 6V output for the servo motor.
-7. **Buck Converter (12V to 5V)**: Supplies 5V power to the Raspberry Pi.
+7. **Buck Converter (11.1V to 5V)**: Supplies 5V power to the Raspberry Pi.
 8. **DTOF (Distance Time-of-Flight) Sensors (I2C)**: Measures distances to obstacles.
 9. **MPU6050 (Gyroscope/Accelerometer)**: Measures orientation and motion.
 10. **Servo Motor**: Controls small actuators or sensor positioning.
@@ -46,17 +45,17 @@ The primary components in the circuit include:
 
 ### 7806 Voltage Regulator
 
-The **7806 voltage regulator** is used to convert the LiPo battery voltage (higher than 6V) to a stable 6V output. The 7806 regulator powers the servo motor, which requires 6V for optimal operation.
+The **7806 voltage regulator** is used to convert the LiPo battery voltage (11.1V) to a stable 6V output. This 6V power is supplied to the servo motor, which requires 6V for optimal operation.
 
-- **Input**: Connected to the LiPo battery output.
+- **Input**: Connected to the 11.1V LiPo battery output.
 - **Output**: Provides 6V for the servo motor.
 - **Grounding**: The 7806 ground pin connects to the shared ground of the entire circuit.
 
-### Buck Converter (12V to 5V)
+### Buck Converter (11.1V to 5V)
 
-A **buck converter** steps down the voltage from 12V to 5V to supply stable power to the Raspberry Pi.
+A **buck converter** steps down the 11.1V from the LiPo battery to a stable 5V to supply power to the Raspberry Pi.
 
-- **Input**: Connected to the 12V LiPo battery configuration.
+- **Input**: Connected to the 11.1V LiPo battery.
 - **Output**: Provides 5V power to the Raspberry Pi.
 - **Grounding**: Connected to the common ground of the circuit.
 
@@ -93,7 +92,7 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 
 **PWM (Pulse Width Modulation)** signals are used to control both the motor driver and servo.
 
-- **Motor Driver (L298N)**: Receives PWM signals from the Raspberry Pi to adjust the speed of the DC motor.
+- **Motor Driver (L298N)**: Receives PWM signals from the Raspberry Pi to adjust the speed of the 12V DC motor.
 - **Servo Motor**: Connected to the Arduino Nano, controlled by PWM for precise angle positioning.
 
 ---
@@ -118,7 +117,7 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 ### L298N Motor Driver
 
 - **Inputs**: Receives PWM signals from the Raspberry Pi to control motor speed and direction.
-- **Outputs**: Connects to the DC motor.
+- **Outputs**: Connects to the 12V DC motor with magnetic encoders.
 
 ### Sensors and Actuators
 
@@ -133,7 +132,7 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 ## System Architecture and Data Flow
 
 1. **Power Supply**:
-   - The LiPo batteries provide power to high-current components like the motor driver and motor.
+   - The LiPo battery (11.1V, 3S, 50C, 2.2Ah) provides power to high-current components like the motor driver and motor.
    - The 7806 voltage regulator supplies a stable 6V output to the servo motor.
    - The buck converter steps down the battery voltage to 5V to power the Raspberry Pi.
 
@@ -147,7 +146,7 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
    - Based on the sensor and image data, the Raspberry Pi sends control commands to the motor driver.
 
 4. **Control Flow**:
-   - The Raspberry Pi sends PWM signals to the L298N motor driver to control the DC motor.
+   - The Raspberry Pi sends PWM signals to the L298N motor driver to control the 12V DC motor.
    - The Arduino Nano sends PWM signals to the servo motor and the buzzer for actuation and audio alerts.
 
 5. **Decision Making**:
