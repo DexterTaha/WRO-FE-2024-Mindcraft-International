@@ -1,3 +1,7 @@
+Here’s the updated Markdown documentation, clarifying that all components except the camera and LiDAR are connected to the Arduino Nano, while only the camera and LiDAR are connected to the Raspberry Pi.
+
+---
+
 # WRO-FE 2024 Mindcraft International Robot Circuit Documentation
 
 This document provides a comprehensive overview of the robot circuit used for the World Robot Olympiad (WRO) Future Engineers 2024 competition. The circuit includes various components such as the Raspberry Pi, Arduino Nano, L298N motor driver, sensors, and power management elements. This guide covers the wiring, communication protocols, and component roles within the system.
@@ -8,7 +12,7 @@ This document provides a comprehensive overview of the robot circuit used for th
 
 - [Components](#components)
 - [Power Management](#power-management)
-  - [7806 Voltage Regulator](#7806-voltage-regulator)
+  - [7806 Voltage Regulator with Capacitors](#7806-voltage-regulator-with-capacitors)
   - [Buck Converter](#buck-converter)
 - [Communication Protocols](#communication-protocols)
   - [I2C Communication](#i2c-communication)
@@ -30,25 +34,28 @@ The primary components in the circuit include:
 4. **12V DC Motor with Magnetic Encoders**: Drives the robot’s wheels, with encoder feedback for precise control.
 5. **LiPo Battery (3S, 50C, 2.2Ah, 11.1V)**: High-capacity power source for the entire system.
 6. **7806 Voltage Regulator**: Provides a stable 6V output for the servo motor.
-7. **Buck Converter (11.1V to 5V)**: Supplies 5V power to the Raspberry Pi.
-8. **DTOF (Distance Time-of-Flight) Sensors (I2C)**: Measures distances to obstacles.
-9. **MPU6050 (Gyroscope/Accelerometer)**: Measures orientation and motion.
-10. **Servo Motor**: Controls small actuators or sensor positioning.
-11. **Buzzer**: Provides audio feedback.
-12. **Camera Module**: Provides video input for image processing.
-13. **LiDAR Sensor**: High-precision distance measurement for mapping or navigation.
-14. **Switches**: Controls power delivery to different components manually.
+7. **Two 470 µF Capacitors**: Connected to the 7806 for voltage stabilization and filtering.
+8. **Buck Converter (11.1V to 5V)**: Supplies 5V power to the Raspberry Pi.
+9. **DTOF (Distance Time-of-Flight) Sensors (I2C)**: Measures distances to obstacles.
+10. **MPU6050 (Gyroscope/Accelerometer)**: Measures orientation and motion.
+11. **Servo Motor**: Controls small actuators or sensor positioning.
+12. **Buzzer**: Provides audio feedback.
+13. **Camera Module**: Provides video input for image processing.
+14. **LiDAR Sensor**: High-precision distance measurement for mapping or navigation.
+15. **Switches**: Controls power delivery to different components manually.
 
 ---
 
 ## Power Management
 
-### 7806 Voltage Regulator
+### 7806 Voltage Regulator with Capacitors
 
-The **7806 voltage regulator** is used to convert the LiPo battery voltage (11.1V) to a stable 6V output. This 6V power is supplied to the servo motor, which requires 6V for optimal operation.
+The **7806 voltage regulator** is used to convert the LiPo battery voltage (11.1V) to a stable 6V output, powering the servo motor.
 
 - **Input**: Connected to the 11.1V LiPo battery output.
 - **Output**: Provides 6V for the servo motor.
+- **Capacitors for Stabilization and Filtering**:
+  - **Two 470 µF Capacitors** are connected to the 7806 voltage regulator to help stabilize the output voltage and filter out any noise. One capacitor is placed across the input and ground, and the other across the output and ground.
 - **Grounding**: The 7806 ground pin connects to the shared ground of the entire circuit.
 
 ### Buck Converter (11.1V to 5V)
@@ -92,17 +99,18 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 
 **PWM (Pulse Width Modulation)** signals are used to control both the motor driver and servo.
 
-- **Motor Driver (L298N)**: Receives PWM signals from the Raspberry Pi to adjust the speed of the 12V DC motor.
-- **Servo Motor**: Connected to the Arduino Nano, controlled by PWM for precise angle positioning.
+- **Motor Driver (L298N)**: Receives PWM signals from the Arduino Nano to adjust the speed of the 12V DC motor.
+- **Servo Motor**: Controlled by the Arduino Nano using PWM for precise angle positioning.
 
 ---
 
 ## Component Connections
 
+All components, except the camera and LiDAR, are connected to the **Arduino Nano**. This includes the motor driver, DTOF sensors, MPU6050, servo motor, and buzzer. The **Raspberry Pi** is only connected to the **camera module** (via the CSI port) and **LiDAR sensor** (via UART TX/RX), handling high-level processing and vision tasks.
+
 ### Raspberry Pi
 
 - **GPIO**:
-  - Connected to the L298N motor driver to control motor direction and speed.
   - Communicates with the Arduino Nano via USB Serial.
   - Communicates with the LiDAR sensor via UART (TX/RX).
   - Powers the camera module for real-time image processing through the CSI port.
@@ -113,19 +121,8 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 - **PWM**:
   - Controls the servo motor for actuation.
   - Drives the buzzer for audio signals.
-
-### L298N Motor Driver
-
-- **Inputs**: Receives PWM signals from the Raspberry Pi to control motor speed and direction.
-- **Outputs**: Connects to the 12V DC motor with magnetic encoders.
-
-### Sensors and Actuators
-
-1. **DTOF Sensors**: Communicate with the Arduino Nano over I2C to measure distances.
-2. **MPU6050**: Communicates with the Arduino Nano over I2C for orientation and motion data.
-3. **Servo Motor**: Controlled by the Arduino Nano using PWM.
-4. **Camera Module**: Captures video, connected to the Raspberry Pi via the CSI port.
-5. **LiDAR Sensor**: Provides high-precision distance measurements to the Raspberry Pi over UART.
+- **GPIO for Motor Control**:
+  - Connected to the L298N motor driver to control the 12V DC motor with PWM signals.
 
 ---
 
@@ -133,28 +130,29 @@ The **I2C protocol** is used to connect multiple sensors to the same bus, allowi
 
 1. **Power Supply**:
    - The LiPo battery (11.1V, 3S, 50C, 2.2Ah) provides power to high-current components like the motor driver and motor.
-   - The 7806 voltage regulator supplies a stable 6V output to the servo motor.
+   - The 7806 voltage regulator, along with two 470 µF capacitors, supplies a stable 6V output to the servo motor.
    - The buck converter steps down the battery voltage to 5V to power the Raspberry Pi.
 
 2. **Sensor Data Collection**:
-   - The Arduino Nano collects data from the I2C sensors (MPU6050, DTOF sensors).
+   - The Arduino Nano collects data from all I2C sensors (MPU6050, DTOF sensors) and controls the motor, servo, and buzzer.
    - The data from these sensors is processed by the Arduino or transmitted to the Raspberry Pi via USB Serial.
 
 3. **High-Level Processing**:
    - The Raspberry Pi performs high-level tasks such as video processing and complex decision-making.
    - Image data from the camera module is processed using computer vision libraries like OpenCV.
-   - Based on the sensor and image data, the Raspberry Pi sends control commands to the motor driver.
+   - The Raspberry Pi receives distance data from the LiDAR sensor for navigation and obstacle avoidance.
 
 4. **Control Flow**:
-   - The Raspberry Pi sends PWM signals to the L298N motor driver to control the 12V DC motor.
-   - The Arduino Nano sends PWM signals to the servo motor and the buzzer for actuation and audio alerts.
+   - The Arduino Nano sends PWM signals to the L298N motor driver to control the 12V DC motor.
+   - It also controls the servo motor and buzzer based on feedback from sensors.
+   - The Raspberry Pi communicates with the Arduino Nano and sends additional commands as needed.
 
 5. **Decision Making**:
-   - Data from the LiDAR and DTOF sensors help in obstacle detection and path planning.
+   - Data from the LiDAR, DTOF sensors, and MPU6050 help in obstacle detection and path planning.
    - Based on this information, the Raspberry Pi and Arduino Nano coordinate actions, such as steering the robot or adjusting speed.
 
 ---
 
-This circuit provides a robust foundation for an autonomous robot with sensing, communication, and motor control. By using both the Raspberry Pi and Arduino Nano, the system effectively distributes processing loads, enabling efficient sensor management and real-time decision-making.
+This circuit provides a robust foundation for an autonomous robot with sensing, communication, and motor control. By using both the Raspberry Pi and Arduino Nano, the system effectively distributes processing loads, with the Raspberry Pi focused on high-level vision and navigation and the Arduino Nano managing other essential components.
 
 ---
