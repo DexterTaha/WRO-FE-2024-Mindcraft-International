@@ -2,7 +2,7 @@
   <h1>Robot Base</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Robot Base" is the foundational structure of the WRO competition robot, meticulously designed to support the steering and driving mechanisms. Built with reinforced strength, it securely holds four bearings and provides a safe compartment for the LiPo battery, shielding it from impact. A dedicated gap accommodates the differential system, enhancing maneuverability for tight turns. The base also includes mounts for four Distance Time-of-Flight (DTOF) sensors, allowing precise obstacle detection and navigation, along with a LiPo test indicator sensor for real-time battery monitoring. For neat wiring, the base is equipped with cable management holes and guides, ensuring organized and secure connections that prevent accidental disconnections. This combination of durability, stability, and thoughtful functionality makes the Robot Base essential for competitive reliability and ease of maintenance.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
