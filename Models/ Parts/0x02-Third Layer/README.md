@@ -2,7 +2,7 @@
   <h1>Third Layer</h1>
 </div>
 
-<p>The "Third Layer" is an essential structural component designed to cover and protect underlying parts while providing additional mounting options for sensors and electronic modules. Its layout includes cutouts and slots to accommodate cables, ensuring organized wiring and ease of access for maintenance. This layer strengthens the robot’s frame, adds stability, and helps secure components like sensors in optimal positions for performance. Its design emphasizes modularity, allowing for easy adjustments and enhancements as needed.</p>
+<p>The "Third Layer" is responsible for securely holding all electronics, including the Raspberry Pi, Arduino, switch, start buttons, and motor drive PCB board. Designed with multiple standoff positions and screw holes, it provides a sturdy mounting solution that keeps components organized and protected. This layer optimizes space for electronic integrations, enabling efficient assembly and maintenance. Its thoughtful layout supports easy access to each component, ensuring reliability and durability during competition.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
