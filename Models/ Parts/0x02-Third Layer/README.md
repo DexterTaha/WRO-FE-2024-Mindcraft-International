@@ -2,7 +2,7 @@
   <h1>Third Layer</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Third Layer" is an essential structural component designed to cover and protect underlying parts while providing additional mounting options for sensors and electronic modules. Its layout includes cutouts and slots to accommodate cables, ensuring organized wiring and ease of access for maintenance. This layer strengthens the robot’s frame, adds stability, and helps secure components like sensors in optimal positions for performance. Its design emphasizes modularity, allowing for easy adjustments and enhancements as needed.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
