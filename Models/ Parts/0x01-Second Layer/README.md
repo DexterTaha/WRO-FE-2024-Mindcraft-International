@@ -2,7 +2,7 @@
   <h1>Second Layer</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Second Layer" is designed to overlay and secure the Robot Base, providing additional stability and structure. It holds the bearings and wheels firmly, ensuring smooth movement and alignment. This layer also mounts the motor, supporting the robot’s driving mechanism, and houses the 5V converter for consistent power supply. Laddered holes are included for standoffs, allowing easy assembly and modular adjustments. This structural layer enhances durability while organizing key components securely.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
