@@ -2,7 +2,7 @@
   <h1>Back Support Camera</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Back Support Camera" allows for adjustable camera angling, enabling precise alignment to suit various operational needs. It securely connects to the Connector Support Camera, providing stability while retaining the protective functions of the Front Support Camera. This component ensures the camera is well-supported, safeguarding the sensor and lens, and allowing reliable, customizable positioning for optimal image capture and functionality in the robot’s vision system.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
