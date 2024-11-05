@@ -2,7 +2,7 @@
   <h1>Big Gear</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Big Gear" features a depth of 15 mm, 30 teeth, a module of 1.65 mm, a pitch circle diameter of 49.5 mm, a pressure angle of 20 degrees, and a root fillet of 1/3. This gear connects to the motor through a meshing gear and has an internal hole that attaches to the differential system. It effectively transmits the motor’s rotational power through the differential, ensuring smooth power delivery to the wheels for consistent movement and control.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
