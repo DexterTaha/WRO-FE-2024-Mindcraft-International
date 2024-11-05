@@ -2,7 +2,7 @@
   <h1>Steering Conector</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Steering Connector" securely attaches the Steering Rack to the servo motor, transmitting the servo’s movements directly to the rack. This component is essential for ensuring that the rotational input from the servo motor translates accurately into steering adjustments. By providing a stable and reliable connection, the Steering Connector enables precise control over the robot’s directional movements, enhancing its ability to navigate and respond to steering commands smoothly.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
