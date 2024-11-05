@@ -2,7 +2,7 @@
   <h1>Conector Support Camera</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Connector Support Camera" is responsible for securely attaching the camera to the robot, providing stability and durability for the camera assembly. It not only connects and supports the camera but also serves as a convenient handle for carrying the robot, as it is the highest point on the structure. This dual functionality enhances usability, ensuring the camera remains stable while making the robot easy to transport.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
