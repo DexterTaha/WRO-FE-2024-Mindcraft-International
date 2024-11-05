@@ -2,7 +2,7 @@
   <h1>Berring Support Front Bottom</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Bearing Support Front Bottom" is designed to securely hold the bearing and front shaft that support the wheel, facilitating smooth rotation. This support enables the front steering wheel to turn freely, enhancing maneuverability and stability by reducing friction in the wheel’s rotation. Its structure is critical for allowing passive steering, ensuring the front wheel follows the motion of the robot seamlessly, optimizing control and alignment.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
