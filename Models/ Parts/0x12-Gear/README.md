@@ -2,7 +2,7 @@
   <h1>Gear</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Gear" is responsible for transmitting rotational motion from the motor to the Big Gear, enabling efficient power transfer within the system. This gear has a depth of 15 mm, 15 teeth, a module of 1.65 mm, a pitch circle diameter of 24.75 mm, a pressure angle of 20 degrees, and a root fillet of 1/3, as shown in the image. Its precise specifications ensure smooth engagement with the Big Gear, maintaining reliable motion transmission.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
