@@ -2,7 +2,7 @@
   <h1>Short Shaft</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Short Shaft" is designed to securely connect the wheels using screws and nuts, transmitting rotational power from the motor directly to the wheels. It also features compatibility with the LEGO gear on the differential system, enabling smooth integration and effective power transfer. Constructed with high strength and durability, this shaft endures intensive loads, ensuring reliable performance and stability during maneuvers. Its robust design is crucial for efficient and consistent movement in competition settings.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
