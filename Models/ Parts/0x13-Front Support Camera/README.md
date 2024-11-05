@@ -2,7 +2,7 @@
   <h1>Front Support Camera</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Front Support Camera" is designed to securely hold the camera in place, protecting its sensor and lens from potential impacts. This component ensures the camera remains stable during operation and is firmly attached to the Back Support Camera for added support. By safeguarding the camera’s essential parts, the Front Support Camera maintains optimal positioning, enabling consistent and reliable image capture essential for the robot’s vision-based functions.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
