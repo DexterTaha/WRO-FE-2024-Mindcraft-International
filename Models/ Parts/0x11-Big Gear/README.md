@@ -50,15 +50,15 @@
     </tr>
     <tr>
       <td>Layer Height</td>
-      <td>0.2 mm</td>
+      <td>0.08 mm</td>
     </tr>
     <tr>
       <td>Infill Density</td>
-      <td>20%</</td>
+      <td>100%</</td>
     </tr>
     <tr>
       <td>Print Speed</td>
-      <td>60 mm/s</td>
+      <td>200 mm/s</td>
     </tr>
     <tr>
       <td>Nozzle Size</td>
@@ -74,7 +74,7 @@
     </tr>
     <tr>
       <td>Supports</td>
-      <td>None</td>
+      <td>yes</td>
     </tr>
     <tr>
       <td>Fan Speed</td>
