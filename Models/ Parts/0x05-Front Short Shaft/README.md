@@ -2,7 +2,7 @@
   <h1>Front Shaft</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Front Shaft" is designed to securely hold the wheel in place using screws and nuts, allowing it to rotate freely and follow the movement of the motor-driven rear wheels. Unlike the rear shaft, the front shaft operates independently of any motor connection, enabling smooth, passive movement. This setup provides stability and reduces drag, allowing the robot to navigate efficiently while maintaining alignment with the rear-driven wheels.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
