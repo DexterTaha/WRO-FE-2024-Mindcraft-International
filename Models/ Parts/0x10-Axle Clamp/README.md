@@ -2,7 +2,7 @@
   <h1>Axle Clamp</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Axle Clamp" is designed to secure the shaft from the opposite direction of the bearing, providing rotational stability while preventing any axial movement. It features a hole that aligns with a hole in the shaft, allowing it to be fastened securely using a screw and nut. This setup ensures that the shaft rotates freely without shifting along its axis, maintaining precise alignment and reliable rotational performance in the robot's mechanisms.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
