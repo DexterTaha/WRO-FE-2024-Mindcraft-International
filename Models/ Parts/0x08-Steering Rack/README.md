@@ -2,7 +2,7 @@
   <h1>Steering Rack</h1>
 </div>
 
-<p>The robot base is 3D-printed using durable PLA material. It features integrated mounting points for 620 RPM motors, four high-torque wheels, and allows for the easy installation of sensors, a battery pack, and other components. The design ensures modular flexibility and includes ventilation slots for effective heat dissipation.</p>
+<p>The "Steering Rack" is responsible for connecting and transmitting rotational motion from the servo motor to the Bearing Support Front Top, functioning similarly to a four-bar linkage system. This setup enables precise control over the front wheel’s direction, allowing smooth and accurate steering adjustments. The Steering Rack’s design enhances maneuverability by directly translating servo movements into wheel alignment changes, ensuring the robot can navigate turns and complex paths effectively.</p>
 
 <div align="left">
   <h2>Drawing PNG:</h2>
