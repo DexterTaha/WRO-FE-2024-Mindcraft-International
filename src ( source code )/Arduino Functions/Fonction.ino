@@ -120,7 +120,7 @@ void controlRobot(int speedInput, int steeringInput) {
   analogWrite(ENA, motorSpeed);
 
   // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
-  steeringAngle = map(steeringInput, -100, 100, 130, 50);
+  steeringAngle = map(steeringInput, -100, 100, 120, 60);
 
   // Set servo position
   STEERING.write(steeringAngle);
@@ -262,9 +262,7 @@ bool isSwitchOn(int value) {
 void act(){
   sendDataToPi();       // Send sensor and motor data to Raspberry Pi
   receiveDataFromPi();  // Receive control data from Raspberry Pi
-  
-  delay(10);           // Delay based on communication speed and data requirement
-}
+  }
 
 // Setup function
 void setup() {
