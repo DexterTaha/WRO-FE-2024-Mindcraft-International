@@ -1,3 +1,7 @@
+Here's the updated content with the website link added:
+
+---
+
 # Future Engineers Map Randomizer and Score Calculator
 
 This project provides an interactive web-based tool for the WRO Future Engineers competition. It combines a map randomizer and a score calculator, allowing participants to simulate various configurations of map elements and assess their robot's performance effectively.
@@ -202,15 +206,8 @@ The CSS file provides styles for the application. You can adjust colors, fonts, 
 ## JavaScript (script.js)
 The JavaScript file handles the logic for randomization, score calculation, and timer functionality. It listens for user actions and performs the corresponding operations, updating the displayed results.
 
-***
-
 ## Website Preview
 ![website preview](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/0fd944c4e0d555fc80da8dd42af44a5308ee50ac/images/randomizer_page.jpeg)
 
-
-
-
-
-
-
-
+## Access the Website
+Explore the interactive tool by visiting: [https://dextertaha.github.io/WRO-FE-2024-Mindcraft-International/](https://dextertaha.github.io/WRO-FE-2024
