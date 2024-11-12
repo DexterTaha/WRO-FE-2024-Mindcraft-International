@@ -205,5 +205,7 @@ The JavaScript file handles the logic for randomization, score calculation, and 
 ## Website Preview
 ![website preview](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/0fd944c4e0d555fc80da8dd42af44a5308ee50ac/images/randomizer_page.jpeg)
 
-## Access the Website
-Explore the interactive tool by visiting: [https://dextertaha.github.io/WRO-FE-2024-Mindcraft-International/](https://dextertaha.github.io/WRO-FE-2024
+Access the Website
+Explore the interactive tool by visiting the following link:
+
+https://dextertaha.github.io/WRO-FE-2024-Mindcraft-International/
