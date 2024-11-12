@@ -1,7 +1,3 @@
-Here's the updated content with the website link added:
-
----
-
 # Future Engineers Map Randomizer and Score Calculator
 
 This project provides an interactive web-based tool for the WRO Future Engineers competition. It combines a map randomizer and a score calculator, allowing participants to simulate various configurations of map elements and assess their robot's performance effectively.
