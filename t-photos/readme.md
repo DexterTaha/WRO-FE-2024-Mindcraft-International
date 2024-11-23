@@ -1,3 +1,26 @@
+
+
+<h3>Engineers Github</h3>
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5f536c4e-d997-4cb6-9d39-cfb2d6dd72be" 
+         alt="Engineers Github">
+    <p>A visual showcasing the Engineers' GitHub repository.</p>
+</div>
+
+
+
+
+<h3>OUR Team Fun Pic 🤦‍♂️</h3>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e4554c51-6b42-4232-a2d8-b8e35a5619a1" alt="Team Fun Pic" width="900" />
+    <p>Our team's fun moment captured perfectly!</p>
+</div>
+
+
+
+<h3>team members</h3>
+
 <table border="1" style="width: 100%; border-collapse: collapse;">
     <thead>
         <tr>
@@ -162,19 +185,4 @@
         </tr>
     </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-### OUR Team Fun pic🤦‍♂️
-
 
