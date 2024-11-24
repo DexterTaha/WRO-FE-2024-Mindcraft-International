@@ -2,12 +2,12 @@
 #include <Servo.h>
 
 #define I2C_ADDRESS 0x08  // I2C address of this Arduino
-
-// Define the switch pin
-#define switchPin  A0  // Switch pin
+#define switchPin  A0     // Switch pin
 
 String receivedData = "";  // String to store the incoming message
 bool receiving = false;    // Flag to check if we are in the middle of receiving a message
+unsigned long lastReceiveTime = 0;  // Time when the last data was received
+unsigned long timeoutDuration = 500;  // Timeout duration in milliseconds
 
 // Motor control pins
 #define ENA  11
@@ -22,16 +22,6 @@ Servo STEERING;  // Create Servo object for steering
 int MaxSpeed = 255;
 int MinSpeed = 127;
 int steeringAngle = 0;
-
-// Buzzer functions (no longer used for now)
-void BuzzerRobotError() {
-  for (int i = 0; i < 5; i++) {
-    tone(8, 1500);  // Tone at 1500Hz (you can change the pin if needed)
-    delay(100);
-    noTone(8);  // Stop tone
-    delay(100);
-  }
-}
 
 // Stop the motors
 void StopMotors() {
@@ -52,7 +42,7 @@ bool isSwitchOn(int value) {
   return value > 1000;  // Return true if analog reading is close to 1023 (switch on)
 }
 
-// Function to handle data received over I2C (for future use, if necessary)
+// Function to handle data received over I2C
 void receiveEvent(int bytesReceived) {
   while (Wire.available()) {
     char c = Wire.read();  // Read one byte from I2C
@@ -64,6 +54,7 @@ void receiveEvent(int bytesReceived) {
       // End of the message
       receivedData += ".";
       receiving = false;
+      lastReceiveTime = millis();  // Update the last received time
     } else if (receiving) {
       // Append to the message if we're in the middle of receiving
       receivedData += c;
@@ -73,9 +64,14 @@ void receiveEvent(int bytesReceived) {
 
 // Function to print the lidar output data in the serial monitor
 void printLidarData() {
-  // If you want to display the full received message from I2C
-  if (receivedData.length() > 0) {
-    Serial.println(receivedData);
+  // Check if data was recently received
+  if (millis() - lastReceiveTime <= timeoutDuration) {
+    if (receivedData.length() > 0) {
+      Serial.println(receivedData);
+    }
+  } else {
+    // Timeout occurred, print zeros
+    Serial.println("0,0,0,0,0,0.");
   }
 }
 
@@ -101,12 +97,13 @@ void controlRobot(int speedInput, int steeringInput) {
   // Set motor speed
   analogWrite(ENA, motorSpeed);
 
-  // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
+  // Map steeringInput from -100 to 100 to servo angle range (120 to 60 degrees)
   steeringAngle = map(steeringInput, -100, 100, 120, 60);
 
   // Set servo position
   STEERING.write(steeringAngle);
 }
+
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
   printLidarData();
@@ -124,21 +121,21 @@ void setup() {
 
   // Attach servo
   STEERING.attach(STEERING_SERVO_PIN);
-  // Stop and hold motors when the switch is off
-  StopMotors();  
+
   // Stop motors and set servo to neutral position
+  StopMotors();
   controlRobot(0, 0);
 }
 
 void loop() {
   int switchValue = analogRead(switchPin);  // Read the analog value of the switch
 
-  if (isSwitchOn  (switchValue)) {  // Check if switch is on
+  if (isSwitchOn(switchValue)) {  // Check if switch is on
     act();  // Perform robot actions when the switch is on
   } else {
-    StopMotors();  // Stop and hold motors when the switch is off
-    controlRobot(50, 0);
-    BuzzerRobotError();  // Play error sound
+    StopMotors();  // Stop motors when the switch is off
+    controlRobot(0, 0);
+
   }
 
   delay(100);  // Short delay for stability
