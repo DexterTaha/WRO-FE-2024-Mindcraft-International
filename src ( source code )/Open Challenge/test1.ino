@@ -74,33 +74,34 @@ void printLidarData() {
   }
 }
 
-// Robot control function
+// Existing motor control function
 void controlRobot(int speedInput, int steeringInput) {
-  // Stop motors initially for 0,0 control
-  if (speedInput == 0 && steeringInput == 0) {
-    StopMotors();
-    steeringServo.write(90);  // Set steering to neutral position (90 degrees)
-    return;
-  }
-
-  // Set motor direction based on speedInput
+  // Map speedInput from -100 to 100 to motor speed range
+  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
+  
+  // Set motor direction based on the sign of speedInput
   if (speedInput > 0) {
+    // Move forward
     digitalWrite(IN_1, HIGH);
     digitalWrite(IN_2, LOW);
   } else if (speedInput < 0) {
+    // Move backward
     digitalWrite(IN_1, LOW);
     digitalWrite(IN_2, HIGH);
+  } else {
+    // Stop motors
+    StopMotors();
   }
 
   // Set motor speed
-  int motorSpeed = map(abs(speedInput), 0, 100, 0, 255);
   analogWrite(ENA, motorSpeed);
 
-  // Set steering angle
-  int steeringAngle = map(steeringInput, -100, 100, 60, 120);  // Adjust range as needed
-  steeringServo.write(steeringAngle);
-}
+  // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
+  steeringAngle = map(steeringInput, -100, 100, 120, 60);
 
+  // Set servo position
+  STEERING.write(steeringAngle);
+}
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
   printLidarData();
