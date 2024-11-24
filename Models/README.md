@@ -84,7 +84,7 @@ After qualifying for the international stage, we decided to build a **100% DIY r
 
 *Image of First DIY Robot Version:*
 
-[First DIY Robot](https://cad.onshape.com/documents/08595aa7e5b1cdab597252fc/w/cfc7e06246a86472db038f97/e/a6dace16d30ca705305fbd41?renderMode=0&uiState=67434850443a10243937ef0f)
+[First DIY Robot](https://cad.onshape.com/documents/08595aa7e5b1cdab597252fc/w/cfc7e06246a86472db038f97/e/671ce5308fe71051d562260c)
 
 ### Second Version: Lack of Differential System
 
@@ -96,7 +96,7 @@ In the second iteration of our DIY robot, we attempted to reduce the size and we
 
 *Image of Second DIY Robot Version:*
 
-[Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b?renderMode=0&uiState=67434af5443a10243937f76a)
+[Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b)
 
 ### Third Version: Final Optimized Robot
 
@@ -116,7 +116,7 @@ For the third version, we made significant changes to address the previous short
 
 *Image of Third DIY Robot Version:*
 
-![Third DIY Robot](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/images/Third_DIY_Robot.png)
+[Third DIY Robot](https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/7f48b1d9bd685347e4768d04)
 
 This final version solved all the problems encountered in previous iterations, resulting in a robot that is compact, efficient, and competition-ready.
 
