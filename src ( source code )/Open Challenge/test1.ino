@@ -22,30 +22,64 @@ String receivedData = "";  // String to store the incoming message
 bool receiving = false;    // Flag to check if we are in the middle of receiving a message
 
 // Direction control variables
-int ccw = 0; // Counter-clockwise (default: 0)
-int cw = 1;  // Clockwise (default: 1)
+int ccw = 0; // Counter-clockwise
+int cw = 1;  // Clockwise
 
-// Motor control function for CW
-void controlRobotCW(int rightDistance, int backRightDistance) {
-  // Maintain distance to the wall at 30 cm
-  int targetDistance = 30;
-  int averageRight = (rightDistance + backRightDistance) / 2;
+// Function to drive the robot
+void controlRobot(int speedInput, int steeringInput) {
+  // Map speedInput from -100 to 100 to motor speed range
+  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
 
-  if (averageRight < targetDistance) {
-    // Move backward to restore distance
-    digitalWrite(IN_1, LOW);
-    digitalWrite(IN_2, HIGH);
-    analogWrite(ENA, MaxSpeed / 2);
-  } else {
+  // Set motor direction based on the sign of speedInput
+  if (speedInput > 0) {
     // Move forward
     digitalWrite(IN_1, HIGH);
     digitalWrite(IN_2, LOW);
-    analogWrite(ENA, MaxSpeed);
+  } else if (speedInput < 0) {
+    // Move backward
+    digitalWrite(IN_1, LOW);
+    digitalWrite(IN_2, HIGH);
+  } else {
+    // Stop motors
+    StopMotors();
   }
 
-  // Keep steering straight
-  steeringAngle = 90;
+  // Set motor speed
+  analogWrite(ENA, motorSpeed);
+
+  // Map steeringInput from -100 to 100 to servo angle range (130 to 50 degrees)
+  steeringAngle = map(steeringInput, -100, 100, 120, 60);
+
+  // Set servo position
   STEERING.write(steeringAngle);
+}
+
+// Motor control function for CW
+void controlRobotCW(int rightDistance, int backRightDistance) {
+  int targetDistance = 30;  // Target wall distance (cm)
+  int averageRight = (rightDistance + backRightDistance) / 2;
+
+  // Adjust steering based on the distance
+  if (abs(averageRight - targetDistance) > 2) {
+    int adjustment = (averageRight > targetDistance) ? -5 : 5;
+    steeringAngle = constrain(steeringAngle + adjustment, 60, 120);
+    STEERING.write(steeringAngle);
+  }
+
+  // Drive forward
+  controlRobot(50, 0);  // Speed: 50%, Steering: Centered
+}
+
+// Stop motors
+void StopMotors() {
+  digitalWrite(IN_1, LOW);
+  digitalWrite(IN_2, LOW);
+  analogWrite(ENA, 0);
+}
+
+// Hold motors (keep them idle)
+void HoldMotors() {
+  StopMotors();
 }
 
 // Buzzer functions
@@ -73,15 +107,20 @@ void BuzzerRobotError() {
   }
 }
 
-void StopMotors() {
-  digitalWrite(IN_1, LOW);
-  digitalWrite(IN_2, LOW);
-  analogWrite(ENA, 0);
-}
-
 // Check if the switch is on
 bool isSwitchOn(int value) {
-  return value > 1000;
+  return value > 1000;  // Return true if analog reading is close to 1023 (switch on)
+}
+
+// Robot action function
+void act() {
+  sendDataToPi();       // Send sensor and motor data to Raspberry Pi
+  receiveDataFromPi();  // Receive control data from Raspberry Pi
+}
+
+// Send data to Raspberry Pi
+void sendDataToPi() {
+  // Placeholder function for sending data to Raspberry Pi
 }
 
 // Process received data from Raspberry Pi
@@ -92,9 +131,9 @@ void receiveDataFromPi() {
     sscanf(receivedData.c_str(), "-%d,%d,%d,%d,%d,%d.", &distances[0], &distances[1], &distances[2], &distances[3], &distances[4], &distances[5]);
 
     if (cw == 1 && ccw == 0) {
-      controlRobotCW(distances[4], distances[5]); // Use right-side sensors for CW
+      controlRobotCW(distances[4], distances[5]);  // Use right-side sensors for CW
     } else {
-      StopMotors(); // Default behavior if invalid configuration
+      StopMotors();  // Default behavior if invalid configuration
       BuzzerRobotError();
     }
 
@@ -134,12 +173,14 @@ void setup() {
   BuzzerRobotStart();
 }
 
+// Loop function
 void loop() {
-  int switchValue = analogRead(switchPin);
-  if (isSwitchOn(switchValue)) {
-    receiveDataFromPi();
+  int switchValue = analogRead(switchPin);  // Read the analog value of the switch
+
+  if (isSwitchOn(switchValue)) {  // Check if switch is on
+    act();
   } else {
-    StopMotors();
+    HoldMotors();
     BuzzerRobotError();
   }
 }
