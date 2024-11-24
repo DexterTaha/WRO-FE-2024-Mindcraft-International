@@ -1,21 +1,17 @@
-
-
 <h3>Engineers Github</h3>
 <div align="center">
     <img src="https://github.com/user-attachments/assets/5f536c4e-d997-4cb6-9d39-cfb2d6dd72be" 
-         alt="Engineers Github">
+         alt="Engineers Github" width="500" height="500">
     <p>A visual showcasing the Engineers' GitHub repository.</p>
 </div>
 
-
-
-
 <h3>OUR Team Fun Pic 🤦‍♂️</h3>
-
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/e4554c51-6b42-4232-a2d8-b8e35a5619a1" alt="Team Fun Pic" width="900" />
+    <img src="https://github.com/user-attachments/assets/e4554c51-6b42-4232-a2d8-b8e35a5619a1" 
+         alt="Team Fun Pic" width="500" height="500">
     <p>Our team's fun moment captured perfectly!</p>
 </div>
+
 
 
 
