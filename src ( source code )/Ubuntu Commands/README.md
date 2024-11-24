@@ -1,4 +1,16 @@
 ### Basic Ubuntu Commands:
+Create a file:
+```bash
+touch file.py
+```
+Navigate to a folder:
+```bash
+cd folder
+```
+Run a python script:
+```bash
+python3 file.py
+```
 
 
 ---
