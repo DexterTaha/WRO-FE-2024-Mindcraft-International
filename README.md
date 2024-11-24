@@ -41,39 +41,42 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 | **1.Mobility Management**             |
 |:---------------------------------------|
 | Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.|
-| [Overview](#competition-context)      |
-| [Team Management](#team-management)  |
-| [Vehicle Strengths and Limitations](#vehicle-strengths-and-limitations) |
+| [Robot Parts & Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/Models)      |
 
 ---
 
 | **Power and Sense Management**        |
 |:---------------------------------------|
 |Power and Sense management discussion should cover the power source for the vehicle as well as the sensors required to provide the vehicle with information to negotiate the different challenges. The discussion can include the reasons for selecting various sensors and how they are being used on the vehicle together with power consumption. The discussion could include a wiring diagram with BOM for the vehicle that includes all aspects of professional wiring diagrams.|
-| [Chassis Design](#chassis)            |
-| [Sensors](#sensors)                   |
-| [Wiring Diagram](#wiring-diagram)     |
+| [Bill of Materials (BOM)](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/other/BOM(Bill%20of%20Materials))            |
+| [Schematics](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/schemes)                   |
 
 ---
 
 | **Obstacle Management**               |
-|---------------------------------------|
-| [Turn Detection Algorithms](#detecting-turns-direction)  |
-| [Pillar Detection](#pillar-detection) |
-| [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy) |
+|:---------------------------------------|
+|Obstacle management discussion should include the strategy for the vehicle to negotiate the obstacle course for all the challenges. This could include flow diagrams, pseudo code and source code with detailed comments.|
+| [Strategy](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/other/Strategy) |
+| [Arduino Functions](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/src%20(%20source%20code%20)/Arduino%20Functions) |
+| [Open challenge](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/src%20(%20source%20code%20)/Open%20Challenge) |
+| [Dashboard Visualisation](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/src%20(%20source%20code%20)/Dashboard)|
+| [Map randomizer & score calculator](https://dextertaha.github.io/WRO-FE-2024-Mindcraft-International/)|
 
 ---
 
 | **Pictures – Team and Vehicle**       |
-|---------------------------------------|
-| [Team Photos](#team-photos)           |
-| [Vehicle Photos](#photos)             |
+|:---------------------------------------|
+| Pictures of the team and robot must be provided. The pictures of the robot must cover all sides of the robot, must be clear, in focus and show aspects of the mobility, power and sense, and obstacle management. Reference in the discussion sections 1, 2 and 3 can be made to these pictures. Team photo is necessary for judges to relate and identify the team during the local and international competitions. |
+| [Vehicle Photos](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/v-photos)           |
+| [Team Members & Pictures](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/t-photos)             |
 
 ---
 
 | **Performance Videos**                |
-|---------------------------------------|
-| [Demonstration Videos](#demonstration-videos) |
+|:---------------------------------------|
+| The performance videos must demonstrate the performance of the vehicle from start to finish for each challenge. The videos could include an overlay of commentary, titles or animations. The video could also include aspects of section 1, 2 or 3. |
+| [Demonstration Videos](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/videos) |
+| [Youtube Channel](https://www.youtube.com/@MindcraftWRO-kw8vp)|
 
 ---
 
