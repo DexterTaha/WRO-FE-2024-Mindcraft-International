@@ -72,7 +72,7 @@ We participated in the **national competition** with a robot constructed using *
 
 *Image of LEGO Robot Used in National Competition:*
 
-![LEGO Robot](https://github-production-user-asset-6210df.s3.amazonaws.com/130682580/337490248-3f184c4a-aa2b-491f-9ec5-0fe420d42f31.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241124T153606Z&X-Amz-Expires=300&X-Amz-Signature=f0453b3dcbf27a713996a15e16b4535ea7a080e4f0b3ac95c5329351e6ec7839&X-Amz-SignedHeaders=host)
+[LEGO Robot](https://github-production-user-asset-6210df.s3.amazonaws.com/130682580/337490248-3f184c4a-aa2b-491f-9ec5-0fe420d42f31.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241124T153606Z&X-Amz-Expires=300&X-Amz-Signature=f0453b3dcbf27a713996a15e16b4535ea7a080e4f0b3ac95c5329351e6ec7839&X-Amz-SignedHeaders=host)
 
 ### First Version: Oversized DIY Robot
 
@@ -84,8 +84,7 @@ After qualifying for the international stage, we decided to build a **100% DIY r
 
 *Image of First DIY Robot Version:*
 
-![First DIY Robot](https://cad.onshape.com/documents/08595aa7e5b1cdab597252fc/w/cfc7e06246a86472db038f97/e/a6dace16d30ca705305fbd41?renderMode=0&uiState=67434850443a10243937ef0f
-)
+[First DIY Robot](https://cad.onshape.com/documents/08595aa7e5b1cdab597252fc/w/cfc7e06246a86472db038f97/e/a6dace16d30ca705305fbd41?renderMode=0&uiState=67434850443a10243937ef0f)
 
 ### Second Version: Lack of Differential System
 
@@ -97,7 +96,7 @@ In the second iteration of our DIY robot, we attempted to reduce the size and we
 
 *Image of Second DIY Robot Version:*
 
-![Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b?renderMode=0&uiState=67434af5443a10243937f76a)
+[Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b?renderMode=0&uiState=67434af5443a10243937f76a)
 
 ### Third Version: Final Optimized Robot
 
