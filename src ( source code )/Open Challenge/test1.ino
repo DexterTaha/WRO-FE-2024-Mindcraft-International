@@ -94,7 +94,7 @@ void loop() {
   if (isSwitchOn(switchValue)) {  // Check if switch is on
     act();  // Perform robot actions when the switch is on
   } else {
-    HoldMotors();  // Stop and hold motors when the switch is off
+    StopMotors();  // Stop and hold motors when the switch is off
     BuzzerRobotError();  // Play error sound
   }
 
