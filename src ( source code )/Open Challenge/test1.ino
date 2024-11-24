@@ -118,7 +118,8 @@ void setup() {
 
   // Attach servo
   steeringServo.attach(STEERING_SERVO_PIN);
-
+  // Stop and hold motors when the switch is off
+  StopMotors();  
   // Stop motors and set servo to neutral position
   controlRobot(0, 0);
 }
@@ -126,11 +127,11 @@ void setup() {
 void loop() {
   int switchValue = analogRead(switchPin);  // Read the analog value of the switch
 
-  if (isSwitchOn(switchValue)) {  // Check if switch is on
+  if (isSwitchOn  (switchValue)) {  // Check if switch is on
     act();  // Perform robot actions when the switch is on
   } else {
     StopMotors();  // Stop and hold motors when the switch is off
-    steeringServo.write(90);  // Neutral servo position
+    controlRobot(0, 0);
     BuzzerRobotError();  // Play error sound
   }
 
