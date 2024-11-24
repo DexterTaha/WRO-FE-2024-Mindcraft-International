@@ -42,6 +42,9 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 |:---------------------------------------|
 | Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.|
 | [Robot Parts & Design](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/Models)      |
+| [Power System](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/ba104a2bcaaa4348022537fc64ced3bace19f17f/other/Power%20System) |
+| [Sensing Units](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/ba104a2bcaaa4348022537fc64ced3bace19f17f/other/Sensing%20Units) |
+| [Steering System](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/ba104a2bcaaa4348022537fc64ced3bace19f17f/other/Steering%20System) |
 
 ---
 
