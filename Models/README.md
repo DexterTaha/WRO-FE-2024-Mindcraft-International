@@ -95,8 +95,8 @@ In the second iteration of our DIY robot, we attempted to reduce the size and we
 - **Inefficient Turning Radius**: The large turning radius prevented the robot from handling obstacles and precise movements required in the competition.
 
 *Link of Second DIY Robot Version:*
-
 [Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b)
+
 
 ### Third Version: Final Optimized Robot
 
@@ -117,6 +117,7 @@ For the third version, we made significant changes to address the previous short
 *Link of Third DIY Robot Version:*
 
 [Third DIY Robot](https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/7f48b1d9bd685347e4768d04)
+
 
 This final version solved all the problems encountered in previous iterations, resulting in a robot that is compact, efficient, and competition-ready.
 
