@@ -82,7 +82,7 @@ After qualifying for the international stage, we decided to build a **100% DIY r
 - **Weight Problems**: The larger size contributed to increased weight, affecting speed and maneuverability.
 - **Inefficient Design**: The oversized structure made it difficult to navigate the course effectively.
 
-*Image of First DIY Robot Version:*
+*Link of First DIY Robot Version:*
 
 [First DIY Robot](https://cad.onshape.com/documents/08595aa7e5b1cdab597252fc/w/cfc7e06246a86472db038f97/e/671ce5308fe71051d562260c)
 
@@ -94,7 +94,7 @@ In the second iteration of our DIY robot, we attempted to reduce the size and we
 - **Poor Maneuverability**: The robot would **drift a lot** and took **150cm** to complete a full turn, which is unacceptable for tight course navigation.
 - **Inefficient Turning Radius**: The large turning radius prevented the robot from handling obstacles and precise movements required in the competition.
 
-*Image of Second DIY Robot Version:*
+*Link of Second DIY Robot Version:*
 
 [Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b)
 
@@ -114,7 +114,7 @@ For the third version, we made significant changes to address the previous short
 - **Sturdy and Modular Assembly**: All parts are assembled using screws, nuts, and zip ties—no glue—making the robot sturdy yet easy to modify and improve.
 - **Safety Features**: The battery is placed in a safe location to avoid damage from bumps or accidents, and critical components are protected from potential battery issues.
 
-*Image of Third DIY Robot Version:*
+*Link of Third DIY Robot Version:*
 
 [Third DIY Robot](https://cad.onshape.com/documents/1c6f1405e84d0c390333223c/w/c90b719cdc670bdbfb16a84e/e/7f48b1d9bd685347e4768d04)
 
