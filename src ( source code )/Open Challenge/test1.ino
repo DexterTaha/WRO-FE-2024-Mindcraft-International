@@ -14,6 +14,10 @@ bool receiving = false;    // Flag to check if we are in the middle of receiving
 #define IN_1 13
 #define IN_2 12
 
+#define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
+
+Servo steeringServo;  // Create Servo object for steering
+
 // Buzzer functions (no longer used for now)
 void BuzzerRobotError() {
   for (int i = 0; i < 5; i++) {
@@ -70,6 +74,33 @@ void printLidarData() {
   }
 }
 
+// Robot control function
+void controlRobot(int speedInput, int steeringInput) {
+  // Stop motors initially for 0,0 control
+  if (speedInput == 0 && steeringInput == 0) {
+    StopMotors();
+    steeringServo.write(90);  // Set steering to neutral position (90 degrees)
+    return;
+  }
+
+  // Set motor direction based on speedInput
+  if (speedInput > 0) {
+    digitalWrite(IN_1, HIGH);
+    digitalWrite(IN_2, LOW);
+  } else if (speedInput < 0) {
+    digitalWrite(IN_1, LOW);
+    digitalWrite(IN_2, HIGH);
+  }
+
+  // Set motor speed
+  int motorSpeed = map(abs(speedInput), 0, 100, 0, 255);
+  analogWrite(ENA, motorSpeed);
+
+  // Set steering angle
+  int steeringAngle = map(steeringInput, -100, 100, 60, 120);  // Adjust range as needed
+  steeringServo.write(steeringAngle);
+}
+
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
   printLidarData();
@@ -78,14 +109,18 @@ void act() {
 void setup() {
   Wire.begin(I2C_ADDRESS);  // Join the I2C bus with the specified address
   Wire.onReceive(receiveEvent);  // Register the receive event
-  Serial.begin(9600);       // Start the Serial Monitor
+  Serial.begin(9600);  // Start the Serial Monitor
   
   // Initialize motor pins
   pinMode(ENA, OUTPUT);
   pinMode(IN_1, OUTPUT);
   pinMode(IN_2, OUTPUT);
-  
-  StopMotors();  // Ensure motors are stopped initially
+
+  // Attach servo
+  steeringServo.attach(STEERING_SERVO_PIN);
+
+  // Stop motors and set servo to neutral position
+  controlRobot(0, 0);
 }
 
 void loop() {
@@ -95,6 +130,7 @@ void loop() {
     act();  // Perform robot actions when the switch is on
   } else {
     StopMotors();  // Stop and hold motors when the switch is off
+    steeringServo.write(90);  // Neutral servo position
     BuzzerRobotError();  // Play error sound
   }
 
