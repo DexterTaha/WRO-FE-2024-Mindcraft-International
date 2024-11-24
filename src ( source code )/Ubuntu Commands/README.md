@@ -1,4 +1,5 @@
-### Preparing the ROS2 startup script:
+### Preparing the ROS2 startup script
+#### Setup
 1. Create a startup script:
 ```bash
 touch startup.sh
@@ -21,4 +22,25 @@ sleep 5
 cd ~/ros2_ws
 ros2 run wall_follower wall_follower
 ```
-
+3. Make the script executable:
+```
+chmod +x /home/mindcraft/start_ros2.sh
+```
+#### Making the script executable
+1. Edit Contrab:
+```bash
+crontab -e
+```
+2. Add the following line:
+```bash
+@reboot /bin/bash /home/mindcraft/start_ros2.sh > /home/mindcraft/start_ros2.log 2>&1
+```
+#### Testing the setup
+1. Reboot the system:
+```bash
+sudo reboot
+```
+2. Check the Log File After Reboot:
+```bash
+cat /home/mindcraft/start_ros2.log
+```
