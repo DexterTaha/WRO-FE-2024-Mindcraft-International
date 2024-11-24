@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/7dd84c35-26ea-4696-9ddd-9582db0917b3" alt="Top View" height="600">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Top-view.jpg" alt="Top View" height="600">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Isometric View</p>
     </td>
   </tr>
@@ -10,17 +10,17 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/7dd84c35-26ea-4696-9ddd-9582db0917b3" alt="Top View" height="300">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Top-view.jpg" alt="Top View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Top View</p>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/c19e7906-0902-4bd4-982e-fbc750e36572" alt="Bottom View" height="300">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/bottom-view.jpg" alt="Bottom View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Bottom View</p>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/3204f66e-3bff-4e06-ad67-10a9025d0708" alt="Front View" height="300">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Front-view.jpg" alt="Front View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Right View</p>
     </td>
     <td>
