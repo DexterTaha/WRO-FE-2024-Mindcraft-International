@@ -95,6 +95,7 @@ In the second iteration of our DIY robot, we attempted to reduce the size and we
 - **Inefficient Turning Radius**: The large turning radius prevented the robot from handling obstacles and precise movements required in the competition.
 
 *Link of Second DIY Robot Version:*
+
 [Second DIY Robot](https://cad.onshape.com/documents/fbbf77d5a7d51852563af36e/w/afa3b15c16b20a57b3f67b6c/e/98887fbf0f458e0817d24d8b)
 
 
