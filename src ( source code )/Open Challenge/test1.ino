@@ -18,6 +18,11 @@ bool receiving = false;    // Flag to check if we are in the middle of receiving
 
 Servo steeringServo;  // Create Servo object for steering
 
+// Motor control variables
+int MaxSpeed = 255;
+int MinSpeed = 127;
+int steeringAngle = 0;
+
 // Buzzer functions (no longer used for now)
 void BuzzerRobotError() {
   for (int i = 0; i < 5; i++) {
