@@ -20,17 +20,17 @@
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Front-view.jpg" alt="Front View" height="300">
+      <img src=https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Right-view.jpg" alt="Front View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Right View</p>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/eec60241-d684-42f8-8959-c9945ed51c15" alt="Left View" height="300">
+      <img src="https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/blob/main/v-photos/real%20images/Left-view.jpg" alt="Left View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Left View</p>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/74367178-4ef1-437a-8aa6-5fa74df424f8" alt="Back View" height="300">
+      <img src="" alt="Back View" height="300">
       <p style="text-align: center; font-size: 24px; font-weight: bold;">Face View</p>
     </td>
     <td>
