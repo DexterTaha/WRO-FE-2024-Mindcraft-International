@@ -45,7 +45,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ---
 
-| **Power and Sense Management**        |
+| **2.Power and Sense Management**        |
 |:---------------------------------------|
 |Power and Sense management discussion should cover the power source for the vehicle as well as the sensors required to provide the vehicle with information to negotiate the different challenges. The discussion can include the reasons for selecting various sensors and how they are being used on the vehicle together with power consumption. The discussion could include a wiring diagram with BOM for the vehicle that includes all aspects of professional wiring diagrams.|
 | [Bill of Materials (BOM)](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/other/BOM(Bill%20of%20Materials))            |
@@ -53,7 +53,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ---
 
-| **Obstacle Management**               |
+| **3.Obstacle Management**               |
 |:---------------------------------------|
 |Obstacle management discussion should include the strategy for the vehicle to negotiate the obstacle course for all the challenges. This could include flow diagrams, pseudo code and source code with detailed comments.|
 | [Strategy](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/other/Strategy) |
@@ -64,7 +64,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ---
 
-| **Pictures – Team and Vehicle**       |
+| **4.Pictures – Team and Vehicle**       |
 |:---------------------------------------|
 | Pictures of the team and robot must be provided. The pictures of the robot must cover all sides of the robot, must be clear, in focus and show aspects of the mobility, power and sense, and obstacle management. Reference in the discussion sections 1, 2 and 3 can be made to these pictures. Team photo is necessary for judges to relate and identify the team during the local and international competitions. |
 | [Vehicle Photos](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/v-photos)           |
@@ -72,7 +72,7 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ---
 
-| **Performance Videos**                |
+| **5.Performance Videos**                |
 |:---------------------------------------|
 | The performance videos must demonstrate the performance of the vehicle from start to finish for each challenge. The videos could include an overlay of commentary, titles or animations. The video could also include aspects of section 1, 2 or 3. |
 | [Demonstration Videos](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2bbf1b3f514550d7e91d4fa6e24702a49f4da584/videos) |
@@ -80,13 +80,14 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 ---
 
-| **GitHub Utilization**                |
-|---------------------------------------|
-| [Project Repository](https://github.com/username/repo) |
+| **6.GitHub Utilization**                |
+|:---------------------------------------|
+| Git and GitHub are available for opensource project management and file version control. As part of the design and development process, teams must use this platform to document their progress, coding development and share files. Judging the platform will include how complete the information provided is, how information is structured and how often commits were done. Teams can use this platform to provide additional information on their engineering design and coding of their vehicle as well.|
+| [Repository Link](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International) |
 
 ---
 
-| **Engineering Factor**                |
-|---------------------------------------|
-| [Reflections](#future-work-and-reflections) |
-| [Safety Notes](#lipo-battery-safety)  |
+| **7.Engineering Factor**                |
+|:---------------------------------------|
+| Own Design and manufacturing of vehicle and components, with off the shelf electrical components, such as motors and sensors. |
+| [Design Description](https://github.com/DexterTaha/WRO-FE-2024-Mindcraft-International/tree/2e0510bb5057f1936545975d4327144dd42a107b/Models/%20Parts) |
