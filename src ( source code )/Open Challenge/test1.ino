@@ -16,7 +16,7 @@ bool receiving = false;    // Flag to check if we are in the middle of receiving
 
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 
-Servo steeringServo;  // Create Servo object for steering
+Servo STEERING;  // Create Servo object for steering
 
 // Motor control variables
 int MaxSpeed = 255;
@@ -123,7 +123,7 @@ void setup() {
   pinMode(IN_2, OUTPUT);
 
   // Attach servo
-  steeringServo.attach(STEERING_SERVO_PIN);
+  STEERING.attach(STEERING_SERVO_PIN);
   // Stop and hold motors when the switch is off
   StopMotors();  
   // Stop motors and set servo to neutral position
@@ -137,7 +137,7 @@ void loop() {
     act();  // Perform robot actions when the switch is on
   } else {
     StopMotors();  // Stop and hold motors when the switch is off
-    controlRobot(0, 0);
+    controlRobot(50, 0);
     BuzzerRobotError();  // Play error sound
   }
 
