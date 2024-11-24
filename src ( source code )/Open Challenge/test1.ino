@@ -9,15 +9,33 @@
 String receivedData = "";  // String to store the incoming message
 bool receiving = false;    // Flag to check if we are in the middle of receiving a message
 
+// Motor control pins
+#define ENA  11
+#define IN_1 13
+#define IN_2 12
+
 // Buzzer functions (no longer used for now)
 void BuzzerRobotError() {
-  // You can keep this function for error indication if necessary
   for (int i = 0; i < 5; i++) {
     tone(8, 1500);  // Tone at 1500Hz (you can change the pin if needed)
     delay(100);
     noTone(8);  // Stop tone
     delay(100);
   }
+}
+
+// Stop the motors
+void StopMotors() {
+  digitalWrite(IN_1, LOW);
+  digitalWrite(IN_2, LOW);
+  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
+}
+
+// Hold the motors in place
+void HoldMotors() {
+  digitalWrite(IN_1, HIGH);
+  digitalWrite(IN_2, HIGH);
+  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
 }
 
 // Check if the switch is on
@@ -51,6 +69,7 @@ void printLidarData() {
     Serial.println(receivedData);
   }
 }
+
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
   printLidarData();
@@ -60,16 +79,23 @@ void setup() {
   Wire.begin(I2C_ADDRESS);  // Join the I2C bus with the specified address
   Wire.onReceive(receiveEvent);  // Register the receive event
   Serial.begin(9600);       // Start the Serial Monitor
+  
+  // Initialize motor pins
+  pinMode(ENA, OUTPUT);
+  pinMode(IN_1, OUTPUT);
+  pinMode(IN_2, OUTPUT);
+  
+  StopMotors();  // Ensure motors are stopped initially
 }
 
 void loop() {
   int switchValue = analogRead(switchPin);  // Read the analog value of the switch
 
   if (isSwitchOn(switchValue)) {  // Check if switch is on
-    act();  // Print to Serial Monitor when the switch is on
+    act();  // Perform robot actions when the switch is on
   } else {
-    // If switch is off, optionally handle error or stop motors
-    BuzzerRobotError();  // Error sound when switch is off
+    HoldMotors();  // Stop and hold motors when the switch is off
+    BuzzerRobotError();  // Play error sound
   }
 
   delay(100);  // Short delay for stability
