@@ -36,71 +36,54 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 
 
-# WRO Future-Engineers Competition:
+# WRO Future Engineers Competition
 
-## Table of Contents
+| **1.Mobility Management**             |
+|:---------------------------------------|
+| Mobility management discussion should cover how the vehicle movements are managed. What motors are selected, how they are selected and implemented. A brief discussion regarding the vehicle chassis design /selection can be provided as well as the mounting of all components to the vehicle chassis/structure. The discussion may include engineering principles such as speed, torque, power etc. usage. Building or assembly instructions can be provided together with 3D CAD files to 3D print parts.|
+| [Overview](#competition-context)      |
+| [Team Management](#team-management)  |
+| [Vehicle Strengths and Limitations](#vehicle-strengths-and-limitations) |
 
-- **[Project Overview](#project-overview)**  
-   - [Competition Context](#competition-context)  
-   - [Team Management](#team-management)  
-   - [Vehicle Strengths and Limitations](#vehicle-strengths-and-limitations)  
+---
 
-- **[Technical Overview](#technical-overview)**  
-   - **Hardware Design**  
-      - [Chassis](#chassis)  
-      - [Power and Control](#power-and-control)  
-      - [Sensors](#sensors)  
-      - [Wiring Diagram](#wiring-diagram)  
-   - **Software Design**  
-      - [Programming Languages & Libraries](#programming-languages-libraries)  
-      - [Algorithms](#algorithms)  
+| **Power and Sense Management**        |
+|:---------------------------------------|
+|Power and Sense management discussion should cover the power source for the vehicle as well as the sensors required to provide the vehicle with information to negotiate the different challenges. The discussion can include the reasons for selecting various sensors and how they are being used on the vehicle together with power consumption. The discussion could include a wiring diagram with BOM for the vehicle that includes all aspects of professional wiring diagrams.|
+| [Chassis Design](#chassis)            |
+| [Sensors](#sensors)                   |
+| [Wiring Diagram](#wiring-diagram)     |
 
-- **[Programming and Algorithms](#programming-and-algorithms)**  
-   - [Detecting Turns & Direction](#detecting-turns-direction)  
-   - [Lap Counting](#lap-counting)  
-   - [IMU-Based Steering](#imu-based-steering)  
-   - [PID Controller](#pid-controller)  
-   - [Turn Execution](#turn-execution)  
+---
 
-- **[Challenges](#challenges)**  
-   - **Obstacle Avoidance Round**  
-      - [Obstacle Challenge Overview](#obstacle-challenge-overview)  
-      - [Pillar Detection](#pillar-detection)  
-      - [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)  
-   - **Design Challenges**  
-      - [Hardware Challenges](#hardware-challenges)  
-      - [Sensor & Coding Challenges](#sensor-coding-challenges)  
-      - [Mechanical Challenges](#mechanical-challenges)  
+| **Obstacle Management**               |
+|---------------------------------------|
+| [Turn Detection Algorithms](#detecting-turns-direction)  |
+| [Pillar Detection](#pillar-detection) |
+| [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy) |
 
-- **[Future Work and Reflections](#future-work-and-reflections)**  
-   - [Future Work](#future-work)  
-   - [Reflections and Gratitude](#reflections-and-gratitude)  
+---
 
-- **[Acknowledgments](#acknowledgments)**  
+| **Pictures – Team and Vehicle**       |
+|---------------------------------------|
+| [Team Photos](#team-photos)           |
+| [Vehicle Photos](#photos)             |
 
-- **[Appendices](#appendices)**  
-   - [Datasheets & Specifications](#datasheets-specifications)  
-   - [References](#references)  
+---
 
-- **[Demonstrations](#demonstrations)**  
-   - [Demonstration Videos](#demonstration-videos)  
-   - [Photos](#photos)  
-   - [Team Photos](#team-photos)  
+| **Performance Videos**                |
+|---------------------------------------|
+| [Demonstration Videos](#demonstration-videos) |
 
-- **[Lessons Learned](#lessons-learned)**  
+---
 
-- **[Safety Notes](#safety-notes)**  
-   - [LiPo Battery Safety](#lipo-battery-safety)
+| **GitHub Utilization**                |
+|---------------------------------------|
+| [Project Repository](https://github.com/username/repo) |
 
-## Project Overview
+---
 
-### Aim and Objectives
-The primary aim of this robot project is to develop an autonomous vehicle capable of navigating its environment effectively. The key objectives include:
-
-1. Detecting and avoiding obstacles in real-time.
-2. Implementing autonomous driving capabilities.
-3. Enabling state detection and automatic correction in case of errors.
-4. Performing tasks efficiently within competition constraints.
-
-### Competition Context:
-The WRO Future Engineers 2024 competition challenges teams to design, build, and program advanced autonomous robots to solve real-world engineering problems. Robots must navigate complex environments, interact with objects, and perform tasks using sophisticated sensors such as LiDAR, DTOF, and gyroscopes. The emphasis is on both the technical aspects, like precision and programming (often using platforms like Jetson Nano or Raspberry Pi), and the engineering design, focusing on efficient mechanical systems. Teams will be evaluated based on their robot's performance, problem-solving, and ability to innovate, with a focus on themes like automation and sustainability.
+| **Engineering Factor**                |
+|---------------------------------------|
+| [Reflections](#future-work-and-reflections) |
+| [Safety Notes](#lipo-battery-safety)  |
