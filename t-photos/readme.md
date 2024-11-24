@@ -1,8 +1,7 @@
-<h3>Engineers Github</h3>
+<h3>Mindcraft Engineers Team Pic</h3>
 <div align="center">
     <img src="https://github.com/user-attachments/assets/5f536c4e-d997-4cb6-9d39-cfb2d6dd72be" 
          alt="Engineers Github" width="500">
-    <p>A visual showcasing the Engineers' GitHub repository.</p>
 </div>
 
 <h3>OUR Team Fun Pic 🤦‍♂️</h3>
