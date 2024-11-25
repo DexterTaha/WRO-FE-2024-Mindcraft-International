@@ -142,18 +142,21 @@ void adjustControlBasedOnDistance(int requiredDistance) {
   if (averageDistance == requiredDistance) {
     controlRobot(100, 0); // Drive straight
   } else if (averageDistance > requiredDistance) {
-    int steeringValue = map(averageDistance, requiredDistance, 100, 0, 100);
-    controlRobot(50, steeringValue); // Turn right
+    int steeringValue = map(averageDistance, requiredDistance, 3000, 0, 100);
+    controlRobot(30, steeringValue); // Turn right
+  } else if (averageDistance < requiredDistance) {
+    int steeringValue = map(averageDistance, 300, requiredDistance, -100, 0);
+    controlRobot(30, steeringValue); // Turn left
   } else {
-    int steeringValue = map(averageDistance, 0, requiredDistance, -100, 0);
-    controlRobot(50, steeringValue); // Turn left
+    controlRobot(0, 0); // Turn left
   }
 }
 
 // Robot action function
 void act() {
   printLidarData();
-  adjustControlBasedOnDistance(30); // Adjust based on required distance (30 cm)
+  parseMessage(receivedData);  // Parse the received data
+  adjustControlBasedOnDistance(20); // Adjust based on required distance (30 cm)
 }
 
 void setup() {
@@ -178,7 +181,6 @@ void loop() {
   int switchValue = analogRead(SWITCH_PIN); // Read the analog value of the switch
 
   if (isSwitchOn(switchValue)) { // Check if switch is on
-    parseMessage(receivedData);  // Parse the received data
     act();                       // Perform robot actions
   } else {
     StopMotors();                // Stop motors when the switch is off
@@ -187,3 +189,4 @@ void loop() {
 
   delay(100); // Short delay for stability
 }
+
