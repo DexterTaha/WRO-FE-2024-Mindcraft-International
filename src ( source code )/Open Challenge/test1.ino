@@ -2,12 +2,12 @@
 #include <Servo.h>
 
 #define I2C_ADDRESS 0x08  // I2C address of this Arduino
-#define switchPin  A0     // Switch pin
+#define SWITCH_PIN A0     // Switch pin
 
-String receivedData = "";  // String to store the incoming message
-bool receiving = false;    // Flag to check if we are in the middle of receiving a message
-unsigned long lastReceiveTime = 0;  // Time when the last data was received
-unsigned long timeoutDuration = 500;  // Timeout duration in milliseconds
+String receivedData = "";          // String to store the incoming message
+bool receiving = false;            // Flag to check if we are in the middle of receiving a message
+unsigned long lastReceiveTime = 0; // Time when the last data was received
+unsigned long timeoutDuration = 500; // Timeout duration in milliseconds
 
 // Motor control pins
 #define ENA  11
@@ -16,15 +16,15 @@ unsigned long timeoutDuration = 500;  // Timeout duration in milliseconds
 
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 
-Servo STEERING;  // Create Servo object for steering
+Servo STEERING;                // Create Servo object for steering
 
 // Motor control variables
-int MaxSpeed = 255;
-int MinSpeed = 127;
+int maxSpeed = 255;
+int minSpeed = 127;
 int steeringAngle = 0;
 
 // Variables to store the parsed values
-int FR, FL, L1, L2, R1, R2;
+int FR = 0, FL = 0, L1 = 0, L2 = 0, R1 = 0, R2 = 0;
 
 // Function to parse the received message
 void parseMessage(String message) {
@@ -52,30 +52,29 @@ void parseMessage(String message) {
   }
 }
 
-
 // Stop the motors
 void StopMotors() {
   digitalWrite(IN_1, LOW);
   digitalWrite(IN_2, LOW);
-  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
+  analogWrite(ENA, 0); // Stop motor by setting speed to 0
 }
 
 // Hold the motors in place
 void HoldMotors() {
   digitalWrite(IN_1, HIGH);
   digitalWrite(IN_2, HIGH);
-  analogWrite(ENA, 0);  // Stop motor by setting speed to 0
+  analogWrite(ENA, 0); // Stop motor by setting speed to 0
 }
 
 // Check if the switch is on
 bool isSwitchOn(int value) {
-  return value > 1000;  // Return true if analog reading is close to 1023 (switch on)
+  return value > 1000; // Return true if analog reading is close to 1023 (switch on)
 }
 
 // Function to handle data received over I2C
 void receiveEvent(int bytesReceived) {
   while (Wire.available()) {
-    char c = Wire.read();  // Read one byte from I2C
+    char c = Wire.read(); // Read one byte from I2C
     if (c == '-') {
       // Start of a new message
       receivedData = "-";
@@ -84,7 +83,7 @@ void receiveEvent(int bytesReceived) {
       // End of the message
       receivedData += ".";
       receiving = false;
-      lastReceiveTime = millis();  // Update the last received time
+      lastReceiveTime = millis(); // Update the last received time
     } else if (receiving) {
       // Append to the message if we're in the middle of receiving
       receivedData += c;
@@ -105,10 +104,10 @@ void printLidarData() {
   }
 }
 
-// Existing motor control function
+// Motor control function
 void controlRobot(int speedInput, int steeringInput) {
   // Map speedInput from -100 to 100 to motor speed range
-  int motorSpeed = map(abs(speedInput), 0, 100, MinSpeed, MaxSpeed);
+  int motorSpeed = map(abs(speedInput), 0, 100, minSpeed, maxSpeed);
   
   // Set motor direction based on the sign of speedInput
   if (speedInput > 0) {
@@ -134,42 +133,33 @@ void controlRobot(int speedInput, int steeringInput) {
   STEERING.write(steeringAngle);
 }
 
-
-
-
-
-
-
+// Adjust robot control based on distance
 void adjustControlBasedOnDistance(int requiredDistance) {
   // Calculate the average of R1 and R2
   int averageDistance = (R1 + R2) / 2;
 
   // Compare the average distance with the required distance
   if (averageDistance == requiredDistance) {
-    // If the average is equal to the required distance
-    controlRobot(100, 0);  // Set speed to 100 and steering to 0
+    controlRobot(100, 0); // Drive straight
   } else if (averageDistance > requiredDistance) {
-    // If the average is greater than the required distance
     int steeringValue = map(averageDistance, requiredDistance, 100, 0, 100);
-    controlRobot(50, steeringValue);  // Set speed to 50 and turn right
+    controlRobot(50, steeringValue); // Turn right
   } else {
-    // If the average is less than the required distance
     int steeringValue = map(averageDistance, 0, requiredDistance, -100, 0);
-    controlRobot(50, steeringValue);  // Set speed to 50 and turn left
+    controlRobot(50, steeringValue); // Turn left
   }
 }
 
-
-// Robot action function (only for printing to Serial Monitor when switch is on)
+// Robot action function
 void act() {
   printLidarData();
-  adjustControlBasedOnDistance(30);  // Replace 30 with your required distance in cm
+  adjustControlBasedOnDistance(30); // Adjust based on required distance (30 cm)
 }
 
 void setup() {
-  Wire.begin(I2C_ADDRESS);  // Join the I2C bus with the specified address
-  Wire.onReceive(receiveEvent);  // Register the receive event
-  Serial.begin(9600);  // Start the Serial Monitor
+  Wire.begin(I2C_ADDRESS);          // Join the I2C bus with the specified address
+  Wire.onReceive(receiveEvent);     // Register the receive event
+  Serial.begin(9600);               // Start the Serial Monitor
   
   // Initialize motor pins
   pinMode(ENA, OUTPUT);
@@ -185,16 +175,15 @@ void setup() {
 }
 
 void loop() {
-  int switchValue = analogRead(switchPin);  // Read the analog value of the switch
+  int switchValue = analogRead(SWITCH_PIN); // Read the analog value of the switch
 
-  if (isSwitchOn(switchValue)) {  // Check if switch is on
+  if (isSwitchOn(switchValue)) { // Check if switch is on
     parseMessage(receivedData);  // Parse the received data
-    act();  // Perform robot actions when the switch is on
+    act();                       // Perform robot actions
   } else {
-    StopMotors();  // Stop motors when the switch is off
-    controlRobot(0, 0);
-
+    StopMotors();                // Stop motors when the switch is off
+    controlRobot(0, 0);          // Reset control
   }
 
-  delay(100);  // Short delay for stability
+  delay(100); // Short delay for stability
 }
