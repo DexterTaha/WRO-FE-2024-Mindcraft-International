@@ -26,6 +26,9 @@ int steeringAngle = 0;
 // Variables to store the parsed values
 int FR = 0, FL = 0, L1 = 0, L2 = 0, R1 = 0, R2 = 0;
 
+// Variable to count increments
+int counter = 0;
+
 // Function to parse the received message
 void parseMessage(String message) {
   if (message.startsWith("-") && message.endsWith(".")) {
@@ -161,19 +164,24 @@ void adjustControlBasedOnDistance() {
   int R = 20;
   int tolerance = 10;
 
-  if (R1 > 100 || R2 > 100) {
+  if (R1 > 150 && R2 > 150) {
     controlRobot(50, 100);
+    counter++;
+    // Print the updated counter value
+    Serial.print("Counter: ");
+    Serial.println(counter);
   } else if (abs(R1 - R2) <= tolerance && abs(R1 - R) <= tolerance) {
-    controlRobot(50, 0);
+    controlRobot(100, 0);
   } else if (R1 < R && R2 < R && R1 < R2) {
     controlRobot(50, 0);
   } else if (R2 < R1 && R1 < R && R2 < R) {
-    controlRobot(50, -60);
+    controlRobot(50, -80);
   } else if (R < R1 && R1 < R2 && R < R2) {
-    controlRobot(50, 60);
+    controlRobot(50, 80);
   } else if (R < R2 && R2 < R1 && R < R1) {
-    controlRobot(50, -60);
+    controlRobot(50, -80);
   } else if (FR < 15 || FL < 15) {
+    Serial.println("stepBack");
     stepBack();
   } else {
     controlRobot(0, 0);
@@ -185,7 +193,7 @@ void stepBack() {
 }
 
 void act() {
-  //printLidarData();
+  printLidarData();
   if (millis() - lastReceiveTime <= timeoutDuration) {
     parseMessage(receivedData);
     adjustControlBasedOnDistance();
@@ -224,4 +232,3 @@ void loop() {
 
   delay(100);
 }
-
