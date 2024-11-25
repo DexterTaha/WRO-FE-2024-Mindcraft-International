@@ -136,8 +136,7 @@ void controlRobot(int speedInput, int steeringInput) {
 
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
-  //printLidarData();
-  Serial.println(FR);
+  printLidarData();
 }
 
 void setup() {
@@ -162,6 +161,7 @@ void loop() {
   int switchValue = analogRead(switchPin);  // Read the analog value of the switch
 
   if (isSwitchOn(switchValue)) {  // Check if switch is on
+    parseMessage(receivedData);  // Parse the received data
     act();  // Perform robot actions when the switch is on
   } else {
     StopMotors();  // Stop motors when the switch is off
