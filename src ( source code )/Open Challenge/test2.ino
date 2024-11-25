@@ -28,6 +28,8 @@ int FR = 0, FL = 0, L1 = 0, L2 = 0, R1 = 0, R2 = 0;
 
 // Variable to count increments
 int counter = 0;
+unsigned long lastCounterUpdateTime = 0; // Time when the counter was last incremented
+const unsigned long counterDelay = 5000; // 5 seconds in milliseconds
 
 // Function to parse the received message
 void parseMessage(String message) {
@@ -164,12 +166,16 @@ void adjustControlBasedOnDistance() {
   int R = 20;
   int tolerance = 10;
 
-  if (R1 > 150 && R2 > 150) {
-    controlRobot(50, 100);
+  if (R1 > 150 && R2 > 150 && millis() - lastCounterUpdateTime > counterDelay) {
+    controlRobot(0, 0);
     counter++;
+    lastCounterUpdateTime = millis();
+
     // Print the updated counter value
     Serial.print("Counter: ");
     Serial.println(counter);
+
+    delay(counterDelay); // Pause for 5 seconds
   } else if (abs(R1 - R2) <= tolerance && abs(R1 - R) <= tolerance) {
     controlRobot(100, 0);
   } else if (R1 < R && R2 < R && R1 < R2) {
