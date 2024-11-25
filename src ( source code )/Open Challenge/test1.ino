@@ -13,7 +13,7 @@ unsigned long timeoutDuration = 500; // Timeout duration in milliseconds
 #define ENA  11
 #define IN_1 13
 #define IN_2 12
-
+#define buzzerPin  8           // Pin for the buzzer
 #define STEERING_SERVO_PIN 10  // Pin connected to the steering servo
 
 Servo STEERING;                // Create Servo object for steering
@@ -49,6 +49,41 @@ void parseMessage(String message) {
   } else {
     // Invalid message format
     Serial.println("Error: Invalid message format");
+  }
+}
+
+// Existing buzzer functions
+void BuzzerRobotStart() {
+  for (int i = 0; i < 3; i++) {
+    tone(buzzerPin, 1000);  // Frequency of 1000 Hz
+    delay(200);
+    noTone(buzzerPin);
+    delay(100);
+  }
+}
+
+void BuzzerRobotEnd() {
+  tone(buzzerPin, 500);  // Lower frequency for end sound
+  delay(1000);           // Long beep for 1 second
+  noTone(buzzerPin);
+}
+
+void BuzzerRobotError() {
+  for (int i = 0; i < 5; i++) {
+    tone(buzzerPin, 1500);  // Higher frequency for error
+    delay(100);
+    noTone(buzzerPin);
+    delay(100);
+  }
+}
+
+void BuzzerRobotSpecial() {
+  int melody[] = { 262, 294, 330, 349 };  // Notes for C, D, E, F
+  for (int i = 0; i < 4; i++) {
+    tone(buzzerPin, melody[i]);
+    delay(300);
+    noTone(buzzerPin);
+    delay(100);
   }
 }
 
@@ -89,6 +124,11 @@ void receiveEvent(int bytesReceived) {
       receivedData += c;
     }
   }
+
+  // Reset the timeout and process data immediately
+  if (!receiving && receivedData.length() > 0) {
+    lastReceiveTime = millis(); // Update the last received time
+  }
 }
 
 // Function to print the lidar output data in the serial monitor
@@ -96,11 +136,14 @@ void printLidarData() {
   // Check if data was recently received
   if (millis() - lastReceiveTime <= timeoutDuration) {
     if (receivedData.length() > 0) {
-      Serial.println(receivedData);
+      Serial.println(receivedData); // Print received data
     }
   } else {
-    // Timeout occurred, print zeros
-    Serial.println("0,0,0,0,0,0.");
+    // Timeout occurred, clear the received data
+    receivedData = ""; // Clear the string to avoid re-parsing old data
+    Serial.println("0,0,0,0,0,0."); // Print zeros for timeout
+    // Trigger special buzzer sound when printing zeros
+    BuzzerRobotSpecial();
   }
 }
 
@@ -138,25 +181,45 @@ void adjustControlBasedOnDistance(int requiredDistance) {
   // Calculate the average of R1 and R2
   int averageDistance = (R1 + R2) / 2;
 
-  // Compare the average distance with the required distance
-  if (averageDistance == requiredDistance) {
-    controlRobot(100, 0); // Drive straight
-  } else if (averageDistance > requiredDistance) {
-    int steeringValue = map(averageDistance, requiredDistance, 3000, 0, 100);
-    controlRobot(30, steeringValue); // Turn right
+  // Determine action based on the average distance
+  if (averageDistance == requiredDistance || 
+      (averageDistance >= requiredDistance - 5 && averageDistance <= requiredDistance + 5)) {
+    // Distance matches required or is within ±5; steer to the center and go forward
+    controlRobot(50, 0); // Fixed speed of 50, no steering
+  } else if (averageDistance > 350) {
+    // Object is too far; move straight
+    controlRobot(30, 0); // Fixed speed, no steering
+  } else if (averageDistance < requiredDistance - 20) {
+    // Object is too close, turn sharply left
+    controlRobot(30, -70); // Fixed speed, sharp left turn
   } else if (averageDistance < requiredDistance) {
-    int steeringValue = map(averageDistance, 300, requiredDistance, -100, 0);
-    controlRobot(30, steeringValue); // Turn left
-  } else {
-    controlRobot(0, 0); // Turn left
+    // Object is closer than the required distance, turn gently left
+    controlRobot(30, -50); // Fixed speed, gentle left turn
+  }  else if (averageDistance > requiredDistance + 20) {
+    // Object is farther than the required distance, turn slightly right
+    controlRobot(30, 70); // Fixed speed, turn right
+  } else if (averageDistance > requiredDistance) {
+    // Object is near the required distance, turn gently right
+    controlRobot(30, 50); // Fixed speed, gentle right turn
+  }else {
+    // Stop if distance is invalid or not in range
+    controlRobot(0, 0);
   }
 }
+
+
+
+
 
 // Robot action function
 void act() {
   printLidarData();
-  parseMessage(receivedData);  // Parse the received data
-  adjustControlBasedOnDistance(20); // Adjust based on required distance (30 cm)
+  if (millis() - lastReceiveTime <= timeoutDuration) { // Only act if data is fresh
+    parseMessage(receivedData);  // Parse the received data
+    adjustControlBasedOnDistance(20); // Adjust based on required distance (30 cm)
+  } else {
+    StopMotors(); // Stop the robot if data is outdated
+  }
 }
 
 void setup() {
@@ -169,12 +232,16 @@ void setup() {
   pinMode(IN_1, OUTPUT);
   pinMode(IN_2, OUTPUT);
 
+  // Set buzzer pin as output
+  pinMode(buzzerPin, OUTPUT);  
+
   // Attach servo
   STEERING.attach(STEERING_SERVO_PIN);
 
   // Stop motors and set servo to neutral position
   StopMotors();
   controlRobot(0, 0);
+  BuzzerRobotStart();
 }
 
 void loop() {
@@ -185,8 +252,8 @@ void loop() {
   } else {
     StopMotors();                // Stop motors when the switch is off
     controlRobot(0, 0);          // Reset control
+    BuzzerRobotError();
   }
 
   delay(100); // Short delay for stability
 }
-
