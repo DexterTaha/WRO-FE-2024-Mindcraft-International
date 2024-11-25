@@ -134,9 +134,36 @@ void controlRobot(int speedInput, int steeringInput) {
   STEERING.write(steeringAngle);
 }
 
+
+
+
+
+
+
+void adjustControlBasedOnDistance(int requiredDistance) {
+  // Calculate the average of R1 and R2
+  int averageDistance = (R1 + R2) / 2;
+
+  // Compare the average distance with the required distance
+  if (averageDistance == requiredDistance) {
+    // If the average is equal to the required distance
+    controlRobot(100, 0);  // Set speed to 100 and steering to 0
+  } else if (averageDistance > requiredDistance) {
+    // If the average is greater than the required distance
+    int steeringValue = map(averageDistance, requiredDistance, 100, 0, 100);
+    controlRobot(50, steeringValue);  // Set speed to 50 and turn right
+  } else {
+    // If the average is less than the required distance
+    int steeringValue = map(averageDistance, 0, requiredDistance, -100, 0);
+    controlRobot(50, steeringValue);  // Set speed to 50 and turn left
+  }
+}
+
+
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
   printLidarData();
+  adjustControlBasedOnDistance(30);  // Replace 30 with your required distance in cm
 }
 
 void setup() {
