@@ -158,31 +158,34 @@ void controlRobot(int speedInput, int steeringInput) {
 
 // Adjust control based on distance
 void adjustControlBasedOnDistance() {
-  int R = 25;
-  int tolerance = 5;
+  int R = 20;
+  int tolerance = 10;
 
-  if (FR < 15 || FL < 15) {
-    stepBack();
-  } else if (FR < 30 || FL < 30) {
+  if (R1 > 100 || R2 > 100) {
     controlRobot(50, 100);
   } else if (abs(R1 - R2) <= tolerance && abs(R1 - R) <= tolerance) {
     controlRobot(50, 0);
-  } else if (R1 < R && R2 < R) {
+  } else if (R1 < R && R2 < R && R1 < R2) {
     controlRobot(50, 0);
-  } else if (R1 > R && R2 > R) {
-    controlRobot(50, 50);
+  } else if (R2 < R1 && R1 < R && R2 < R) {
+    controlRobot(50, -60);
+  } else if (R < R1 && R1 < R2 && R < R2) {
+    controlRobot(50, 60);
+  } else if (R < R2 && R2 < R1 && R < R1) {
+    controlRobot(50, -60);
+  } else if (FR < 15 || FL < 15) {
+    stepBack();
   } else {
-    controlRobot(30, 0);
+    controlRobot(0, 0);
   }
 }
 
 void stepBack() {
-  controlRobot(-100, 0);
-  delay(500);
+  controlRobot(-100, -100);
 }
 
 void act() {
-  printLidarData();
+  //printLidarData();
   if (millis() - lastReceiveTime <= timeoutDuration) {
     parseMessage(receivedData);
     adjustControlBasedOnDistance();
