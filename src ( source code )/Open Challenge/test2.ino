@@ -166,8 +166,9 @@ void adjustControlBasedOnDistance() {
   int R = 20;
   int tolerance = 10;
 
-  if (R1 > 150 && R2 > 150 && millis() - lastCounterUpdateTime > counterDelay) {
-    controlRobot(0, 0);
+  if (R1 > 150 && R2 > 150) {
+    controlRobot(50, 100);
+  } else if (R1 > 150 && R2 > 150 && millis() - lastCounterUpdateTime > counterDelay) {
     counter++;
     lastCounterUpdateTime = millis();
 
@@ -223,6 +224,7 @@ void setup() {
   StopMotors();
   controlRobot(0, 0);
   BuzzerRobotStart();
+  Serial.println("on");
 }
 
 void loop() {
@@ -234,6 +236,8 @@ void loop() {
     StopMotors();
     controlRobot(0, 0);
     BuzzerRobotError();
+    Serial.println("ready");
+
   }
 
   delay(100);
