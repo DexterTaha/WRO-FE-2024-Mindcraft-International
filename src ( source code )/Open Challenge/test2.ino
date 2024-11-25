@@ -143,7 +143,9 @@ void printLidarData() {
     receivedData = ""; // Clear the string to avoid re-parsing old data
     Serial.println("0,0,0,0,0,0."); // Print zeros for timeout
     // Trigger special buzzer sound when printing zeros
-    BuzzerRobotSpecial();
+    BuzzerRobotSpecial(); 
+    StopMotors(); // Stop the robot if data is outdated
+
   }
 }
 
@@ -177,33 +179,28 @@ void controlRobot(int speedInput, int steeringInput) {
 }
 
 // Adjust robot control based on distance
-void adjustControlBasedOnDistance(int requiredDistance) {
-  // Calculate the average of R1 and R2
-  int averageDistance = (R1 + R2) / 2;
+void adjustControlBasedOnDistance() {
+  int R = 25;  //requiredDistance
+  int tolerance = 5;
 
   // Determine action based on the average distance
-  if (averageDistance == requiredDistance || 
-      (averageDistance >= requiredDistance - 5 && averageDistance <= requiredDistance + 5)) {
-    // Distance matches required or is within ±5; steer to the center and go forward
-    controlRobot(50, 0); // Fixed speed of 50, no steering
-  } else if (averageDistance > 350) {
-    // Object is too far; move straight
-    controlRobot(30, 0); // Fixed speed, no steering
-  } else if (averageDistance < requiredDistance - 20) {
-    // Object is too close, turn sharply left
-    controlRobot(30, -70); // Fixed speed, sharp left turn
-  } else if (averageDistance < requiredDistance) {
-    // Object is closer than the required distance, turn gently left
-    controlRobot(30, -50); // Fixed speed, gentle left turn
-  }  else if (averageDistance > requiredDistance + 20) {
-    // Object is farther than the required distance, turn slightly right
-    controlRobot(30, 70); // Fixed speed, turn right
-  } else if (averageDistance > requiredDistance) {
-    // Object is near the required distance, turn gently right
-    controlRobot(30, 50); // Fixed speed, gentle right turn
-  }else {
-    // Stop if distance is invalid or not in range
-    controlRobot(0, 0);
+  if (FR < 15 || FL < 15 ) {
+    void stepBack();
+
+  } else if (FR < 30 || FL < 30 ) {
+      controlRobot(50, 100);
+  } else if (abs(R1 - R2) <= tolerance && abs(R1 - R) <= tolerance && abs(R2 - R) <= tolerance) {
+      controlRobot(50, 0);
+  } else if (R1<R2<R) {
+      controlRobot(50, 0);
+  } else if (R2<R1<R) {
+      controlRobot(50, -50);
+  } else if (R<R1<R2) {
+      controlRobot(50, 50);
+  } else if (R<R2<R1) {
+      controlRobot(50, -50);
+  } else {
+    controlRobot(30, 0);
   }
 }
 
@@ -221,7 +218,10 @@ void act() {
     StopMotors(); // Stop the robot if data is outdated
   }
 }
-
+void stepBack() {
+  controlRobot(-100, -100);
+  delay(500);
+}
 void setup() {
   Wire.begin(I2C_ADDRESS);          // Join the I2C bus with the specified address
   Wire.onReceive(receiveEvent);     // Register the receive event
