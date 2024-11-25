@@ -23,6 +23,36 @@ int MaxSpeed = 255;
 int MinSpeed = 127;
 int steeringAngle = 0;
 
+// Variables to store the parsed values
+int FR, FL, L1, L2, R1, R2;
+
+// Function to parse the received message
+void parseMessage(String message) {
+  if (message.startsWith("-") && message.endsWith(".")) {
+    // Remove the start and end markers
+    message = message.substring(1, message.length() - 1);
+
+    // Split the message into individual parts
+    int firstComma = message.indexOf(',');
+    int secondComma = message.indexOf(',', firstComma + 1);
+    int thirdComma = message.indexOf(',', secondComma + 1);
+    int fourthComma = message.indexOf(',', thirdComma + 1);
+    int fifthComma = message.indexOf(',', fourthComma + 1);
+
+    // Parse each value
+    FR = message.substring(0, firstComma).toInt();
+    FL = message.substring(firstComma + 1, secondComma).toInt();
+    L1 = message.substring(secondComma + 1, thirdComma).toInt();
+    L2 = message.substring(thirdComma + 1, fourthComma).toInt();
+    R1 = message.substring(fourthComma + 1, fifthComma).toInt();
+    R2 = message.substring(fifthComma + 1).toInt();
+  } else {
+    // Invalid message format
+    Serial.println("Error: Invalid message format");
+  }
+}
+
+
 // Stop the motors
 void StopMotors() {
   digitalWrite(IN_1, LOW);
