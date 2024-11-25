@@ -136,7 +136,8 @@ void controlRobot(int speedInput, int steeringInput) {
 
 // Robot action function (only for printing to Serial Monitor when switch is on)
 void act() {
-  printLidarData();
+  //printLidarData();
+  Serial.println(FR);
 }
 
 void setup() {
