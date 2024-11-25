@@ -99,18 +99,7 @@ void HoldMotors() {
 
 // Check if switch is on
 bool isSwitchOn(int value) {
-  static int lastValue = 0;
-  static unsigned long lastDebounceTime = 0;
-  const int debounceDelay = 50;
-
-  if (abs(value - lastValue) > 10) {
-    lastDebounceTime = millis();
-  }
-  if ((millis() - lastDebounceTime) > debounceDelay) {
-    lastValue = value;
-    return value > 1000;
-  }
-  return false;
+  return value > 1000;
 }
 
 // Handle data received over I2C
@@ -145,8 +134,6 @@ void printLidarData() {
     Serial.println("0,0,0,0,0,0.");
     BuzzerRobotSpecial();
     StopMotors();
-    controlRobot(-50, 0);
-    delay(300);
   }
 }
 
@@ -155,22 +142,17 @@ void controlRobot(int speedInput, int steeringInput) {
   int motorSpeed = map(abs(speedInput), 0, 100, minSpeed, maxSpeed);
 
   if (speedInput > 0) {
-    if (digitalRead(IN_1) != HIGH || digitalRead(IN_2) != LOW) {
-      digitalWrite(IN_1, HIGH);
-      digitalWrite(IN_2, LOW);
-    }
+    digitalWrite(IN_1, HIGH);
+    digitalWrite(IN_2, LOW);
   } else if (speedInput < 0) {
-    if (digitalRead(IN_1) != LOW || digitalRead(IN_2) != HIGH) {
-      digitalWrite(IN_1, LOW);
-      digitalWrite(IN_2, HIGH);
-    }
+    digitalWrite(IN_1, LOW);
+    digitalWrite(IN_2, HIGH);
   } else {
     StopMotors();
   }
 
   analogWrite(ENA, motorSpeed);
-  int targetAngle = map(steeringInput, -100, 100, 120, 60);
-  steeringAngle += (targetAngle - steeringAngle) / 5;
+  steeringAngle = map(steeringInput, -100, 100, 120, 60);
   STEERING.write(steeringAngle);
 }
 
@@ -199,13 +181,11 @@ void adjustControlBasedOnDistance() {
 }
 
 void stepBack() {
-  controlRobot(-50, 0);
-  delay(500);
-  controlRobot(0, random(-50, 50));
-  delay(500);
+  controlRobot(-100, -100);
 }
 
 void act() {
+  //printLidarData();
   if (millis() - lastReceiveTime <= timeoutDuration) {
     parseMessage(receivedData);
     adjustControlBasedOnDistance();
@@ -229,8 +209,6 @@ void setup() {
   StopMotors();
   controlRobot(0, 0);
   BuzzerRobotStart();
-
-  Serial.println("Robot Initialized");
 }
 
 void loop() {
@@ -244,5 +222,5 @@ void loop() {
     BuzzerRobotError();
   }
 
-  delay(50);
+  delay(100);
 }
