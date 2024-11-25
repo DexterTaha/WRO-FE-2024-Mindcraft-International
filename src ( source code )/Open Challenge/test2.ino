@@ -36,11 +36,25 @@ void parseMessage(String message) {
   if (message.startsWith("-") && message.endsWith(".")) {
     message = message.substring(1, message.length() - 1);
 
+    int expectedCommas = 5;
+    int commaCount = 0;
+    for (char c : message) {
+      if (c == ',') commaCount++;
+    }
+
+    if (commaCount != expectedCommas) {
+      Serial.println("Error: Incorrect number of data fields");
+      return;
+    }
+
+    // Proceed with parsing
     int firstComma = message.indexOf(',');
     int secondComma = message.indexOf(',', firstComma + 1);
     int thirdComma = message.indexOf(',', secondComma + 1);
     int fourthComma = message.indexOf(',', thirdComma + 1);
     int fifthComma = message.indexOf(',', fourthComma + 1);
+
+    // Additional checks can be added here
 
     FR = message.substring(0, firstComma).toInt();
     FL = message.substring(firstComma + 1, secondComma).toInt();
@@ -52,6 +66,7 @@ void parseMessage(String message) {
     Serial.println("Error: Invalid message format");
   }
 }
+
 
 // Buzzer functions
 void BuzzerRobotStart() {
