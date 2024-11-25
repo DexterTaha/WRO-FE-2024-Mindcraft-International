@@ -4,9 +4,12 @@
 #define I2C_ADDRESS 0x08  // I2C address of this Arduino
 #define SWITCH_PIN A0     // Switch pin
 
-String receivedData = "";          // String to store the incoming message
-bool receiving = false;            // Flag to check if we are in the middle of receiving a message
-unsigned long lastReceiveTime = 0; // Time when the last data was received
+// Buffer for storing the incoming message
+#define BUFFER_SIZE 64
+char receivedData[BUFFER_SIZE];  // Fixed-size buffer
+int receivedIndex = 0;           // Index in the buffer
+bool receiving = false;          // Flag to check if we are in the middle of receiving a message
+unsigned long lastReceiveTime = 0;   // Time when the last data was received
 unsigned long timeoutDuration = 500; // Timeout duration in milliseconds
 
 // Motor control pins
@@ -54,8 +57,6 @@ void parseMessage(String message) {
     int fourthComma = message.indexOf(',', thirdComma + 1);
     int fifthComma = message.indexOf(',', fourthComma + 1);
 
-    // Additional checks can be added here
-
     FR = message.substring(0, firstComma).toInt();
     FL = message.substring(firstComma + 1, secondComma).toInt();
     L1 = message.substring(secondComma + 1, thirdComma).toInt();
@@ -66,7 +67,6 @@ void parseMessage(String message) {
     Serial.println("Error: Invalid message format");
   }
 }
-
 
 // Buzzer functions
 void BuzzerRobotStart() {
@@ -85,11 +85,15 @@ void BuzzerRobotEnd() {
 }
 
 void BuzzerRobotError() {
-  for (int i = 0; i < 5; i++) {
-    tone(buzzerPin, 1500);
-    delay(100);
-    noTone(buzzerPin);
-    delay(100);
+  static bool errorBuzzerPlayed = false;
+  if (!errorBuzzerPlayed) {
+    for (int i = 0; i < 5; i++) {
+      tone(buzzerPin, 1500);
+      delay(100);
+      noTone(buzzerPin);
+      delay(100);
+    }
+    errorBuzzerPlayed = true;
   }
 }
 
@@ -119,7 +123,19 @@ void HoldMotors() {
 
 // Check if switch is on
 bool isSwitchOn(int value) {
-  return value > 1000;
+  static unsigned long lastDebounceTime = 0;
+  static bool lastSwitchState = false;
+
+  bool currentSwitchState = value > 1000;
+  if (currentSwitchState != lastSwitchState) {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > 50) { // 50 ms debounce time
+    lastSwitchState = currentSwitchState;
+  }
+
+  return lastSwitchState;
 }
 
 // Handle data received over I2C
@@ -127,18 +143,26 @@ void receiveEvent(int bytesReceived) {
   while (Wire.available()) {
     char c = Wire.read();
     if (c == '-') {
-      receivedData = "-";
+      receivedIndex = 0;
+      memset(receivedData, 0, BUFFER_SIZE);
+      receivedData[receivedIndex++] = c;
       receiving = true;
     } else if (c == '.' && receiving) {
-      receivedData += ".";
+      receivedData[receivedIndex++] = c;
       receiving = false;
       lastReceiveTime = millis();
+      receivedData[receivedIndex] = '\0'; // Null-terminate the string
+    } else if (receiving && receivedIndex < BUFFER_SIZE - 1) {
+      receivedData[receivedIndex++] = c;
     } else if (receiving) {
-      receivedData += c;
+      // Buffer full, handle the error
+      Serial.println("Error: Received data too long");
+      receiving = false;
+      receivedIndex = 0;
     }
   }
 
-  if (!receiving && receivedData.length() > 0) {
+  if (!receiving && receivedIndex > 0) {
     lastReceiveTime = millis();
   }
 }
@@ -146,11 +170,12 @@ void receiveEvent(int bytesReceived) {
 // Print LIDAR data
 void printLidarData() {
   if (millis() - lastReceiveTime <= timeoutDuration) {
-    if (receivedData.length() > 0) {
+    if (receivedIndex > 0) {
       Serial.println(receivedData);
     }
   } else {
-    receivedData = "";
+    memset(receivedData, 0, BUFFER_SIZE);
+    receivedIndex = 0;
     Serial.println("0,0,0,0,0,0.");
     BuzzerRobotSpecial();
     StopMotors();
@@ -172,7 +197,7 @@ void controlRobot(int speedInput, int steeringInput) {
   }
 
   analogWrite(ENA, motorSpeed);
-  steeringAngle = map(steeringInput, -100, 100, 120, 60);
+  steeringAngle = map(steeringInput, -100, 100, 60, 120); // Adjusted mapping
   STEERING.write(steeringAngle);
 }
 
@@ -180,18 +205,21 @@ void controlRobot(int speedInput, int steeringInput) {
 void adjustControlBasedOnDistance() {
   int R = 20;
   int tolerance = 10;
+  unsigned long currentMillis = millis();
 
-  if (R1 > 150 && R2 > 150) {
+  if (FR < 15 || FL < 15) {
+    Serial.println("stepBack");
+    stepBack();
+  } else if (R1 > 150 && R2 > 150) {
+    if (currentMillis - lastCounterUpdateTime > counterDelay) {
+      counter++;
+      lastCounterUpdateTime = currentMillis;
+
+      // Print the updated counter value
+      Serial.print("Counter: ");
+      Serial.println(counter);
+    }
     controlRobot(50, 100);
-  } else if (R1 > 150 && R2 > 150 && millis() - lastCounterUpdateTime > counterDelay) {
-    counter++;
-    lastCounterUpdateTime = millis();
-
-    // Print the updated counter value
-    Serial.print("Counter: ");
-    Serial.println(counter);
-
-    delay(counterDelay); // Pause for 5 seconds
   } else if (abs(R1 - R2) <= tolerance && abs(R1 - R) <= tolerance) {
     controlRobot(100, 0);
   } else if (R1 < R && R2 < R && R1 < R2) {
@@ -202,22 +230,19 @@ void adjustControlBasedOnDistance() {
     controlRobot(50, 80);
   } else if (R < R2 && R2 < R1 && R < R1) {
     controlRobot(50, -80);
-  } else if (FR < 15 || FL < 15) {
-    Serial.println("stepBack");
-    stepBack();
   } else {
-    controlRobot(0, 0);
+    controlRobot(30, 0);
   }
 }
 
 void stepBack() {
-  controlRobot(-100, -100);
+  controlRobot(-100, 0); // Reverse straight back
 }
 
 void act() {
   printLidarData();
   if (millis() - lastReceiveTime <= timeoutDuration) {
-    parseMessage(receivedData);
+    parseMessage(String(receivedData));
     adjustControlBasedOnDistance();
   } else {
     StopMotors();
@@ -242,18 +267,27 @@ void setup() {
   Serial.println("on");
 }
 
+bool lastSwitchState = false;
 void loop() {
   int switchValue = analogRead(SWITCH_PIN);
+  bool currentSwitchState = isSwitchOn(switchValue);
 
-  if (isSwitchOn(switchValue)) {
+  if (currentSwitchState) {
+    if (!lastSwitchState) {
+      Serial.println("Switch turned ON");
+    }
     act();
   } else {
+    if (lastSwitchState) {
+      Serial.println("Switch turned OFF");
+      BuzzerRobotError();
+    }
     StopMotors();
     controlRobot(0, 0);
-    BuzzerRobotError();
     Serial.println("ready");
-
   }
 
+  lastSwitchState = currentSwitchState;
   delay(100);
 }
+
