@@ -1,6 +1,6 @@
 ## Sensors Testing
 
----s
+---
 
 
 ### Temperature sensor testing
